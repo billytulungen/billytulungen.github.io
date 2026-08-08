@@ -1,0 +1,261 @@
+---
+title: "Curriculum Vitae"
+subtitle: "Billy Thandy Tulungen, S.IP., M.E."
+description-meta: "Academic and professional curriculum vitae."
+toc: false
+---
+
+[Download CV (PDF)](files/cv-billy-tulungen.pdf){.cv-download}
+
+::: {.note}
+
+**Editorial note — delete this block once the file is in place.** Export a
+public version of your CV to `files/cv-billy-tulungen.pdf`. Remove NIK, NIP,
+NPWP, bank account details, date of birth, home address, and personal mobile
+number before publishing: the versions currently in your Downloads folder
+contain all of these. Keep the full internal CV separate.
+
+:::
+
+## Education
+
+::::: {.entry}
+
+::: {.years}
+
+in progress
+
+:::
+
+:::: {.what}
+
+[PhD in Economics]{.role}
+
+::: {.org}
+
+Faculty of Economics and Business, Universitas Indonesia
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020
+
+:::
+
+:::: {.what}
+
+[M.E., Economic Planning and Development Policy]{.role}
+
+::: {.org}
+
+Faculty of Economics and Business, Universitas Indonesia<br>
+Thesis: *Competitive Bidding in Indonesian Government Procurement: Empirical
+Evidence from the e-Procurement System* — one of three theses selected for
+examination by the Minister of Finance of the Republic of Indonesia
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2015
+
+:::
+
+:::: {.what}
+
+[S.IP., Government Studies]{.role}
+
+::: {.org}
+
+Institut Pemerintahan Dalam Negeri (IPDN)
+
+:::
+
+::::
+
+:::::
+
+## Research fields
+
+Development economics &middot; urban and regional economics &middot; political
+economy &middot; spatial economics. Methods: causal inference, staggered
+difference-in-differences, spatial econometrics, applied microeconometrics.
+
+## Publications
+
+::::: {.entry}
+
+::: {.years}
+
+forthcoming
+
+:::
+
+:::: {.what}
+
+[Competition and Efficiency in Government Procurement: Empirical Evidence from Indonesian Ministries and Agencies]{.role}
+
+::: {.org}
+
+*Indonesian Treasury Review* (SINTA 2)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+R&R
+
+:::
+
+:::: {.what}
+
+[Competitive Bidding in Public Procurement: Empirical Evidence in Indonesia]{.role}
+
+::::
+
+:::::
+
+## Working papers
+
+::::: {.entry}
+
+::: {.years}
+
+2026
+
+:::
+
+:::: {.what}
+
+[Motive Without Mobilization? Earthquakes and Communal Conflict in Indonesia]{.role}
+
+::: {.org}
+
+Job market paper. [Abstract →](research.qmd)
+
+:::
+
+::::
+
+:::::
+
+## Work in progress
+
+::::: {.entry}
+
+::: {.years}
+
+2026–
+
+:::
+
+:::: {.what}
+
+[Faith after the Shock: Earthquakes, Religious Expenditure, and the Insurance Value of Religion in Indonesia]{.role}
+
+::::
+
+:::::
+
+## Grants, scholarships, and awards
+
+::::: {.entry}
+
+::: {.years}
+
+2018–2020
+
+:::
+
+:::: {.what}
+
+[Graduate scholarship]{.role}
+
+::: {.org}
+
+Pusbindiklatren, Ministry of National Development Planning (Bappenas)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2011–2015
+
+:::
+
+:::: {.what}
+
+[Service scholarship]{.role}
+
+::: {.org}
+
+IPDN, Ministry of Home Affairs
+
+:::
+
+::::
+
+:::::
+
+## Teaching and training
+
+Certified public procurement facilitator (LKPP), foundation and advanced level,
+since 2018. Certified competency assessor (LSP LKPP / BNSP) for competency
+levels 2–4, since 2020. [Details →](teaching.qmd)
+
+## Professional experience
+
+Civil servant, Government of North Sulawesi Province, since 2015. Roles include
+commitment-making official, procurement official, procurement strategy analyst,
+and member of provincial procurement selection working groups.
+[Full history →](professional.qmd)
+
+## Public procurement
+
+Probity advisor and contract support team member, National Public Procurement
+Agency (LKPP), since 2020. Certified mediator under the Supreme Court of the
+Republic of Indonesia. Certificate Professional in Public Procurement (CPPP),
+World Bank. Certified auditor, BPKP. [Full profile →](procurement/index.qmd)
+
+## Professional service
+
+Secretary, North Sulawesi chapter, Ikatan Ahli Pengadaan Indonesia (2024–2027).
+Head of Procurement Competency Development, North Sulawesi chapter (2020–2023).
+Provincial Coordinator for North Sulawesi, Forum Ahli Kontrak Pemerintah
+Indonesia.
+
+## Skills
+
+**Software.** Stata, R, Python, QGIS, LaTeX.
+
+**Empirical.** Staggered difference-in-differences and modern DiD estimators,
+spatial econometrics, panel data methods, large-scale survey and administrative
+microdata, raster and vector GIS processing, record linkage across changing
+administrative boundaries.
+
+**Languages.** Indonesian (native), English (professional working proficiency).

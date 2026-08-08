@@ -1,0 +1,146 @@
+---
+title: "Teaching"
+subtitle: "University teaching and professional training in public procurement."
+description-meta: "Courses, teaching materials, and professional training delivery."
+toc: false
+---
+
+## University teaching
+
+::: {.note}
+
+**Editorial note — delete this block, and the placeholder entry below it, once
+the first course is added.** List each course as an `.entry`, with links to the
+syllabus, lecture notes, and problem sets once they exist. Keep teaching
+materials in `files/teaching/`.
+
+:::
+
+::::: {.entry}
+
+::: {.years}
+
+Year
+
+:::
+
+:::: {.what}
+
+[Course title]{.role}
+
+::: {.org}
+
+Institution &middot; undergraduate or graduate &middot; lecturer or teaching assistant
+
+:::
+
+::::
+
+:::::
+
+## Professional training
+
+Since 2018 I have delivered public procurement training nationally as a
+certified facilitator, and since 2020 I have assessed procurement competency as
+a certified assessor. The training spans the levels of Indonesia's public
+procurement competency framework and is delivered to central and regional
+government institutions.
+
+::::: {.entry}
+
+::: {.years}
+
+2018–
+
+:::
+
+:::: {.what}
+
+[Public procurement — foundation level]{.role}
+
+::: {.org}
+
+Certified facilitator (LKPP). Procurement principles, planning, selection
+methods, and contract basics for officials entering the profession.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Public procurement — advanced level]{.role}
+
+::: {.org}
+
+Certified advanced facilitator (LKPP). Procurement strategy, complex packaging,
+contract performance, and problem resolution.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Competency assessment — levels 2, 3, and 4]{.role}
+
+::: {.org}
+
+Certified assessor (LSP LKPP / BNSP). Assessment against the national
+procurement competency standard.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Curriculum and materials development]{.role}
+
+::: {.org}
+
+Contributor to LKPP training materials, including foundation-level procurement
+under Presidential Regulation 16/2018 and its amendments, and curriculum work on
+e-catalogue and sustainable public procurement.
+
+:::
+
+::::
+
+:::::
+
+::: {.paper-links style="margin-top:1.6rem"}
+
+[Full procurement profile →](procurement/index.qmd)
+
+:::

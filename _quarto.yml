@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "procurement/*.qmd"
+    - "procurement/insights/*.qmd"
+    - "!README.md"
+
+website:
+  title: "Billy Tulungen"
+  description: "Economist, researcher, and public procurement expert. PhD candidate in Economics, Universitas Indonesia."
+  site-url: "https://billytulungen.github.io"
+  favicon: assets/img/favicon.png
+  open-graph: true
+  twitter-card: false
+
+  navbar:
+    title: "Billy Tulungen"
+    pinned: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: procurement/index.qmd
+        text: Public Procurement
+      - href: teaching.qmd
+        text: Teaching
+      - href: professional.qmd
+        text: Professional
+      - href: cv.qmd
+        text: CV
+      - href: about.qmd
+        text: About
+
+  page-footer:
+    left: |
+      © 2026 Billy Tulungen
+    center: |
+      [Email](mailto:billy.thandy21@ui.ac.id) &middot;
+      [Google Scholar](https://scholar.google.com/) &middot;
+      [ORCID](https://orcid.org/) &middot;
+      [GitHub](https://github.com/) &middot;
+      [LinkedIn](https://www.linkedin.com/)
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+  page-navigation: false
+  back-to-top-navigation: false
+  search: false
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false

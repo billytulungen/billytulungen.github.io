@@ -1,0 +1,423 @@
+---
+title: "Professional"
+subtitle: "Government service, advisory work, and professional associations."
+description-meta: "Government experience, advisory roles, and professional service."
+toc: false
+---
+
+::: {.lead-note}
+
+I am a civil servant in the Provincial Government of North Sulawesi and have
+held procurement roles across the full cycle of public buying — from procurement
+official and commitment-making official to member of provincial selection
+working groups. That institutional experience is the origin of both my
+professional practice and my research interest in how public resources are
+actually allocated.
+
+:::
+
+## Government service
+
+::::: {.entry}
+
+::: {.years}
+
+2023–
+
+:::
+
+:::: {.what}
+
+[Provincial Civil Service Agency (BKD)]{.role}
+
+::: {.org}
+
+Government of North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–2023
+
+:::
+
+:::: {.what}
+
+[Commitment-Making Official (PPK)]{.role}
+
+::: {.org}
+
+Procurement Bureau, Regional Secretariat, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–2023
+
+:::
+
+:::: {.what}
+
+[Member, Procurement Selection Working Group]{.role}
+
+::: {.org}
+
+Procurement Bureau, Regional Secretariat, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–2022
+
+:::
+
+:::: {.what}
+
+[Commitment-Making Official (PPK)]{.role}
+
+::: {.org}
+
+Regional Education Office, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020
+
+:::
+
+:::: {.what}
+
+[Procurement Strategy Analyst]{.role}
+
+::: {.org}
+
+Procurement Bureau, Regional Secretariat, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2018–2020
+
+:::
+
+:::: {.what}
+
+[Study leave for graduate study]{.role}
+
+::: {.org}
+
+Provincial Civil Service Agency, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2018
+
+:::
+
+:::: {.what}
+
+[Member, Procurement Selection Working Group]{.role}
+
+::: {.org}
+
+Procurement Service Unit, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2017–2018
+
+:::
+
+:::: {.what}
+
+[Commitment-Making Official (PPK)]{.role}
+
+::: {.org}
+
+Provincial Civil Service Agency, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2016–2017
+
+:::
+
+:::: {.what}
+
+[Procurement Official]{.role}
+
+::: {.org}
+
+Provincial Civil Service Agency, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2015–2016
+
+:::
+
+:::: {.what}
+
+[Work Acceptance Official]{.role}
+
+::: {.org}
+
+Provincial Civil Service Agency, North Sulawesi Province
+
+:::
+
+::::
+
+:::::
+
+## Advisory and technical assistance
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Probity Advisor]{.role}
+
+::: {.org}
+
+National Public Procurement Agency (LKPP)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Contract Support Team]{.role}
+
+::: {.org}
+
+National Public Procurement Agency (LKPP)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Expert team, institutional procurement guidelines]{.role}
+
+::: {.org}
+
+Universitas Sam Ratulangi (public service agency status), 2020– ; Universitas
+Negeri Manado, 2021–
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Mediator]{.role}
+
+::: {.org}
+
+Certified by Jimly School of Law and Government under the Supreme Court of the
+Republic of Indonesia
+
+:::
+
+::::
+
+:::::
+
+## Professional service
+
+::::: {.entry}
+
+::: {.years}
+
+2024–2027
+
+:::
+
+:::: {.what}
+
+[Secretary, North Sulawesi Chapter]{.role}
+
+::: {.org}
+
+Ikatan Ahli Pengadaan Indonesia (Indonesian Procurement Experts Association)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–2023
+
+:::
+
+:::: {.what}
+
+[Head of Procurement Competency Development, North Sulawesi Chapter]{.role}
+
+::: {.org}
+
+Ikatan Ahli Pengadaan Indonesia
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+Current
+
+:::
+
+:::: {.what}
+
+[Provincial Coordinator, North Sulawesi]{.role}
+
+::: {.org}
+
+Forum Ahli Kontrak Pemerintah Indonesia (Indonesian Government Contract Experts
+Forum)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Competency Assessor]{.role}
+
+::: {.org}
+
+Professional Certification Body (LSP) of LKPP and the National Professional
+Certification Agency (BNSP)
+
+:::
+
+::::
+
+:::::

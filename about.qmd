@@ -1,0 +1,63 @@
+---
+title: "About"
+subtitle: "How the research and the procurement work fit together."
+description-meta: "About Billy Tulungen — economist, researcher, and public procurement expert."
+toc: false
+---
+
+I am an economist and PhD candidate at the Faculty of Economics and Business,
+Universitas Indonesia, and a civil servant in the Provincial Government of North
+Sulawesi. My work has two strands that are usually kept apart: empirical
+research on how communities absorb large shocks, and professional practice in
+Indonesian public procurement. They share a single question — how public
+resources and collective capacity are actually allocated when institutions are
+under strain.
+
+My research is in development, urban and regional, and spatial economics. The
+dissertation asks what happens to social order and household behaviour after a
+large physical shock, in a setting where formal insurance is thin and local
+order is largely self-enforced. The first chapter combines twenty years of
+Indonesia's Village Potential Survey with village-level earthquake intensity
+surfaces and finds a pattern that neither of the standard stories predicts:
+reported communal conflict falls after damage-level shaking, while theft rises
+sharply on the same villages in the same waves. Not a general improvement in
+security, then, but a change in the *kind* of violence a community can produce.
+The second chapter turns to what households pay for religious and ceremonial
+activity after a shock, using expenditure rather than stated belief to test
+whether religion functions as informal insurance.
+
+Building these papers has meant building the data infrastructure they rest on:
+harmonising two decades of village boundary change onto a constant reference
+year, converting seismic intensity rasters into village-level exposure, and
+documenting the whole chain so that it can be reproduced. That work is
+unglamorous and, in the Indonesian context, largely unavailable off the shelf.
+It is also where most of the credibility of the results comes from.
+
+Before graduate school I entered the civil service through IPDN, and my early
+posts were in procurement — receiving completed work, then serving as a
+procurement official, then as a commitment-making official responsible for
+contracts. I have sat on provincial selection working groups and managed
+construction, equipment, and consultancy contracts. Since 2018 I have worked
+nationally as a certified procurement facilitator, and since 2020 as a
+competency assessor, probity advisor, and member of the contract support team
+of Indonesia's National Public Procurement Agency. I am also a certified
+mediator and hold the World Bank's Certificate Professional in Public
+Procurement.
+
+That practical experience shaped what I find worth studying. Procurement is
+where formal rules meet local discretion, and where the gap between what a
+regulation requires and what an official can actually do is most visible. My
+master's thesis used Indonesia's e-procurement records to ask whether more
+bidders produce better outcomes; that work continues alongside the dissertation.
+
+The longer-term agenda is to keep both strands running: rigorous empirical
+economics on shocks, institutions, and local public goods in Indonesia, and a
+serious contribution to the professionalisation of Indonesian public
+procurement — including writing about procurement practice for practitioners,
+not only for regulators.
+
+::: {.paper-links style="margin-top:2rem"}
+
+[Email](mailto:billy.thandy21@ui.ac.id) [Research](research.qmd) [Public Procurement](procurement/index.qmd) [CV](cv.qmd)
+
+:::

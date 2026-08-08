@@ -1,0 +1,223 @@
+---
+pagetitle: "Billy Tulungen — Economist, Researcher, Public Procurement Expert"
+description-meta: "PhD candidate in Economics at Universitas Indonesia. Development, urban and regional, and spatial economics; public procurement practice."
+toc: false
+---
+
+::::: {.hero}
+
+
+:::: {.hero-text}
+
+
+::: {.hero-name}
+
+Billy Tulungen
+
+:::
+
+::: {.hero-roles}
+
+Economist &middot; Researcher &middot; Public Procurement Expert
+
+:::
+
+::: {.hero-affil}
+
+PhD Candidate in Economics<br>
+Faculty of Economics and Business, Universitas Indonesia
+
+:::
+
+::: {.hero-bio}
+
+I am a PhD candidate in Economics at Universitas Indonesia. My research is in
+development economics, urban and regional economics, political economy, and
+spatial economics, with an emphasis on causal inference and spatial empirical
+methods. My current work asks how large natural shocks reshape social order and
+household behaviour in Indonesian villages.
+
+Alongside my academic work, I work extensively in Indonesian public procurement
+as a certified facilitator, competency assessor, and advisor, with a focus on
+procurement strategy, contract management, and the professionalisation of the
+procurement workforce.
+
+:::
+
+::: {.home-nav}
+
+[Research](research.qmd) [Public Procurement](procurement/index.qmd) [CV](cv.qmd) [Email](mailto:billy.thandy21@ui.ac.id)
+
+:::
+
+::::
+
+:::: {.hero-photo}
+
+::: {.photo-placeholder}
+
+Add a professional photograph at `assets/img/profile.jpg`
+
+:::
+
+::::
+
+:::::
+
+## Selected research
+
+:::: {.paper}
+
+::: {.paper-title}
+
+Motive Without Mobilization? Earthquakes and Communal Conflict in Indonesia
+
+:::
+
+::: {.paper-meta}
+
+Job market paper &nbsp;·&nbsp; [Working paper]{.paper-status}
+
+:::
+
+::: {.paper-abstract}
+
+Combining seven waves of Indonesia's Village Potential Survey (PODES, 2005–2024)
+with village-level USGS ShakeMap intensities, we estimate that first exposure to
+damage-level shaking reduces reported communal conflict by about 1.1 percentage
+points against a 4.8 percent pre-exposure mean. On identical villages and waves,
+theft rises by roughly six percentage points while communal violence does not.
+The pattern is consistent with a large physical shock raising the incentive for
+individual predation while degrading the capacity to organise collective violence.
+
+:::
+
+::: {.paper-links}
+
+[Details](research.qmd) [Draft available on request]{.disabled}
+
+:::
+
+::::
+
+:::: {.paper}
+
+::: {.paper-title}
+
+Faith after the Shock: Earthquakes, Religious Expenditure, and the Insurance
+Value of Religion in Indonesia
+
+:::
+
+::: {.paper-meta}
+
+[Work in progress]{.paper-status}
+
+:::
+
+::: {.paper-abstract}
+
+Whether religion functions as informal insurance against uninsured risk is
+usually tested on stated religiosity. This project instead uses household
+expenditure in rupiah, combined with village-level earthquake exposure, to
+separate the income effect from the club-good and coping channels.
+
+:::
+
+::: {.paper-links}
+
+[Details](research.qmd)
+
+:::
+
+::::
+
+## Public procurement
+
+I have worked in Indonesian public procurement since 2015, in government
+procurement roles and, since 2018, as a national-level facilitator and assessor.
+My professional focus is procurement strategy and planning, contract management,
+and the development of procurement competency across the public sector.
+
+::: {.tags}
+
+[Procurement Strategy & Planning]{} [Specification & Cost Estimation]{}
+[Supplier Selection]{} [Contract Management]{} [Competency Development]{}
+[Procurement Governance]{}
+
+:::
+
+::: {.paper-links style="margin-top:1rem"}
+
+[Overview and expertise →](procurement/index.qmd)
+
+:::
+
+## Current
+
+::::: {.entry}
+
+::: {.years}
+
+2026
+
+:::
+
+:::: {.what}
+
+[Dissertation in progress]{.role}
+
+::: {.org}
+
+Three essays on natural disasters, social order, and household behaviour in
+Indonesia — Universitas Indonesia
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2024–2027
+
+:::
+
+:::: {.what}
+
+[Secretary, DPD Sulawesi Utara]{.role}
+
+::: {.org}
+
+Ikatan Ahli Pengadaan Indonesia (IAPI)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Probity Advisor and Contract Support Team]{.role}
+
+::: {.org}
+
+National Public Procurement Agency (LKPP)
+
+:::
+
+::::
+
+:::::

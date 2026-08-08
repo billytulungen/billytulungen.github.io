@@ -1,0 +1,34 @@
+---
+title: "Title of the Essay"
+subtitle: "One sentence that states the argument, not the topic."
+date: 2026-01-01
+description-meta: "One or two sentences used as the preview on the Insights page."
+categories: [contract management]
+toc: false
+---
+
+<!--
+HOW TO USE THIS TEMPLATE
+------------------------
+1. Copy this file to `procurement/insights/YYYY-MM-DD-short-slug.qmd`
+   (drop the leading underscore — files starting with `_` are ignored by Quarto).
+2. Fill in the front matter above.
+3. Add a linked entry on `procurement/insights.qmd`, moving the title out of
+   the "In preparation" section.
+4. Render with:  ~/.local/bin/quarto render
+
+Structure that works for a professional essay of 1,000–2,500 words:
+  - Open with the concrete problem, not the definition.
+  - State the claim in the first three paragraphs.
+  - Give reasons, then evidence — regulation, case, or data.
+  - Acknowledge the strongest objection and answer it.
+  - Close with what should change in practice.
+-->
+
+Opening paragraph: the concrete situation a practitioner will recognise.
+
+## The problem
+
+## Why it happens
+
+## What should change instead

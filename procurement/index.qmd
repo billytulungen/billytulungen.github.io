@@ -1,0 +1,391 @@
+---
+title: "Public Procurement"
+subtitle: "Procurement strategy, contract management, and the professionalisation of the public procurement workforce in Indonesia."
+description-meta: "Expertise, professional roles, certifications, and selected engagements in Indonesian public procurement."
+toc: false
+---
+
+::: {.lead-note}
+
+I have worked in Indonesian public procurement since 2015 — first inside
+government as a procurement official, commitment-making official, and member of
+provincial selection working groups, and since 2018 as a nationally certified
+facilitator, competency assessor, and advisor. My work sits at the point where
+procurement rules meet procurement practice: how buying decisions are actually
+planned, how contracts are actually managed, and how procurement officials
+actually acquire competence.
+
+:::
+
+::: {.note}
+
+This page describes my professional practice. It is distinct from my
+[academic research](../research.qmd), which is in development, urban, and
+spatial economics. Where the two meet — empirical work on competition and
+efficiency in Indonesian government procurement — the papers appear under
+Research.
+
+:::
+
+## Areas of expertise
+
+:::: {.grid-2}
+
+
+::: {.area}
+
+#### Procurement Planning & Strategy
+Translating programme objectives into a procurement approach: packaging, market
+approach, contract type, and timing. Most procurement failures are decided
+before the tender opens.
+
+:::
+
+::: {.area}
+
+#### Specification & Cost Estimation
+Specifications that describe a need rather than a product, and cost estimates
+that survive scrutiny — the two documents that most often determine whether a
+competitive process is possible at all.
+
+:::
+
+::: {.area}
+
+#### Supplier Selection
+Evaluation design, qualification, and the trade-off between price and value.
+Selection method is a policy choice, not an administrative formality.
+
+:::
+
+::: {.area}
+
+#### Contract Management
+Performance monitoring, variation and claim handling, acceptance, and dispute
+resolution — including construction and consultancy contracts.
+
+:::
+
+::: {.area}
+
+#### Competency Development
+Design and delivery of training and competency assessment across the levels of
+Indonesia's public procurement competency framework, from foundation through
+advanced practice.
+
+:::
+
+::: {.area}
+
+#### Procurement Governance & Policy
+Institutional procurement guidelines, probity advice, and drafting of
+organisational procurement regulations for public bodies.
+
+:::
+
+::::
+
+## Professional roles
+
+::::: {.entry}
+
+::: {.years}
+
+2018–
+
+:::
+
+:::: {.what}
+
+[Public Procurement Facilitator]{.role}
+
+::: {.org}
+
+Certified at foundation and advanced level by LKPP. Delivers national
+procurement training for government officials and procurement practitioners.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Competency Assessor]{.role}
+
+::: {.org}
+
+Certified assessor with LSP LKPP and BNSP. Assesses procurement competency at
+levels 2, 3, and 4 of the national framework.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Probity Advisor]{.role}
+
+::: {.org}
+
+National Public Procurement Agency (LKPP)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Contract Support Team]{.role}
+
+::: {.org}
+
+Tim Pendamping Kontrak, National Public Procurement Agency (LKPP)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Mediator]{.role}
+
+::: {.org}
+
+Certified by Jimly School of Law and Government under the Supreme Court of the
+Republic of Indonesia
+
+:::
+
+::::
+
+:::::
+
+## Selected engagements
+
+::::: {.entry}
+
+::: {.years}
+
+2020–
+
+:::
+
+:::: {.what}
+
+[Expert team, institutional procurement guidelines]{.role}
+
+::: {.org}
+
+Universitas Sam Ratulangi (public service agency) and Universitas Negeri Manado
+— drafting procurement regulations for autonomous public bodies.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2018–
+
+:::
+
+:::: {.what}
+
+[Procurement competency development]{.role}
+
+::: {.org}
+
+Training, facilitation, and competency assessment across multiple levels of
+Indonesia's public procurement competency framework, for central and regional
+government institutions.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2017–2020
+
+:::
+
+:::: {.what}
+
+[Technical advisory on provincial procurement packages]{.role}
+
+::: {.org}
+
+Technical team and procurement support on construction, equipment, consultancy,
+and services packages across provincial agencies in North Sulawesi, including
+infrastructure works, command-centre systems, and emergency health procurement.
+
+:::
+
+::::
+
+:::::
+
+## Certifications
+
+::::: {.entry}
+
+::: {.years}
+
+World Bank
+
+:::
+
+:::: {.what}
+
+[Certificate Professional in Public Procurement (CPPP)]{.role}
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+LKPP
+
+:::
+
+:::: {.what}
+
+[Procurement facilitator — foundation and advanced]{.role}
+
+::: {.org}
+
+Including training-of-trainers certification for government procurement
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+LKPP
+
+:::
+
+:::: {.what}
+
+[Competency facilitator — levels 2, 3, and 4]{.role}
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+BNSP
+
+:::
+
+:::: {.what}
+
+[Certified competency assessor]{.role}
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+BPKP
+
+:::
+
+:::: {.what}
+
+[Certified auditor]{.role}
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+Supreme Court
+
+:::
+
+:::: {.what}
+
+[Certified mediator]{.role}
+
+::: {.org}
+
+Jimly School of Law and Government
+
+:::
+
+::::
+
+:::::
+
+## Insights
+
+Short professional essays on procurement strategy, contract performance, and
+where public procurement is heading.
+
+[Read the essays →](insights.qmd)

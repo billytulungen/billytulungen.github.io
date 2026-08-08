@@ -1,0 +1,11 @@
+/.quarto/
+/_site/
+_freeze/
+.DS_Store
+*.log
+
+# Never commit the internal CV — it contains NIK, NIP, NPWP, and bank details
+files/cv-internal*
+files/*private*
+
+**/*.quarto_ipynb

@@ -1,0 +1,77 @@
+---
+title: "Procurement Insights"
+subtitle: "Short professional essays on public procurement practice, strategy, and reform."
+description-meta: "Essays on public procurement strategy, contract management, and the future of the profession."
+toc: false
+---
+
+::: {.lead-note}
+
+Indonesian public procurement generates an enormous amount of regulation and
+very little written reflection on practice. These essays are an attempt to close
+part of that gap: short pieces on how procurement decisions are actually made,
+why they go wrong, and what the profession should be arguing about.
+
+:::
+
+::: {.note}
+
+Essays are in preparation. The pieces below are the ones I intend to write
+first; each will be published here as it is finished.
+
+:::
+
+## In preparation
+
+::: {.insight-item}
+
+### Beyond the Lowest Price: What "Value" Means in Public Procurement
+Why the lowest evaluated bid is a decision rule rather than an outcome, and what
+a public buyer gives up when price is the only dimension that is scored.
+
+:::
+
+::: {.insight-item}
+
+### Procurement Strategy Is Decided Before the Tender Opens
+Packaging, market approach, and contract type determine the range of achievable
+outcomes. By the time the tender is announced, most of the value has already
+been won or lost.
+
+:::
+
+::: {.insight-item}
+
+### Managing Contract Performance, Not Contract Documents
+Indonesian procurement practice is strong on document compliance and weak on
+performance management. What changes when the contract is treated as a
+management instrument rather than a legal artefact.
+
+:::
+
+::: {.insight-item}
+
+### Rethinking the Kraljic Matrix for Government Procurement
+A portfolio model built for private manufacturing is widely taught to public
+buyers. Where it transfers, where it misleads, and what a public-sector
+equivalent would need to account for.
+
+:::
+
+::: {.insight-item}
+
+### From Procurement Dashboards to an End-to-End Procurement Pipeline
+Indonesia has invested heavily in procurement data collection. The remaining
+problem is that the data are reported rather than used. What an integrated
+procurement pipeline would have to look like.
+
+:::
+
+::: {.insight-item}
+
+### Artificial Intelligence and the Future of Public Procurement
+Which parts of the procurement cycle are genuinely automatable, which are
+judgement calls that should stay with accountable officials, and what the
+distinction implies for how procurement officers are trained.
+
+:::

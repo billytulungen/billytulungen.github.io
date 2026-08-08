@@ -1,0 +1,261 @@
+---
+title: "Research"
+subtitle: "Development, urban and regional, and spatial economics — with an emphasis on causal inference."
+description-meta: "Working papers, work in progress, publications, and dissertation chapters."
+toc: false
+---
+
+## Research interests
+
+:::: {.grid-2}
+
+
+::: {.area}
+
+#### Development Economics
+Shocks, informal insurance, and household responses where formal insurance and
+state capacity are weak.
+
+:::
+
+::: {.area}
+
+#### Urban & Regional Economics
+Spatial distribution of economic activity, local public goods, and regional
+disparities in Indonesia.
+
+:::
+
+::: {.area}
+
+#### Political Economy
+Local order, collective action, and the institutions that govern public
+resources — including public procurement.
+
+:::
+
+::: {.area}
+
+#### Spatial Economics
+Geographic exposure measures, spatial dependence, and boundary change in
+long-run village panels.
+
+:::
+
+::::
+
+::: {.tags}
+
+[Causal Inference]{} [Difference-in-Differences]{} [Spatial Econometrics]{}
+[Applied Microeconometrics]{} [Administrative & Survey Microdata]{}
+
+:::
+
+## Working papers
+
+:::: {.paper}
+
+::: {.paper-title}
+
+Motive Without Mobilization? Earthquakes and Communal Conflict in Indonesia
+
+:::
+
+::: {.paper-meta}
+
+Billy Tulungen &nbsp;·&nbsp; [Working paper]{.paper-status} &nbsp;·&nbsp; JEL: D74, Q54, O18, R12
+
+:::
+
+::: {.paper-abstract}
+
+Do strong earthquakes increase or reduce communal conflict? We combine seven
+waves of Indonesia's Village Potential Survey (PODES, 2005–2024) with
+village-level USGS ShakeMap intensities. Using a staggered
+difference-in-differences design, we estimate that first observed exposure to
+damage-level shaking (MMI ≥ VI) reduces reported communal conflict by
+approximately 1.1 percentage points against a 4.8 percent pre-exposure mean.
+The decline holds across alternative staggered estimators and a PGA-derived
+exposure measure, but it is carried by the larger earthquakes, concentrated in
+villages with a prior conflict history, and marginal once inference treats the
+earthquake rather than the village as the unit of assignment. The sharper
+evidence is compositional. On identical villages and waves, theft rises by about
+six percentage points while assault does not move and communal violence does not
+rise, and this divergence is the one result that survives shock-level inference.
+The pattern rejects a general improvement in local security. Although we do not
+identify the income or mobilization channels directly, it is consistent with a
+large physical shock raising the economic incentive for individual predation
+while degrading the capacity to organize collective violence.
+
+:::
+
+::: {.paper-links}
+
+[Draft available on request]{.disabled} [Slides forthcoming]{.disabled} [Data & code forthcoming]{.disabled}
+
+:::
+
+::::
+
+## Work in progress
+
+:::: {.paper}
+
+::: {.paper-title}
+
+Faith after the Shock: Earthquakes, Religious Expenditure, and the Insurance
+Value of Religion in Indonesia
+
+:::
+
+::: {.paper-meta}
+
+Billy Tulungen &nbsp;·&nbsp; [In progress]{.paper-status}
+
+:::
+
+::: {.paper-abstract}
+
+Does religion function as informal insurance against uninsured risk? The
+existing evidence rests largely on stated religiosity measured at district level
+or on aggregate shocks. This project instead observes what households actually
+pay: religious and ceremonial expenditure in rupiah, drawn from the consumption
+module used for Indonesia's official poverty statistics, matched to
+village-level earthquake exposure on constant 2005 boundaries. The design
+separates three channels with opposing predictions — the income effect, the
+club-good or mutual-insurance channel, and the coping channel — using a
+within-block placebo that isolates the income effect and a continuous exposure
+measure built from exact event timestamps against the survey's twelve-month
+recall window.
+
+:::
+
+::::
+
+## Publications
+
+:::: {.paper}
+
+::: {.paper-title}
+
+Kompetisi dan Efisiensi pada Pengadaan Pemerintah: Bukti Empiris pada
+Kementerian/Lembaga di Indonesia
+
+:::
+
+::: {.paper-meta}
+
+*Indonesian Treasury Review* &nbsp;·&nbsp; [Forthcoming]{.paper-status}
+
+:::
+
+::: {.paper-abstract}
+
+Evidence on the relationship between bidder competition and procurement
+efficiency across Indonesian line ministries and agencies, using national
+e-procurement records.
+
+:::
+
+::::
+
+:::: {.paper}
+
+::: {.paper-title}
+
+Competitive Bidding in Public Procurement: Empirical Evidence in Indonesia
+
+:::
+
+::: {.paper-meta}
+
+[Revise and resubmit]{.paper-status}
+
+:::
+
+::::
+
+## Dissertation
+
+**Three essays on natural disasters, social order, and household behaviour in
+Indonesia** — Faculty of Economics and Business, Universitas Indonesia.
+
+The dissertation asks how large, plausibly exogenous physical shocks propagate
+through village-level social and economic life in a setting where formal
+insurance is thin and local order is largely self-enforced. The chapters share a
+common empirical infrastructure: a long village panel harmonised onto constant
+2005 boundaries, and earthquake exposure constructed from USGS ShakeMap
+intensity surfaces.
+
+::::: {.entry}
+
+::: {.years}
+
+Chapter 1
+
+:::
+
+:::: {.what}
+
+[Motive Without Mobilization?]{.role}
+
+::: {.org}
+
+Earthquakes and communal conflict. Complete.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+Chapter 2
+
+:::
+
+:::: {.what}
+
+[Faith after the Shock]{.role}
+
+::: {.org}
+
+Earthquakes, religious expenditure, and the insurance value of religion. In progress.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+Chapter 3
+
+:::
+
+:::: {.what}
+
+[In development]{.role}
+
+::: {.org}
+
+Third essay, topic to be confirmed.
+
+:::
+
+::::
+
+:::::
+
+## Data and code
+
+I am committed to reproducible empirical work. Replication packages for the
+dissertation chapters — cleaning code, analysis do-files, and the village
+boundary crosswalk used to harmonise PODES waves onto constant 2005 boundaries —
+will be posted here as each paper is released.
