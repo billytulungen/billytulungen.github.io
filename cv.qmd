@@ -13,7 +13,6 @@ Department of Economics, Faculty of Economics and Business<br>
 Graduate School Building, 2nd Floor, Widjojo Nitisastro Campus<br>
 Universitas Indonesia, Depok 16424, Indonesia<br>
 [billy.thandy21@ui.ac.id](mailto:billy.thandy21@ui.ac.id)<br>
-[Google Scholar](https://scholar.google.com/citations?user=LchRWJsAAAAJ) &middot;
 [ORCID 0000-0001-5480-1426](https://orcid.org/0000-0001-5480-1426)
 
 ## Education
@@ -327,5 +326,7 @@ geospatial data analysis (GIS).
 ## References
 
 M. Halley Yudhistira, Ph.D. — Associate Professor of Economics, Universitas
-Indonesia<br>
-Jahen F. Rezki, Ph.D. — Assistant Professor of Economics, Universitas Indonesia
+Indonesia &middot; [m.halley@ui.ac.id](mailto:m.halley@ui.ac.id)<br>
+Vid Adrison, Ph.D. — Associate Professor of Economics, Universitas Indonesia<br>
+Jahen F. Rezki, Ph.D. — Assistant Professor of Economics, Universitas
+Indonesia &middot; [jahen.fr@ui.ac.id](mailto:jahen.fr@ui.ac.id)

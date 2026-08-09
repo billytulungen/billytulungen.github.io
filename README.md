@@ -102,8 +102,18 @@ listing:
       `_variables.yml`, which feeds the "This version" label. The label can
       therefore never disagree with the file a reader downloads — so do not
       edit `_variables.yml` by hand.
-- [x] ~~Google Scholar and ORCID~~ — in the footer and on the CV, both web and
-      PDF.
+- [x] ~~ORCID~~ — 0000-0001-5480-1426, in the footer and on the CV, web and PDF.
+- [ ] **Google Scholar is not linked, on purpose.** Profile `LchRWJsAAAAJ`
+      returns HTTP 404 to a logged-out visitor, while a control profile fetched
+      the same way returns 200 — so it is private, not bot-blocked. Make it
+      public (Scholar → your profile → **Public access**), re-check with the
+      command below, then add it to `page-footer` in `_quarto.yml`, the contact
+      block in `cv.qmd`, and the header in `files/src/cv.tex`.
+
+      ```bash
+      curl -s -o /dev/null -w '%{http_code}\n' \
+        "https://scholar.google.com/citations?user=LchRWJsAAAAJ&hl=en"
+      ```
 - [x] ~~Presentations and refereeing~~ — no talks yet, so the Presentations
       section was removed rather than left empty. Refereeing for *Jurnal
       Kebijakan Ekonomi* is on the CV and the Professional page. Both live in
