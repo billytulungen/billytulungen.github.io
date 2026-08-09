@@ -70,5 +70,16 @@ Insights section at the foot of `procurement/index.qmd`. Start an essay from
 
 ## Custom domain
 
-Add a `CNAME` file containing the bare domain, point the domain's DNS at GitHub
-Pages, and update `site-url` in `_quarto.yml`.
+billytulungen.com is registered but not yet live. At the registrar, create four
+A records on the apex host pointing to 185.199.108.153, 185.199.109.153,
+185.199.110.153, and 185.199.111.153, and a CNAME for `www` pointing to
+`billytulungen.github.io.`
+
+Then run the switch-over, which refuses to act until DNS actually resolves to
+all four addresses. Committing a `CNAME` before that would make GitHub redirect
+the .github.io address to a domain that does not answer, taking the site off the
+air at both addresses.
+
+```bash
+./files/src/enable-domain.sh
+```
