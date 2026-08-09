@@ -297,11 +297,14 @@ procurement specialist.
 
 :::: {.what}
 
-[Probity Advisor]{.role}
+[Public Procurement Advisor]{.role}
 
 ::: {.org}
 
-National Public Procurement Agency (LKPP).
+National Public Procurement Agency (LKPP). The advisor role is established under
+[Deputy IV Decree No. 5 of 2021](https://jdih.lkpp.go.id/regulation/keputusan-deputi-iv/keputusan-deputi-iv-nomor-5-tahun-2021),
+as last amended by
+[Decree No. 1 of 2026](https://jdih.lkpp.go.id/regulation/keputusan-deputi-iv/keputusan-deputi-iv-nomor-1-tahun-2026).
 
 :::
 
@@ -465,6 +468,7 @@ Policy, Faculty of Economics and Business, Universitas Indonesia.
 ::: {.org}
 
 Ikatan Ahli Pengadaan Indonesia (Indonesian Procurement Experts Association).
+[Chapter board](https://sulut.iapi-indonesia.org/profil-dpd/)
 
 :::
 
