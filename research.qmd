@@ -142,15 +142,22 @@ Kementerian/Lembaga di Indonesia
 
 ::: {.paper-meta}
 
-Billy Tulungen &nbsp;·&nbsp; *Indonesian Treasury Review*, 2021
+with Vid Adrison &nbsp;·&nbsp; *Indonesian Treasury Review*, 6(1), 19–29, 2021
 
 :::
 
 ::: {.paper-abstract}
 
-Evidence on the relationship between bidder competition and procurement
-efficiency across Indonesian line ministries and agencies, using national
-e-procurement records.
+Does competition make government procurement cheaper? Using more than 82,000
+procurement records from Indonesian line ministries and agencies, we find that
+each additional bidder lowers the winning bid by about 3.35 percent of the
+official cost estimate.
+
+:::
+
+::: {.paper-links}
+
+[Article](https://doi.org/10.33105/itrev.v6i1.225)
 
 :::
 
