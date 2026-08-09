@@ -57,9 +57,10 @@ Supervisor: M. Halley Yudhistira, Ph.D. Co-supervisor: Jahen F. Rezki, Ph.D.
 
 ::: {.org}
 
-Universitas Indonesia. Thesis on competitive bidding in Indonesian government
-procurement, selected as one of three theses at the Faculty of Economics and
-Business examined by the Minister of Finance of the Republic of Indonesia.
+Universitas Indonesia. Supervisor: Vid Adrison, Ph.D. Thesis on competitive
+bidding in Indonesian government procurement, selected as one of three theses at
+the Faculty of Economics and Business examined by the Minister of Finance of the
+Republic of Indonesia.
 
 :::
 
@@ -308,5 +309,6 @@ Ahli Kontrak Pemerintah Indonesia.
 Universitas Indonesia &middot; [m.halley@ui.ac.id](mailto:m.halley@ui.ac.id)<br>
 **Jahen F. Rezki, Ph.D.** (co-supervisor) Assistant Professor of Economics,
 Universitas Indonesia &middot; [jahen.fr@ui.ac.id](mailto:jahen.fr@ui.ac.id)<br>
-**Vid Adrison, Ph.D.** (co-author) Associate Professor of Economics, Universitas
-Indonesia &middot; [vid.adrison@ui.ac.id](mailto:vid.adrison@ui.ac.id)
+**Vid Adrison, Ph.D.** (master's supervisor, co-author) Associate Professor of
+Economics, Universitas Indonesia &middot;
+[vid.adrison@ui.ac.id](mailto:vid.adrison@ui.ac.id)
