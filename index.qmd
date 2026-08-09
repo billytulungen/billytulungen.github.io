@@ -1,5 +1,7 @@
 ---
-pagetitle: "Billy Tulungen — Economist, Researcher, Public Procurement Expert"
+# Quarto appends " – Billy Tulungen" (the site title), so do not repeat the
+# name here or the browser tab reads it twice.
+pagetitle: "Economist, Researcher, Public Procurement Expert"
 description-meta: "PhD candidate in Economics at Universitas Indonesia. Development, urban and regional economics; the economics of seismic disasters; public procurement practice."
 toc: false
 ---
