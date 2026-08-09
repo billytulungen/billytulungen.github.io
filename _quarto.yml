@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - CNAME
   render:
     - "*.qmd"
     - "procurement/*.qmd"
@@ -17,7 +19,7 @@ project:
 website:
   title: "Billy Tulungen"
   description: "Economist, researcher, and public procurement expert. PhD candidate in Economics, Universitas Indonesia."
-  site-url: "https://billytulungen.github.io"
+  site-url: "https://billytulungen.com"
   favicon: assets/img/favicon.png
   open-graph: true
   twitter-card: false
