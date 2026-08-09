@@ -1,6 +1,6 @@
 ---
 title: "Research"
-subtitle: "Development, urban and regional economics, with a focus on the economic consequences of seismic disasters in Indonesia."
+subtitle: "Development economics, urban and regional economics, and political economy. Applied empirical work on Indonesian microdata."
 description-meta: "Working papers, work in progress, publications, grants, and dissertation."
 toc: false
 ---

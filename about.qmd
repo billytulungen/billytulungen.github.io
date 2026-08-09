@@ -9,8 +9,9 @@ toc: false
 I am an economist and PhD candidate in the Department of Economics, Faculty of
 Economics and Business, Universitas Indonesia, and a civil servant in the
 Provincial Government of North Sulawesi. My work has two strands that are
-usually kept apart: empirical research on how communities absorb large physical
-shocks, and professional practice in Indonesian public procurement. They share a
+usually kept apart: empirical research on how local economies and institutions
+hold up under strain, and professional practice in Indonesian public
+procurement. They share a
 single question: how public resources and collective capacity are actually
 allocated when institutions are under strain.
 
