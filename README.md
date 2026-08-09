@@ -91,11 +91,19 @@ listing:
       It deliberately omits NIK, NIP, NPWP, bank details, date of birth, home
       address, and mobile number, and gives referees' institutional emails only.
       Do **not** publish the CVs in `~/Downloads`, which carry all of the above.
-- [ ] Put the Paper 1 draft in `files/` and link it from `research.qmd`, so
-      readers do not have to email you for it.
-- [ ] Create Google Scholar and ORCID profiles, then add them to the
-      `page-footer` block of `_quarto.yml`. They are deliberately absent rather
-      than pointing at generic homepages.
+- [x] ~~Paper 1 draft~~ — linked from Home and Research. The draft is still
+      moving, so refresh it whenever you rebuild `main.pdf`:
+
+      ```bash
+      ./files/src/update-paper.sh && quarto render
+      ```
+
+      The script copies the PDF and stamps its modification date into
+      `_variables.yml`, which feeds the "This version" label. The label can
+      therefore never disagree with the file a reader downloads — so do not
+      edit `_variables.yml` by hand.
+- [x] ~~Google Scholar and ORCID~~ — in the footer and on the CV, both web and
+      PDF.
 - [ ] Fill in or delete the **Presentations** and **refereeing** sections in
       `cv.qmd`. Both are currently editorial placeholders.
 - [ ] Set `site-url` in `_quarto.yml` to the final domain.

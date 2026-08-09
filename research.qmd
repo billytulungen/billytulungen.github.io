@@ -110,7 +110,7 @@ collective violence.
 
 ::: {.paper-links}
 
-[Draft available on request]{.disabled} [Slides forthcoming]{.disabled} [Data & code forthcoming]{.disabled}
+[Draft (PDF)](files/paper1-motive-without-mobilization.pdf) [This version: {{< var paper1.version >}}. Work in progress — please check back before citing.]{.disabled}
 
 :::
 
