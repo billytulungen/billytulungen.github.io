@@ -4,10 +4,10 @@
 % Built from the same verified content as the website, so the two cannot drift.
 % Deliberately excludes NIK, NIP, NPWP, bank details, date of birth, home
 % address, and personal mobile number. Referee contact uses institutional
-% addresses only.
+% addresses only. Google Scholar is omitted while the profile is private.
 %
-% Compile:  pdflatex cv.tex  (run once; no bibliography)
-% Output:   move cv.pdf to files/cv-billy-tulungen.pdf
+% Compile:  pdflatex cv.tex   (twice — page totals need a second pass)
+% Install:  cp cv.pdf ../cv-billy-tulungen.pdf
 % ---------------------------------------------------------------------------
 \documentclass[11pt,a4paper]{article}
 
@@ -16,54 +16,81 @@
 \usepackage{tgpagella}
 \usepackage{textcomp}
 \usepackage{microtype}
-\usepackage[margin=0.95in,top=0.75in,bottom=0.7in]{geometry}
-\usepackage{enumitem}
+\usepackage[margin=0.95in,top=0.8in,bottom=0.85in]{geometry}
 \usepackage{titlesec}
-\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{needspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 
 \definecolor{ink}{HTML}{16181D}
 \definecolor{muted}{HTML}{5C626C}
+\definecolor{faint}{HTML}{8B909A}
 \definecolor{accent}{HTML}{1D3F66}
+\definecolor{rule}{HTML}{C9C6C0}
 
 \color{ink}
 \hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
-
-\pagestyle{plain}
 \setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}   % fewer overfull lines in narrow columns
 
-% Section headings: small caps over a hairline rule
+% --- running footer --------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{faint} Billy Thandy Tulungen
+  \textperiodcentered\ Curriculum Vitae \textperiodcentered\ August 2026}
+\fancyfoot[R]{\footnotesize\color{faint} \thepage\ of \pageref{LastPage}}
+
+% --- section headings ------------------------------------------------------
 \titleformat{\section}
-  {\normalfont\large\scshape}{}{0pt}{}[\vspace{-0.55em}\rule{\textwidth}{0.4pt}]
-\titlespacing*{\section}{0pt}{1.05em}{0.55em}
+  {\normalfont\normalsize\scshape\color{ink}}{}{0pt}{}
+  [\vspace{-0.6em}{\color{rule}\rule{\textwidth}{0.4pt}}]
+\titlespacing*{\section}{0pt}{1.15em}{0.6em}
 
-% Two-column entry: left = date, right = content
+% --- entry: date column on the left, content on the right ------------------
+% \strut in both columns puts their first baselines on the same line; without
+% it the small date text floats relative to the entry title.
+\newlength{\datecol}\setlength{\datecol}{0.155\textwidth}
+\newlength{\bodycol}\setlength{\bodycol}{0.815\textwidth}
+
 \newcommand{\entry}[2]{%
-  \begin{minipage}[t]{0.16\textwidth}\raggedright\color{muted}\small #1\end{minipage}%
-  \hfill%
-  \begin{minipage}[t]{0.82\textwidth}#2\end{minipage}%
-  \vspace{0.3em}\par}
+  \noindent
+  \begin{minipage}[t]{\datecol}%
+    \strut\raggedright\small\color{muted}#1%
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{\bodycol}%
+    \strut #2%
+  \end{minipage}%
+  \par\vspace{0.28em}}
 
-% Full-width entry, for blocks with no date in the left column
-\newcommand{\fentry}[1]{#1\vspace{0.3em}\par}
+% Full-width entry, for blocks with no date
+\newcommand{\fentry}[1]{\noindent#1\par\vspace{0.28em}}
 
-\newcommand{\org}[1]{{\small\color{muted} #1}}
+% Secondary line under an entry title
+\newcommand{\org}[1]{{\small\color{muted}#1}}
 
 \begin{document}
 
 % ------------------------------------------------------------------ header --
-{\LARGE\bfseries Billy Thandy Tulungen}\\[0.5em]
-{\color{muted}
-Department of Economics, Faculty of Economics and Business\\
-Graduate School Building, 2nd Floor, Widjojo Nitisastro Campus\\
-Universitas Indonesia, Depok 16424, Indonesia\\[0.3em]
+{\LARGE\bfseries Billy Thandy Tulungen}
+
+\vspace{0.45em}
+{\color{muted}\small
+Department of Economics, Faculty of Economics and Business \textperiodcentered\
+Universitas Indonesia\\
+Graduate School Building, 2nd Floor, Widjojo Nitisastro Campus, Depok 16424,
+Indonesia\\[0.25em]
 \href{mailto:billy.thandy21@ui.ac.id}{billy.thandy21@ui.ac.id}
 \textperiodcentered\
-% Google Scholar omitted until the profile is public — it currently 404s.
-\href{https://orcid.org/0000-0001-5480-1426}{ORCID 0000-0001-5480-1426}}
+\href{https://orcid.org/0000-0001-5480-1426}{ORCID 0000-0001-5480-1426}
+\textperiodcentered\
+\href{https://billytulungen.github.io}{billytulungen.github.io}}
 
-\vspace{0.4em}
+\vspace{0.5em}
 
 % --------------------------------------------------------------- education --
 \section{Education}
@@ -100,7 +127,7 @@ Universitas Indonesia, Depok 16424, Indonesia\\[0.3em]
   \org{\emph{Indonesian Treasury Review}, 6(1), 19--29.
   \href{https://doi.org/10.33105/itrev.v6i1.225}{doi:10.33105/itrev.v6i1.225}}}
 
-% --------------------------------------------------------- working papers --
+% ---------------------------------------------------------- working papers --
 \section{Working Papers}
 
 \entry{2026}{%
@@ -144,10 +171,10 @@ Universitas Indonesia, Depok 16424, Indonesia\\[0.3em]
 % --------------------------------------------------------------- teaching --
 \section{Teaching}
 
-Teaching assistant, Faculty of Economics and Business, Universitas Indonesia,
-since February 2024.
+\fentry{Teaching assistant, Faculty of Economics and Business, Universitas
+  Indonesia, since February 2024.}
 
-\vspace{0.7em}
+\vspace{0.35em}
 
 \entry{2026}{ECES908012 \textperiodcentered\ Advanced Econometrics
   \emph{(doctoral)}\\ \org{TA to Rus'an Nasrudin, Ph.D.}}
@@ -169,13 +196,18 @@ since February 2024.
   \org{TA to Prof. Dr. Djoni Hartono, Prani Sastiono, Ph.D., Muhammad Hanri,
   Ph.D., and Putu Geniki Lavinia Natih, D.Phil.}}
 
-% --------------------------------------------------- professional (govt) --
+% ---------------------------------------------------- professional (govt) --
 \section{Professional Experience}
 
-Civil servant, Provincial Civil Service Agency (Badan Kepegawaian Daerah),
-Provincial Government of North Sulawesi, since 2015.
+\fentry{Civil servant, Provincial Civil Service Agency (Badan Kepegawaian
+  Daerah), Provincial Government of North Sulawesi, since 2015.}
 
-\vspace{0.7em}
+\vspace{0.35em}
+
+\entry{2023--}{\textbf{Study leave for doctoral study}\\
+  \org{On assignment as a civil servant (PNS tugas belajar) under a doctoral
+  scholarship from the Provincial Government of North Sulawesi, for the PhD in
+  Economics at Universitas Indonesia.}}
 
 \entry{2023--}{\textbf{Internal Procurement Facilitator}, provincial
   procurement training institution (LPPBJ)\\
@@ -212,7 +244,7 @@ Provincial Government of North Sulawesi, since 2015.
 \entry{2015--2016}{\textbf{Civil servant, Ministry of Home Affairs}, seconded to
   the Provincial Civil Service Agency, North Sulawesi.}
 
-% ---------------------------------------------------------- procurement --
+% ------------------------------------------------------------ procurement --
 \section{Public Procurement}
 
 \entry{2025--}{\textbf{Competency Assessor}, Professional Certification Body
@@ -238,15 +270,13 @@ Provincial Government of North Sulawesi, since 2015.
   Ratulangi\\
   \org{Drafted the Rector's Regulation on Goods and Services Procurement.}}
 
-\vspace{0.3em}
-% Only certifications not already implied by a dated role above.
-\entry{Also certified}{%
-  Certificate Professional in Public Procurement (World Bank)
-  \textperiodcentered\ Public--Private Partnership (KPBU) procurement, 2025
-  \textperiodcentered\ Village procurement, 2025
-  \textperiodcentered\ Social and Behavioral Research (CITI Program).}
+\vspace{0.15em}
+\fentry{\org{Also certified: Certificate Professional in Public Procurement
+  (World Bank) \textperiodcentered\ Public--Private Partnership (KPBU)
+  procurement, 2025 \textperiodcentered\ Village procurement, 2025
+  \textperiodcentered\ Social and Behavioral Research (CITI Program).}}
 
-% ------------------------------------------------------------- service --
+% --------------------------------------------------------------- service --
 \section{Professional Service}
 
 \entry{Refereeing}{\textbf{Reviewer}, \emph{Jurnal Kebijakan Ekonomi}\\
@@ -261,7 +291,7 @@ Provincial Government of North Sulawesi, since 2015.
 \entry{Current}{\textbf{Provincial Coordinator} for North Sulawesi, Forum Ahli
   Kontrak Pemerintah Indonesia.}
 
-% -------------------------------------------------------------- skills --
+% ---------------------------------------------------------------- skills --
 \section{Skills}
 
 \entry{Technical}{Advanced econometrics, spatial econometrics, causal
@@ -272,24 +302,19 @@ Provincial Government of North Sulawesi, since 2015.
 \entry{Languages}{Indonesian (native), English (professional working
   proficiency).}
 
-% ---------------------------------------------------------- references --
+% ------------------------------------------------------------ references --
+\Needspace{6\baselineskip}
 \section{References}
 
-\fentry{%
-  \textbf{M. Halley Yudhistira, Ph.D.} --- Associate Professor of Economics,
-  Universitas Indonesia \textperiodcentered\
-  \org{\href{mailto:m.halley@ui.ac.id}{m.halley@ui.ac.id}}}
+\fentry{\textbf{M. Halley Yudhistira, Ph.D.} \textperiodcentered\
+  \org{Associate Professor of Economics, Universitas Indonesia
+  \textperiodcentered\ \href{mailto:m.halley@ui.ac.id}{m.halley@ui.ac.id}}}
 
-\fentry{%
-  \textbf{Vid Adrison, Ph.D.} --- Associate Professor of Economics,
-  Universitas Indonesia}
+\fentry{\textbf{Vid Adrison, Ph.D.} \textperiodcentered\
+  \org{Associate Professor of Economics, Universitas Indonesia}}
 
-\fentry{%
-  \textbf{Jahen F. Rezki, Ph.D.} --- Assistant Professor of Economics,
-  Universitas Indonesia \textperiodcentered\
-  \org{\href{mailto:jahen.fr@ui.ac.id}{jahen.fr@ui.ac.id}}}
-
-\vfill
-{\footnotesize\color{muted} This version: August 2026.}
+\fentry{\textbf{Jahen F. Rezki, Ph.D.} \textperiodcentered\
+  \org{Assistant Professor of Economics, Universitas Indonesia
+  \textperiodcentered\ \href{mailto:jahen.fr@ui.ac.id}{jahen.fr@ui.ac.id}}}
 
 \end{document}
