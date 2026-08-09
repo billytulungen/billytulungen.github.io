@@ -181,6 +181,17 @@ a {
   line-height: 1.5;
 }
 
+// Research fields, set to be scannable in a couple of seconds by an academic
+// reader who will not stop to parse the bio paragraph.
+.hero-fields {
+  font-size: 0.93rem;
+  color: $accent;
+  margin-top: -0.7rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-fields p { margin-bottom: 0; }
+
 .hero-bio p {
   font-size: 1rem;
   line-height: 1.68;

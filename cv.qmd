@@ -254,28 +254,6 @@ Affairs, where tuition and living costs are borne by the state.
 
 :::::
 
-::::: {.entry}
-
-::: {.years}
-
-2010
-
-:::
-
-:::: {.what}
-
-[Finalist, National Mathematics Olympiad, Indonesia]{.role}
-
-::: {.org}
-
-First place, Provincial Mathematics Olympiad, North Sulawesi.
-
-:::
-
-::::
-
-:::::
-
 ## Teaching
 
 Teaching assistant, Faculty of Economics and Business, Universitas Indonesia,
@@ -320,10 +298,7 @@ Ahli Kontrak Pemerintah Indonesia.
 
 ## Skills
 
-**Technical.** Advanced econometrics, spatial econometrics, causal inference,
-geospatial data analysis (GIS).
-
-**Software.** Stata, R, Python, LaTeX, QGIS.
+**Software.** Stata &middot; R &middot; Python &middot; QGIS &middot; LaTeX.
 
 **Languages.** Indonesian (native), English (professional working proficiency).
 

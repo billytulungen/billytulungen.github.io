@@ -269,28 +269,6 @@ Earthquakes, religious expenditure, and the insurance value of religion. In prog
 
 :::::
 
-::::: {.entry}
-
-::: {.years}
-
-Chapter 3
-
-:::
-
-:::: {.what}
-
-[In development]{.role}
-
-::: {.org}
-
-Third essay, topic to be confirmed.
-
-:::
-
-::::
-
-:::::
-
 ## Data and code
 
 I am committed to reproducible empirical work. Replication packages for the

@@ -1,28 +1,16 @@
-# billytulungen.com — personal academic website
+# billytulungen.github.io
 
-Quarto website. Source lives here; the rendered site goes to `_site/` (gitignored)
-and is published to GitHub Pages by CI.
+Personal academic website of Billy Tulungen, PhD candidate in Economics at
+Universitas Indonesia.
 
-## Requirements
+Built with [Quarto](https://quarto.org) and deployed to GitHub Pages by the
+workflow in `.github/workflows/publish.yml`. Every push to `main` rebuilds and
+redeploys.
 
-Quarto is installed user-locally at `~/.local/opt/quarto`, with a symlink at
-`~/.local/bin/quarto`. Add it to your PATH once:
-
-```bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
-```
-
-To install it system-wide instead (requires your admin password):
+## Local development
 
 ```bash
-brew install --cask quarto
-```
-
-## Daily use
-
-```bash
-cd ~/website
-quarto preview          # live-reloading local preview
+quarto preview          # live-reloading preview
 quarto render           # full build into _site/
 ```
 
@@ -30,94 +18,48 @@ quarto render           # full build into _site/
 
 ```
 _quarto.yml               site config: navbar, footer, theme
-styles.scss               all visual design lives here
-index.qmd                 Home
-research.qmd              Working papers, WIP, publications, dissertation
-procurement/
-  index.qmd               Public Procurement: expertise, roles, engagements
-  insights.qmd            Essay index
-  insights/               One .qmd per essay
-    _post-template.qmd    Copy this to start a new essay
-teaching.qmd              University teaching + professional training
-professional.qmd          Government service, advisory, professional service
-cv.qmd                    CV summary + PDF download
-about.qmd                 Narrative bio
-assets/img/               Photos, favicon
-files/                    Downloadable PDFs (CV, papers, slides)
+_variables.yml            generated; holds the working paper's version date
+styles.scss               all visual design
+index.qmd                 home
+research.qmd              working papers, work in progress, publications, grants
+procurement/index.qmd     public procurement practice
+procurement/insights.qmd  essay index (excluded from the build for now)
+teaching.qmd              graduate teaching and professional training
+professional.qmd          government service, national roles, service
+cv.qmd                    CV, with a link to the PDF
+about.qmd                 narrative bio
+assets/img/               photograph, favicon, figures
+files/                    downloadable PDFs
+files/src/                sources for the generated PDFs
 ```
 
-## Adding content
+## Maintenance
 
-**A new procurement essay.** The Insights page is written but held back from
-the build: an index of six unwritten essays reads worse than no page at all. To
-turn it on, delete the `"!procurement/insights.qmd"` exclusion in `_quarto.yml`
-and uncomment the Insights section at the foot of `procurement/index.qmd`.
-
-To write one, copy `procurement/insights/_post-template.qmd` to
-`procurement/insights/YYYY-MM-DD-slug.qmd`, write it, then move its title on
-`procurement/insights.qmd` out of "In preparation" into a linked entry. Once
-there are several essays it is worth converting `insights.qmd` to a Quarto
-listing — add to its front matter:
-
-```yaml
-listing:
-  contents: insights
-  type: default
-  sort: "date desc"
-  fields: [date, title, description]
-```
-
-**A new paper.** Copy a `.paper` block in `research.qmd`. Put the PDF in
-`files/` and link it from `.paper-links`.
-
-**A new role or position.** Copy an `.entry` block in `professional.qmd` or
-`procurement/index.qmd`.
-
-## Before the first publish
-
-- [x] ~~Profile photograph~~ — `assets/img/profile.jpg`, cropped to 4:5 and
-      resized to 800x1000 for retina. Source was an AI-generated portrait; if
-      you later shoot a real headshot, drop it in at the same path and size.
-- [x] ~~Favicon~~ — `assets/img/favicon.png`, a BT monogram in the site accent
-      colour. Source: the PIL snippet in the commit that added it.
-- [x] ~~Public CV PDF~~ — `files/cv-billy-tulungen.pdf`, built from
-      `files/src/cv.tex`. Edit the `.tex` and recompile; never hand-edit the
-      PDF:
-
-      ```bash
-      cd files/src && pdflatex cv.tex && cp cv.pdf ../cv-billy-tulungen.pdf
-      ```
-
-      It deliberately omits NIK, NIP, NPWP, bank details, date of birth, home
-      address, and mobile number, and gives referees' institutional emails only.
-      Do **not** publish the CVs in `~/Downloads`, which carry all of the above.
-- [x] ~~Paper 1 draft~~ — linked from Home and Research. The draft is still
-      moving, so refresh it whenever you rebuild `main.pdf`:
-
-      ```bash
-      ./files/src/update-paper.sh && quarto render
-      ```
-
-      The script copies the PDF and stamps its modification date into
-      `_variables.yml`, which feeds the "This version" label. The label can
-      therefore never disagree with the file a reader downloads — so do not
-      edit `_variables.yml` by hand.
-- [x] ~~ORCID~~ — 0000-0001-5480-1426, in the footer and on the CV, web and PDF.
-- [x] ~~Google Scholar~~ — profile made public and verified (returns 200 to a
-      logged-out client, name and works render). Linked in the footer, `cv.qmd`,
-      and `files/src/cv.tex`.
-- [x] ~~`site-url`~~ — set to https://billytulungen.github.io. Change it, and add
-      a `CNAME` file, if you move to a custom domain.
-
-## Publishing to GitHub Pages
+**Working paper.** The draft is edited elsewhere and copied in on demand. The
+script stamps the PDF's own modification date into `_variables.yml`, which feeds
+the "This version" label on the Research page, so the label cannot disagree with
+the file a reader downloads. Do not edit `_variables.yml` by hand.
 
 ```bash
-gh repo create billytulungen.github.io --public --source=. --push
+./files/src/update-paper.sh && quarto render
 ```
 
-Then in the repository: **Settings → Pages → Build and deployment → Source:
-GitHub Actions**. Every push to `main` rebuilds and redeploys via
-`.github/workflows/publish.yml`.
+**CV.** Edit `files/src/cv.tex` and recompile; never hand-edit the PDF.
 
-For a custom domain, add a `CNAME` file containing the bare domain, point the
-domain's DNS at GitHub Pages, and update `site-url` in `_quarto.yml`.
+```bash
+cd files/src && pdflatex cv.tex && pdflatex cv.tex && cp cv.pdf ../cv-billy-tulungen.pdf
+```
+
+**Procurement essays.** The Insights page is written but excluded from the build
+until the first essay exists. To turn it on, remove the
+`"!procurement/insights.qmd"` exclusion in `_quarto.yml` and uncomment the
+Insights section at the foot of `procurement/index.qmd`. Start an essay from
+`procurement/insights/_post-template.qmd`.
+
+**New entries.** Copy an existing `.paper` block in `research.qmd` or an
+`.entry` block in `professional.qmd`.
+
+## Custom domain
+
+Add a `CNAME` file containing the bare domain, point the domain's DNS at GitHub
+Pages, and update `site-url` in `_quarto.yml`.

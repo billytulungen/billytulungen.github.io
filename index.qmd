@@ -30,6 +30,12 @@ Universitas Indonesia
 
 :::
 
+::: {.hero-fields}
+
+Development Economics &middot; Urban & Regional Economics &middot; Political Economy
+
+:::
+
 ::: {.hero-bio}
 
 I am a PhD candidate in Economics at Universitas Indonesia, working in
@@ -37,8 +43,8 @@ development economics and urban and regional economics. My dissertation,
 *Shaking Land and Shaking Lives*, asks how large seismic shocks reshape social
 order, household behaviour, and local economies in Indonesian villages. The
 first chapter is supported by a research grant from the ReCIPE Programme (CEPR
-and UK FCDO). I also teach the graduate econometrics sequence at Universitas
-Indonesia.
+and UK FCDO). I also work as a teaching assistant in the graduate econometrics
+sequence at Universitas Indonesia, across the master's and doctoral programmes.
 
 Alongside my academic work I have spent a decade in Indonesian public
 procurement, in provincial government roles and as a nationally certified
@@ -132,22 +138,13 @@ separate the income effect from the club-good and coping channels.
 
 ## Public procurement
 
-I have worked in Indonesian public procurement since 2015, in provincial
-government roles and, since 2018, as a national-level facilitator. My
-professional focus is procurement strategy and planning, contract management,
-and the development of procurement competency across the public sector.
+Alongside my academic work I have worked in Indonesian public procurement since
+2015, in provincial government roles and, since 2018, nationally as a certified
+facilitator, competency assessor, and advisor.
 
-::: {.tags}
+::: {.paper-links style="margin-top:0.9rem"}
 
-[Procurement Strategy & Planning]{} [Specification & Cost Estimation]{}
-[Supplier Selection]{} [Contract Management]{} [Competency Development]{}
-[Procurement Governance]{}
-
-:::
-
-::: {.paper-links style="margin-top:1rem"}
-
-[Overview and expertise →](procurement/index.qmd)
+[Explore professional practice →](procurement/index.qmd)
 
 :::
 

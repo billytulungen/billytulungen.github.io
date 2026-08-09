@@ -22,9 +22,9 @@ website:
   navbar:
     title: "Billy Tulungen"
     pinned: false
+    # No "Home" entry: the brand at the left already links home, and dropping it
+    # keeps the bar from reading like an institutional site.
     left:
-      - href: index.qmd
-        text: Home
       - href: research.qmd
         text: Research
       - href: procurement/index.qmd

@@ -33,8 +33,9 @@ year, converting seismic intensity rasters into village-level exposure, and
 documenting the whole chain so that it can be reproduced. That work is
 unglamorous and, in the Indonesian context, largely unavailable off the shelf.
 It is also where most of the credibility of the results comes from. Alongside
-the research I teach the graduate econometrics sequence at Universitas
-Indonesia, across the doctoral, master's, and public policy programmes.
+the research I work as a teaching assistant in the graduate econometrics
+sequence at Universitas Indonesia, across the doctoral, master's, and public
+policy programmes.
 
 Before graduate school I entered the civil service through IPDN, and my early
 posts in North Sulawesi were in asset management and procurement: procurement
