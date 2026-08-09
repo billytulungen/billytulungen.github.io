@@ -2,6 +2,7 @@
 title: "Professional"
 subtitle: "Government service, national procurement roles, advisory work, and professional associations."
 description-meta: "Government experience, advisory roles, and professional service."
+image: assets/img/og-card.png
 toc: false
 ---
 

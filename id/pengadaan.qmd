@@ -2,6 +2,7 @@
 title: "Praktik Pengadaan Publik"
 subtitle: "Strategi pengadaan, manajemen kontrak, dan pengembangan kompetensi PBJ."
 description-meta: "Keahlian dan praktik profesional Billy Tulungen di bidang pengadaan barang/jasa pemerintah."
+image: ../assets/img/og-card.png
 lang: id
 toc: false
 ---

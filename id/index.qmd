@@ -1,6 +1,7 @@
 ---
 pagetitle: "Ekonom dan Praktisi Pengadaan Publik"
 description-meta: "Billy Tulungen, kandidat doktor ilmu ekonomi Universitas Indonesia dan praktisi pengadaan barang/jasa pemerintah."
+image: ../assets/img/og-card.png
 lang: id
 toc: false
 ---

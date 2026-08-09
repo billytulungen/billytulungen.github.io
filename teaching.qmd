@@ -2,6 +2,7 @@
 title: "Teaching"
 subtitle: "Graduate econometrics teaching at Universitas Indonesia, and public procurement training nationally."
 description-meta: "Courses taught, teaching materials, and professional training delivery."
+image: assets/img/og-card.png
 toc: false
 ---
 

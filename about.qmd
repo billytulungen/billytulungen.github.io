@@ -2,6 +2,7 @@
 title: "About"
 subtitle: "How the research and the procurement work fit together."
 description-meta: "About Billy Tulungen: economist, researcher, and public procurement expert."
+image: assets/img/og-card.png
 toc: false
 ---
 

@@ -21,8 +21,12 @@ website:
   description: "Economist, researcher, and public procurement expert. PhD candidate in Economics, Universitas Indonesia."
   site-url: "https://billytulungen.com"
   favicon: assets/img/favicon.png
+  # A 1200x630 card. The portrait alone was 4:5, so every share cropped it to a
+  # strip through the middle of the frame.
+  image: assets/img/og-card.png
   open-graph: true
-  twitter-card: false
+  twitter-card:
+    card-style: summary_large_image
 
   navbar:
     title: "Billy Tulungen"

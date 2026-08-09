@@ -2,6 +2,7 @@
 title: "Curriculum Vitae"
 subtitle: "Billy Thandy Tulungen"
 description-meta: "Academic and professional curriculum vitae."
+image: assets/img/og-card.png
 toc: false
 ---
 

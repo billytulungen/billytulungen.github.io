@@ -2,6 +2,7 @@
 title: "Public Procurement"
 subtitle: "Procurement strategy, contract management, and the professionalisation of the public procurement workforce in Indonesia."
 description-meta: "Expertise, professional roles, certifications, and selected engagements in Indonesian public procurement."
+image: ../assets/img/og-card.png
 toc: false
 ---
 
