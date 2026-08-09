@@ -54,11 +54,7 @@ facilitator, competency assessor, and advisor.
 
 :::: {.hero-photo}
 
-::: {.photo-placeholder}
-
-Add a professional photograph at `assets/img/profile.jpg`
-
-:::
+![](assets/img/profile.jpg){fig-alt="Portrait of Billy Tulungen"}
 
 ::::
 

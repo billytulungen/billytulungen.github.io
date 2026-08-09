@@ -75,9 +75,9 @@ listing:
 
 ## Before the first publish
 
-- [ ] Add a professional photograph at `assets/img/profile.jpg`, then replace
-      the `.photo-placeholder` div in `index.qmd` with
-      `![](assets/img/profile.jpg)`.
+- [x] ~~Profile photograph~~ — `assets/img/profile.jpg`, cropped to 4:5 and
+      resized to 800x1000 for retina. Source was an AI-generated portrait; if
+      you later shoot a real headshot, drop it in at the same path and size.
 - [x] ~~Favicon~~ — `assets/img/favicon.png`, a BT monogram in the site accent
       colour. Source: the PIL snippet in the commit that added it.
 - [x] ~~Public CV PDF~~ — `files/cv-billy-tulungen.pdf`, built from
