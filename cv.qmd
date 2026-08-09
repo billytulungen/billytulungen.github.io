@@ -92,9 +92,11 @@ Institut Pemerintahan Dalam Negeri (Institute of Home Affairs Governance).
 
 ## Research fields
 
-**Primary.** Development economics; urban and regional economics.
+**Fields.** Development economics &middot; urban and regional economics
+&middot; political economy.
 
-**Secondary.** Political economics; applied econometrics; public procurement.
+**Interests.** Natural disasters &middot; local public goods &middot; social
+conflict &middot; public procurement.
 
 ## Publications
 
@@ -266,12 +268,15 @@ provincial training institution since 2023. [Full list →](teaching.qmd)
 
 ## Professional experience
 
-Civil servant, Provincial Civil Service Agency (BKD), Provincial Government of
-North Sulawesi, since 2015; on study leave (PNS tugas belajar) for doctoral
-study since 2023. Earlier roles include head of the provincial sub-division for
-procurement assistance and technical guidance, commitment-making official,
-member of the procurement selection working group, procurement strategy analyst,
-and asset management officer. [Full history →](professional.qmd)
+Civil servant since 2015, first with the Ministry of Home Affairs on secondment
+to North Sulawesi, then with the Provincial Government of North Sulawesi. On
+study leave (PNS tugas belajar) for doctoral study since August 2023, posted to
+the Provincial Civil Service Agency (BKD). Earlier roles run across the
+procurement cycle, mostly at the Procurement Bureau of the Provincial
+Secretariat from 2020 to 2023: head of the sub-division for procurement
+assistance and technical guidance, commitment-making official, member of the
+procurement selection working group, procurement strategy analyst, and asset
+management officer. [Full history →](professional.qmd)
 
 ## Public procurement
 

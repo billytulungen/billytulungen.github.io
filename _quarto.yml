@@ -31,8 +31,9 @@ website:
         text: Public Procurement
       - href: teaching.qmd
         text: Teaching
-      - href: professional.qmd
-        text: Professional
+      # Professional stays a page but leaves the bar: it overlaps Public
+      # Procurement enough that a reader could not tell which to click. It is
+      # linked from Public Procurement, the CV, and About.
       - href: cv.qmd
         text: CV
       - href: about.qmd

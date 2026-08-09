@@ -65,6 +65,6 @@ not only for regulators.
 
 ::: {.paper-links style="margin-top:2rem"}
 
-[Email](mailto:billy.thandy21@ui.ac.id) [Research](research.qmd) [Public Procurement](procurement/index.qmd) [CV](cv.qmd)
+[Email](mailto:billy.thandy21@ui.ac.id) [Research](research.qmd) [Public Procurement](procurement/index.qmd) [Professional](professional.qmd) [CV](cv.qmd)
 
 :::

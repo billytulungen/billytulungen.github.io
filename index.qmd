@@ -1,7 +1,7 @@
 ---
 # Quarto appends " – Billy Tulungen" (the site title), so do not repeat the
 # name here or the browser tab reads it twice.
-pagetitle: "Economist, Researcher, Public Procurement Expert"
+pagetitle: "Economist and Public Procurement Expert"
 description-meta: "PhD candidate in Economics at Universitas Indonesia. Development, urban and regional economics; the economics of seismic disasters; public procurement practice."
 toc: false
 ---
@@ -13,12 +13,6 @@ toc: false
 ::: {.hero-name}
 
 Billy Tulungen
-
-:::
-
-::: {.hero-roles}
-
-Economist &middot; Researcher &middot; Public Procurement Expert
 
 :::
 
@@ -199,39 +193,17 @@ Faculty of Economics and Business, Universitas Indonesia
 
 ::: {.years}
 
-2023–
+2025–
 
 :::
 
 :::: {.what}
 
-[Internal Procurement Facilitator, Provincial Training Institution]{.role}
+[Competency Assessor, LSP LKPP]{.role}
 
 ::: {.org}
 
-North Sulawesi provincial procurement training institution (LPPBJ)
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2024–2027
-
-:::
-
-:::: {.what}
-
-[Secretary, North Sulawesi Chapter]{.role}
-
-::: {.org}
-
-Ikatan Ahli Pengadaan Indonesia
+Professional Certification Body of the National Public Procurement Agency
 
 :::
 

@@ -26,7 +26,8 @@ This page describes my professional practice. It is distinct from my
 [academic research](../research.qmd), which is in development, urban, and
 regional economics. Where the two meet, in empirical work on competition and
 efficiency in Indonesian government procurement, the papers appear under
-Research.
+Research. My full government service record, including roles outside
+procurement, is on the [Professional](../professional.qmd) page.
 
 :::
 
