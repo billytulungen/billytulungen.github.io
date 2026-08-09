@@ -497,6 +497,29 @@ a {
 .nav-footer a:hover { color: $accent; }
 
 // ---------------------------------------------------------------------------
+// Figures
+// ---------------------------------------------------------------------------
+.figure {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.figcaption {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: $ink-muted;
+  margin-top: 0.6rem;
+  padding-left: 0.1rem;
+}
+
+.figcaption p { margin-bottom: 0; }
+
+// ---------------------------------------------------------------------------
 // Paragraph reset inside single-purpose wrappers
 //
 // Pandoc wraps the inline content of every fenced div in a <p>, which would

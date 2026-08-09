@@ -169,6 +169,53 @@ with Vid Adrison. *Indonesian Treasury Review*, 6(1), 19–29.
 
 :::::
 
+## Presentations
+
+::: {.note}
+
+**Editorial note — fill this in or delete the whole section before publishing.**
+An empty heading is worse than no heading. List seminars, conferences, and
+invited talks, most recent first, in the form below. Internal FEB UI seminars,
+dissertation proposal defences, and procurement conferences all count; for a
+grant-holding PhD candidate this section is one of the first things a
+fellowship reader looks for. Consider adding the ReCIPE grant's own
+presentation obligations once scheduled.
+
+:::
+
+::::: {.entry}
+
+::: {.years}
+
+Year
+
+:::
+
+:::: {.what}
+
+[Paper title]{.role}
+
+::: {.org}
+
+Event or seminar series, institution, city.
+
+:::
+
+::::
+
+:::::
+
+## Professional service — refereeing
+
+::: {.note}
+
+**Editorial note — fill this in or delete before publishing.** If you have
+refereed for any journal, list the journal names here (no manuscript details).
+Refereeing is a recognised service contribution and is unusual enough at PhD
+stage to be worth stating.
+
+:::
+
 ## Grants, scholarships, and awards
 
 ::::: {.entry}

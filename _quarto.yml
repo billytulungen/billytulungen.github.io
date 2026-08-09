@@ -6,12 +6,18 @@ project:
     - "procurement/*.qmd"
     - "procurement/insights/*.qmd"
     - "!README.md"
+    # Held back until the first essay is written — an index of unwritten pieces
+    # reads worse than no page at all. To publish: delete this line and restore
+    # the "Insights" section at the foot of procurement/index.qmd.
+    - "!procurement/insights.qmd"
 
 website:
   title: "Billy Tulungen"
   description: "Economist, researcher, and public procurement expert. PhD candidate in Economics, Universitas Indonesia."
   site-url: "https://billytulungen.github.io"
-  favicon: assets/img/favicon.png
+  # Uncomment once the file exists — a declared favicon that is missing 404s on
+  # every page.
+  # favicon: assets/img/favicon.png
   open-graph: true
   twitter-card: false
 
@@ -39,9 +45,10 @@ website:
       © 2026 Billy Tulungen
     center: |
       [Email](mailto:billy.thandy21@ui.ac.id) &middot;
-      [LinkedIn](https://www.linkedin.com/in/billytulungen) &middot;
-      [Google Scholar](https://scholar.google.com/) &middot;
-      [ORCID](https://orcid.org/)
+      [LinkedIn](https://www.linkedin.com/in/billytulungen)
+      <!-- Add Google Scholar and ORCID here once the profiles exist.
+           A link pointing at a generic homepage is worse than no link. -->
+
     right: |
       Built with [Quarto](https://quarto.org)
 

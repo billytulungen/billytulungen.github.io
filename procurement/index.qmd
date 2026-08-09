@@ -495,9 +495,14 @@ CITI Program
 
 :::::
 
+<!-- Insights section removed until the first essay exists. To restore:
+
 ## Insights
 
 Short professional essays on procurement strategy, contract performance, and
 where public procurement is heading.
 
 [Read the essays →](insights.qmd)
+
+...and delete the "!procurement/insights.qmd" exclusion in _quarto.yml. -->
+

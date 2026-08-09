@@ -50,6 +50,21 @@ that come with changing administrative boundaries.
 
 :::
 
+::: {.figure}
+
+![](assets/img/fig_map_treated.png)
+
+::: {.figcaption}
+
+Damage-level earthquake exposure is staggered across two decades and scattered
+across the archipelago, not concentrated in a single disaster. Villages are
+coloured by the survey wave in which they were first exposed to MMI ≥ VI; stars
+mark the epicentre of the main earthquake behind each cohort.
+
+:::
+
+:::
+
 ## Working papers
 
 :::: {.paper}

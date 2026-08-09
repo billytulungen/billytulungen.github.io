@@ -48,7 +48,12 @@ files/                    Downloadable PDFs (CV, papers, slides)
 
 ## Adding content
 
-**A new procurement essay.** Copy `procurement/insights/_post-template.qmd` to
+**A new procurement essay.** The Insights page is written but held back from
+the build: an index of six unwritten essays reads worse than no page at all. To
+turn it on, delete the `"!procurement/insights.qmd"` exclusion in `_quarto.yml`
+and uncomment the Insights section at the foot of `procurement/index.qmd`.
+
+To write one, copy `procurement/insights/_post-template.qmd` to
 `procurement/insights/YYYY-MM-DD-slug.qmd`, write it, then move its title on
 `procurement/insights.qmd` out of "In preparation" into a linked entry. Once
 there are several essays it is worth converting `insights.qmd` to a Quarto
@@ -73,15 +78,21 @@ listing:
 - [ ] Add a professional photograph at `assets/img/profile.jpg`, then replace
       the `.photo-placeholder` div in `index.qmd` with
       `![](assets/img/profile.jpg)`.
-- [ ] Add `assets/img/favicon.png` (512×512 works fine).
-- [ ] Export a **public** CV to `files/cv-billy-tulungen.pdf`. Strip NIK, NIP,
-      NPWP, bank account, date of birth, home address, and personal mobile
-      number first — the CVs in `~/Downloads` contain all of these.
-- [ ] Fill in the real Google Scholar / ORCID / GitHub / LinkedIn URLs in the
-      `page-footer` block of `_quarto.yml`, and delete the placeholder ones you
-      do not have.
+- [ ] Add `assets/img/favicon.png` (512×512 works fine), then uncomment the
+      `favicon:` line in `_quarto.yml`.
+- [ ] Export a **public** CV to `files/cv-billy-tulungen.pdf` — the March 2026
+      academic CV is already safe. Do **not** use the CVs in `~/Downloads`:
+      they carry NIK, NIP, NPWP, bank account, date of birth, and mobile number.
+      Until this file exists the CV download button is a dead link.
+- [ ] Put the Paper 1 draft in `files/` and link it from `research.qmd`, so
+      readers do not have to email you for it.
+- [ ] Create Google Scholar and ORCID profiles, then add them to the
+      `page-footer` block of `_quarto.yml`. They are deliberately absent rather
+      than pointing at generic homepages.
+- [ ] Fill in or delete the **Presentations** and **refereeing** sections in
+      `cv.qmd`. Both are currently editorial placeholders.
 - [ ] Set `site-url` in `_quarto.yml` to the final domain.
-- [ ] Delete the two `.note` editorial blocks (in `cv.qmd` and `teaching.qmd`)
+- [ ] Delete the `.note` editorial blocks (in `cv.qmd` and `teaching.qmd`)
       once their content is in place.
 
 ## Publishing to GitHub Pages
