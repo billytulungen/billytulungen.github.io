@@ -79,7 +79,10 @@ to a PGA-derived exposure measure that replaces ShakeMap intensity entirely
 (−1.3 percentage points), and to inference that treats the earthquake rather
 than the village as the unit of assignment: across 19 earthquakes the
 treated-village-weighted effect is −2.4 percentage points (SE 0.0102, p = 0.01).
-The sharper evidence is compositional. On identical villages and waves, theft
+The decline is deepest where the scope for inter-group conflict is greatest: a
+one-standard-deviation increase in religious polarization adds a further 1.8
+percentage points to it, and 0.8 percentage points on the definition-stable
+civilian-versus-civilian outcome. The sharper evidence is compositional. On identical villages and waves, theft
 rises by 5.8 percentage points against a 41 percent baseline while assault does
 not move, and the theft-versus-communal divergence survives earthquake-level
 resampling (p = 0.015). The pattern rejects a general improvement in local
