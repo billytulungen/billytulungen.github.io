@@ -3,6 +3,11 @@ project:
   output-dir: _site
   resources:
     - CNAME
+  # Canonical links, the Person record, and hreflang are not emitted by Quarto,
+  # so they are added to the rendered files afterwards.
+  post-render:
+    - /usr/bin/python3 files/src/postprocess.py
+
   render:
     - "*.qmd"
     - "procurement/*.qmd"
