@@ -10,7 +10,10 @@ toc: false
 I have been a teaching assistant in the Department of Economics, Faculty of
 Economics and Business, Universitas Indonesia since February 2024, working
 almost entirely on the econometrics sequence across the master's and doctoral
-programmes. Separately, I am a registered internal facilitator for the North
+programmes. Across these courses I lead the tutorial sessions, covering both the
+theory and its applied and software components, four to five sessions per
+semester in classes of 20 to 25 students, and I mark the midterm and final
+examinations. Separately, I am a registered internal facilitator for the North
 Sulawesi provincial procurement training institution and a nationally certified
 procurement facilitator and competency assessor.
 

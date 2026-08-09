@@ -258,9 +258,11 @@ Affairs, where tuition and living costs are borne by the state.
 ## Teaching
 
 Teaching assistant, Faculty of Economics and Business, Universitas Indonesia,
-since February 2024, covering the econometrics sequence across the doctoral, master's,
-and public policy programmes. Permanent public procurement instructor for the
-Government of North Sulawesi since 2023. [Full list →](teaching.qmd)
+since February 2024, covering the econometrics sequence across the doctoral,
+master's, and public policy programmes. Leads the tutorial sessions, theory and
+applied, four to five per semester in classes of 20 to 25, and marks the midterm
+and final examinations. Internal procurement facilitator for the North Sulawesi
+provincial training institution since 2023. [Full list →](teaching.qmd)
 
 ## Professional experience
 
