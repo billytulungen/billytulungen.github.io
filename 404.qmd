@@ -1,0 +1,20 @@
+---
+title: "Page not found"
+description-meta: "The page you asked for does not exist on this site."
+image: assets/img/og-card.png
+toc: false
+---
+
+The address you followed does not exist here. It may have been a typo, or a link
+that pointed at something I have since moved.
+
+The pages on this site are:
+
+::: {.paper-links style="margin-top:1rem"}
+
+[Research](research.qmd) [Public Procurement](procurement/index.qmd) [Teaching](teaching.qmd) [Professional](professional.qmd) [CV](cv.qmd) [About](about.qmd) [Bahasa Indonesia](id/index.qmd)
+
+:::
+
+If you arrived here from a citation or a published link that should work, please
+[tell me](mailto:billy.thandy21@ui.ac.id) so I can put a redirect in place.

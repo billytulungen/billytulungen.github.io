@@ -11,7 +11,7 @@ toc: false
 
 ::: {.area}
 
-#### Development Economics
+### Development Economics
 Shocks, informal insurance, and household responses where formal insurance and
 state capacity are weak.
 
@@ -19,7 +19,7 @@ state capacity are weak.
 
 ::: {.area}
 
-#### Urban & Regional Economics
+### Urban & Regional Economics
 Spatial distribution of economic activity, local public goods, and regional
 disparities in Indonesia.
 
@@ -27,7 +27,7 @@ disparities in Indonesia.
 
 ::: {.area}
 
-#### Political Economy
+### Political Economy
 Local order, collective action, and the institutions that govern public
 resources, including public procurement.
 
@@ -37,7 +37,7 @@ resources, including public procurement.
 
 ::: {.area .methods}
 
-#### Methods
+### Methods
 Causal inference on long administrative panels, and the measurement problems
 that come with changing administrative boundaries.
 
@@ -52,7 +52,7 @@ that come with changing administrative boundaries.
 
 ::: {.figure}
 
-![](assets/img/fig_map_treated.png)
+![](assets/img/fig_map_treated.png){fig-alt="Map of Indonesia. Villages first exposed to damage-level shaking are coloured by survey wave and scattered across the archipelago; stars mark the epicentre of the main earthquake behind each cohort."}
 
 ::: {.figcaption}
 

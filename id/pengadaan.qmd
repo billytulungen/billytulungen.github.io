@@ -50,7 +50,7 @@ janji. Padahal di situlah uang negara benar-benar terpakai atau terbuang.
 
 ::: {.area}
 
-#### Perencanaan dan Strategi Pengadaan
+### Perencanaan dan Strategi Pengadaan
 Menerjemahkan sasaran program menjadi rencana belanja yang masuk akal: cara
 memaketkan, cara masuk ke pasar, jenis kontrak, dan kapan dijalankan.
 
@@ -58,7 +58,7 @@ memaketkan, cara masuk ke pasar, jenis kontrak, dan kapan dijalankan.
 
 ::: {.area}
 
-#### Spesifikasi dan HPS
+### Spesifikasi dan HPS
 Menyusun spesifikasi yang tidak mengunci satu penyedia, dan HPS yang angkanya
 bisa ditelusuri.
 
@@ -66,7 +66,7 @@ bisa ditelusuri.
 
 ::: {.area}
 
-#### Pemilihan Penyedia
+### Pemilihan Penyedia
 Merancang evaluasi dan kualifikasi, serta menimbang harga terhadap manfaat yang
 sebenarnya dicari.
 
@@ -74,7 +74,7 @@ sebenarnya dicari.
 
 ::: {.area}
 
-#### Manajemen Kontrak
+### Manajemen Kontrak
 Memantau kinerja penyedia, menangani adendum dan klaim, mengurus serah terima,
 dan menyelesaikan sengketa. Termasuk kontrak konstruksi dan konsultansi.
 
@@ -82,7 +82,7 @@ dan menyelesaikan sengketa. Termasuk kontrak konstruksi dan konsultansi.
 
 ::: {.area}
 
-#### Pengembangan Kompetensi
+### Pengembangan Kompetensi
 Merancang dan membawakan pelatihan, lalu menguji kompetensinya, di keempat
 jenjang kerangka kompetensi PBJ nasional.
 
@@ -90,7 +90,7 @@ jenjang kerangka kompetensi PBJ nasional.
 
 ::: {.area}
 
-#### Tata Kelola dan Kebijakan
+### Tata Kelola dan Kebijakan
 Menyusun pedoman dan peraturan pengadaan untuk instansi, serta memberi pendapat
 probity ketika sebuah proses perlu ditimbang dari sisi kepatutan.
 

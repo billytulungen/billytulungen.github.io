@@ -38,7 +38,7 @@ procurement, is on the [Professional](../professional.qmd) page.
 
 ::: {.area}
 
-#### Procurement Planning & Strategy
+### Procurement Planning & Strategy
 Translating programme objectives into a procurement approach: packaging, market
 approach, contract type, and timing. Most procurement failures are decided
 before the tender opens.
@@ -47,7 +47,7 @@ before the tender opens.
 
 ::: {.area}
 
-#### Specification & Cost Estimation
+### Specification & Cost Estimation
 Specifications that describe a need rather than a product, and cost estimates
 that survive scrutiny. These are the two documents that most often determine
 whether a competitive process is possible at all.
@@ -56,7 +56,7 @@ whether a competitive process is possible at all.
 
 ::: {.area}
 
-#### Supplier Selection
+### Supplier Selection
 Evaluation design, qualification, and the trade-off between price and value.
 Selection method is a policy choice, not an administrative formality.
 
@@ -64,7 +64,7 @@ Selection method is a policy choice, not an administrative formality.
 
 ::: {.area}
 
-#### Contract Management
+### Contract Management
 Performance monitoring, variation and claim handling, acceptance, and dispute
 resolution, including construction and consultancy contracts.
 
@@ -72,7 +72,7 @@ resolution, including construction and consultancy contracts.
 
 ::: {.area}
 
-#### Competency Development
+### Competency Development
 Design and delivery of training and competency assessment across all four levels
 of Indonesia's public procurement competency framework, from procurement officer
 to senior public procurement specialist.
@@ -81,7 +81,7 @@ to senior public procurement specialist.
 
 ::: {.area}
 
-#### Procurement Governance & Policy
+### Procurement Governance & Policy
 Institutional procurement guidelines, probity advice, and drafting of
 organisational procurement regulations for public bodies.
 
