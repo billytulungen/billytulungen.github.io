@@ -126,13 +126,14 @@ procurement specialist.
 
 :::: {.what}
 
-[Permanent Public Procurement Instructor]{.role}
+[Internal Procurement Facilitator, Provincial Training Institution (LPPBJ)]{.role}
 
 ::: {.org}
 
-Regional Human Resources Development Agency (BPSDMD), Government of North
-Sulawesi. Teaches all four competency levels and serves as coach and evaluator
-on the training programmes.
+Registered with LKPP as an internal facilitator for the North Sulawesi
+provincial procurement training institution, delivered through the Regional
+Human Resources Development Agency (BPSDMD). Teaches all four competency levels
+and serves as coach and evaluator.
 
 :::
 
@@ -154,8 +155,11 @@ on the training programmes.
 
 ::: {.org}
 
-Certified at foundation and advanced level by LKPP, and as competency
-facilitator for levels 1 through 4.
+Certified by LKPP as a competency facilitator for levels 1 through 4, and for
+the role-based schemes: commitment-making officer types A, B, and C;
+procurement officer; general and special selection working groups; and selection
+working group competency. Registered on the
+[LKPP public facilitator directory](https://ppsdm.lkpp.go.id/profil-publik/fasilitator-pbj/MzQ4OTQ4).
 
 :::
 
@@ -404,6 +408,50 @@ LKPP
 :::: {.what}
 
 [Public Procurement Advisor]{.role}
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+LKPP
+
+:::
+
+:::: {.what}
+
+[Public–Private Partnership (KPBU) procurement]{.role}
+
+::: {.org}
+
+Procurement under the public–private partnership scheme, 2025.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+LKPP
+
+:::
+
+:::: {.what}
+
+[Village procurement]{.role}
+
+::: {.org}
+
+Procurement at village level, 2025.
+
+:::
 
 ::::
 

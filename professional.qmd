@@ -19,6 +19,9 @@ resources are actually allocated.
 
 ## Government of North Sulawesi
 
+Home agency: Provincial Civil Service Agency (Badan Kepegawaian Daerah Provinsi
+Sulawesi Utara, Type A), Manado.
+
 ::::: {.entry}
 
 ::: {.years}
@@ -29,12 +32,14 @@ resources are actually allocated.
 
 :::: {.what}
 
-[Permanent Public Procurement Instructor]{.role}
+[Internal Procurement Facilitator, Provincial Training Institution (LPPBJ)]{.role}
 
 ::: {.org}
 
-Regional Human Resources Development Agency (BPSDMD). Teaches across all four
-national procurement competency levels and serves as coach and evaluator.
+Registered internal facilitator for the North Sulawesi provincial procurement
+training institution, delivered through the Regional Human Resources Development
+Agency (BPSDMD). Teaches all four national procurement competency levels and
+serves as coach and evaluator.
 
 :::
 

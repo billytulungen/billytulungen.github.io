@@ -10,9 +10,9 @@ toc: false
 I have been a teaching assistant in the Department of Economics, Faculty of
 Economics and Business, Universitas Indonesia since February 2024, working
 almost entirely on the econometrics sequence across the master's and doctoral
-programmes. Separately, I am a permanent public procurement instructor for the
-Government of North Sulawesi and a nationally certified facilitator and
-competency assessor.
+programmes. Separately, I am a registered internal facilitator for the North
+Sulawesi provincial procurement training institution and a nationally certified
+procurement facilitator and competency assessor.
 
 :::
 
@@ -234,14 +234,15 @@ Teaching assistant to Prof. Dr. Djoni Hartono and Prani Sastiono, Ph.D.
 
 :::: {.what}
 
-[Permanent public procurement instructor]{.role}
+[Internal procurement facilitator, provincial training institution]{.role}
 
 ::: {.org}
 
-Regional Human Resources Development Agency (BPSDMD), Government of North
-Sulawesi. Delivers procurement training across all four competency levels, from
-procurement officer through senior procurement specialist, and serves as coach
-and evaluator on the training programmes.
+Registered with LKPP as an internal facilitator for the North Sulawesi
+provincial procurement training institution (LPPBJ), delivered through the
+Regional Human Resources Development Agency (BPSDMD). Teaches all four
+competency levels, from procurement officer through senior procurement
+specialist, and serves as coach and evaluator.
 
 :::
 
