@@ -221,9 +221,17 @@ a {
 @media (max-width: 700px) {
   .hero {
     grid-template-columns: 1fr;
-    gap: 1.6rem;
+    gap: 1.3rem;
   }
-  .hero-photo { max-width: 170px; }
+
+  // In one column the photo would otherwise land after the buttons, orphaned
+  // between the call to action and the next section. Put it first, so the page
+  // opens on the face and closes the hero on the buttons.
+  .hero-photo {
+    order: -1;
+    max-width: 150px;
+  }
+
   .hero-name { font-size: 2rem; }
 }
 
