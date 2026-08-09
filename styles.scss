@@ -161,6 +161,14 @@ a {
   padding-right: 0.85rem !important;
 }
 
+// Language switch. Quarto stamps lang="id" on the Indonesian pages, so the
+// correct half of the pair can be hidden without a second site profile.
+// Order in _quarto.yml: 1 = English, 2 = Bahasa Indonesia.
+html[lang="id"] .navbar-nav.ms-auto > li:nth-child(2),
+html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
+  display: none;
+}
+
 // ---------------------------------------------------------------------------
 // Home hero
 // ---------------------------------------------------------------------------

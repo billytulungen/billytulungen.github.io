@@ -47,7 +47,11 @@ website:
         text: CV
       - href: about.qmd
         text: About
+    # Both language links are always emitted; the stylesheet shows only the one
+    # that leads away from the page's own language, keyed on the lang attribute.
     right:
+      - href: index.qmd
+        text: "English"
       - href: id/index.qmd
         text: "Bahasa Indonesia"
 
