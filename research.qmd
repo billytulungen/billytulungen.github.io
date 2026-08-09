@@ -35,8 +35,13 @@ resources, including public procurement.
 
 ::::
 
-**Methods.** Causal inference on long administrative panels, and the measurement
-problems that come with changing administrative boundaries.
+::: {.area .methods}
+
+#### Methods
+Causal inference on long administrative panels, and the measurement problems
+that come with changing administrative boundaries.
+
+:::
 
 ::: {.tags}
 

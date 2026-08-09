@@ -388,6 +388,13 @@ a {
   margin: 0;
 }
 
+// Methods sits below the fields grid, not inside it, so it needs the gap the
+// grid would otherwise have given it. Two classes, because the `.area` reset
+// further down would otherwise win on source order.
+.area.methods {
+  margin-top: 1.6rem;
+}
+
 // ---------------------------------------------------------------------------
 // Lead paragraph
 // ---------------------------------------------------------------------------
