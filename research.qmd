@@ -52,7 +52,7 @@ that come with changing administrative boundaries.
 
 ::: {.figure}
 
-![](assets/img/fig_map_treated.png){fig-alt="Map of Indonesia. Villages first exposed to damage-level shaking are coloured by survey wave and scattered across the archipelago; stars mark the epicentre of the main earthquake behind each cohort."}
+[![](assets/img/fig_map_treated.png){fig-alt="Map of Indonesia. Villages first exposed to damage-level shaking are coloured by survey wave and scattered across the archipelago; stars mark the epicentre of the main earthquake behind each cohort."}](assets/img/fig_map_treated.png)
 
 ::: {.figcaption}
 

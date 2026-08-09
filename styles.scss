@@ -235,6 +235,11 @@ a {
   .hero-name { font-size: 2rem; }
 }
 
+// On the narrowest phones still in use the brand was truncating mid-surname.
+@media (max-width: 380px) {
+  .navbar-brand { font-size: 1.02rem !important; }
+}
+
 // ---------------------------------------------------------------------------
 // Button row under the hero
 // ---------------------------------------------------------------------------
