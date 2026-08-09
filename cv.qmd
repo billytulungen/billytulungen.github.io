@@ -35,7 +35,7 @@ Universitas Indonesia, Depok 16424, Indonesia<br>
 
 Universitas Indonesia. Dissertation: *Shaking Land and Shaking Lives: Essays on
 the Economic Impacts of Seismic Disasters.* Expected completion February 2028.
-Supervisor: M. Halley Yudhistira, Ph.D.
+Supervisor: M. Halley Yudhistira, Ph.D. Co-supervisor: Jahen F. Rezki, Ph.D.
 
 :::
 
@@ -304,9 +304,9 @@ Ahli Kontrak Pemerintah Indonesia.
 
 ## References
 
-**M. Halley Yudhistira, Ph.D.** Associate Professor of Economics, Universitas
-Indonesia &middot; [m.halley@ui.ac.id](mailto:m.halley@ui.ac.id)<br>
-**Vid Adrison, Ph.D.** Associate Professor of Economics, Universitas
-Indonesia &middot; [vid.adrison@ui.ac.id](mailto:vid.adrison@ui.ac.id)<br>
-**Jahen F. Rezki, Ph.D.** Assistant Professor of Economics, Universitas
-Indonesia &middot; [jahen.fr@ui.ac.id](mailto:jahen.fr@ui.ac.id)
+**M. Halley Yudhistira, Ph.D.** (supervisor) Associate Professor of Economics,
+Universitas Indonesia &middot; [m.halley@ui.ac.id](mailto:m.halley@ui.ac.id)<br>
+**Jahen F. Rezki, Ph.D.** (co-supervisor) Assistant Professor of Economics,
+Universitas Indonesia &middot; [jahen.fr@ui.ac.id](mailto:jahen.fr@ui.ac.id)<br>
+**Vid Adrison, Ph.D.** (co-author) Associate Professor of Economics, Universitas
+Indonesia &middot; [vid.adrison@ui.ac.id](mailto:vid.adrison@ui.ac.id)
