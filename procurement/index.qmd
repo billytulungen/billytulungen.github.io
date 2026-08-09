@@ -7,7 +7,7 @@ toc: false
 
 ::: {.lead-note}
 
-I have worked in Indonesian public procurement since 2015 — first inside
+I have worked in Indonesian public procurement since 2015, first inside
 provincial government as an asset and procurement officer, then as a
 commitment-making official and member of the provincial selection working group,
 and from 2021 to 2023 as head of the sub-division responsible for procurement
@@ -24,8 +24,8 @@ managed, and how procurement officials actually acquire competence.
 
 This page describes my professional practice. It is distinct from my
 [academic research](../research.qmd), which is in development, urban, and
-regional economics. Where the two meet — empirical work on competition and
-efficiency in Indonesian government procurement — the papers appear under
+regional economics. Where the two meet, in empirical work on competition and
+efficiency in Indonesian government procurement, the papers appear under
 Research.
 
 :::
@@ -47,8 +47,8 @@ before the tender opens.
 
 #### Specification & Cost Estimation
 Specifications that describe a need rather than a product, and cost estimates
-that survive scrutiny — the two documents that most often determine whether a
-competitive process is possible at all.
+that survive scrutiny. These are the two documents that most often determine
+whether a competitive process is possible at all.
 
 :::
 
@@ -64,7 +64,7 @@ Selection method is a policy choice, not an administrative formality.
 
 #### Contract Management
 Performance monitoring, variation and claim handling, acceptance, and dispute
-resolution — including construction and consultancy contracts.
+resolution, including construction and consultancy contracts.
 
 :::
 
@@ -364,7 +364,7 @@ LKPP
 
 :::: {.what}
 
-[Competency Assessor — Public Procurement]{.role}
+[Competency Assessor, Public Procurement]{.role}
 
 ::::
 

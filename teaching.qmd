@@ -74,7 +74,7 @@ Teaching assistant to Rus'an Nasrudin, Ph.D. and Jahen F. Rezki, Ph.D.
 
 :::: {.what}
 
-[ECES808832 · Econometrics 2 — Cross-Section and Panel Data]{.role}
+[ECES808832 · Econometrics 2: Cross-Section and Panel Data]{.role}
 
 ::: {.org}
 
@@ -97,7 +97,7 @@ Yudhistira, Ph.D.
 
 :::: {.what}
 
-[ECES808826 · Econometrics 1 — regular class]{.role}
+[ECES808826 · Econometrics 1, regular class]{.role}
 
 ::: {.org}
 
@@ -120,7 +120,7 @@ Kusumawardhani, Ph.D.
 
 :::: {.what}
 
-[ECES808826 · Econometrics 1 — linkage class]{.role}
+[ECES808826 · Econometrics 1, linkage class]{.role}
 
 ::: {.org}
 
@@ -188,7 +188,7 @@ Teaching assistant to Muhammad Hanri, Ph.D.
 
 :::: {.what}
 
-[ECEM801101 · Applied Econometrics — international class]{.role}
+[ECEM801101 · Applied Econometrics, international class]{.role}
 
 ::: {.org}
 

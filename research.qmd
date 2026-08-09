@@ -1,6 +1,6 @@
 ---
 title: "Research"
-subtitle: "Development, urban and regional economics — the economic consequences of seismic disasters in Indonesia."
+subtitle: "Development, urban and regional economics, with a focus on the economic consequences of seismic disasters in Indonesia."
 description-meta: "Working papers, work in progress, publications, grants, and dissertation."
 toc: false
 ---
@@ -29,7 +29,7 @@ disparities in Indonesia.
 
 #### Political Economy
 Local order, collective action, and the institutions that govern public
-resources — including public procurement.
+resources, including public procurement.
 
 :::
 
@@ -110,7 +110,7 @@ collective violence.
 
 ::: {.paper-links}
 
-[Draft (PDF)](files/paper1-motive-without-mobilization.pdf) [This version: {{< var paper1.version >}}. Work in progress — please check back before citing.]{.disabled}
+[Draft (PDF)](files/paper1-motive-without-mobilization.pdf) [This version: {{< var paper1.version >}}. Work in progress; please check back before citing.]{.disabled}
 
 :::
 
@@ -197,7 +197,7 @@ official cost estimate.
 
 :::: {.what}
 
-[PhD Research Grant, ReCIPE Programme — £14,040]{.role}
+[PhD Research Grant, ReCIPE Programme]{.role}
 
 ::: {.org}
 
@@ -214,7 +214,7 @@ Commonwealth and Development Office (FCDO).
 ## Dissertation
 
 **Shaking Land and Shaking Lives: Essays on the Economic Impacts of Seismic
-Disasters** — Department of Economics, Faculty of Economics and Business,
+Disasters**. Department of Economics, Faculty of Economics and Business,
 Universitas Indonesia. Expected completion February 2028. Supervised by
 M. Halley Yudhistira, Ph.D.
 
@@ -294,6 +294,6 @@ Third essay, topic to be confirmed.
 ## Data and code
 
 I am committed to reproducible empirical work. Replication packages for the
-dissertation chapters — cleaning code, analysis do-files, and the village
-boundary crosswalk used to harmonise PODES waves onto constant 2005 boundaries —
-will be posted here as each paper is released.
+dissertation chapters will be posted here as each paper is released: cleaning
+code, analysis do-files, and the village boundary crosswalk used to harmonise
+PODES waves onto constant 2005 boundaries.

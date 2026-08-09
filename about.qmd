@@ -1,7 +1,7 @@
 ---
 title: "About"
 subtitle: "How the research and the procurement work fit together."
-description-meta: "About Billy Tulungen — economist, researcher, and public procurement expert."
+description-meta: "About Billy Tulungen: economist, researcher, and public procurement expert."
 toc: false
 ---
 
@@ -10,7 +10,7 @@ Economics and Business, Universitas Indonesia, and a civil servant in the
 Provincial Government of North Sulawesi. My work has two strands that are
 usually kept apart: empirical research on how communities absorb large physical
 shocks, and professional practice in Indonesian public procurement. They share a
-single question — how public resources and collective capacity are actually
+single question: how public resources and collective capacity are actually
 allocated when institutions are under strain.
 
 My dissertation, *Shaking Land and Shaking Lives: Essays on the Economic Impacts
@@ -37,7 +37,7 @@ the research I teach the graduate econometrics sequence at Universitas
 Indonesia, across the doctoral, master's, and public policy programmes.
 
 Before graduate school I entered the civil service through IPDN, and my early
-posts in North Sulawesi were in asset management and procurement — procurement
+posts in North Sulawesi were in asset management and procurement: procurement
 officer, then commitment-making official responsible for contracts, then member
 of the provincial selection working group with authority over contracts up to
 IDR 100 billion. From 2021 to 2023 I led the provincial sub-division responsible
@@ -58,7 +58,7 @@ selected for examination by the Minister of Finance.
 The longer-term agenda is to keep both strands running: rigorous empirical
 economics on shocks, institutions, and local public goods in Indonesia, and a
 serious contribution to the professionalisation of Indonesian public
-procurement — including writing about procurement practice for practitioners,
+procurement, including writing about procurement practice for practitioners,
 not only for regulators.
 
 ::: {.paper-links style="margin-top:2rem"}

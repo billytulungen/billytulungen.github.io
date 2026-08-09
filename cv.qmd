@@ -174,7 +174,7 @@ with Vid Adrison. *Indonesian Treasury Review*, 6(1), 19–29.
 
 :::: {.what}
 
-[PhD Research Grant, ReCIPE Programme — £14,040]{.role}
+[PhD Research Grant, ReCIPE Programme]{.role}
 
 ::: {.org}
 
@@ -241,11 +241,12 @@ National Development Planning Agency of the Republic of Indonesia (Bappenas).
 
 :::: {.what}
 
-[Undergraduate Full Scholarship]{.role}
+[Fully funded undergraduate place, IPDN]{.role}
 
 ::: {.org}
 
-Ministry of Home Affairs of the Republic of Indonesia.
+Institut Pemerintahan Dalam Negeri, the service academy of the Ministry of Home
+Affairs, where tuition and living costs are borne by the state.
 
 :::
 
@@ -278,7 +279,7 @@ First place, Provincial Mathematics Olympiad, North Sulawesi.
 ## Teaching
 
 Teaching assistant, Faculty of Economics and Business, Universitas Indonesia,
-since February 2024 — the econometrics sequence across the doctoral, master's,
+since February 2024, covering the econometrics sequence across the doctoral, master's,
 and public policy programmes. Permanent public procurement instructor for the
 Government of North Sulawesi since 2023. [Full list →](teaching.qmd)
 
@@ -301,7 +302,7 @@ under the Supreme Court of the Republic of Indonesia.
 
 ## Professional certifications
 
-Competency Assessor — Public Procurement (LKPP) &middot; Public Procurement
+Competency Assessor, Public Procurement (LKPP) &middot; Public Procurement
 Competency Facilitator, Levels 1–4 (LKPP) &middot; Advanced Public Procurement
 Facilitator (LKPP) &middot; Public Procurement Advisor (LKPP) &middot; Certified
 Mediator (Supreme Court of Indonesia) &middot; Certificate Professional in Public
@@ -328,9 +329,9 @@ geospatial data analysis (GIS).
 
 ## References
 
-M. Halley Yudhistira, Ph.D. — Associate Professor of Economics, Universitas
+**M. Halley Yudhistira, Ph.D.** Associate Professor of Economics, Universitas
 Indonesia &middot; [m.halley@ui.ac.id](mailto:m.halley@ui.ac.id)<br>
-Vid Adrison, Ph.D. — Associate Professor of Economics, Universitas
+**Vid Adrison, Ph.D.** Associate Professor of Economics, Universitas
 Indonesia &middot; [vid.adrison@ui.ac.id](mailto:vid.adrison@ui.ac.id)<br>
-Jahen F. Rezki, Ph.D. — Assistant Professor of Economics, Universitas
+**Jahen F. Rezki, Ph.D.** Assistant Professor of Economics, Universitas
 Indonesia &middot; [jahen.fr@ui.ac.id](mailto:jahen.fr@ui.ac.id)
