@@ -1,6 +1,6 @@
 ---
 title: "Curriculum Vitae"
-subtitle: "Billy Thandy Tulungen, S.IP., M.E."
+subtitle: "Billy Thandy Tulungen"
 description-meta: "Academic and professional curriculum vitae."
 toc: false
 ---
@@ -9,13 +9,20 @@ toc: false
 
 ::: {.note}
 
-**Editorial note — delete this block once the file is in place.** Export a
-public version of your CV to `files/cv-billy-tulungen.pdf`. Remove NIK, NIP,
-NPWP, bank account details, date of birth, home address, and personal mobile
-number before publishing: the versions currently in your Downloads folder
-contain all of these. Keep the full internal CV separate.
+**Editorial note — delete this block once the file is in place.** Copy your
+March 2026 academic CV to `files/cv-billy-tulungen.pdf`. That version is already
+safe to publish. Do **not** publish the two CVs in `~/Downloads` — they contain
+NIK, NIP, NPWP, bank account details, date of birth, and your personal mobile
+number.
 
 :::
+
+## Contact
+
+Department of Economics, Faculty of Economics and Business<br>
+Graduate School Building, 2nd Floor, Widjojo Nitisastro Campus<br>
+Universitas Indonesia, Depok 16424, Indonesia<br>
+[billy.thandy21@ui.ac.id](mailto:billy.thandy21@ui.ac.id)
 
 ## Education
 
@@ -23,17 +30,19 @@ contain all of these. Keep the full internal CV separate.
 
 ::: {.years}
 
-in progress
+2023–2028
 
 :::
 
 :::: {.what}
 
-[PhD in Economics]{.role}
+[Ph.D. Candidate in Economics]{.role}
 
 ::: {.org}
 
-Faculty of Economics and Business, Universitas Indonesia
+Universitas Indonesia. Dissertation: *Shaking Land and Shaking Lives: Essays on
+the Economic Impacts of Seismic Disasters.* Expected completion February 2028.
+Supervisor: M. Halley Yudhistira, Ph.D.
 
 :::
 
@@ -51,14 +60,13 @@ Faculty of Economics and Business, Universitas Indonesia
 
 :::: {.what}
 
-[M.E., Economic Planning and Development Policy]{.role}
+[Master of Economics, Planning and Public Policy]{.role}
 
 ::: {.org}
 
-Faculty of Economics and Business, Universitas Indonesia<br>
-Thesis: *Competitive Bidding in Indonesian Government Procurement: Empirical
-Evidence from the e-Procurement System* — one of three theses selected for
-examination by the Minister of Finance of the Republic of Indonesia
+Universitas Indonesia. Thesis on competitive bidding in Indonesian government
+procurement, selected as one of three theses at the Faculty of Economics and
+Business examined by the Minister of Finance of the Republic of Indonesia.
 
 :::
 
@@ -76,11 +84,11 @@ examination by the Minister of Finance of the Republic of Indonesia
 
 :::: {.what}
 
-[S.IP., Government Studies]{.role}
+[Bachelor of Government Science, Financial Management]{.role}
 
 ::: {.org}
 
-Institut Pemerintahan Dalam Negeri (IPDN)
+Institut Pemerintahan Dalam Negeri (Institute of Home Affairs Governance).
 
 :::
 
@@ -90,9 +98,9 @@ Institut Pemerintahan Dalam Negeri (IPDN)
 
 ## Research fields
 
-Development economics &middot; urban and regional economics &middot; political
-economy &middot; spatial economics. Methods: causal inference, staggered
-difference-in-differences, spatial econometrics, applied microeconometrics.
+**Primary.** Development economics; urban and regional economics.
+
+**Secondary.** Political economics; applied econometrics; public procurement.
 
 ## Publications
 
@@ -100,35 +108,19 @@ difference-in-differences, spatial econometrics, applied microeconometrics.
 
 ::: {.years}
 
-forthcoming
+2021
 
 :::
 
 :::: {.what}
 
-[Competition and Efficiency in Government Procurement: Empirical Evidence from Indonesian Ministries and Agencies]{.role}
+[Kompetisi dan Efisiensi pada Pengadaan Pemerintah: Bukti Empiris pada Kementerian/Lembaga di Indonesia]{.role}
 
 ::: {.org}
 
-*Indonesian Treasury Review* (SINTA 2)
+*Indonesian Treasury Review.*
 
 :::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-R&R
-
-:::
-
-:::: {.what}
-
-[Competitive Bidding in Public Procurement: Empirical Evidence in Indonesia]{.role}
 
 ::::
 
@@ -150,7 +142,7 @@ R&R
 
 ::: {.org}
 
-Job market paper. [Abstract →](research.qmd)
+[Abstract →](research.qmd)
 
 :::
 
@@ -182,17 +174,62 @@ Job market paper. [Abstract →](research.qmd)
 
 ::: {.years}
 
+2026–2027
+
+:::
+
+:::: {.what}
+
+[PhD Research Grant, ReCIPE Programme — £14,040]{.role}
+
+::: {.org}
+
+Centre for Economic Policy Research (CEPR) and UK Foreign, Commonwealth and
+Development Office (FCDO).
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2023–2028
+
+:::
+
+:::: {.what}
+
+[Doctoral Scholarship]{.role}
+
+::: {.org}
+
+Government of North Sulawesi.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
 2018–2020
 
 :::
 
 :::: {.what}
 
-[Graduate scholarship]{.role}
+[Master's Scholarship]{.role}
 
 ::: {.org}
 
-Pusbindiklatren, Ministry of National Development Planning (Bappenas)
+National Development Planning Agency of the Republic of Indonesia (Bappenas).
 
 :::
 
@@ -210,11 +247,11 @@ Pusbindiklatren, Ministry of National Development Planning (Bappenas)
 
 :::: {.what}
 
-[Service scholarship]{.role}
+[Undergraduate Full Scholarship]{.role}
 
 ::: {.org}
 
-IPDN, Ministry of Home Affairs
+Ministry of Home Affairs of the Republic of Indonesia.
 
 :::
 
@@ -222,25 +259,58 @@ IPDN, Ministry of Home Affairs
 
 :::::
 
-## Teaching and training
+::::: {.entry}
 
-Certified public procurement facilitator (LKPP), foundation and advanced level,
-since 2018. Certified competency assessor (LSP LKPP / BNSP) for competency
-levels 2–4, since 2020. [Details →](teaching.qmd)
+::: {.years}
+
+2010
+
+:::
+
+:::: {.what}
+
+[Finalist, National Mathematics Olympiad, Indonesia]{.role}
+
+::: {.org}
+
+First place, Provincial Mathematics Olympiad, North Sulawesi.
+
+:::
+
+::::
+
+:::::
+
+## Teaching
+
+Teaching assistant, Faculty of Economics and Business, Universitas Indonesia,
+since February 2024 — the econometrics sequence across the doctoral, master's,
+and public policy programmes. Permanent public procurement instructor for the
+Government of North Sulawesi since 2023. [Full list →](teaching.qmd)
 
 ## Professional experience
 
-Civil servant, Government of North Sulawesi Province, since 2015. Roles include
-commitment-making official, procurement official, procurement strategy analyst,
-and member of provincial procurement selection working groups.
+Civil servant, Provincial Government of North Sulawesi, since 2015. Roles include
+head of the provincial sub-division for procurement assistance and technical
+guidance, commitment-making official, member of the procurement selection working
+group, procurement strategy analyst, and asset management officer.
 [Full history →](professional.qmd)
 
 ## Public procurement
 
-Probity advisor and contract support team member, National Public Procurement
-Agency (LKPP), since 2020. Certified mediator under the Supreme Court of the
-Republic of Indonesia. Certificate Professional in Public Procurement (CPPP),
-World Bank. Certified auditor, BPKP. [Full profile →](procurement/index.qmd)
+Competency assessor for the Professional Certification Body of the National
+Public Procurement Agency (LKPP) since 2025; probity advisor and contract support
+team member since 2020; certified facilitator since 2018. Certified mediator
+under the Supreme Court of the Republic of Indonesia.
+[Full profile →](procurement/index.qmd)
+
+## Professional certifications
+
+Competency Assessor — Public Procurement (LKPP) &middot; Public Procurement
+Competency Facilitator, Levels 1–4 (LKPP) &middot; Advanced Public Procurement
+Facilitator (LKPP) &middot; Public Procurement Advisor (LKPP) &middot; Certified
+Mediator (Supreme Court of Indonesia) &middot; Certificate Professional in Public
+Procurement (World Bank) &middot; Social and Behavioral Research (CITI Program).
 
 ## Professional service
 
@@ -251,11 +321,15 @@ Indonesia.
 
 ## Skills
 
-**Software.** Stata, R, Python, QGIS, LaTeX.
+**Technical.** Advanced econometrics, spatial econometrics, causal inference,
+geospatial data analysis (GIS).
 
-**Empirical.** Staggered difference-in-differences and modern DiD estimators,
-spatial econometrics, panel data methods, large-scale survey and administrative
-microdata, raster and vector GIS processing, record linkage across changing
-administrative boundaries.
+**Software.** Stata, R, Python, LaTeX, QGIS.
 
 **Languages.** Indonesian (native), English (professional working proficiency).
+
+## References
+
+M. Halley Yudhistira, Ph.D. — Associate Professor of Economics, Universitas
+Indonesia<br>
+Jahen F. Rezki, Ph.D. — Assistant Professor of Economics, Universitas Indonesia

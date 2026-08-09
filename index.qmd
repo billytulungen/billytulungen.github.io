@@ -1,14 +1,12 @@
 ---
 pagetitle: "Billy Tulungen — Economist, Researcher, Public Procurement Expert"
-description-meta: "PhD candidate in Economics at Universitas Indonesia. Development, urban and regional, and spatial economics; public procurement practice."
+description-meta: "PhD candidate in Economics at Universitas Indonesia. Development, urban and regional economics; the economics of seismic disasters; public procurement practice."
 toc: false
 ---
 
 ::::: {.hero}
 
-
 :::: {.hero-text}
-
 
 ::: {.hero-name}
 
@@ -25,22 +23,24 @@ Economist &middot; Researcher &middot; Public Procurement Expert
 ::: {.hero-affil}
 
 PhD Candidate in Economics<br>
-Faculty of Economics and Business, Universitas Indonesia
+Department of Economics, Faculty of Economics and Business<br>
+Universitas Indonesia
 
 :::
 
 ::: {.hero-bio}
 
-I am a PhD candidate in Economics at Universitas Indonesia. My research is in
-development economics, urban and regional economics, political economy, and
-spatial economics, with an emphasis on causal inference and spatial empirical
-methods. My current work asks how large natural shocks reshape social order and
-household behaviour in Indonesian villages.
+I am a PhD candidate in Economics at Universitas Indonesia, working in
+development economics and urban and regional economics. My dissertation,
+*Shaking Land and Shaking Lives*, asks how large seismic shocks reshape social
+order, household behaviour, and local economies in Indonesian villages. The
+first chapter is supported by a research grant from the ReCIPE Programme (CEPR
+and UK FCDO). I also teach the graduate econometrics sequence at Universitas
+Indonesia.
 
-Alongside my academic work, I work extensively in Indonesian public procurement
-as a certified facilitator, competency assessor, and advisor, with a focus on
-procurement strategy, contract management, and the professionalisation of the
-procurement workforce.
+Alongside my academic work I have spent a decade in Indonesian public
+procurement, in provincial government roles and as a nationally certified
+facilitator, competency assessor, and advisor.
 
 :::
 
@@ -83,12 +83,12 @@ Job market paper &nbsp;·&nbsp; [Working paper]{.paper-status}
 ::: {.paper-abstract}
 
 Combining seven waves of Indonesia's Village Potential Survey (PODES, 2005–2024)
-with village-level USGS ShakeMap intensities, we estimate that first exposure to
-damage-level shaking reduces reported communal conflict by about 1.1 percentage
-points against a 4.8 percent pre-exposure mean. On identical villages and waves,
-theft rises by roughly six percentage points while communal violence does not.
-The pattern is consistent with a large physical shock raising the incentive for
-individual predation while degrading the capacity to organise collective violence.
+with village-level USGS ShakeMap intensities, we find that first exposure to
+damage-level shaking reduces reported communal conflict. On identical villages
+and waves, theft rises by roughly six percentage points while communal violence
+does not. The pattern is consistent with a large physical shock raising the
+incentive for individual predation while degrading the capacity to organise
+collective violence.
 
 :::
 
@@ -134,9 +134,9 @@ separate the income effect from the club-good and coping channels.
 
 ## Public procurement
 
-I have worked in Indonesian public procurement since 2015, in government
-procurement roles and, since 2018, as a national-level facilitator and assessor.
-My professional focus is procurement strategy and planning, contract management,
+I have worked in Indonesian public procurement since 2015, in provincial
+government roles and, since 2018, as a national-level facilitator. My
+professional focus is procurement strategy and planning, contract management,
 and the development of procurement competency across the public sector.
 
 ::: {.tags}
@@ -159,18 +159,62 @@ and the development of procurement competency across the public sector.
 
 ::: {.years}
 
-2026
+2026–2027
 
 :::
 
 :::: {.what}
 
-[Dissertation in progress]{.role}
+[PhD Research Grant, ReCIPE Programme]{.role}
 
 ::: {.org}
 
-Three essays on natural disasters, social order, and household behaviour in
-Indonesia — Universitas Indonesia
+Centre for Economic Policy Research and UK Foreign, Commonwealth and Development
+Office — earthquakes and communal conflict in Indonesia's seismic zone
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2024–
+
+:::
+
+:::: {.what}
+
+[Teaching Assistant, graduate econometrics]{.role}
+
+::: {.org}
+
+Faculty of Economics and Business, Universitas Indonesia
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2023–
+
+:::
+
+:::: {.what}
+
+[Permanent Public Procurement Instructor]{.role}
+
+::: {.org}
+
+Regional Human Resources Development Agency, Government of North Sulawesi
 
 :::
 
@@ -188,33 +232,11 @@ Indonesia — Universitas Indonesia
 
 :::: {.what}
 
-[Secretary, DPD Sulawesi Utara]{.role}
+[Secretary, North Sulawesi Chapter]{.role}
 
 ::: {.org}
 
-Ikatan Ahli Pengadaan Indonesia (IAPI)
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2020–
-
-:::
-
-:::: {.what}
-
-[Probity Advisor and Contract Support Team]{.role}
-
-::: {.org}
-
-National Public Procurement Agency (LKPP)
+Ikatan Ahli Pengadaan Indonesia
 
 :::
 

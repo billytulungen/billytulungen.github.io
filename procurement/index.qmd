@@ -8,12 +8,15 @@ toc: false
 ::: {.lead-note}
 
 I have worked in Indonesian public procurement since 2015 — first inside
-government as a procurement official, commitment-making official, and member of
-provincial selection working groups, and since 2018 as a nationally certified
-facilitator, competency assessor, and advisor. My work sits at the point where
-procurement rules meet procurement practice: how buying decisions are actually
-planned, how contracts are actually managed, and how procurement officials
-actually acquire competence.
+provincial government as an asset and procurement officer, then as a
+commitment-making official and member of the provincial selection working group,
+and from 2021 to 2023 as head of the sub-division responsible for procurement
+advisory and technical guidance across North Sulawesi. Since 2018 I have also
+worked nationally as a certified facilitator, and I now serve as a competency
+assessor for the certification body of Indonesia's National Public Procurement
+Agency. My work sits at the point where procurement rules meet procurement
+practice: how buying decisions are actually planned, how contracts are actually
+managed, and how procurement officials actually acquire competence.
 
 :::
 
@@ -21,7 +24,7 @@ actually acquire competence.
 
 This page describes my professional practice. It is distinct from my
 [academic research](../research.qmd), which is in development, urban, and
-spatial economics. Where the two meet — empirical work on competition and
+regional economics. Where the two meet — empirical work on competition and
 efficiency in Indonesian government procurement — the papers appear under
 Research.
 
@@ -30,7 +33,6 @@ Research.
 ## Areas of expertise
 
 :::: {.grid-2}
-
 
 ::: {.area}
 
@@ -69,9 +71,9 @@ resolution — including construction and consultancy contracts.
 ::: {.area}
 
 #### Competency Development
-Design and delivery of training and competency assessment across the levels of
-Indonesia's public procurement competency framework, from foundation through
-advanced practice.
+Design and delivery of training and competency assessment across all four levels
+of Indonesia's public procurement competency framework, from procurement officer
+to senior public procurement specialist.
 
 :::
 
@@ -91,18 +93,22 @@ organisational procurement regulations for public bodies.
 
 ::: {.years}
 
-2018–
+2025–
 
 :::
 
 :::: {.what}
 
-[Public Procurement Facilitator]{.role}
+[Competency Assessor, LSP LKPP]{.role}
 
 ::: {.org}
 
-Certified at foundation and advanced level by LKPP. Delivers national
-procurement training for government officials and procurement practitioners.
+Appointed under Head of LKPP Decree No. 18 of 2025. Assesses individual
+competency against the national procurement job competency standards (SKJ PBJ)
+and the Indonesian national work competency standards (SKKNI PBJ), across eight
+schemes: commitment-making officer types A, B, and C; special and general
+selection working groups; procurement officer; and senior and associate public
+procurement specialist.
 
 :::
 
@@ -114,18 +120,42 @@ procurement training for government officials and procurement practitioners.
 
 ::: {.years}
 
-2020–
+2023–
 
 :::
 
 :::: {.what}
 
-[Competency Assessor]{.role}
+[Permanent Public Procurement Instructor]{.role}
 
 ::: {.org}
 
-Certified assessor with LSP LKPP and BNSP. Assesses procurement competency at
-levels 2, 3, and 4 of the national framework.
+Regional Human Resources Development Agency (BPSDMD), Government of North
+Sulawesi. Teaches all four competency levels and serves as coach and evaluator
+on the training programmes.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2018–
+
+:::
+
+:::: {.what}
+
+[Public Procurement Facilitator]{.role}
+
+::: {.org}
+
+Certified at foundation and advanced level by LKPP, and as competency
+facilitator for levels 1 through 4.
 
 :::
 
@@ -147,7 +177,7 @@ levels 2, 3, and 4 of the national framework.
 
 ::: {.org}
 
-National Public Procurement Agency (LKPP)
+National Public Procurement Agency (LKPP).
 
 :::
 
@@ -169,7 +199,7 @@ National Public Procurement Agency (LKPP)
 
 ::: {.org}
 
-Tim Pendamping Kontrak, National Public Procurement Agency (LKPP)
+Tim Pendamping Kontrak, National Public Procurement Agency (LKPP).
 
 :::
 
@@ -192,7 +222,7 @@ Tim Pendamping Kontrak, National Public Procurement Agency (LKPP)
 ::: {.org}
 
 Certified by Jimly School of Law and Government under the Supreme Court of the
-Republic of Indonesia
+Republic of Indonesia.
 
 :::
 
@@ -206,18 +236,66 @@ Republic of Indonesia
 
 ::: {.years}
 
-2020–
+2021–2023
 
 :::
 
 :::: {.what}
 
-[Expert team, institutional procurement guidelines]{.role}
+[Provincial procurement advisory and technical guidance]{.role}
 
 ::: {.org}
 
-Universitas Sam Ratulangi (public service agency) and Universitas Negeri Manado
-— drafting procurement regulations for autonomous public bodies.
+Led the North Sulawesi sub-division responsible for advising ministries,
+agencies, local governments, and villages on strategic planning, supplier
+selection, contract management, legal compliance, and the integrated procurement
+information systems (SIRUP, SPSE, e-Catalogue, e-Monev, SIKaP).
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2022–2023
+
+:::
+
+:::: {.what}
+
+[Procurement advisor, Universitas Negeri Manado]{.role}
+
+::: {.org}
+
+Strategic advice and expert opinion on provider selection and contract
+management.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–2021
+
+:::
+
+:::: {.what}
+
+[Procurement policy drafting team, Universitas Sam Ratulangi]{.role}
+
+::: {.org}
+
+Drafted the Rector's Regulation on Goods and Services Procurement for the
+university.
 
 :::
 
@@ -239,33 +317,9 @@ Universitas Sam Ratulangi (public service agency) and Universitas Negeri Manado
 
 ::: {.org}
 
-Training, facilitation, and competency assessment across multiple levels of
+Training, facilitation, coaching, and competency assessment across all levels of
 Indonesia's public procurement competency framework, for central and regional
 government institutions.
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2017–2020
-
-:::
-
-:::: {.what}
-
-[Technical advisory on provincial procurement packages]{.role}
-
-::: {.org}
-
-Technical team and procurement support on construction, equipment, consultancy,
-and services packages across provincial agencies in North Sulawesi, including
-infrastructure works, command-centre systems, and emergency health procurement.
 
 :::
 
@@ -301,13 +355,7 @@ LKPP
 
 :::: {.what}
 
-[Procurement facilitator — foundation and advanced]{.role}
-
-::: {.org}
-
-Including training-of-trainers certification for government procurement
-
-:::
+[Competency Assessor — Public Procurement]{.role}
 
 ::::
 
@@ -323,7 +371,7 @@ LKPP
 
 :::: {.what}
 
-[Competency facilitator — levels 2, 3, and 4]{.role}
+[Public Procurement Competency Facilitator, Levels 1–4]{.role}
 
 ::::
 
@@ -333,13 +381,13 @@ LKPP
 
 ::: {.years}
 
-BNSP
+LKPP
 
 :::
 
 :::: {.what}
 
-[Certified competency assessor]{.role}
+[Advanced Public Procurement Facilitator]{.role}
 
 ::::
 
@@ -349,13 +397,13 @@ BNSP
 
 ::: {.years}
 
-BPKP
+LKPP
 
 :::
 
 :::: {.what}
 
-[Certified auditor]{.role}
+[Public Procurement Advisor]{.role}
 
 ::::
 
@@ -371,13 +419,29 @@ Supreme Court
 
 :::: {.what}
 
-[Certified mediator]{.role}
+[Certified Mediator]{.role}
 
 ::: {.org}
 
-Jimly School of Law and Government
+Jimly School of Law and Government.
 
 :::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+CITI Program
+
+:::
+
+:::: {.what}
+
+[Social and Behavioral Research]{.role}
 
 ::::
 

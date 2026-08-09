@@ -1,14 +1,13 @@
 ---
 title: "Research"
-subtitle: "Development, urban and regional, and spatial economics — with an emphasis on causal inference."
-description-meta: "Working papers, work in progress, publications, and dissertation chapters."
+subtitle: "Development, urban and regional economics — the economic consequences of seismic disasters in Indonesia."
+description-meta: "Working papers, work in progress, publications, grants, and dissertation."
 toc: false
 ---
 
 ## Research interests
 
 :::: {.grid-2}
-
 
 ::: {.area}
 
@@ -36,9 +35,9 @@ resources — including public procurement.
 
 ::: {.area}
 
-#### Spatial Economics
-Geographic exposure measures, spatial dependence, and boundary change in
-long-run village panels.
+#### Applied Econometrics
+Causal inference on long administrative panels, and the measurement problems
+that come with changing administrative boundaries.
 
 :::
 
@@ -47,7 +46,7 @@ long-run village panels.
 ::: {.tags}
 
 [Causal Inference]{} [Difference-in-Differences]{} [Spatial Econometrics]{}
-[Applied Microeconometrics]{} [Administrative & Survey Microdata]{}
+[Geospatial Data Analysis]{} [Administrative & Survey Microdata]{}
 
 :::
 
@@ -73,14 +72,12 @@ Do strong earthquakes increase or reduce communal conflict? We combine seven
 waves of Indonesia's Village Potential Survey (PODES, 2005–2024) with
 village-level USGS ShakeMap intensities. Using a staggered
 difference-in-differences design, we estimate that first observed exposure to
-damage-level shaking (MMI ≥ VI) reduces reported communal conflict by
-approximately 1.1 percentage points against a 4.8 percent pre-exposure mean.
-The decline holds across alternative staggered estimators and a PGA-derived
-exposure measure, but it is carried by the larger earthquakes, concentrated in
-villages with a prior conflict history, and marginal once inference treats the
-earthquake rather than the village as the unit of assignment. The sharper
-evidence is compositional. On identical villages and waves, theft rises by about
-six percentage points while assault does not move and communal violence does not
+damage-level shaking (MMI ≥ VI) reduces reported communal conflict against its
+pre-exposure mean. The decline holds across alternative staggered estimators and
+a PGA-derived exposure measure, but it is carried by the larger earthquakes and
+concentrated in villages with a prior conflict history. The sharper evidence is
+compositional. On identical villages and waves, theft rises by about six
+percentage points while assault does not move and communal violence does not
 rise, and this divergence is the one result that survives shock-level inference.
 The pattern rejects a general improvement in local security. Although we do not
 identify the income or mobilization channels directly, it is consistent with a
@@ -145,7 +142,7 @@ Kementerian/Lembaga di Indonesia
 
 ::: {.paper-meta}
 
-*Indonesian Treasury Review* &nbsp;·&nbsp; [Forthcoming]{.paper-status}
+Billy Tulungen &nbsp;·&nbsp; *Indonesian Treasury Review*, 2021
 
 :::
 
@@ -159,26 +156,38 @@ e-procurement records.
 
 ::::
 
-:::: {.paper}
+## Grants
 
-::: {.paper-title}
+::::: {.entry}
 
-Competitive Bidding in Public Procurement: Empirical Evidence in Indonesia
+::: {.years}
+
+2026–2027
 
 :::
 
-::: {.paper-meta}
+:::: {.what}
 
-[Revise and resubmit]{.paper-status}
+[PhD Research Grant, ReCIPE Programme — £14,040]{.role}
+
+::: {.org}
+
+"Crack Beneath and Between: Earthquakes and Communal Conflict in Indonesia's
+Seismic Zone." Centre for Economic Policy Research (CEPR) and the UK Foreign,
+Commonwealth and Development Office (FCDO).
 
 :::
 
 ::::
 
+:::::
+
 ## Dissertation
 
-**Three essays on natural disasters, social order, and household behaviour in
-Indonesia** — Faculty of Economics and Business, Universitas Indonesia.
+**Shaking Land and Shaking Lives: Essays on the Economic Impacts of Seismic
+Disasters** — Department of Economics, Faculty of Economics and Business,
+Universitas Indonesia. Expected completion February 2028. Supervised by
+M. Halley Yudhistira, Ph.D.
 
 The dissertation asks how large, plausibly exogenous physical shocks propagate
 through village-level social and economic life in a setting where formal

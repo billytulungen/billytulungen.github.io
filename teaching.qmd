@@ -1,36 +1,220 @@
 ---
 title: "Teaching"
-subtitle: "University teaching and professional training in public procurement."
-description-meta: "Courses, teaching materials, and professional training delivery."
+subtitle: "Graduate econometrics teaching at Universitas Indonesia, and public procurement training nationally."
+description-meta: "Courses taught, teaching materials, and professional training delivery."
 toc: false
 ---
 
-## University teaching
+::: {.lead-note}
 
-::: {.note}
-
-**Editorial note — delete this block, and the placeholder entry below it, once
-the first course is added.** List each course as an `.entry`, with links to the
-syllabus, lecture notes, and problem sets once they exist. Keep teaching
-materials in `files/teaching/`.
+I have been a teaching assistant in the Department of Economics, Faculty of
+Economics and Business, Universitas Indonesia since February 2024, working
+almost entirely on the econometrics sequence across the master's and doctoral
+programmes. Separately, I am a permanent public procurement instructor for the
+Government of North Sulawesi and a nationally certified facilitator and
+competency assessor.
 
 :::
+
+## Doctoral programme in Economics (PPIE)
 
 ::::: {.entry}
 
 ::: {.years}
 
-Year
+2026
 
 :::
 
 :::: {.what}
 
-[Course title]{.role}
+[ECES908012 · Advanced Econometrics]{.role}
 
 ::: {.org}
 
-Institution &middot; undergraduate or graduate &middot; lecturer or teaching assistant
+Teaching assistant to Rus'an Nasrudin, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2025
+
+:::
+
+:::: {.what}
+
+[ECES808826 · Econometrics 1]{.role}
+
+::: {.org}
+
+Teaching assistant to Rus'an Nasrudin, Ph.D. and Jahen F. Rezki, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+## Master's programme in Economics (PPIE)
+
+::::: {.entry}
+
+::: {.years}
+
+2026
+
+:::
+
+:::: {.what}
+
+[ECES808832 · Econometrics 2 — Cross-Section and Panel Data]{.role}
+
+::: {.org}
+
+Teaching assistant to I Dewa Gede Karma Wisana, Ph.D. and M. Halley
+Yudhistira, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2025
+
+:::
+
+:::: {.what}
+
+[ECES808826 · Econometrics 1 — regular class]{.role}
+
+::: {.org}
+
+Teaching assistant to Prani Sastiono, Ph.D. and Prita Nurmalia
+Kusumawardhani, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2025
+
+:::
+
+:::: {.what}
+
+[ECES808826 · Econometrics 1 — linkage class]{.role}
+
+::: {.org}
+
+Teaching assistant to Jahen F. Rezki, Ph.D. and Milda Irhamni, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+## Master's programme in Economic Planning and Public Policy (MPKP)
+
+::::: {.entry}
+
+::: {.years}
+
+2026
+
+:::
+
+:::: {.what}
+
+[ECEM801101 · Applied Econometrics]{.role}
+
+::: {.org}
+
+Teaching assistant to Muhammad Hanri, Ph.D. and Prani Sastiono, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2025
+
+:::
+
+:::: {.what}
+
+[ECEM801101 · Applied Econometrics]{.role}
+
+::: {.org}
+
+Teaching assistant to Muhammad Hanri, Ph.D.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2024
+
+:::
+
+:::: {.what}
+
+[ECEM801101 · Applied Econometrics — international class]{.role}
+
+::: {.org}
+
+Teaching assistant to Putu Geniki Lavinia Natih, D.Phil.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2024
+
+:::
+
+:::: {.what}
+
+[ECEM801101 · Applied Econometrics]{.role}
+
+::: {.org}
+
+Teaching assistant to Prof. Dr. Djoni Hartono and Prani Sastiono, Ph.D.
 
 :::
 
@@ -40,11 +224,30 @@ Institution &middot; undergraduate or graduate &middot; lecturer or teaching ass
 
 ## Professional training
 
-Since 2018 I have delivered public procurement training nationally as a
-certified facilitator, and since 2020 I have assessed procurement competency as
-a certified assessor. The training spans the levels of Indonesia's public
-procurement competency framework and is delivered to central and regional
-government institutions.
+::::: {.entry}
+
+::: {.years}
+
+2023–
+
+:::
+
+:::: {.what}
+
+[Permanent public procurement instructor]{.role}
+
+::: {.org}
+
+Regional Human Resources Development Agency (BPSDMD), Government of North
+Sulawesi. Delivers procurement training across all four competency levels, from
+procurement officer through senior procurement specialist, and serves as coach
+and evaluator on the training programmes.
+
+:::
+
+::::
+
+:::::
 
 ::::: {.entry}
 
@@ -56,12 +259,11 @@ government institutions.
 
 :::: {.what}
 
-[Public procurement — foundation level]{.role}
+[Certified procurement facilitator]{.role}
 
 ::: {.org}
 
-Certified facilitator (LKPP). Procurement principles, planning, selection
-methods, and contract basics for officials entering the profession.
+National Public Procurement Agency (LKPP), foundation and advanced level.
 
 :::
 
@@ -73,65 +275,18 @@ methods, and contract basics for officials entering the profession.
 
 ::: {.years}
 
-2020–
+2025–
 
 :::
 
 :::: {.what}
 
-[Public procurement — advanced level]{.role}
+[Competency assessor]{.role}
 
 ::: {.org}
 
-Certified advanced facilitator (LKPP). Procurement strategy, complex packaging,
-contract performance, and problem resolution.
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2020–
-
-:::
-
-:::: {.what}
-
-[Competency assessment — levels 2, 3, and 4]{.role}
-
-::: {.org}
-
-Certified assessor (LSP LKPP / BNSP). Assessment against the national
-procurement competency standard.
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2020–
-
-:::
-
-:::: {.what}
-
-[Curriculum and materials development]{.role}
-
-::: {.org}
-
-Contributor to LKPP training materials, including foundation-level procurement
-under Presidential Regulation 16/2018 and its amendments, and curriculum work on
-e-catalogue and sustainable public procurement.
+Professional Certification Body (LSP) of LKPP. Assesses individual competency
+against the national procurement competency standards.
 
 :::
 

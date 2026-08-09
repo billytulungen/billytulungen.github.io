@@ -1,22 +1,23 @@
 ---
 title: "Professional"
-subtitle: "Government service, advisory work, and professional associations."
+subtitle: "Government service, national procurement roles, advisory work, and professional associations."
 description-meta: "Government experience, advisory roles, and professional service."
 toc: false
 ---
 
 ::: {.lead-note}
 
-I am a civil servant in the Provincial Government of North Sulawesi and have
-held procurement roles across the full cycle of public buying — from procurement
-official and commitment-making official to member of provincial selection
-working groups. That institutional experience is the origin of both my
-professional practice and my research interest in how public resources are
-actually allocated.
+I have been a civil servant in the Provincial Government of North Sulawesi since
+2015, and have held procurement roles across the full cycle of public buying —
+asset management, procurement officer, commitment-making official, selection
+working group, and finally leading the provincial unit responsible for
+procurement advisory and technical guidance. That institutional experience is the
+origin of both my professional practice and my research interest in how public
+resources are actually allocated.
 
 :::
 
-## Government service
+## Government of North Sulawesi
 
 ::::: {.entry}
 
@@ -28,11 +29,12 @@ actually allocated.
 
 :::: {.what}
 
-[Provincial Civil Service Agency (BKD)]{.role}
+[Permanent Public Procurement Instructor]{.role}
 
 ::: {.org}
 
-Government of North Sulawesi Province
+Regional Human Resources Development Agency (BPSDMD). Teaches across all four
+national procurement competency levels and serves as coach and evaluator.
 
 :::
 
@@ -44,17 +46,20 @@ Government of North Sulawesi Province
 
 ::: {.years}
 
-2020–2023
+2021–2023
 
 :::
 
 :::: {.what}
 
-[Commitment-Making Official (PPK)]{.role}
+[Head of Sub-Division, Procurement Assistance, Consultation and Technical Guidance]{.role}
 
 ::: {.org}
 
-Procurement Bureau, Regional Secretariat, North Sulawesi Province
+Led provincial advisory and technical guidance in public procurement, covering
+strategic planning, supplier selection, contract management, legal compliance,
+and the integrated procurement information systems (SIRUP, SPSE, e-Catalogue,
+e-Monev, SIKaP) used across agencies, local governments, and villages.
 
 :::
 
@@ -66,7 +71,7 @@ Procurement Bureau, Regional Secretariat, North Sulawesi Province
 
 ::: {.years}
 
-2020–2023
+2021–2023
 
 :::
 
@@ -76,7 +81,9 @@ Procurement Bureau, Regional Secretariat, North Sulawesi Province
 
 ::: {.org}
 
-Procurement Bureau, Regional Secretariat, North Sulawesi Province
+Prepared and ran provider selection, including electronic catalogue procurement.
+Authorised to determine winning providers for contracts up to IDR 100 billion
+for goods, construction, and services, and up to IDR 10 billion for consultancy.
 
 :::
 
@@ -98,7 +105,9 @@ Procurement Bureau, Regional Secretariat, North Sulawesi Province
 
 ::: {.org}
 
-Regional Education Office, North Sulawesi Province
+Responsible for the full procurement lifecycle: strategic planning, market
+consolidation, technical specification, contract drafting, pricing, payment
+authorisation, contract management, and provider performance evaluation.
 
 :::
 
@@ -110,7 +119,7 @@ Regional Education Office, North Sulawesi Province
 
 ::: {.years}
 
-2020
+2020–2021
 
 :::
 
@@ -120,7 +129,9 @@ Regional Education Office, North Sulawesi Province
 
 ::: {.org}
 
-Procurement Bureau, Regional Secretariat, North Sulawesi Province
+Inventoried provincial procurement packages, conducted market research, and
+formulated procurement strategies for efficiency, transparency, and
+value for money.
 
 :::
 
@@ -142,7 +153,8 @@ Procurement Bureau, Regional Secretariat, North Sulawesi Province
 
 ::: {.org}
 
-Provincial Civil Service Agency, North Sulawesi Province
+Bappenas/Pusbindiklatren domestic scholarship — MPKP, Faculty of Economics and
+Business, Universitas Indonesia.
 
 :::
 
@@ -160,11 +172,11 @@ Provincial Civil Service Agency, North Sulawesi Province
 
 :::: {.what}
 
-[Member, Procurement Selection Working Group]{.role}
+[Member, Procurement Selection Working Group (ad hoc)]{.role}
 
 ::: {.org}
 
-Procurement Service Unit, North Sulawesi Province
+Procurement Service Unit (ULP), North Sulawesi Province.
 
 :::
 
@@ -182,11 +194,12 @@ Procurement Service Unit, North Sulawesi Province
 
 :::: {.what}
 
-[Commitment-Making Official (PPK)]{.role}
+[Asset Management Officer]{.role}
 
 ::: {.org}
 
-Provincial Civil Service Agency, North Sulawesi Province
+Managed the full lifecycle of regional government assets, from needs planning
+and budgeting through inventory control, utilisation, transfer, and disposal.
 
 :::
 
@@ -198,47 +211,50 @@ Provincial Civil Service Agency, North Sulawesi Province
 
 ::: {.years}
 
-2016–2017
+2016
 
 :::
 
 :::: {.what}
 
-[Procurement Official]{.role}
+[Executive Secretary]{.role}
 
 ::: {.org}
 
-Provincial Civil Service Agency, North Sulawesi Province
+Provincial Government of North Sulawesi.
 
 :::
 
 ::::
 
 :::::
+
+## National Public Procurement Agency (LKPP)
 
 ::::: {.entry}
 
 ::: {.years}
 
-2015–2016
+2025–
 
 :::
 
 :::: {.what}
 
-[Work Acceptance Official]{.role}
+[Competency Assessor, Professional Certification Body (LSP)]{.role}
 
 ::: {.org}
 
-Provincial Civil Service Agency, North Sulawesi Province
+Appointed under Head of LKPP Decree No. 18 of 2025. Assesses individual
+competency against the national procurement competency standards (SKJ PBJ and
+SKKNI PBJ) across eight schemes, from procurement officer to senior public
+procurement specialist.
 
 :::
 
 ::::
 
 :::::
-
-## Advisory and technical assistance
 
 ::::: {.entry}
 
@@ -254,7 +270,7 @@ Provincial Civil Service Agency, North Sulawesi Province
 
 ::: {.org}
 
-National Public Procurement Agency (LKPP)
+National Public Procurement Agency (LKPP).
 
 :::
 
@@ -276,7 +292,7 @@ National Public Procurement Agency (LKPP)
 
 ::: {.org}
 
-National Public Procurement Agency (LKPP)
+Tim Pendamping Kontrak, National Public Procurement Agency (LKPP).
 
 :::
 
@@ -288,18 +304,65 @@ National Public Procurement Agency (LKPP)
 
 ::: {.years}
 
-2020–
+2018–
 
 :::
 
 :::: {.what}
 
-[Expert team, institutional procurement guidelines]{.role}
+[Certified Procurement Facilitator]{.role}
 
 ::: {.org}
 
-Universitas Sam Ratulangi (public service agency status), 2020– ; Universitas
-Negeri Manado, 2021–
+Foundation and advanced level, National Public Procurement Agency (LKPP).
+
+:::
+
+::::
+
+:::::
+
+## Advisory
+
+::::: {.entry}
+
+::: {.years}
+
+2022–2023
+
+:::
+
+:::: {.what}
+
+[Procurement Advisor]{.role}
+
+::: {.org}
+
+Universitas Negeri Manado. Strategic advice and expert opinion on provider
+selection and contract management.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2020–2021
+
+:::
+
+:::: {.what}
+
+[Procurement Policy Drafting Team]{.role}
+
+::: {.org}
+
+Universitas Sam Ratulangi. Drafted the Rector's Regulation on Goods and Services
+Procurement for the university.
 
 :::
 
@@ -322,7 +385,7 @@ Negeri Manado, 2021–
 ::: {.org}
 
 Certified by Jimly School of Law and Government under the Supreme Court of the
-Republic of Indonesia
+Republic of Indonesia.
 
 :::
 
@@ -346,7 +409,7 @@ Republic of Indonesia
 
 ::: {.org}
 
-Ikatan Ahli Pengadaan Indonesia (Indonesian Procurement Experts Association)
+Ikatan Ahli Pengadaan Indonesia (Indonesian Procurement Experts Association).
 
 :::
 
@@ -368,7 +431,7 @@ Ikatan Ahli Pengadaan Indonesia (Indonesian Procurement Experts Association)
 
 ::: {.org}
 
-Ikatan Ahli Pengadaan Indonesia
+Ikatan Ahli Pengadaan Indonesia.
 
 :::
 
@@ -391,30 +454,7 @@ Current
 ::: {.org}
 
 Forum Ahli Kontrak Pemerintah Indonesia (Indonesian Government Contract Experts
-Forum)
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2020–
-
-:::
-
-:::: {.what}
-
-[Competency Assessor]{.role}
-
-::: {.org}
-
-Professional Certification Body (LSP) of LKPP and the National Professional
-Certification Agency (BNSP)
+Forum).
 
 :::
 
