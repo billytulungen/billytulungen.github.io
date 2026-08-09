@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------
 $ink:          #16181d;   // primary text
 $ink-muted:    #5c626c;   // secondary text, metadata
-$ink-faint:    #8b909a;   // tertiary, dates, captions
+$ink-faint:    #6e747c;   // tertiary, dates, captions — 4.6:1 on $paper (AA)
 $paper:        #fcfcfb;   // page background (a hair warm)
 $panel:        #f5f4f1;   // sunken panel background
 $rule:         #e4e2dd;   // hairline borders
@@ -62,7 +62,7 @@ main.content,
 
 .navbar > .container-fluid,
 .nav-footer {
-  max-width: 940px;
+  max-width: 820px;
   margin-left: auto;
   margin-right: auto;
 }
