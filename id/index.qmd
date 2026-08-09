@@ -32,16 +32,16 @@ Ekonomi Pembangunan &middot; Ekonomi Perkotaan dan Wilayah &middot; Ekonomi Poli
 ::: {.hero-bio}
 
 Saya kandidat doktor ilmu ekonomi di Universitas Indonesia. Disertasi saya,
-*Shaking Land and Shaking Lives*, meneliti bagaimana guncangan gempa berskala
-besar mengubah tatanan sosial, perilaku rumah tangga, dan perekonomian lokal di
-desa-desa Indonesia. Bab pertamanya memperoleh hibah riset dari ReCIPE
-Programme, yang didanai Centre for Economic Policy Research dan UK FCDO.
+*Shaking Land and Shaking Lives*, menelusuri apa yang terjadi pada sebuah desa
+setelah diguncang gempa yang merusak: pada tatanan sosialnya, pada perilaku
+rumah tangganya, dan pada perekonomian setempat. Bab pertamanya didanai hibah
+riset ReCIPE Programme dari Centre for Economic Policy Research dan UK FCDO.
 
-Di luar riset, saya PNS Pemerintah Provinsi Sulawesi Utara dan telah bekerja di
-bidang pengadaan barang/jasa pemerintah sejak 2015: dari pengurus barang,
-pejabat pembuat komitmen, dan pokja pemilihan, hingga memimpin sub bagian
-pendampingan dan bimbingan teknis PBJ provinsi. Secara nasional saya fasilitator
-bersertifikat LKPP sejak 2018, dan kini asesor kompetensi pada LSP LKPP,
+Di luar itu saya PNS Pemerintah Provinsi Sulawesi Utara, dan sudah sepuluh tahun
+berada di dunia pengadaan barang/jasa pemerintah. Mulai dari pengurus barang,
+pejabat pembuat komitmen, pokja pemilihan, sampai memimpin sub bagian
+pendampingan dan bimbingan teknis PBJ provinsi. Di tingkat nasional saya
+fasilitator LKPP sejak 2018, dan sekarang asesor kompetensi di LSP LKPP,
 advisor PBJ, serta anggota tim pendamping kontrak.
 
 :::
@@ -64,26 +64,27 @@ advisor PBJ, serta anggota tim pendamping kontrak.
 
 ::: {.note}
 
-Halaman berbahasa Indonesia ini ditujukan bagi rekan-rekan di lingkungan
-pengadaan barang/jasa pemerintah. Rekam jejak lengkap yang bertanggal, daftar
-publikasi, riwayat mengajar, dan CV tersedia pada
-[versi bahasa Inggris](../index.qmd), yang menjadi rujukan utama.
+Halaman berbahasa Indonesia ini saya siapkan untuk rekan-rekan di lingkungan
+pengadaan. Riwayat lengkap beserta tanggalnya, daftar publikasi, riwayat
+mengajar, dan CV ada di [versi bahasa Inggris](../index.qmd), dan halaman itu
+yang saya perbarui lebih dulu.
 
 :::
 
 ## Riset
 
-Disertasi saya menanyakan apa yang terjadi pada sebuah desa setelah diguncang
-gempa yang merusak. Jawabannya ternyata tidak searah. Menggunakan tujuh
-gelombang Podes 2005–2024 yang dipadankan dengan peta intensitas guncangan USGS
-ShakeMap, konflik komunal justru **turun** sekitar 1,5 poin persen terhadap
-basis 2,4 persen, sementara pada desa dan gelombang yang sama **pencurian naik**
-5,8 poin persen dan penganiayaan tidak bergerak.
+Dugaan yang lazim, gempa besar memicu konflik. Ternyata tidak sesederhana itu.
 
-Pola itu menolak tafsir bahwa keamanan membaik secara umum. Yang berubah adalah
-*jenis* kekerasan yang mampu diproduksi sebuah komunitas: guncangan besar
-menaikkan insentif ekonomi untuk kejahatan individual, sekaligus melemahkan
-kapasitas untuk mengorganisasi kekerasan kolektif.
+Saya memadankan tujuh gelombang Podes 2005–2024 dengan peta intensitas guncangan
+USGS ShakeMap. Hasilnya, konflik komunal justru **turun** sekitar 1,5 poin
+persen dari basis 2,4 persen. Tetapi di desa dan gelombang yang sama,
+**pencurian naik** 5,8 poin persen, sementara penganiayaan tidak bergerak sama
+sekali.
+
+Jadi keamanan tidak membaik. Yang berubah adalah *jenis* kekerasan yang sanggup
+dihasilkan sebuah komunitas. Guncangan besar menaikkan dorongan ekonomi untuk
+kejahatan perorangan, dan pada saat yang sama melumpuhkan kemampuan warga
+mengorganisasi kekerasan bersama.
 
 ::: {.paper-links style="margin-top:1rem"}
 
@@ -93,9 +94,9 @@ kapasitas untuk mengorganisasi kekerasan kolektif.
 
 ## Pengadaan publik
 
-Bidang keahlian saya adalah perencanaan dan strategi pengadaan, penyusunan
-spesifikasi dan harga perkiraan, pemilihan penyedia, manajemen kontrak, serta
-pengembangan kompetensi PBJ.
+Keahlian saya berkisar pada perencanaan dan strategi pengadaan, penyusunan
+spesifikasi dan HPS, pemilihan penyedia, manajemen kontrak, dan pengembangan
+kompetensi PBJ.
 
 ::: {.paper-links style="margin-top:0.9rem"}
 

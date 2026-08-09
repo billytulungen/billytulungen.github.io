@@ -8,12 +8,11 @@ toc: false
 
 ::: {.lead-note}
 
-Pengadaan publik Indonesia menghasilkan aturan dalam jumlah luar biasa banyak,
-dan tulisan reflektif tentang praktiknya dalam jumlah luar biasa sedikit. Kita
-punya banyak penjelasan tentang apa yang boleh dan tidak boleh, tetapi sedikit
-sekali pembahasan tentang mengapa keputusan pengadaan diambil sebagaimana
-adanya, mengapa sering meleset, dan apa yang sebenarnya perlu diperdebatkan
-profesi ini.
+Aturan pengadaan di Indonesia berlimpah. Tulisan yang memikirkan praktiknya,
+hampir tidak ada. Kita punya banyak sekali penjelasan tentang apa yang boleh dan
+tidak boleh, tetapi nyaris tidak ada pembahasan tentang mengapa sebuah keputusan
+pengadaan diambil, mengapa hasilnya sering meleset, dan apa yang sebenarnya
+layak diperdebatkan di profesi ini.
 
 Halaman ini saya niatkan untuk mengisi sebagian celah itu.
 
@@ -21,8 +20,8 @@ Halaman ini saya niatkan untuk mengisi sebagian celah itu.
 
 ::: {.note}
 
-Tulisan sedang disiapkan. Judul-judul di bawah adalah yang saya rencanakan lebih
-dahulu, dan akan terbit di sini satu per satu.
+Tulisannya sedang saya siapkan. Judul di bawah ini yang saya kerjakan lebih
+dulu, dan akan terbit satu per satu.
 
 :::
 
