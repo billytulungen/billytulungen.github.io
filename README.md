@@ -70,10 +70,15 @@ Insights section at the foot of `procurement/index.qmd`. Start an essay from
 
 ## Custom domain
 
-billytulungen.com is registered but not yet live. At the registrar, create four
-A records on the apex host pointing to 185.199.108.153, 185.199.109.153,
-185.199.110.153, and 185.199.111.153, and a CNAME for `www` pointing to
-`billytulungen.github.io.`
+billytulungen.com is registered at Rumahweb but not yet live. Two steps, in
+order, because A records cannot resolve on a domain whose nameservers are unset:
+
+1. **Pengaturan > Pengaturan Nameserver**: nsid1.rumahweb.com,
+   nsid2.rumahweb.net, nsid3.rumahweb.biz, nsid4.rumahweb.org. Confirm DNSSEC
+   is off.
+2. **Pengaturan > Manajemen DNS**: four A records on host `@` pointing to
+   185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153, and a
+   CNAME on host `www` pointing to `billytulungen.github.io.`
 
 Then run the switch-over, which refuses to act until DNS actually resolves to
 all four addresses. Committing a `CNAME` before that would make GitHub redirect

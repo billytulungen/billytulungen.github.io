@@ -25,7 +25,41 @@ EXPECTED=(185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153)
 
 echo "Checking DNS for $DOMAIN ..."
 
-# dig is not always available in a sandbox; DNS-over-HTTPS always is.
+doh () {  # $1 = name, $2 = type -> newline-separated answers
+  curl -s --max-time 20 "https://dns.google/resolve?name=$1&type=$2" \
+    | /usr/bin/python3 -c "
+import json,sys
+d=json.load(sys.stdin)
+print('\n'.join(a['data'] for a in (d.get('Answer') or [])))
+"
+}
+
+# Two different failures need two different fixes, so tell them apart: a domain
+# with no nameservers cannot have A records at all.
+ns=$(doh "$DOMAIN" NS)
+if [[ -z "$ns" ]]; then
+  cat >&2 <<EOF
+
+The domain has no working nameservers yet, so no DNS record of any kind can
+resolve. Fix that first; adding A records before this will do nothing.
+
+At Rumahweb: Domain > billytulungen.com > Pengaturan > Pengaturan Nameserver,
+and set all four:
+
+  nsid1.rumahweb.com
+  nsid2.rumahweb.net
+  nsid3.rumahweb.biz
+  nsid4.rumahweb.org
+
+Also check Pengaturan > DNSSEC is off. DNSSEC left half-configured produces
+exactly this failure.
+
+Then wait for the change to propagate and run this script again; it will tell
+you what to do next.
+EOF
+  exit 1
+fi
+
 resolved=$(curl -s --max-time 20 "https://dns.google/resolve?name=${DOMAIN}&type=A" \
   | /usr/bin/python3 -c "
 import json,sys
@@ -36,15 +70,17 @@ print(' '.join(sorted(a['data'] for a in (d.get('Answer') or []) if a.get('type'
 if [[ -z "$resolved" ]]; then
   cat >&2 <<EOF
 
-DNS is not ready. $DOMAIN does not resolve to anything yet.
+Nameservers answer, but $DOMAIN has no A records yet.
 
-At your registrar, create four A records on the apex (host "@"):
+At Rumahweb: Domain > billytulungen.com > Pengaturan > Manajemen DNS, then
+Add New Record four times, type A, host "@" (or leave the name blank):
+
   ${EXPECTED[0]}
   ${EXPECTED[1]}
   ${EXPECTED[2]}
   ${EXPECTED[3]}
 
-and a CNAME record for host "www" pointing to:
+and once more, type CNAME, host "www", value:
   billytulungen.github.io.
 
 Then run this script again. Propagation usually takes minutes but can take
