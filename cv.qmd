@@ -53,7 +53,7 @@ Supervisor: M. Halley Yudhistira, Ph.D. Co-supervisor: Jahen F. Rezki, Ph.D.
 
 :::: {.what}
 
-[Master of Economics, Planning and Public Policy]{.role}
+[M.E., Planning and Public Policy (MPKP)]{.role}
 
 ::: {.org}
 
