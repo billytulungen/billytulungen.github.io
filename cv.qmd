@@ -7,16 +7,6 @@ toc: false
 
 [Download CV (PDF)](files/cv-billy-tulungen.pdf){.cv-download}
 
-::: {.note}
-
-**Editorial note — delete this block once the file is in place.** Copy your
-March 2026 academic CV to `files/cv-billy-tulungen.pdf`. That version is already
-safe to publish. Do **not** publish the two CVs in `~/Downloads` — they contain
-NIK, NIP, NPWP, bank account details, date of birth, and your personal mobile
-number.
-
-:::
-
 ## Contact
 
 Department of Economics, Faculty of Economics and Business<br>

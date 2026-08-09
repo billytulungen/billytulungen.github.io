@@ -1,0 +1,285 @@
+% ---------------------------------------------------------------------------
+% Public academic CV — Billy Thandy Tulungen
+%
+% Built from the same verified content as the website, so the two cannot drift.
+% Deliberately excludes NIK, NIP, NPWP, bank details, date of birth, home
+% address, and personal mobile number. Referee contact uses institutional
+% addresses only.
+%
+% Compile:  pdflatex cv.tex  (run once; no bibliography)
+% Output:   move cv.pdf to files/cv-billy-tulungen.pdf
+% ---------------------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgpagella}
+\usepackage{textcomp}
+\usepackage{microtype}
+\usepackage[margin=0.95in,top=0.75in,bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{ink}{HTML}{16181D}
+\definecolor{muted}{HTML}{5C626C}
+\definecolor{accent}{HTML}{1D3F66}
+
+\color{ink}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+
+% Section headings: small caps over a hairline rule
+\titleformat{\section}
+  {\normalfont\large\scshape}{}{0pt}{}[\vspace{-0.55em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{1.05em}{0.55em}
+
+% Two-column entry: left = date, right = content
+\newcommand{\entry}[2]{%
+  \begin{minipage}[t]{0.16\textwidth}\raggedright\color{muted}\small #1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{0.82\textwidth}#2\end{minipage}%
+  \vspace{0.3em}\par}
+
+% Full-width entry, for blocks with no date in the left column
+\newcommand{\fentry}[1]{#1\vspace{0.3em}\par}
+
+\newcommand{\org}[1]{{\small\color{muted} #1}}
+
+\begin{document}
+
+% ------------------------------------------------------------------ header --
+{\LARGE\bfseries Billy Thandy Tulungen}\\[0.5em]
+{\color{muted}
+Department of Economics, Faculty of Economics and Business\\
+Graduate School Building, 2nd Floor, Widjojo Nitisastro Campus\\
+Universitas Indonesia, Depok 16424, Indonesia\\[0.3em]
+\href{mailto:billy.thandy21@ui.ac.id}{billy.thandy21@ui.ac.id}}
+
+\vspace{0.4em}
+
+% --------------------------------------------------------------- education --
+\section{Education}
+
+\entry{2023--2028}{%
+  \textbf{Ph.D. Candidate in Economics}, Universitas Indonesia\\
+  \org{Dissertation: \emph{Shaking Land and Shaking Lives: Essays on the
+  Economic Impacts of Seismic Disasters}. Expected February 2028.
+  Supervisor: M. Halley Yudhistira, Ph.D.}}
+
+\entry{2020}{%
+  \textbf{M.E., Economics, Planning and Public Policy}, Universitas Indonesia\\
+  \org{Thesis on competitive bidding in Indonesian government procurement; one
+  of three theses at the faculty selected for examination by the Minister of
+  Finance of the Republic of Indonesia.}}
+
+\entry{2015}{%
+  \textbf{S.IP., Government Science, Financial Management}\\
+  \org{Institut Pemerintahan Dalam Negeri (Institute of Home Affairs
+  Governance).}}
+
+% ------------------------------------------------------------------ fields --
+\section{Research Fields}
+
+\entry{Primary}{Development economics; urban and regional economics.}
+\entry{Secondary}{Political economics; applied econometrics; public procurement.}
+
+% ------------------------------------------------------------ publications --
+\section{Publications}
+
+\entry{2021}{%
+  ``Kompetisi dan Efisiensi pada Pengadaan Pemerintah: Bukti Empiris pada
+  Kementerian/Lembaga di Indonesia,'' with Vid Adrison.\\
+  \org{\emph{Indonesian Treasury Review}, 6(1), 19--29.
+  \href{https://doi.org/10.33105/itrev.v6i1.225}{doi:10.33105/itrev.v6i1.225}}}
+
+% --------------------------------------------------------- working papers --
+\section{Working Papers}
+
+\entry{2026}{%
+  ``Motive Without Mobilization? Earthquakes and Communal Conflict in
+  Indonesia.''\\
+  \org{Dissertation chapter. Seven waves of Indonesia's Village Potential
+  Survey (2005--2024) matched to village-level USGS ShakeMap intensities.
+  Damage-level shaking reduces reported communal conflict by 1.5 percentage
+  points against a 2.4 percent baseline, while theft rises by 5.8 points on the
+  same villages and waves.}}
+
+\section{Work in Progress}
+
+\entry{2026--}{%
+  ``Faith after the Shock: Earthquakes, Religious Expenditure, and the
+  Insurance Value of Religion in Indonesia.''\\
+  \org{Dissertation chapter. Household religious and ceremonial expenditure
+  against village-level earthquake exposure, separating the income effect from
+  the club-good and coping channels.}}
+
+% ----------------------------------------------------------------- grants --
+\section{Grants, Scholarships, and Awards}
+
+\entry{2026--2027}{%
+  \textbf{PhD Research Grant, ReCIPE Programme} --- \textsterling 14,040\\
+  \org{``Crack Beneath and Between: Earthquakes and Communal Conflict in
+  Indonesia's Seismic Zone.'' Centre for Economic Policy Research (CEPR) and
+  the UK Foreign, Commonwealth and Development Office (FCDO).}}
+
+\entry{2023--2028}{\textbf{Doctoral Scholarship}, Government of North Sulawesi.}
+
+\entry{2018--2020}{\textbf{Master's Scholarship}, National Development Planning
+  Agency of the Republic of Indonesia (Bappenas).}
+
+\entry{2011--2015}{\textbf{Undergraduate Full Scholarship}, Ministry of Home
+  Affairs of the Republic of Indonesia.}
+
+\entry{2010}{Finalist, National Mathematics Olympiad, Indonesia. First place,
+  Provincial Mathematics Olympiad, North Sulawesi.}
+
+% --------------------------------------------------------------- teaching --
+\section{Teaching}
+
+Teaching assistant, Faculty of Economics and Business, Universitas Indonesia,
+since February 2024.
+
+\vspace{0.7em}
+
+\entry{2026}{ECES908012 \textperiodcentered\ Advanced Econometrics
+  \emph{(doctoral)}\\ \org{TA to Rus'an Nasrudin, Ph.D.}}
+
+\entry{2025}{ECES808826 \textperiodcentered\ Econometrics 1 \emph{(doctoral)}\\
+  \org{TA to Rus'an Nasrudin, Ph.D. and Jahen F. Rezki, Ph.D.}}
+
+\entry{2026}{ECES808832 \textperiodcentered\ Econometrics 2, Cross-Section and
+  Panel Data \emph{(master's)}\\
+  \org{TA to I Dewa Gede Karma Wisana, Ph.D. and M. Halley Yudhistira, Ph.D.}}
+
+\entry{2025}{ECES808826 \textperiodcentered\ Econometrics 1, regular and
+  linkage classes \emph{(master's)}\\
+  \org{TA to Prani Sastiono, Ph.D., Prita Nurmalia Kusumawardhani, Ph.D.,
+  Jahen F. Rezki, Ph.D., and Milda Irhamni, Ph.D.}}
+
+\entry{2024--2026}{ECEM801101 \textperiodcentered\ Applied Econometrics,
+  regular and international classes \emph{(MPKP)}\\
+  \org{TA to Prof. Dr. Djoni Hartono, Prani Sastiono, Ph.D., Muhammad Hanri,
+  Ph.D., and Putu Geniki Lavinia Natih, D.Phil.}}
+
+% --------------------------------------------------- professional (govt) --
+\section{Professional Experience}
+
+Civil servant, Provincial Civil Service Agency (Badan Kepegawaian Daerah),
+Provincial Government of North Sulawesi, since 2015.
+
+\vspace{0.7em}
+
+\entry{2023--}{\textbf{Internal Procurement Facilitator}, provincial
+  procurement training institution (LPPBJ)\\
+  \org{Delivered through the Regional Human Resources Development Agency.
+  Teaches all four national competency levels; coach and evaluator.}}
+
+\entry{2021--2023}{\textbf{Head of Sub-Division}, Procurement Assistance,
+  Consultation and Technical Guidance\\
+  \org{Led provincial procurement advisory across agencies, local governments,
+  and villages: strategic planning, supplier selection, contract management,
+  legal compliance, and the integrated procurement information systems.}}
+
+\entry{2021--2023}{\textbf{Member, Procurement Selection Working Group}\\
+  \org{Authorised to determine winning providers for contracts up to
+  IDR 100 billion for goods, construction, and services, and IDR 10 billion for
+  consultancy.}}
+
+\entry{2020--2022}{\textbf{Commitment-Making Official (PPK)}\\
+  \org{Full procurement lifecycle: strategic planning, technical specification,
+  contract drafting, pricing, payment authorisation, and provider performance
+  evaluation.}}
+
+\entry{2020--2021}{\textbf{Procurement Strategy Analyst}\\
+  \org{Provincial package inventory, market research, and procurement strategy
+  formulation.}}
+
+\entry{2018--2020}{\textbf{Study leave for graduate study}
+  \org{(Bappenas scholarship).}}
+
+\entry{2017--2018}{\textbf{Asset Management Officer}\\
+  \org{Full lifecycle of regional government assets, from needs planning and
+  budgeting to inventory control, transfer, and disposal.}}
+
+\entry{2015--2016}{\textbf{Civil servant, Ministry of Home Affairs}, seconded to
+  the Provincial Civil Service Agency, North Sulawesi.}
+
+% ---------------------------------------------------------- procurement --
+\section{Public Procurement}
+
+\entry{2025--}{\textbf{Competency Assessor}, Professional Certification Body
+  (LSP) of the National Public Procurement Agency (LKPP)\\
+  \org{Appointed under Head of LKPP Decree No. 18 of 2025. Assesses competency
+  against the national standards across eight schemes, from procurement officer
+  to senior public procurement specialist.}}
+
+\entry{2020--}{\textbf{Probity Advisor} and \textbf{Contract Support Team},
+  LKPP.}
+
+\entry{2020--}{\textbf{Mediator}, certified by Jimly School of Law and
+  Government under the Supreme Court of the Republic of Indonesia.}
+
+\entry{2018--}{\textbf{Certified Procurement Facilitator}, LKPP\\
+  \org{Competency facilitator for levels 1--4 and the role-based schemes:
+  commitment-making officer types A, B, and C; procurement officer; general and
+  special selection working groups.}}
+
+\entry{2022--2023}{\textbf{Procurement Advisor}, Universitas Negeri Manado.}
+
+\entry{2020--2021}{\textbf{Procurement Policy Drafting Team}, Universitas Sam
+  Ratulangi\\
+  \org{Drafted the Rector's Regulation on Goods and Services Procurement.}}
+
+\vspace{0.3em}
+% Only certifications not already implied by a dated role above.
+\entry{Also certified}{%
+  Certificate Professional in Public Procurement (World Bank)
+  \textperiodcentered\ Public--Private Partnership (KPBU) procurement, 2025
+  \textperiodcentered\ Village procurement, 2025
+  \textperiodcentered\ Social and Behavioral Research (CITI Program).}
+
+% ------------------------------------------------------------- service --
+\section{Professional Service}
+
+\entry{2024--2027}{\textbf{Secretary}, North Sulawesi chapter, Ikatan Ahli
+  Pengadaan Indonesia.}
+
+\entry{2020--2023}{\textbf{Head of Procurement Competency Development}, North
+  Sulawesi chapter, Ikatan Ahli Pengadaan Indonesia.}
+
+\entry{Current}{\textbf{Provincial Coordinator} for North Sulawesi, Forum Ahli
+  Kontrak Pemerintah Indonesia.}
+
+% -------------------------------------------------------------- skills --
+\section{Skills}
+
+\entry{Technical}{Advanced econometrics, spatial econometrics, causal
+  inference, geospatial analysis (GIS).}
+
+\entry{Software}{Stata, R, Python, \LaTeX, QGIS.}
+
+\entry{Languages}{Indonesian (native), English (professional working
+  proficiency).}
+
+% ---------------------------------------------------------- references --
+\section{References}
+
+\fentry{%
+  \textbf{M. Halley Yudhistira, Ph.D.} --- Associate Professor of Economics,
+  Universitas Indonesia \textperiodcentered\
+  \org{\href{mailto:m.halley@ui.ac.id}{m.halley@ui.ac.id}}}
+
+\fentry{%
+  \textbf{Jahen F. Rezki, Ph.D.} --- Assistant Professor of Economics,
+  Universitas Indonesia \textperiodcentered\
+  \org{\href{mailto:jahen.fr@ui.ac.id}{jahen.fr@ui.ac.id}}}
+
+\vfill
+{\footnotesize\color{muted} This version: August 2026.}
+
+\end{document}

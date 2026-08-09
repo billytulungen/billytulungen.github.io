@@ -78,12 +78,19 @@ listing:
 - [ ] Add a professional photograph at `assets/img/profile.jpg`, then replace
       the `.photo-placeholder` div in `index.qmd` with
       `![](assets/img/profile.jpg)`.
-- [ ] Add `assets/img/favicon.png` (512×512 works fine), then uncomment the
-      `favicon:` line in `_quarto.yml`.
-- [ ] Export a **public** CV to `files/cv-billy-tulungen.pdf` — the March 2026
-      academic CV is already safe. Do **not** use the CVs in `~/Downloads`:
-      they carry NIK, NIP, NPWP, bank account, date of birth, and mobile number.
-      Until this file exists the CV download button is a dead link.
+- [x] ~~Favicon~~ — `assets/img/favicon.png`, a BT monogram in the site accent
+      colour. Source: the PIL snippet in the commit that added it.
+- [x] ~~Public CV PDF~~ — `files/cv-billy-tulungen.pdf`, built from
+      `files/src/cv.tex`. Edit the `.tex` and recompile; never hand-edit the
+      PDF:
+
+      ```bash
+      cd files/src && pdflatex cv.tex && cp cv.pdf ../cv-billy-tulungen.pdf
+      ```
+
+      It deliberately omits NIK, NIP, NPWP, bank details, date of birth, home
+      address, and mobile number, and gives referees' institutional emails only.
+      Do **not** publish the CVs in `~/Downloads`, which carry all of the above.
 - [ ] Put the Paper 1 draft in `files/` and link it from `research.qmd`, so
       readers do not have to email you for it.
 - [ ] Create Google Scholar and ORCID profiles, then add them to the

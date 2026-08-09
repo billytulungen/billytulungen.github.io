@@ -15,9 +15,7 @@ website:
   title: "Billy Tulungen"
   description: "Economist, researcher, and public procurement expert. PhD candidate in Economics, Universitas Indonesia."
   site-url: "https://billytulungen.github.io"
-  # Uncomment once the file exists — a declared favicon that is missing 404s on
-  # every page.
-  # favicon: assets/img/favicon.png
+  favicon: assets/img/favicon.png
   open-graph: true
   twitter-card: false
 
