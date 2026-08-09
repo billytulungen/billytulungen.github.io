@@ -1,0 +1,82 @@
+---
+title: "Tulisan"
+subtitle: "Catatan pendek tentang praktik, strategi, dan arah pengadaan publik Indonesia."
+description-meta: "Esai Billy Tulungen tentang praktik dan kebijakan pengadaan barang/jasa pemerintah."
+lang: id
+toc: false
+---
+
+::: {.lead-note}
+
+Pengadaan publik Indonesia menghasilkan aturan dalam jumlah luar biasa banyak,
+dan tulisan reflektif tentang praktiknya dalam jumlah luar biasa sedikit. Kita
+punya banyak penjelasan tentang apa yang boleh dan tidak boleh, tetapi sedikit
+sekali pembahasan tentang mengapa keputusan pengadaan diambil sebagaimana
+adanya, mengapa sering meleset, dan apa yang sebenarnya perlu diperdebatkan
+profesi ini.
+
+Halaman ini saya niatkan untuk mengisi sebagian celah itu.
+
+:::
+
+::: {.note}
+
+Tulisan sedang disiapkan. Judul-judul di bawah adalah yang saya rencanakan lebih
+dahulu, dan akan terbit di sini satu per satu.
+
+:::
+
+## Sedang disiapkan
+
+::: {.insight-item}
+
+### Bukan Sekadar Harga Terendah: Apa Arti Value dalam Pengadaan Publik
+Mengapa penawaran terendah adalah aturan pengambilan keputusan, bukan hasil, dan
+apa yang direlakan pembeli publik ketika harga menjadi satu-satunya dimensi yang
+dinilai.
+
+:::
+
+::: {.insight-item}
+
+### Strategi Pengadaan Ditentukan Sebelum Tender Dibuka
+Pemaketan, pendekatan pasar, dan jenis kontrak menentukan rentang hasil yang
+mungkin dicapai. Ketika pengumuman terbit, sebagian besar nilai sudah dimenangkan
+atau hilang.
+
+:::
+
+::: {.insight-item}
+
+### Mengelola Kinerja Kontrak, Bukan Dokumen Kontrak
+Praktik kita kuat pada kepatuhan dokumen dan lemah pada manajemen kinerja. Apa
+yang berubah ketika kontrak diperlakukan sebagai instrumen manajemen, bukan
+artefak hukum.
+
+:::
+
+::: {.insight-item}
+
+### Menimbang Ulang Matriks Kraljic untuk Pengadaan Pemerintah
+Model portofolio yang dirancang untuk manufaktur swasta diajarkan luas kepada
+pembeli publik. Di mana ia berlaku, di mana ia menyesatkan, dan apa yang perlu
+diperhitungkan padanannya di sektor publik.
+
+:::
+
+::: {.insight-item}
+
+### Dari Dashboard Pengadaan ke Pipeline yang Utuh
+Indonesia sudah berinvestasi besar untuk mengumpulkan data pengadaan. Masalah
+yang tersisa adalah datanya dilaporkan, bukan dipakai.
+
+:::
+
+::: {.insight-item}
+
+### Kecerdasan Buatan dan Masa Depan Pengadaan Publik
+Bagian mana dari siklus pengadaan yang benar-benar dapat diotomasi, bagian mana
+yang merupakan pertimbangan yang harus tetap dipegang pejabat yang bertanggung
+jawab, dan apa implikasinya bagi cara pengelola pengadaan dilatih.
+
+:::

@@ -1,0 +1,157 @@
+---
+title: "Praktik Pengadaan Publik"
+subtitle: "Strategi pengadaan, manajemen kontrak, dan pengembangan kompetensi PBJ."
+description-meta: "Keahlian dan praktik profesional Billy Tulungen di bidang pengadaan barang/jasa pemerintah."
+lang: id
+toc: false
+---
+
+::: {.lead-note}
+
+Saya bekerja di bidang pengadaan barang/jasa pemerintah sejak 2015, mula-mula di
+dalam pemerintahan daerah sebagai pengurus barang, pejabat pembuat komitmen, dan
+anggota pokja pemilihan, lalu memimpin sub bagian yang bertanggung jawab atas
+pendampingan, konsultasi, dan bimbingan teknis PBJ di Sulawesi Utara. Sejak 2018
+saya juga bekerja pada tingkat nasional sebagai fasilitator bersertifikat LKPP,
+dan sejak 2025 sebagai asesor kompetensi pada Lembaga Sertifikasi Profesi LKPP.
+
+Titik berat pekerjaan saya ada pada pertemuan antara aturan dan praktik: bagaimana
+keputusan belanja benar-benar direncanakan, bagaimana kontrak benar-benar
+dikelola, dan bagaimana pengelola pengadaan benar-benar memperoleh kompetensinya.
+
+:::
+
+## Cara saya memandang pengadaan
+
+Sebagian besar kegagalan pengadaan sudah ditentukan **sebelum tender dibuka**.
+Pemaketan, pendekatan pasar, jenis kontrak, dan penjadwalan menentukan rentang
+hasil yang mungkin dicapai. Ketika pengumuman tender terbit, sebagian besar nilai
+sudah dimenangkan atau hilang.
+
+Dua dokumen yang paling sering menentukan apakah proses yang benar-benar
+kompetitif mungkin terjadi adalah **spesifikasi dan harga perkiraan sendiri**.
+Spesifikasi yang baik menggambarkan kebutuhan, bukan produk tertentu. HPS yang
+baik sanggup dipertanggungjawabkan ketika diperiksa.
+
+Metode pemilihan adalah **pilihan kebijakan, bukan formalitas administratif**.
+Menempatkan harga terendah sebagai satu-satunya dimensi yang dinilai adalah
+keputusan, dan keputusan itu punya konsekuensi yang harus disadari.
+
+Terakhir, praktik PBJ Indonesia kuat pada kepatuhan dokumen dan lemah pada
+manajemen kinerja. Kontrak lebih sering diperlakukan sebagai artefak hukum
+daripada sebagai instrumen manajemen. Di situlah menurut saya ruang perbaikan
+terbesar berada.
+
+## Bidang keahlian
+
+:::: {.grid-2}
+
+::: {.area}
+
+#### Perencanaan dan Strategi Pengadaan
+Menerjemahkan sasaran program menjadi pendekatan pengadaan: pemaketan,
+pendekatan pasar, jenis kontrak, dan waktu pelaksanaan.
+
+:::
+
+::: {.area}
+
+#### Spesifikasi dan Penyusunan HPS
+Spesifikasi yang menggambarkan kebutuhan, serta harga perkiraan yang dapat
+dipertanggungjawabkan.
+
+:::
+
+::: {.area}
+
+#### Pemilihan Penyedia
+Perancangan evaluasi, kualifikasi, dan pertimbangan antara harga dan nilai
+manfaat.
+
+:::
+
+::: {.area}
+
+#### Manajemen Kontrak
+Pemantauan kinerja, penanganan perubahan dan klaim, serah terima, serta
+penyelesaian perselisihan, termasuk kontrak konstruksi dan konsultansi.
+
+:::
+
+::: {.area}
+
+#### Pengembangan Kompetensi
+Perancangan dan penyelenggaraan pelatihan serta uji kompetensi pada keempat
+jenjang kerangka kompetensi PBJ nasional.
+
+:::
+
+::: {.area}
+
+#### Tata Kelola dan Kebijakan
+Penyusunan pedoman pengadaan kelembagaan, pemberian pendapat probity, dan
+penyusunan peraturan pengadaan organisasi publik.
+
+:::
+
+::::
+
+## Peran nasional
+
+**Asesor Kompetensi**, Lembaga Sertifikasi Profesi LKPP, sejak 2025. Diangkat
+berdasarkan Keputusan Kepala LKPP Nomor 18 Tahun 2025. Menguji kompetensi
+individu terhadap SKJ PBJ dan SKKNI PBJ pada delapan skema, mulai dari Pejabat
+Pengadaan hingga Pengelola PBJ Ahli Madya.
+
+**Advisor Pengadaan Barang/Jasa Pemerintah**, LKPP, sejak 2021, berdasarkan
+Keputusan Deputi IV Nomor 5 Tahun 2021 sebagaimana terakhir diubah dengan
+Keputusan Nomor 1 Tahun 2026.
+
+**Tim Pendamping Kontrak**, LKPP, sejak 2020, berdasarkan Keputusan Deputi IV
+Nomor 8 Tahun 2020.
+
+**Fasilitator PBJ bersertifikat**, LKPP, sejak 2018, untuk Fasilitator Kompetensi
+Level 1 sampai 4 serta skema berbasis peran: PPK Tipe A, B, dan C, Pejabat
+Pengadaan, Pokja Pemilihan Umum dan Khusus.
+
+**Mediator** bersertifikat Jimly School of Law and Government di bawah Mahkamah
+Agung Republik Indonesia, sejak 2020.
+
+Sejak 2023 saya juga fasilitator internal pada lembaga pelatihan PBJ Pemerintah
+Provinsi Sulawesi Utara, mengajar keempat jenjang kompetensi serta bertindak
+sebagai coach dan evaluator.
+
+::: {.note}
+
+Rekam jejak lengkap dengan tanggal dan tautan ke masing-masing keputusan
+tersedia pada halaman [Professional](../professional.qmd) dan
+[Public Procurement](../procurement/index.qmd) berbahasa Inggris, yang menjadi
+rujukan utama dan selalu diperbarui lebih dahulu.
+
+:::
+
+## Riset tentang pengadaan
+
+Ketertarikan akademik saya pada pengadaan bermula dari pekerjaan ini. Tesis
+magister saya menggunakan data e-procurement nasional untuk menguji apakah
+jumlah penawar yang lebih banyak menghasilkan pengadaan yang lebih efisien.
+Hasilnya terbit bersama Vid Adrison di *Indonesian Treasury Review*: setiap
+tambahan satu penawar menurunkan harga penawaran pemenang sekitar 3,35 persen
+terhadap HPS, dari lebih dari 82.000 paket di kementerian dan lembaga.
+
+::: {.paper-links style="margin-top:1rem"}
+
+[Artikel](https://doi.org/10.33105/itrev.v6i1.225)
+
+:::
+
+<!-- Bagian Tulisan disembunyikan sampai esai pertama terbit. Untuk
+mengaktifkan: hapus pengecualian "!id/tulisan.qmd" di _quarto.yml lalu buka
+komentar blok ini.
+
+## Tulisan
+
+Catatan pendek tentang praktik, strategi, dan arah pengadaan publik Indonesia.
+
+[Baca tulisan →](tulisan.qmd)
+-->

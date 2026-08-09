@@ -5,11 +5,14 @@ project:
     - "*.qmd"
     - "procurement/*.qmd"
     - "procurement/insights/*.qmd"
+    - "id/*.qmd"
     - "!README.md"
     # Held back until the first essay is written — an index of unwritten pieces
     # reads worse than no page at all. To publish: delete this line and restore
     # the "Insights" section at the foot of procurement/index.qmd.
     - "!procurement/insights.qmd"
+    # Same reason as insights.qmd above: held back until the first essay.
+    - "!id/tulisan.qmd"
 
 website:
   title: "Billy Tulungen"
@@ -38,6 +41,9 @@ website:
         text: CV
       - href: about.qmd
         text: About
+    right:
+      - href: id/index.qmd
+        text: "Bahasa Indonesia"
 
   page-footer:
     left: |

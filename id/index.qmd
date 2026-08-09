@@ -1,0 +1,104 @@
+---
+pagetitle: "Ekonom dan Praktisi Pengadaan Publik"
+description-meta: "Billy Tulungen, kandidat doktor ilmu ekonomi Universitas Indonesia dan praktisi pengadaan barang/jasa pemerintah."
+lang: id
+toc: false
+---
+
+::::: {.hero}
+
+:::: {.hero-text}
+
+::: {.hero-name}
+
+Billy Tulungen
+
+:::
+
+::: {.hero-affil}
+
+Kandidat Doktor Ilmu Ekonomi<br>
+Departemen Ilmu Ekonomi, Fakultas Ekonomi dan Bisnis<br>
+Universitas Indonesia
+
+:::
+
+::: {.hero-fields}
+
+Ekonomi Pembangunan &middot; Ekonomi Perkotaan dan Wilayah &middot; Ekonomi Politik
+
+:::
+
+::: {.hero-bio}
+
+Saya kandidat doktor ilmu ekonomi di Universitas Indonesia. Disertasi saya,
+*Shaking Land and Shaking Lives*, meneliti bagaimana guncangan gempa berskala
+besar mengubah tatanan sosial, perilaku rumah tangga, dan perekonomian lokal di
+desa-desa Indonesia. Bab pertamanya memperoleh hibah riset dari ReCIPE
+Programme, yang didanai Centre for Economic Policy Research dan UK FCDO.
+
+Di luar riset, saya PNS Pemerintah Provinsi Sulawesi Utara dan telah bekerja di
+bidang pengadaan barang/jasa pemerintah sejak 2015: dari pengurus barang,
+pejabat pembuat komitmen, dan pokja pemilihan, hingga memimpin sub bagian
+pendampingan dan bimbingan teknis PBJ provinsi. Secara nasional saya fasilitator
+bersertifikat LKPP sejak 2018, dan kini asesor kompetensi pada LSP LKPP,
+advisor PBJ, serta anggota tim pendamping kontrak.
+
+:::
+
+::: {.home-nav}
+
+[Praktik Pengadaan](pengadaan.qmd) [CV & riset (Inggris)](../index.qmd) [Email](mailto:billy.thandy21@ui.ac.id)
+
+:::
+
+::::
+
+:::: {.hero-photo}
+
+![](../assets/img/profile.jpg){fig-alt="Foto Billy Tulungen"}
+
+::::
+
+:::::
+
+::: {.note}
+
+Halaman berbahasa Indonesia ini ditujukan bagi rekan-rekan di lingkungan
+pengadaan barang/jasa pemerintah. Rekam jejak lengkap yang bertanggal, daftar
+publikasi, riwayat mengajar, dan CV tersedia pada
+[versi bahasa Inggris](../index.qmd), yang menjadi rujukan utama.
+
+:::
+
+## Riset
+
+Disertasi saya menanyakan apa yang terjadi pada sebuah desa setelah diguncang
+gempa yang merusak. Jawabannya ternyata tidak searah. Menggunakan tujuh
+gelombang Podes 2005–2024 yang dipadankan dengan peta intensitas guncangan USGS
+ShakeMap, konflik komunal justru **turun** sekitar 1,5 poin persen terhadap
+basis 2,4 persen, sementara pada desa dan gelombang yang sama **pencurian naik**
+5,8 poin persen dan penganiayaan tidak bergerak.
+
+Pola itu menolak tafsir bahwa keamanan membaik secara umum. Yang berubah adalah
+*jenis* kekerasan yang mampu diproduksi sebuah komunitas: guncangan besar
+menaikkan insentif ekonomi untuk kejahatan individual, sekaligus melemahkan
+kapasitas untuk mengorganisasi kekerasan kolektif.
+
+::: {.paper-links style="margin-top:1rem"}
+
+[Naskah lengkap dan abstrak (Inggris) →](../research.qmd)
+
+:::
+
+## Pengadaan publik
+
+Bidang keahlian saya adalah perencanaan dan strategi pengadaan, penyusunan
+spesifikasi dan harga perkiraan, pemilihan penyedia, manajemen kontrak, serta
+pengembangan kompetensi PBJ.
+
+::: {.paper-links style="margin-top:0.9rem"}
+
+[Selengkapnya →](pengadaan.qmd)
+
+:::

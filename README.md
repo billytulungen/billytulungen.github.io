@@ -24,6 +24,9 @@ index.qmd                 home
 research.qmd              working papers, work in progress, publications, grants
 procurement/index.qmd     public procurement practice
 procurement/insights.qmd  essay index (excluded from the build for now)
+id/index.qmd              Indonesian landing page
+id/pengadaan.qmd          Indonesian procurement practice page
+id/tulisan.qmd            Indonesian essays (excluded from the build for now)
 teaching.qmd              graduate teaching and professional training
 professional.qmd          government service, national roles, service
 cv.qmd                    CV, with a link to the PDF
@@ -50,8 +53,14 @@ the file a reader downloads. Do not edit `_variables.yml` by hand.
 cd files/src && pdflatex cv.tex && pdflatex cv.tex && cp cv.pdf ../cv-billy-tulungen.pdf
 ```
 
-**Procurement essays.** The Insights page is written but excluded from the build
-until the first essay exists. To turn it on, remove the
+**Indonesian pages.** `id/` is a separate short section for the Indonesian
+procurement audience, not a translation. It deliberately carries no dated record
+of its own: roles, decrees, and dates live only on the English pages, so the two
+languages cannot state different facts. Keep it that way when editing.
+
+**Procurement essays.** Both the English Insights page and the Indonesian
+Tulisan page are written but excluded from the build until the first essay
+exists. To turn it on, remove the
 `"!procurement/insights.qmd"` exclusion in `_quarto.yml` and uncomment the
 Insights section at the foot of `procurement/index.qmd`. Start an essay from
 `procurement/insights/_post-template.qmd`.
