@@ -20,7 +20,9 @@ procurement facilitator and competency assessor.
 
 :::
 
-## Doctoral programme in Economics (PPIE)
+## University teaching
+
+### Doctoral programme in Economics (PPIE)
 
 ::::: {.entry}
 
@@ -66,7 +68,7 @@ Teaching assistant to Rus'an Nasrudin, Ph.D. and Jahen F. Rezki, Ph.D.
 
 :::::
 
-## Master's programme in Economics (PPIE)
+### Master's programme in Economics (PPIE)
 
 ::::: {.entry}
 
@@ -136,7 +138,7 @@ Teaching assistant to Jahen F. Rezki, Ph.D. and Milda Irhamni, Ph.D.
 
 :::::
 
-## Master's programme in Planning and Public Policy (MPKP)
+### Master's programme in Planning and Public Policy (MPKP)
 
 ::::: {.entry}
 
@@ -226,78 +228,17 @@ Teaching assistant to Prof. Dr. Djoni Hartono and Prani Sastiono, Ph.D.
 
 :::::
 
-## Professional training
+## Public procurement training
 
-::::: {.entry}
+Separately from the university work, I train procurement officials nationally.
+I have been a certified LKPP facilitator since 2018, teaching the foundation and
+advanced levels; since 2023 a registered internal facilitator for the North
+Sulawesi provincial training institution, covering all four competency levels
+and serving as coach and evaluator; and since 2025 a competency assessor for the
+certification body of LKPP, examining candidates against the national standards.
 
-::: {.years}
-
-2023–
-
-:::
-
-:::: {.what}
-
-[Internal procurement facilitator, provincial training institution]{.role}
-
-::: {.org}
-
-Registered with LKPP as an internal facilitator for the North Sulawesi
-provincial procurement training institution (LPPBJ), delivered through the
-Regional Human Resources Development Agency (BPSDMD). Teaches all four
-competency levels, from procurement officer through senior procurement
-specialist, and serves as coach and evaluator.
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2018–
-
-:::
-
-:::: {.what}
-
-[Certified procurement facilitator]{.role}
-
-::: {.org}
-
-National Public Procurement Agency (LKPP), foundation and advanced level.
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2025–
-
-:::
-
-:::: {.what}
-
-[Competency assessor]{.role}
-
-::: {.org}
-
-Professional Certification Body (LSP) of LKPP. Assesses individual competency
-against the national procurement competency standards.
-
-:::
-
-::::
-
-:::::
+Roles, dates, and the decrees behind them are on the
+[Public Procurement](procurement/index.qmd) page.
 
 ::: {.paper-links style="margin-top:1.6rem"}
 
