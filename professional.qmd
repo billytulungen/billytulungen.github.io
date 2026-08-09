@@ -405,6 +405,30 @@ Republic of Indonesia.
 
 ::: {.years}
 
+Refereeing
+
+:::
+
+:::: {.what}
+
+[Reviewer, *Jurnal Kebijakan Ekonomi*]{.role}
+
+::: {.org}
+
+Peer-reviewed journal of the Master's Programme in Economic Planning and Public
+Policy, Faculty of Economics and Business, Universitas Indonesia.
+[Reviewer board](https://scholarhub.ui.ac.id/jke/reviewers.html)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
 2024–2027
 
 :::

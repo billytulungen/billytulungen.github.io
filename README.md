@@ -104,11 +104,11 @@ listing:
       edit `_variables.yml` by hand.
 - [x] ~~Google Scholar and ORCID~~ — in the footer and on the CV, both web and
       PDF.
-- [ ] Fill in or delete the **Presentations** and **refereeing** sections in
-      `cv.qmd`. Both are currently editorial placeholders.
+- [x] ~~Presentations and refereeing~~ — no talks yet, so the Presentations
+      section was removed rather than left empty. Refereeing for *Jurnal
+      Kebijakan Ekonomi* is on the CV and the Professional page. Both live in
+      `cv.qmd` **and** `files/src/cv.tex`; change them together.
 - [ ] Set `site-url` in `_quarto.yml` to the final domain.
-- [ ] Delete the `.note` editorial blocks (in `cv.qmd` and `teaching.qmd`)
-      once their content is in place.
 
 ## Publishing to GitHub Pages
 
