@@ -94,7 +94,22 @@ h2 {
   margin-top: 2.4rem;
   margin-bottom: 1rem;
   padding-bottom: 0.45rem;
-  border-bottom: 1px solid $rule;
+  border-bottom: 1px solid darken($rule, 6%);
+  position: relative;
+}
+
+// A short accent segment where each section rule begins. The palette stays
+// near-monochrome on purpose, but the one colour the site owns now does
+// structural work instead of only marking links, so a long page has something
+// to scan by.
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 34px;
+  height: 2px;
+  background: $accent;
 }
 
 h3 {
