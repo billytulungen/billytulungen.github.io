@@ -14,48 +14,31 @@ single question: how public resources and collective capacity are actually
 allocated when institutions are under strain.
 
 My dissertation, *Shaking Land and Shaking Lives: Essays on the Economic Impacts
-of Seismic Disasters*, is supervised by M. Halley Yudhistira with Jahen F.
-Rezki as co-supervisor, and is due for completion in early 2028. The first
-chapter combines twenty years of Indonesia's
-Village Potential Survey with village-level earthquake intensity surfaces and
-finds a pattern that neither of the standard stories predicts: reported communal
+of Seismic Disasters*, asks what a damaging earthquake does to a village once
+the rubble is cleared. The answer is not one-directional. Reported communal
 conflict falls after damage-level shaking, while theft rises sharply on the same
-villages in the same waves. Not a general improvement in security, then, but a
-change in the *kind* of violence a community can produce. That chapter is
-supported by a research grant from the ReCIPE Programme, funded by the Centre
-for Economic Policy Research and the UK Foreign, Commonwealth and Development
-Office. The second chapter turns to what households pay for religious and
-ceremonial activity after a shock, using expenditure rather than stated belief
-to test whether religion functions as informal insurance.
-
-Building these papers has meant building the data infrastructure they rest on:
-harmonising two decades of village boundary change onto a constant reference
-year, converting seismic intensity rasters into village-level exposure, and
-documenting the whole chain so that it can be reproduced. That work is
-unglamorous and, in the Indonesian context, largely unavailable off the shelf.
-It is also where most of the credibility of the results comes from. Alongside
-the research I work as a teaching assistant in the graduate econometrics
-sequence at Universitas Indonesia, across the doctoral, master's, and public
-policy programmes.
+villages in the same waves: not a general improvement in security, but a change
+in the *kind* of violence a community can produce. Much of the work behind that
+result is infrastructure rather than estimation, harmonising two decades of
+village boundary change onto a constant reference year and turning seismic
+intensity surfaces into village-level exposure. It is unglamorous, largely
+unavailable off the shelf in Indonesia, and where most of the credibility of the
+results comes from.
 
 Before graduate school I entered the civil service through IPDN, and my early
 posts in North Sulawesi were in asset management and procurement: procurement
 officer, then commitment-making official responsible for contracts, then member
-of the provincial selection working group with authority over contracts up to
-IDR 100 billion. From 2021 to 2023 I led the provincial sub-division responsible
-for procurement advisory and technical guidance. Since 2018 I have worked
-nationally as a certified procurement facilitator, and I now serve as a
-competency assessor for the certification body of Indonesia's National Public
-Procurement Agency, as a procurement advisor, and as a certified mediator under the
-Supreme Court. I hold the World Bank's Certificate Professional in Public
-Procurement.
+of the provincial selection working group, authorised to determine winning
+providers for procurements up to IDR 100 billion. From 2021 to 2023 I led the
+provincial sub-division responsible for procurement advisory and technical
+guidance, and since 2018 I have worked nationally as a certified facilitator,
+competency assessor, and advisor.
 
 That practical experience shaped what I find worth studying. Procurement is
 where formal rules meet local discretion, and where the gap between what a
 regulation requires and what an official can actually do is most visible. My
 master's thesis used Indonesia's e-procurement records to ask whether more
-bidders produce better outcomes, and was one of three theses at the faculty
-selected for examination by the Minister of Finance.
+bidders produce better outcomes.
 
 The longer-term agenda is to keep both strands running: rigorous empirical
 economics on shocks, institutions, and local public goods in Indonesia, and a

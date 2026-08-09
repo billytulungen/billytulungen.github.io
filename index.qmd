@@ -80,13 +80,9 @@ Dissertation chapter &nbsp;·&nbsp; [Working paper]{.paper-status}
 
 ::: {.paper-abstract}
 
-Combining seven waves of Indonesia's Village Potential Survey (PODES, 2005–2024)
-with village-level USGS ShakeMap intensities, we estimate that first exposure to
-damage-level shaking reduces reported communal conflict by 1.5 percentage points
-against a 2.4 percent baseline. On identical villages and waves, theft rises by
-5.8 percentage points while assault does not move. The pattern is consistent with
-a large physical shock raising the incentive for individual predation while
-degrading the capacity to organise collective violence.
+Damage-level shaking cuts reported communal conflict by 1.5 percentage points,
+yet theft rises by 5.8 points on the same villages in the same waves. Disasters
+appear to change the composition of local violence rather than its level.
 
 :::
 
