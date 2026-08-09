@@ -146,33 +146,7 @@ and serves as coach and evaluator.
 
 ::: {.years}
 
-2018–
-
-:::
-
-:::: {.what}
-
-[Public Procurement Facilitator]{.role}
-
-::: {.org}
-
-Certified by LKPP as a competency facilitator for levels 1 through 4, and for
-the role-based schemes: commitment-making officer types A, B, and C;
-procurement officer; general and special selection working groups; and selection
-working group competency. Registered on the
-[LKPP public facilitator directory](https://ppsdm.lkpp.go.id/profil-publik/fasilitator-pbj/MzQ4OTQ4).
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
-2020–
+2021–
 
 :::
 
@@ -232,6 +206,32 @@ under [Deputy IV Decree No. 8 of 2020](https://jdih.lkpp.go.id/regulation/keputu
 
 Certified by Jimly School of Law and Government under the Supreme Court of the
 Republic of Indonesia.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2018–
+
+:::
+
+:::: {.what}
+
+[Public Procurement Facilitator]{.role}
+
+::: {.org}
+
+Certified by LKPP as a competency facilitator for levels 1 through 4, and for
+the role-based schemes: commitment-making officer types A, B, and C;
+procurement officer; general and special selection working groups; and selection
+working group competency. Registered on the
+[LKPP public facilitator directory](https://ppsdm.lkpp.go.id/profil-publik/fasilitator-pbj/MzQ4OTQ4).
 
 :::
 
