@@ -2,13 +2,12 @@
 #
 # Refresh the Paper 1 draft on the website.
 #
-# The draft is still moving, so it lives in the dissertation repo and is copied
-# here on demand rather than kept in sync by hand. This script also stamps the
-# PDF's own modification date into _variables.yml, so the "This version" label
-# on the Research page can never disagree with the file a reader downloads.
+# WARNING: the stamp below is the PDF file's modification date, which is not the
+# same thing as the version printed on the paper's title page. Recompiling an
+# unchanged manuscript moves the file date and leaves the title page untouched.
+# Check the title page and set the label on research.qmd by hand when they
+# differ, or the site will claim a version the download does not support.
 #
-#   ./files/src/update-paper.sh            # use the default source path
-#   ./files/src/update-paper.sh /some.pdf  # or point it somewhere else
 #
 # Run it from the repository root, then `quarto render`.
 
