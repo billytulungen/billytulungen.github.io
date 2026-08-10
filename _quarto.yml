@@ -12,6 +12,7 @@ project:
     - "*.qmd"
     - "procurement/*.qmd"
     - "procurement/insights/*.qmd"
+    - "notes/*.qmd"
     - "id/*.qmd"
     - "!README.md"
     # Held back until the first essay is written — an index of unwritten pieces
@@ -20,6 +21,11 @@ project:
     - "!procurement/insights.qmd"
     # Same reason as insights.qmd above: held back until the first essay.
     - "!id/tulisan.qmd"
+    # Same again for the research notes. To publish: delete this line, add a
+    # "Research Notes" link to research.qmd, and only then consider the navbar.
+    # Do not open this section and the procurement one in the same week; two
+    # half-empty writing sections read worse than one that is alive.
+    - "!notes.qmd"
 
 website:
   title: "Billy Tulungen"

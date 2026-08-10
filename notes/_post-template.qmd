@@ -1,0 +1,58 @@
+---
+title: "Title of the Note"
+subtitle: "One sentence naming the measurement or identification problem, not the paper."
+date: 2026-01-01
+description-meta: "One or two sentences used as the preview on the Research Notes page."
+categories: [measurement]
+toc: false
+---
+
+<!--
+HOW TO USE THIS TEMPLATE
+------------------------
+1. Copy this file to `notes/YYYY-MM-DD-short-slug.qmd`
+   (drop the leading underscore — files starting with `_` are ignored by Quarto).
+2. Fill in the front matter above.
+3. Add a linked entry on `notes.qmd`, moving the title out of the
+   "In preparation" section.
+4. Render with:  ~/.local/bin/quarto render
+
+THE FOUR QUESTIONS
+------------------
+Every note answers the same four, in this order. Keeping the shape fixed is what
+makes these cheap to write: the decision each time is what to say, never what
+kind of piece this is.
+
+  1. What was the problem?   The data would not answer the question as it stood.
+                             State it concretely enough that a reader who has
+                             never opened this dataset can feel the difficulty.
+  2. What was the fix?       The construction, restriction, or design choice.
+                             Enough detail to be reproduced, not the full
+                             appendix.
+  3. What did it cost?       Every fix drops observations, narrows the estimand,
+                             or buys precision with an assumption. Say which.
+                             This is the paragraph most summaries omit, and the
+                             reason to read a note rather than the abstract.
+  4. Does it travel?         Would it work on PODES, Susenas, Sakernas, or
+                             Indonesian administrative data more broadly? This
+                             is the paragraph only you can write.
+
+LENGTH: 900–1,200 words. A note, not an essay.
+
+TWO RULES
+---------
+- Do not reproduce figures or tables from the paper. Describe them, link to the
+  original, and build your own exhibit from your own data if one is needed.
+- Write about the technique, not the verdict. No paper is graded here.
+-->
+
+Opening paragraph: the concrete difficulty, stated so that a reader who has
+never used this dataset can see why the obvious approach fails.
+
+## The problem
+
+## The fix
+
+## What it costs
+
+## Whether it travels to Indonesian data
