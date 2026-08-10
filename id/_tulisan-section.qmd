@@ -1,0 +1,25 @@
+---
+title: "Bagian Tulisan yang ditahan (tidak dirender)"
+lang: id
+---
+
+<!--
+Berkas ini tidak pernah dirender atau diterbitkan: Quarto mengabaikan path yang
+diawali garis bawah. Berkas ini ada karena markdown di bawah tadinya berada di
+dalam komentar HTML pada id/pengadaan.qmd, dan komentar HTML diteruskan apa
+adanya ke halaman terbit, sehingga siapa pun yang membaca sumber halaman bisa
+melihat catatan internal berikut nama berkasnya.
+
+UNTUK MENERBITKAN BAGIAN TULISAN
+--------------------------------
+1. Tulis esai pertama ke id/ (atau folder tulisan yang dipakai nanti).
+2. Hapus baris "!id/tulisan.qmd" dari daftar render di _quarto.yml.
+3. Tempelkan kembali blok di bawah ini ke bagian bawah id/pengadaan.qmd.
+4. Hapus berkas ini.
+-->
+
+## Tulisan
+
+Catatan pendek tentang praktik, strategi, dan arah pengadaan publik Indonesia.
+
+[Baca tulisan →](tulisan.qmd)

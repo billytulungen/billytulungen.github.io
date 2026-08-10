@@ -1,0 +1,26 @@
+---
+title: "Held-back Insights section (not rendered)"
+---
+
+<!--
+This file is never rendered or published: Quarto ignores paths beginning with
+an underscore. It exists because the markdown below used to sit inside an HTML
+comment in procurement/index.qmd, and HTML comments are passed straight through
+to the published page, where anyone reading the source could see the internal
+to-do and the file path behind it.
+
+TO PUBLISH THE INSIGHTS SECTION
+-------------------------------
+1. Write the first essay into procurement/insights/.
+2. Delete the "!procurement/insights.qmd" line from the render list in
+   _quarto.yml.
+3. Paste the block below back at the foot of procurement/index.qmd.
+4. Delete this file.
+-->
+
+## Insights
+
+Short professional essays on procurement strategy, contract performance, and
+where public procurement is heading.
+
+[Read the essays →](insights.qmd)

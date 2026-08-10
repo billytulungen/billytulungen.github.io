@@ -354,14 +354,4 @@ Partnership (KPBU) procurement, 2025 &middot; Village procurement, 2025 &middot;
 Certified Mediator, Supreme Court of Indonesia &middot; Social and Behavioral
 Research (CITI Program).
 
-<!-- Insights section removed until the first essay exists. To restore:
-
-## Insights
-
-Short professional essays on procurement strategy, contract performance, and
-where public procurement is heading.
-
-[Read the essays →](insights.qmd)
-
-...and delete the "!procurement/insights.qmd" exclusion in _quarto.yml. -->
 

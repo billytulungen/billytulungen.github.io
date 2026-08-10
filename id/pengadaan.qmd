@@ -152,13 +152,3 @@ sekitar 3,35 persen dari HPS. Hasil ini terbit bersama Vid Adrison di
 
 :::
 
-<!-- Bagian Tulisan disembunyikan sampai esai pertama terbit. Untuk
-mengaktifkan: hapus pengecualian "!id/tulisan.qmd" di _quarto.yml lalu buka
-komentar blok ini.
-
-## Tulisan
-
-Catatan pendek tentang praktik, strategi, dan arah pengadaan publik Indonesia.
-
-[Baca tulisan →](tulisan.qmd)
--->
