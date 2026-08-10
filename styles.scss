@@ -121,9 +121,13 @@ h3 {
 
 p { margin-bottom: 1.05rem; }
 
+// The link colour sits only 1.65:1 against the body text around it, so the
+// underline is the sole thing marking a link. At 0.28 the rule itself was
+// 1.67:1 against the page and could be missed on a bright screen; 0.58 puts it
+// at 3.3:1, clear of the 3:1 floor with room for rounding, and still quiet.
 a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(29, 63, 102, 0.28);
+  border-bottom: 1px solid rgba(29, 63, 102, 0.58);
   transition: border-color 0.15s ease, color 0.15s ease;
 
   &:hover {
@@ -226,20 +230,9 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
   filter: grayscale(12%);
 }
 
-.photo-placeholder {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  background: $panel;
-  border: 1px dashed $rule;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 0.76rem;
-  color: $ink-faint;
-  padding: 0.8rem;
-}
+// .photo-placeholder removed: the portrait has been in place since the site
+// launched, so the stand-in was dead CSS and the only pairing on the site that
+// failed AA contrast (4.29:1).
 
 @media (max-width: 700px) {
   .hero {
@@ -313,15 +306,19 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
   margin-bottom: 0.25rem;
 }
 
+// The metadata tier — meta lines, dates, tags, links, footer — is held at a
+// 0.85rem floor (about 14.5px). Below that it was carrying real information,
+// paper status above all, at sizes that ask too much of a reader who is not
+// twenty-five.
 .paper-meta {
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   color: $ink-faint;
   margin-bottom: 0.6rem;
 }
 
 .paper-status {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $ink-muted;
@@ -340,7 +337,7 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 }
 
 .paper-links {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   letter-spacing: 0.02em;
 }
 
@@ -371,7 +368,7 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 .entry:last-child { border-bottom: none; }
 
 .entry .years {
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   color: $ink-faint;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
@@ -465,7 +462,7 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 .insight-item:last-child { border-bottom: none; }
 
 .insight-item .date {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: $ink-faint;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -506,7 +503,7 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 }
 
 .tags span {
-  font-size: 0.79rem;
+  font-size: 0.85rem;
   letter-spacing: 0.02em;
   color: $ink-muted;
   border: 1px solid $rule;
@@ -541,7 +538,7 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 // ---------------------------------------------------------------------------
 .nav-footer {
   border-top: 1px solid $rule;
-  font-size: 0.83rem;
+  font-size: 0.85rem;
   color: $ink-faint;
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
@@ -583,7 +580,6 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 .hero-name p,
 .hero-roles p,
 .hero-affil p,
-.photo-placeholder p,
 .entry .years p,
 .entry .what > p,
 .entry .what .org p,
