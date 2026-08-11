@@ -10,9 +10,28 @@ toc: false
 
 ## Contact
 
+::: {.grid-2}
+
+::: {.area}
+
+### Depok
 Department of Economics, Faculty of Economics and Business<br>
 Graduate School Building, 2nd Floor, Widjojo Nitisastro Campus<br>
-Universitas Indonesia, Depok 16424, Indonesia<br>
+Universitas Indonesia, Depok 16424, Indonesia
+
+:::
+
+::: {.area}
+
+### Salemba
+LPEM FEB UI, Ali Wardhana Building, 1st Floor, Room 205<br>
+Jalan Salemba Raya No. 4, Kenari, Senen<br>
+Central Jakarta 10430, Indonesia
+
+:::
+
+:::
+
 [billy.thandy21@ui.ac.id](mailto:billy.thandy21@ui.ac.id) &middot;
 [billythandy@gmail.com](mailto:billythandy@gmail.com)<br>
 [Google Scholar](https://scholar.google.com/citations?user=LchRWJsAAAAJ) &middot;
