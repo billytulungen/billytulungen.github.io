@@ -8,11 +8,13 @@ toc: false
 
 ::: {.lead-note}
 
-I have been a civil servant in the Provincial Government of North Sulawesi since
-2015, and have held procurement roles across the full cycle of public buying:
-asset management, procurement officer, commitment-making official, selection
-working group, and finally leading the provincial unit responsible for
-procurement advisory and technical guidance. That institutional experience is the
+I entered the civil service in June 2015 as a probationary officer (CPNS) of the
+Ministry of Home Affairs, seconded to North Sulawesi, and have been a civil
+servant in the Provincial Government of North Sulawesi since June 2016. Since
+then I have held procurement roles across the full cycle of public buying: asset
+management, procurement officer, commitment-making official, selection working
+group, and finally leading the provincial unit responsible for procurement
+advisory and technical guidance. That institutional experience is the
 origin of both my professional practice and my research interest in how public
 resources are actually allocated.
 
@@ -249,17 +251,43 @@ through inventory control, utilisation, transfer, and disposal.
 
 ::: {.years}
 
+2016
+
+:::
+
+:::: {.what}
+
+[Implementing Staff, Provincial Government of North Sulawesi]{.role}
+
+::: {.org}
+
+June 2016 – December 2016. Confirmed as a full civil servant (PNS) and posted to
+the Provincial Government of North Sulawesi as implementing staff (staf
+pelaksana).
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
 2015–2016
 
 :::
 
 :::: {.what}
 
-[Civil servant, Ministry of Home Affairs, seconded to the Provincial Civil Service Agency]{.role}
+[Probationary Civil Servant (CPNS), Ministry of Home Affairs, seconded to North Sulawesi]{.role}
 
 ::: {.org}
 
-July 2015 – July 2016. Badan Kepegawaian Daerah, North Sulawesi Province.
+June 2015 – June 2016. Appointed as a probationary civil servant of the Ministry
+of Home Affairs and seconded to the Provincial Civil Service Agency (Badan
+Kepegawaian Daerah), North Sulawesi Province.
 
 :::
 
