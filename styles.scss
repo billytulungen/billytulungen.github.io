@@ -189,6 +189,12 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
   margin-bottom: 2.4rem;
 }
 
+// Carries role="heading" aria-level="1" in the markup rather than being an <h1>.
+// The home page had no top-level heading at all, so a screen reader arrived with
+// nothing to land on. A real <h1> cannot be used here: Quarto lifts any h1 in the
+// body out into its own title block above .hero, which drops the name out of the
+// left column and lets h1.title override this size. The ARIA pair gives assistive
+// technology the same level-1 heading while leaving the layout untouched.
 .hero-name {
   font-family: $font-family-serif;
   font-size: 2.5rem;
@@ -581,7 +587,6 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 // Pandoc wraps the inline content of every fenced div in a <p>, which would
 // otherwise inject a full paragraph margin into one-line elements.
 // ---------------------------------------------------------------------------
-.hero-name p,
 .hero-roles p,
 .hero-affil p,
 .entry .years p,

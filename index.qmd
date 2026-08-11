@@ -12,11 +12,7 @@ toc: false
 
 :::: {.hero-text}
 
-::: {.hero-name}
-
-Billy Tulungen
-
-:::
+<div class="hero-name" role="heading" aria-level="1">Billy Tulungen</div>
 
 ::: {.hero-affil}
 
@@ -131,7 +127,7 @@ separate the income effect from the club-good and coping channels.
 ## Public procurement
 
 Alongside my academic work I have worked in Indonesian public procurement since
-2015, in provincial government roles and, since 2018, nationally as a certified
+2016, in provincial government roles and, since 2018, nationally as a certified
 facilitator, competency assessor, and advisor.
 
 ::: {.paper-links style="margin-top:0.9rem"}
