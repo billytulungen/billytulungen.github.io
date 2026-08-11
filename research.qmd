@@ -47,7 +47,8 @@ that come with changing administrative boundaries.
 
 [Difference-in-Differences]{} [Instrumental Variables]{}
 [Regression Discontinuity Design]{} [Spatial Econometrics]{}
-[Geospatial Data Analysis]{} [Administrative & Survey Microdata]{}
+[Geospatial Data Analysis]{} [Satellite & Remote Sensing Data]{}
+[Administrative & Survey Microdata]{}
 
 :::
 
