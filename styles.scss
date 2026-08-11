@@ -7,14 +7,15 @@ $ink:          #16181d;   // primary text
 $ink-muted:    #5c626c;   // secondary text, metadata
 $ink-faint:    #6e747c;   // tertiary, dates, captions — 4.6:1 on $paper (AA)
 $paper:        #fcfcfb;   // page background (a hair warm)
-$panel:        #f5f4f1;   // sunken panel background
-$rule:         #e4e2dd;   // hairline borders
-// Oxblood rather than the academic-default navy, and warm on purpose. Every
-// background here sits at hue 43–60 while every grey sits at 210–223; a cool
-// accent left the beige hairlines reading dusty beside it. A warm accent
-// resolves the split from the other side and keeps the warm paper an asset.
-$accent:       #7a2231;   // oxblood — links, marks (10.5:1 on $paper)
-$accent-soft:  #aa2f44;   // hover (6.4:1, the same step navy took)
+// Panel and rule sit just cool of neutral so they agree with the greys above
+// (hue 210-223) and with the navy accent. They used to be beige, hue 43-45, and
+// $rule is dark enough at 88% lightness for that warmth to read: the hairlines
+// looked dusty next to the accent. $paper stays warm; at 99% lightness its hue
+// is imperceptible and it only reads as a white that is not clinical.
+$panel:        #f4f4f6;   // sunken panel background
+$rule:         #e1e3e7;   // hairline borders
+$accent:       #1d3f66;   // deep navy — links, marks (10.5:1 on $paper)
+$accent-soft:  #34618f;   // hover (6.3:1)
 
 // Bootstrap variable overrides consumed by Quarto/cosmo
 $body-bg:            $paper;
@@ -125,13 +126,13 @@ h3 {
 
 p { margin-bottom: 1.05rem; }
 
-// The link colour sits only 1.78:1 against the body text around it, so the
+// The link colour sits only 1.65:1 against the body text around it, so the
 // underline is the sole thing marking a link. At 0.28 the rule itself was
 // 1.67:1 against the page and could be missed on a bright screen; 0.58 puts it
 // at 3.3:1, clear of the 3:1 floor with room for rounding, and still quiet.
 a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(122, 34, 49, 0.58);
+  border-bottom: 1px solid rgba(29, 63, 102, 0.58);
   transition: border-color 0.15s ease, color 0.15s ease;
 
   &:hover {
