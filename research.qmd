@@ -7,7 +7,18 @@ toc: false
 
 ## Research interests
 
+**Primary fields**
+
 :::: {.grid-2}
+
+::: {.area}
+
+### Public Economics
+How public money is actually spent. Government procurement, the efficiency of
+public purchasing, and the distance between what a rule requires and what an
+official can do.
+
+:::
 
 ::: {.area}
 
@@ -17,11 +28,17 @@ state capacity are weak.
 
 :::
 
+::::
+
+**Secondary fields**
+
+:::: {.grid-2}
+
 ::: {.area}
 
-### Urban & Regional Economics
-Spatial distribution of economic activity, local public goods, and regional
-disparities in Indonesia.
+### Industrial Organization
+Competition and bidding in government procurement markets, contract design, and
+what determines whether a tender delivers value rather than only a low price.
 
 :::
 
