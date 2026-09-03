@@ -90,46 +90,75 @@ mark the epicentre of the main earthquake behind each cohort.
 
 ::: {.paper-title}
 
-Motive Without Mobilization? Earthquakes and Communal Conflict in Indonesia
+Earthquakes and Communal Conflict: Village-Level Evidence from Indonesia
 
 :::
 
 ::: {.paper-meta}
 
-Billy Tulungen &nbsp;·&nbsp; [Working paper]{.paper-status} &nbsp;·&nbsp; JEL: D74, Q54, O18, R12
+with M. Halley Yudhistira and Jahen F. Rezki &nbsp;·&nbsp; [Working paper]{.paper-status} &nbsp;·&nbsp; JEL: D74, K42, Q54, O12, O18, R12
 
 :::
 
 ::: {.paper-abstract}
 
-Do strong earthquakes increase or reduce communal conflict? We combine seven
-waves of Indonesia's Village Potential Survey (PODES, 2005–2024) with
-village-level USGS ShakeMap intensities. Using a staggered
-difference-in-differences design, we estimate that first observed exposure to
-damage-level shaking (MMI ≥ VI) reduces reported communal conflict by 1.5
-percentage points (Callaway–Sant'Anna overall ATT, SE 0.0043) against a baseline
-rate of 2.4 percent. The decline is robust to alternative staggered estimators,
-to a PGA-derived exposure measure that replaces ShakeMap intensity entirely
-(−1.3 percentage points), and to inference that treats the earthquake rather
-than the village as the unit of assignment: across 19 earthquakes the
-treated-village-weighted effect is −2.4 percentage points (SE 0.0102, p = 0.01).
-The decline is deepest where the scope for inter-group conflict is greatest: a
-one-standard-deviation increase in religious polarization adds a further 1.8
-percentage points to it, and 0.8 percentage points on the definition-stable
-civilian-versus-civilian outcome. The sharper evidence is compositional. On identical villages and waves, theft
-rises by 5.8 percentage points against a 41 percent baseline while assault does
-not move, and the theft-versus-communal divergence survives earthquake-level
-resampling (p = 0.015). The pattern rejects a general improvement in local
-security. Although we do not identify the income or mobilization channels
-directly, it is consistent with a large physical shock raising the economic
-incentive for individual predation while degrading the capacity to organize
-collective violence.
+Do earthquakes raise or suppress communal conflict? We combine seven waves of
+Indonesia's village census (PODES, 2005–2024) with village-level USGS ShakeMap
+intensities in a staggered difference-in-differences design. Within Indonesia's
+medium and high seismic-hazard zones, a village's first exposure to damage-level
+shaking (MMI ≥ VI) lowers reported communal conflict by 1.5 percentage points
+(SE 0.004) against the treated villages' 6.1 percent pre-exposure rate. That
+average conceals a split we take seriously rather than relegate: among the
+roughly nine in ten treated villages that had never reported an episode,
+exposure instead *raises* the onset of communal conflict by 0.70 percentage
+points (SE 0.22) against a counterfactual onset rate of 2.1 percent.
+
+The finding the paper rests on is compositional. The same survey form that
+records communal conflict also records theft, robbery, and assault. On a single
+common sample of 211,082 village-waves, theft rises by 5.8 percentage points
+against a 41 percent base while communal conflict falls, robbery falls by 1.4
+points, and assault does not move. That contrast survives inference which treats
+the earthquake rather than the village as the unit of assignment: estimated
+event by event over 19 earthquakes, the divergence is 0.095 (bootstrap SE 0.034)
+weighting earthquakes by the villages they treat, and 0.061 counting each
+earthquake once (p = 0.046) — a bar the pooled level decline does not clear.
+
+The pattern rejects a general improvement in local security. It is most
+consistent with a shock that degrades a village's capacity for organised
+collective action, capacity that was doing two jobs at once: supplying the
+mobilisation communal violence requires, and supplying the routine guardianship
+— the night-watch rotations of *siskamling* — that deters property crime.
+High-involvement public-purpose *gotong royong* falls by 3.1 to 3.2 percentage
+points after exposure, while emergency mutual aid, which needs no standing
+coordination, does not.
+
+:::
+
+::: {.figure style="margin-top:1.2rem"}
+
+[![](assets/img/fig_composition_a.png){fig-alt="Coefficient plot of the treatment effect on five outcomes. Theft alone sits well above zero; communal conflict and robbery sit below it; assault sits on it."}](assets/img/fig_composition_a.png)
+
+[![](assets/img/fig_composition_b.png){fig-alt="Scatter of the theft-minus-communal gap for each of nineteen earthquakes, sorted by size. Most points are positive, and the pooled means and their bootstrap interval lie above zero."}](assets/img/fig_composition_b.png)
+
+::: {.figcaption}
+
+The composition of disorder. On a single common sample of 211,082
+village-waves, theft is the only outcome that rises after damage-level shaking:
+communal conflict and robbery fall, and assault does not move (Panel A, with 95
+percent village-clustered intervals). *Warga* is the civilian-versus-civilian
+series, the one whose survey definition holds across all seven waves. Panel B
+re-estimates the theft-minus-*warga* gap separately for each of the 19 usable
+earthquakes, with marker area proportional to the villages an earthquake
+treats. The divergence survives when the earthquake, rather than the village, is
+the unit of inference — the bar the pooled level decline does not clear.
+
+:::
 
 :::
 
 ::: {.paper-links}
 
-[Draft (PDF)](files/paper1-motive-without-mobilization.pdf) [This version: {{< var paper1.version >}}. The figures on this page come from a later estimation run than the draft, which is being revised to match.]{.disabled}
+[Draft (PDF)](files/paper1-earthquakes-communal-conflict.pdf) [This version: {{< var paper1.version >}}.]{.disabled}
 
 :::
 
@@ -254,11 +283,12 @@ Chapter 1
 
 :::: {.what}
 
-[Motive Without Mobilization?]{.role}
+[Earthquakes and Communal Conflict]{.role}
 
 ::: {.org}
 
-Earthquakes and communal conflict. Draft complete, under revision.
+Village-level evidence from Indonesia, with M. Halley Yudhistira and Jahen F.
+Rezki. Draft complete, under revision.
 
 :::
 

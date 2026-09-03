@@ -72,16 +72,22 @@ yang saya perbarui lebih dulu.
 
 Dugaan yang lazim, gempa besar memicu konflik. Ternyata tidak sesederhana itu.
 
-Saya memadankan tujuh gelombang Podes 2005–2024 dengan peta intensitas guncangan
-USGS ShakeMap. Hasilnya, konflik komunal justru **turun** sekitar 1,5 poin
-persen dari basis 2,4 persen. Tetapi di desa dan gelombang yang sama,
-**pencurian naik** 5,8 poin persen, sementara penganiayaan tidak bergerak sama
-sekali.
+Bersama Halley Yudhistira dan Jahen Rezki, saya memadankan tujuh gelombang Podes
+2005–2024 dengan peta intensitas guncangan USGS ShakeMap. Hasilnya, laporan
+konflik komunal justru **turun** sekitar 1,5 poin persen dari basis 6,1 persen
+di desa yang terguncang. Tetapi di desa dan gelombang yang sama, **pencurian
+naik** 5,8 poin persen dari basis 41 persen, perampokan turun 1,4 poin, dan
+penganiayaan tidak bergerak sama sekali.
 
-Jadi keamanan tidak membaik. Yang berubah adalah *jenis* kekerasan yang sanggup
-dihasilkan sebuah komunitas. Guncangan besar menaikkan dorongan ekonomi untuk
-kejahatan perorangan, dan pada saat yang sama melumpuhkan kemampuan warga
-mengorganisasi kekerasan bersama.
+Jadi keamanan tidak membaik. Yang berubah adalah *jenis* gangguan yang sanggup
+dihasilkan sebuah desa. Guncangan besar melumpuhkan kemampuan warga
+berorganisasi, dan kemampuan itu selama ini mengerjakan dua pekerjaan sekaligus:
+menggerakkan orang untuk kekerasan bersama, dan menjaga ronda serta siskamling
+yang menahan pencurian.
+
+Penurunan itu pun tidak merata. Di sembilan dari sepuluh desa terguncang yang
+sebelumnya tidak pernah melaporkan konflik, gempa justru **menaikkan** kemunculan
+konflik pertama sebesar 0,70 poin persen dari basis 2,1 persen.
 
 ::: {.paper-links style="margin-top:1rem"}
 

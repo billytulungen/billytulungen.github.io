@@ -582,6 +582,12 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 
 .figcaption p { margin-bottom: 0; }
 
+// A figure may carry more than one panel, each in its own paragraph. The gap
+// between panels is smaller than the gap to the caption, so the two panels read
+// as one figure rather than two.
+.figure > p { margin-bottom: 0.55rem; }
+.figure > p:last-of-type { margin-bottom: 0; }
+
 // ---------------------------------------------------------------------------
 // Paragraph reset inside single-purpose wrappers
 //
@@ -595,7 +601,9 @@ html:not([lang="id"]) .navbar-nav.ms-auto > li:nth-child(1) {
 .entry .what .org p,
 .paper-title p,
 .paper-meta p,
-.paper-abstract p,
+// :last-child, not every p: the Paper 1 abstract runs to three paragraphs and
+// needs the gaps between them.
+.paper-abstract p:last-child,
 .paper-links p,
 .insight-item p:last-child,
 .lead-note p:last-child,

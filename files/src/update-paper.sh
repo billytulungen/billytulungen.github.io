@@ -12,7 +12,7 @@
 set -euo pipefail
 
 SRC="${1:-/Users/billytulungen/PhD Project/2. paper 1/6. paper/main.pdf}"
-DEST="files/paper1-motive-without-mobilization.pdf"
+DEST="files/paper1-earthquakes-communal-conflict.pdf"
 
 if [[ ! -f "$SRC" ]]; then
   echo "error: source draft not found at:" >&2

@@ -20,7 +20,7 @@ of Seismic Disasters*, asks what a damaging earthquake does to a village once
 the rubble is cleared. The answer is not one-directional. Reported communal
 conflict falls after damage-level shaking, while theft rises sharply on the same
 villages in the same waves: not a general improvement in security, but a change
-in the *kind* of violence a community can produce. Much of the work behind that
+in the *kind* of disorder a community produces. Much of the work behind that
 result is infrastructure rather than estimation, harmonising two decades of
 village boundary change onto a constant reference year and turning seismic
 intensity surfaces into village-level exposure. It is unglamorous, largely
