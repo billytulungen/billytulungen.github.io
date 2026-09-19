@@ -4,590 +4,366 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Spatial Data Lab</title>
-<meta name="description" content="Five interactive modules on spatial data for economics: raster resolution, map projections, choropleth classification, table joins, and the modifiable areal unit problem.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<meta name="description" content="A hands-on companion to a guest lecture on spatial data in economics: raster resolution, projections, map classification, table joins, and units of analysis.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
 :root{
-  --paper:#E4EAE5; --panel:#F2F6F2; --panel-2:#E8EFE9;
-  --ink:#13212B; --ink-2:#41545F; --ink-3:#5F737C;
-  --line:#BAC8BF; --line-soft:#D3DDD5;
-  --blue:#1F5C7B; --blue-soft:#D8E7EE;
-  --mag:#9E2C6E; --mag-soft:#F0DAE6;
-  --grid:rgba(19,33,43,.10);
-  --r0:#E7EDE9; --r1:#C4DAE4; --r2:#99C0D4; --r3:#6299BA; --r4:#37769B; --r5:#174E6C;
-  --d0:#8E2A5C; --d1:#CE7FA8; --d2:#E9EEE9; --d3:#7FA9C2; --d4:#1F5A78;
-  --ok:#2C6B4F; --bad:#9E3030;
+  --paper:#E6EBE6; --panel:#F3F6F2; --sunk:#E9EFE9;
+  --ink:#16222B; --ink-2:#44565F; --ink-3:#697C85;
+  --rule:#CAD5CC; --rule-2:#DBE3DC;
+  --blue:#1E5A78; --mag:#982B69;
+  --r0:#E9EEEA; --r1:#C7DBE4; --r2:#9CC1D3; --r3:#6699B9; --r4:#39759A; --r5:#1A4F6C;
+  --d0:#8B2A5B; --d1:#CC7EA6; --d2:#E9EEE9; --d3:#7CA7C0; --d4:#1E5876;
+  --ok:#2A6A4E; --bad:#9A2F2F;
+  --blue-soft:#DCE8EE; --mag-soft:#F1DCE7;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#0D171D; --panel:#152128; --panel-2:#1B2831;
-    --ink:#E2EBE6; --ink-2:#A6BAC2; --ink-3:#7B929C;
-    --line:#2B3C45; --line-soft:#1F2C34;
-    --blue:#72B8D9; --blue-soft:#15303C; --mag:#E88BBB; --mag-soft:#37192A;
-    --grid:rgba(226,235,230,.08);
-    --r0:#1A2830; --r1:#224557; --r2:#2D5F7C; --r3:#3E83A7; --r4:#5CA4C8; --r5:#8AC6E2;
-    --d0:#E07BAE; --d1:#A8496F; --d2:#28363E; --d3:#3B7C9E; --d4:#7CC2E2;
-    --ok:#5FBE95; --bad:#E07C7C;
+    --paper:#0F1A20; --panel:#17232A; --sunk:#1C2A32;
+    --ink:#E3ECE7; --ink-2:#A7BAC2; --ink-3:#7E959F;
+    --rule:#2A3B44; --rule-2:#223038;
+    --blue:#74B7D9; --mag:#E389B9;
+    --r0:#1B2931; --r1:#234658; --r2:#2E617E; --r3:#3F85A8; --r4:#5DA5C9; --r5:#8BC7E3;
+    --d0:#DF7AAD; --d1:#A74A70; --d2:#27353D; --d3:#3C7D9F; --d4:#7BC1E1;
+    --ok:#5EBD94; --bad:#DF7B7B;
+    --blue-soft:#16313D; --mag-soft:#381A2B;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0D171D; --panel:#152128; --panel-2:#1B2831;
-  --ink:#E2EBE6; --ink-2:#A6BAC2; --ink-3:#7B929C;
-  --line:#2B3C45; --line-soft:#1F2C34;
-  --blue:#72B8D9; --blue-soft:#15303C; --mag:#E88BBB; --mag-soft:#37192A;
-  --grid:rgba(226,235,230,.08);
-  --r0:#1A2830; --r1:#224557; --r2:#2D5F7C; --r3:#3E83A7; --r4:#5CA4C8; --r5:#8AC6E2;
-  --d0:#E07BAE; --d1:#A8496F; --d2:#28363E; --d3:#3B7C9E; --d4:#7CC2E2;
-  --ok:#5FBE95; --bad:#E07C7C;
+  --paper:#0F1A20; --panel:#17232A; --sunk:#1C2A32;
+  --ink:#E3ECE7; --ink-2:#A7BAC2; --ink-3:#7E959F;
+  --rule:#2A3B44; --rule-2:#223038;
+  --blue:#74B7D9; --mag:#E389B9;
+  --r0:#1B2931; --r1:#234658; --r2:#2E617E; --r3:#3F85A8; --r4:#5DA5C9; --r5:#8BC7E3;
+  --d0:#DF7AAD; --d1:#A74A70; --d2:#27353D; --d3:#3C7D9F; --d4:#7BC1E1;
+  --ok:#5EBD94; --bad:#DF7B7B;
+  --blue-soft:#16313D; --mag-soft:#381A2B;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{
-  background:var(--paper); color:var(--ink);
+body{background:var(--paper); color:var(--ink);
   font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
-}
+  font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased}
 img{max-width:100%}
 [hidden]{display:none!important}
-.wrap{max-width:1180px; margin-inline:auto; padding-inline:20px; padding-block:0 72px}
-h1,h2,h3,h4{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif; text-wrap:balance; margin:0}
-h1{font-size:clamp(38px,6vw,64px); font-weight:700; line-height:1.02; letter-spacing:-.01em}
-h2{font-size:clamp(25px,3.4vw,36px); font-weight:600; line-height:1.1}
-h3{font-size:19px; font-weight:600; line-height:1.25}
-h4{font-size:15px; font-weight:600; letter-spacing:.02em}
+.wrap{max-width:860px; margin-inline:auto; padding-inline:22px; padding-block:0 80px}
+h1,h2,h3{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif; text-wrap:balance; margin:0}
+h1{font-size:clamp(40px,7vw,68px); font-weight:700; line-height:1}
+h2{font-size:clamp(26px,4vw,38px); font-weight:600; line-height:1.08; margin-bottom:10px}
+h3{font-size:19px; font-weight:600}
 p{margin:0}
+a{color:var(--blue)}
 .mono{font-family:'IBM Plex Mono','Courier New',monospace; font-variant-numeric:tabular-nums}
-code{font-family:'IBM Plex Mono','Courier New',monospace; font-size:.92em; color:var(--blue)}
+code{font-family:'IBM Plex Mono','Courier New',monospace; font-size:.88em; color:var(--blue)}
 
-/* masthead */
-.mast{
-  border:1px solid var(--line); border-top:3px solid var(--ink);
-  background:var(--panel); margin-top:24px;
-  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
-  background-size:36px 36px;
-}
-.mast-in{padding:30px 26px 26px; display:grid; gap:26px; grid-template-columns:1fr}
-@media(min-width:860px){.mast-in{grid-template-columns:1fr 280px; align-items:end}}
-.kicker{font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; font-weight:500;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--mag); margin-bottom:12px}
-.mast p.sub{margin-top:14px; color:var(--ink-2); font-size:17px; max-width:58ch}
-.marg{border-left:2px solid var(--mag); padding-left:14px;
-  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12.5px; color:var(--ink-2); line-height:1.85}
-.marg b{color:var(--ink); font-weight:500}
+/* opening */
+.open{padding-block:56px 30px}
+.open p.by{font-size:15px; color:var(--ink-3); margin-bottom:18px}
+.open p.lead{font-size:20px; color:var(--ink-2); margin-top:20px; max-width:60ch}
+.open p.lead + p.lead{margin-top:14px}
 
-/* how to use */
-.howto{border:1px solid var(--line-soft); background:var(--panel-2); margin-top:18px; padding:20px 24px;
-  display:grid; gap:18px; grid-template-columns:1fr}
-@media(min-width:760px){.howto{grid-template-columns:repeat(3,1fr)}}
-.howto div{display:flex; gap:12px; align-items:flex-start}
-.howto .n{font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; color:var(--mag);
-  border:1px solid var(--mag); padding:1px 6px; flex:none; margin-top:2px}
-.howto p{font-size:14.5px; color:var(--ink-2)}
+.get{margin-top:30px; padding:20px 22px; background:var(--panel); border-left:3px solid var(--mag)}
+.get h3{margin-bottom:6px}
+.get p{font-size:15.5px; color:var(--ink-2)}
+.get a.dl{display:inline-block; margin-top:14px; padding:10px 18px; background:var(--mag);
+  color:#FFF6FA; text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:14px}
+.get a.dl:hover{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
 
-/* nav */
-.idx{position:sticky; top:env(safe-area-inset-top,0px); z-index:20;
-  background:var(--paper); border-bottom:1px solid var(--line);
-  margin-inline:-20px; padding:8px 20px; overflow-x:auto}
-.idx ul{display:flex; gap:6px; list-style:none; margin:0; padding:0; min-width:max-content}
-.idx a{display:block; text-decoration:none; padding:7px 12px; border:1px solid var(--line-soft);
-  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; letter-spacing:.06em;
-  color:var(--ink-2); white-space:nowrap; background:var(--panel)}
-.idx a:hover{border-color:var(--mag); color:var(--mag)}
-.idx a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
+nav.toc{margin-top:34px; padding-top:18px; border-top:1px solid var(--rule)}
+nav.toc ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:5px}
+nav.toc li{font-size:15.5px; color:var(--ink-3)}
+nav.toc a{text-decoration:none; color:var(--ink)}
+nav.toc a:hover{color:var(--mag)}
 
-/* sheets */
-.sheet{border:1px solid var(--line); background:var(--panel); margin-top:34px; position:relative; scroll-margin-top:60px}
-.sheet::before,.sheet::after{content:""; position:absolute; width:11px; height:11px; border:2px solid var(--mag); pointer-events:none}
-.sheet::before{top:-1px; left:-1px; border-right:0; border-bottom:0}
-.sheet::after{bottom:-1px; right:-1px; border-left:0; border-top:0}
-.sheet-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px;
-  padding:16px 22px; border-bottom:1px solid var(--line); background:var(--panel-2)}
-.code{font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; font-weight:500;
-  letter-spacing:.14em; color:var(--mag); text-transform:uppercase}
-.sheet-body{padding:22px}
-.lede{color:var(--ink-2); max-width:72ch; font-size:16.5px}
+/* a module */
+section.mod{padding-top:54px; margin-top:44px; border-top:1px solid var(--rule); scroll-margin-top:24px}
+section.mod > p{color:var(--ink-2); max-width:62ch; margin-top:2px}
+section.mod > p + p{margin-top:12px}
 
-.work{display:grid; gap:20px; grid-template-columns:1fr; margin-top:20px}
-@media(min-width:920px){.work{grid-template-columns:minmax(0,1fr) 330px}}
-.plot{border:1px solid var(--line-soft); background:var(--panel-2); padding:12px}
+figure{margin:26px 0 0; padding:0}
+.plot{background:var(--panel); padding:14px}
 canvas{display:block; width:100%; height:auto; max-width:100%}
 
-.readout{display:flex; flex-wrap:wrap; gap:0; margin-top:12px; border:1px solid var(--line-soft); border-bottom:0; border-right:0}
-.readout>div{flex:1 1 116px; padding:8px 11px; border-right:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft)}
-.readout .dt{font-family:'IBM Plex Mono','Courier New',monospace; font-size:10.5px; letter-spacing:.11em;
-  text-transform:uppercase; color:var(--ink-3); margin:0 0 3px}
-.readout .dd{margin:0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:19px; font-weight:500;
-  color:var(--ink); font-variant-numeric:tabular-nums; line-height:1.2}
+.readout{display:flex; flex-wrap:wrap; gap:22px 34px; margin-top:14px; padding-top:13px; border-top:1px solid var(--rule-2)}
+.readout>div{min-width:106px}
+.readout .dt{font-size:13px; color:var(--ink-3); margin:0 0 1px}
+.readout .dd{margin:0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:20px;
+  font-weight:500; color:var(--ink); font-variant-numeric:tabular-nums; line-height:1.15}
 .readout .dd.hi{color:var(--mag)}
 
-/* controls */
-.ctl{border:1px solid var(--line-soft); background:var(--panel-2); padding:16px;
-  display:flex; flex-direction:column; gap:15px; align-self:start}
-.ctl-h{font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--ink-3); border-bottom:1px solid var(--line-soft); padding-bottom:8px}
-.fld{display:flex; flex-direction:column; gap:7px}
-.fld>label{font-size:13.5px; font-weight:600; color:var(--ink-2)}
-select{font:inherit; font-size:14px; padding:7px 9px; background:var(--panel); color:var(--ink);
-  border:1px solid var(--line); border-radius:0; width:100%}
-input[type=range]{width:100%; accent-color:var(--mag); background:transparent}
-.seg{display:flex; flex-wrap:wrap; gap:5px}
-.seg button{font:inherit; font-size:13px; padding:6px 11px; cursor:pointer;
-  background:var(--panel); color:var(--ink-2); border:1px solid var(--line); border-radius:0}
-.seg button[aria-pressed="true"]{background:var(--mag); border-color:var(--mag); color:#FFF7FB; font-weight:600}
-.chk{display:flex; gap:9px; align-items:flex-start; font-size:14px; color:var(--ink-2); cursor:pointer; line-height:1.4}
-.chk input{margin:2px 0 0; accent-color:var(--mag); flex:none}
-button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
-.val{font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; color:var(--ink); float:right; font-weight:500}
-.try{border-top:1px solid var(--line-soft); padding-top:13px; font-size:14px; color:var(--ink-2)}
-.try b{display:block; font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:.13em;
-  text-transform:uppercase; color:var(--mag); margin-bottom:8px; font-weight:500}
-.try ol{margin:0; padding-left:19px; display:flex; flex-direction:column; gap:8px}
-
-.note{margin-top:16px; border-left:3px solid var(--blue); background:var(--blue-soft);
-  padding:13px 16px; font-size:14.5px; color:var(--ink-2)}
-.note.warn{border-left-color:var(--mag); background:var(--mag-soft)}
+.note{margin-top:16px; font-size:15.5px; color:var(--ink-2); background:var(--blue-soft); padding:13px 16px}
+.note.warn{background:var(--mag-soft)}
 .note strong{color:var(--ink)}
 
-/* learn block */
-.learn{display:grid; gap:0; grid-template-columns:1fr; margin-top:20px;
-  border:1px solid var(--line-soft); border-bottom:0}
-@media(min-width:880px){.learn{grid-template-columns:repeat(3,1fr)}}
-.learn>div{padding:16px 18px; border-bottom:1px solid var(--line-soft)}
-@media(min-width:880px){.learn>div+div{border-left:1px solid var(--line-soft)}}
-.learn h4{color:var(--mag); font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px;
-  letter-spacing:.13em; text-transform:uppercase; font-weight:500; margin-bottom:9px}
-.learn p,.learn li{font-size:14.5px; color:var(--ink-2)}
-.learn ul{margin:0; padding-left:17px; display:flex; flex-direction:column; gap:6px}
-.learn .path{font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; color:var(--blue);
-  display:block; margin-top:8px; line-height:1.6}
+/* controls sit under the figure, in a row */
+.knobs{display:flex; flex-wrap:wrap; gap:18px 28px; align-items:flex-end; margin-top:18px;
+  padding:16px 18px; background:var(--sunk)}
+.knob{display:flex; flex-direction:column; gap:6px; flex:1 1 190px}
+.knob > span{font-size:14px; color:var(--ink-2)}
+.knob > span b{font-family:'IBM Plex Mono','Courier New',monospace; font-weight:500; color:var(--ink)}
+select{font:inherit; font-size:15px; padding:7px 9px; background:var(--panel); color:var(--ink);
+  border:1px solid var(--rule); border-radius:0; width:100%}
+input[type=range]{width:100%; accent-color:var(--mag); background:transparent}
+.switch{display:flex; gap:9px; align-items:flex-start; font-size:15px; color:var(--ink-2); cursor:pointer;
+  line-height:1.42; flex:1 1 210px}
+.switch input{margin:3px 0 0; accent-color:var(--mag); flex:none}
+.seg{display:flex; flex-wrap:wrap; gap:6px}
+.seg button{font:inherit; font-size:14px; padding:7px 13px; cursor:pointer;
+  background:var(--panel); color:var(--ink-2); border:1px solid var(--rule); border-radius:0}
+.seg button[aria-pressed="true"]{background:var(--mag); border-color:var(--mag); color:#FFF6FA; font-weight:600}
+button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
 
-/* legend & tables */
-.legend{display:flex; flex-direction:column; gap:3px; margin-top:12px}
-.legend .row{display:flex; align-items:center; gap:10px; font-family:'IBM Plex Mono','Courier New',monospace; font-size:12.5px; color:var(--ink-2)}
-.legend i{width:26px; height:13px; flex:none; border:1px solid var(--line)}
+.after{margin-top:22px}
+.after h3{margin-bottom:8px}
+.after p, .after li{color:var(--ink-2); font-size:16px}
+.after ul,.after ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px}
+.after p + p{margin-top:12px}
+
+.legend{display:flex; flex-direction:column; gap:4px; margin-top:14px}
+.legend .row{display:flex; align-items:center; gap:11px;
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:13.5px; color:var(--ink-2)}
+.legend i{width:28px; height:14px; flex:none; border:1px solid var(--rule)}
 .legend span.n{margin-left:auto; color:var(--ink-3)}
-.tscroll{overflow-x:auto; border:1px solid var(--line-soft); background:var(--panel-2)}
-table{border-collapse:collapse; width:100%; min-width:540px; font-size:14px}
-th,td{text-align:left; padding:8px 12px; border-bottom:1px solid var(--line-soft); white-space:nowrap}
-th{font-family:'IBM Plex Mono','Courier New',monospace; font-size:10.5px; letter-spacing:.11em;
-  text-transform:uppercase; color:var(--ink-3); font-weight:500; background:var(--panel)}
+.axis{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12.5px; color:var(--ink-3); margin-top:8px}
+
+.tscroll{overflow-x:auto; background:var(--panel)}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:15px}
+th,td{text-align:left; padding:9px 13px; border-bottom:1px solid var(--rule-2); white-space:nowrap}
+th{font-size:13px; color:var(--ink-3); font-weight:500}
 tr.miss td{color:var(--ink-3)}
 tr.miss td.k{text-decoration:line-through}
 td.k{font-family:'IBM Plex Mono','Courier New',monospace; color:var(--ink)}
-.badge{font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; padding:2px 7px; border:1px solid currentColor}
-.badge.ok{color:var(--ok)} .badge.no{color:var(--bad)}
-.axis{display:flex; justify-content:space-between; font-family:'IBM Plex Mono','Courier New',monospace;
-  font-size:11.5px; color:var(--ink-3); margin-top:6px; gap:10px; flex-wrap:wrap}
+.badge{font-size:13px; color:var(--ok)}
+.badge.no{color:var(--bad)}
 
-footer{margin-top:42px; border-top:2px solid var(--ink); padding-top:20px; display:grid; gap:22px}
-@media(min-width:860px){footer{grid-template-columns:1fr 280px}}
-footer h3{margin-bottom:10px}
-.map-list{display:grid; gap:0; border:1px solid var(--line-soft)}
-.map-list div{display:flex; flex-wrap:wrap; gap:4px 14px; padding:9px 13px; border-bottom:1px solid var(--line-soft); font-size:14px; color:var(--ink-2)}
-.map-list div:last-child{border-bottom:0}
-.map-list b{font-weight:600; color:var(--ink); min-width:150px}
-.colophon{font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; color:var(--ink-3); line-height:1.9; border-left:2px solid var(--line); padding-left:14px}
-
-.grab{display:flex; flex-wrap:wrap; gap:18px 24px; align-items:center; justify-content:space-between;
-  border:1px solid var(--mag); background:var(--mag-soft); padding:20px 24px; margin-top:18px}
-.grab .kicker{margin-bottom:6px}
-.grab p.d{font-size:14.5px; color:var(--ink-2); margin-top:6px; max-width:62ch}
-.dl{display:inline-flex; align-items:center; gap:10px; text-decoration:none; white-space:nowrap;
-  font-family:'IBM Plex Mono','Courier New',monospace; font-size:14px; font-weight:500;
-  padding:11px 18px; border:1px solid var(--mag); background:var(--mag); color:#FFF7FB}
-.dl:hover{background:transparent; color:var(--mag)}
-.dl:focus-visible{outline:2px solid var(--mag); outline-offset:3px}
+footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--rule); color:var(--ink-3); font-size:15px}
+footer p + p{margin-top:10px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="mast">
-    <div class="mast-in">
-      <div>
-        <p class="kicker">Empirical Development Economics &middot; FEB UI</p>
-        <h1>Spatial Data Lab</h1>
-        <p class="sub">Five things that go wrong the first time you use spatial data in economics. Here you can make each mistake yourself, watch what it does to your numbers, and then fix it &mdash; before it happens to your thesis.</p>
-      </div>
-      <div class="marg">
-        <b>SESSION</b> &nbsp;21 September 2026<br>
-        <b>ROOM</b> &nbsp;A.112, 08.00&ndash;10.30<br>
-        <b>MODULES</b> &nbsp;5, nothing to install<br>
-        <b>DATA</b> &nbsp;synthetic, generated in your browser
-      </div>
+  <header class="open">
+    <p class="by">Guest lecture, Empirical Development Economics &middot; Faculty of Economics and Business, Universitas Indonesia</p>
+    <h1>Spatial Data Lab</h1>
+    <p class="lead">Most of the trouble with spatial data in economics comes from five places. None of them announces itself. Your software runs, a column appears, and the number in it is wrong.</p>
+    <p class="lead">So rather than warn you about them, this page lets you cause each one and watch what it does. Drag something, then read the numbers under the picture. That is where the lesson usually is.</p>
+
+    <div class="get">
+      <h3>Practice files</h3>
+      <p>The same twelve layers and tables we use in the session, 430&nbsp;KB in total. Unzip it anywhere and open the files straight from QGIS. The README inside says which file each exercise needs.</p>
+      <a class="dl" href="data/qgis-lab-data.zip" download>qgis-lab-data.zip</a>
     </div>
-  </div>
 
-  <div class="howto">
-    <div><span class="n">1</span><p><strong>Move the controls.</strong> Every module recomputes as you drag. Nothing is pre-recorded.</p></div>
-    <div><span class="n">2</span><p><strong>Watch the numbers, not just the picture.</strong> The readout strip under each figure is where the lesson usually lives.</p></div>
-    <div><span class="n">3</span><p><strong>Read the three boxes underneath.</strong> They say what you are looking at, what to notice, and which QGIS tool does the same job.</p></div>
-  </div>
+    <nav class="toc">
+      <ol>
+        <li><a href="#m1">How coarse a raster can get before the average stops meaning anything</a></li>
+        <li><a href="#m2">Why 5000 sometimes means five kilometres and sometimes five hundred</a></li>
+        <li><a href="#m3">One column of numbers, and how different the maps can look</a></li>
+        <li><a href="#m4">The join that drops a third of your sample without saying so</a></li>
+        <li><a href="#m5">What happens to a coefficient when you redraw the boundaries</a></li>
+      </ol>
+    </nav>
+  </header>
 
-  <div class="grab">
-    <div>
-      <p class="kicker">Before you start</p>
-      <h3>Download the practice files</h3>
-      <p class="d">Twelve layers and tables, 430&nbsp;KB. Unzip it anywhere and open the files straight from QGIS. The README inside says which file each exercise needs. All of it is synthetic data built for this class.</p>
-    </div>
-    <a class="dl" href="data/qgis-lab-data.zip" download>qgis-lab-data.zip</a>
-  </div>
-
-  <nav class="idx" aria-label="Modules">
-    <ul>
-      <li><a href="#m1">01 &middot; Raster resolution</a></li>
-      <li><a href="#m2">02 &middot; Projections &amp; buffers</a></li>
-      <li><a href="#m3">03 &middot; Map classification</a></li>
-      <li><a href="#m4">04 &middot; Joining tables</a></li>
-      <li><a href="#m5">05 &middot; Units of analysis</a></li>
-    </ul>
-  </nav>
-
-  <!-- ============ 01 ============ -->
-  <section class="sheet" id="m1">
-    <div class="sheet-head"><span class="code">Module 01</span><h2>Raster resolution and zonal statistics</h2></div>
-    <div class="sheet-body">
-      <p class="lede">A satellite image of night lights sitting under one district boundary. Make the cells coarser and two things happen at once: the coastline turns into a staircase, and the number of cells inside the boundary collapses until the average stops meaning very much.</p>
-      <div class="work">
-        <div class="plot">
-          <canvas id="c1" role="img" aria-label="A grid of night-light raster cells with one district boundary drawn on top"></canvas>
-          <div class="readout">
-            <div><p class="dt">Cell size</p><p class="dd" id="r1a">4 km</p></div>
-            <div><p class="dt">Cells inside</p><p class="dd" id="r1b">0</p></div>
-            <div><p class="dt">Mean</p><p class="dd" id="r1c">0</p></div>
-            <div><p class="dt">Std. error of mean</p><p class="dd hi" id="r1e">0</p></div>
-            <div><p class="dt">Sum</p><p class="dd" id="r1d">0</p></div>
-          </div>
-          <div class="note" id="n1">At this resolution the average rests on plenty of cells.</div>
-        </div>
-        <div class="ctl">
-          <p class="ctl-h">Controls</p>
-          <div class="fld">
-            <label for="i1res">Cell size <span class="val" id="v1res">4 km</span></label>
-            <input type="range" id="i1res" min="0" max="4" step="1" value="2">
-          </div>
-          <label class="chk"><input type="checkbox" id="i1bat" checked> Show the district boundary</label>
-          <label class="chk"><input type="checkbox" id="i1sor" checked> Dim the cells outside it</label>
-          <div class="try">
-            <b>Try this</b>
-            <ol>
-              <li>Drag to 16 km cells. How many cells are left inside the boundary?</li>
-              <li>Compare the mean at 1 km and at 16 km. Now compare the standard errors beside them. Which mean would you put in a regression?</li>
-              <li>Watch the <em>sum</em> as you drag. It swings wildly, while the mean holds much steadier. That is why rates travel better than totals.</li>
-            </ol>
-          </div>
-        </div>
+  <section class="mod" id="m1">
+    <h2>How coarse a raster can get before the average stops meaning anything</h2>
+    <p>Below is a night-lights image with one district boundary drawn over it. Zonal statistics works by reading every cell whose centre falls inside that boundary and returning a single summary number. Coarsen the cells and you are not just losing detail in the picture; you are losing the observations the average is built from.</p>
+    <figure>
+      <div class="plot">
+        <canvas id="c1" role="img" aria-label="A grid of night-light raster cells with one district boundary drawn on top"></canvas>
       </div>
-      <div class="learn">
-        <div>
-          <h4>What this shows</h4>
-          <p>Zonal statistics reads every raster cell whose centre falls inside a polygon and returns one summary number for that polygon. The coarser the raster, the fewer cells there are to summarise.</p>
-        </div>
-        <div>
-          <h4>What to notice</h4>
-          <ul>
-            <li>The mean barely moves; the sum moves a lot. Totals depend on how many cells you happen to have.</li>
-            <li>The standard error grows as cells disappear. Same district, same underlying light, far less precision.</li>
-            <li>The boundary itself does not change. Only your ability to measure inside it does.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>In QGIS</h4>
-          <p>The same operation, with the same trap:</p>
-          <code class="path">Processing Toolbox &rsaquo; Zonal statistics</code>
-          <p style="margin-top:8px">Always tick <code>count</code> alongside <code>mean</code>. A small city district can hold a dozen cells, and its average will jump around for no economic reason.</p>
-        </div>
+      <div class="readout">
+        <div><p class="dt">Cell size</p><p class="dd" id="r1a">4 km</p></div>
+        <div><p class="dt">Cells inside</p><p class="dd" id="r1b">0</p></div>
+        <div><p class="dt">Mean</p><p class="dd" id="r1c">0</p></div>
+        <div><p class="dt">Standard error</p><p class="dd hi" id="r1e">0</p></div>
+        <div><p class="dt">Sum</p><p class="dd" id="r1d">0</p></div>
       </div>
+      <div class="note" id="n1">At this resolution the average rests on plenty of cells.</div>
+      <div class="knobs">
+        <label class="knob"><span>Cell size <b id="v1res">4 km</b></span>
+          <input type="range" id="i1res" min="0" max="4" step="1" value="2"></label>
+        <label class="switch"><input type="checkbox" id="i1bat" checked> Show the district boundary</label>
+        <label class="switch"><input type="checkbox" id="i1sor" checked> Dim the cells outside it</label>
+      </div>
+    </figure>
+    <div class="after">
+      <h3>Worth doing</h3>
+      <ol>
+        <li>Drag to 16&nbsp;km and count what is left inside the boundary.</li>
+        <li>Compare the mean at 1&nbsp;km and at 16&nbsp;km, then compare the standard errors beside them. One of those means belongs in a regression and the other does not.</li>
+        <li>Watch the sum while you drag. It swings hard; the mean barely moves. That is the whole argument for using rates rather than totals.</li>
+      </ol>
+      <p>In QGIS this is <code>Processing Toolbox &rsaquo; Zonal statistics</code>. Tick <code>count</code> as well as <code>mean</code>, always. A small city district can hold a dozen cells, and nobody downstream will know.</p>
     </div>
   </section>
 
-  <!-- ============ 02 ============ -->
-  <section class="sheet" id="m2">
-    <div class="sheet-head"><span class="code">Module 02</span><h2>One number, two units</h2></div>
-    <div class="sheet-body">
-      <p class="lede">Three villages and twelve health facilities. You want to count the facilities within 5 km of each village, so you type 5000 into the <span class="mono">Distance</span> box. Pick the wrong coordinate system and that number means something else entirely &mdash; with no warning of any kind.</p>
-      <div class="work">
-        <div class="plot">
-          <canvas id="c2" role="img" aria-label="A map of three villages with distance circles around them and health facility points scattered across an island"></canvas>
-          <div class="readout">
-            <div><p class="dt">Layer units</p><p class="dd" id="r2a">metres</p></div>
-            <div><p class="dt">Actual radius</p><p class="dd" id="r2b">5 km</p></div>
-            <div><p class="dt">Per village</p><p class="dd" id="r2c">0 &middot; 0 &middot; 0</p></div>
-            <div><p class="dt">Pairs counted</p><p class="dd hi" id="r2d">0</p></div>
-          </div>
-          <div class="note" id="n2">This looks sensible: some facilities fall outside the reach of each village.</div>
-        </div>
-        <div class="ctl">
-          <p class="ctl-h">Controls</p>
-          <div class="fld">
-            <label for="i2crs">Layer coordinate system</label>
-            <select id="i2crs">
-              <option value="m">EPSG:32749 &mdash; UTM 49S (metres)</option>
-              <option value="d">EPSG:4326 &mdash; WGS 84 (degrees)</option>
-            </select>
-          </div>
-          <div class="fld">
-            <label for="i2r">Distance value <span class="val" id="v2r">5</span></label>
-            <input type="range" id="i2r" min="1" max="20" step="1" value="5">
-          </div>
-          <div class="try">
-            <b>Try this</b>
-            <ol>
-              <li>Leave the value at 5 and switch the system to degrees. What radius do you actually get?</li>
-              <li>In degrees, is there any value at all that still gives a sensible answer?</li>
-              <li>Back in metres, find the smallest value that gives every village at least one facility.</li>
-            </ol>
-          </div>
-        </div>
+  <section class="mod" id="m2">
+    <h2>Why 5000 sometimes means five kilometres and sometimes five hundred</h2>
+    <p>Three villages, twelve health facilities. You want to know how many facilities lie within five kilometres of each village, so you type 5000 into the distance box. Whether that is five kilometres or roughly five hundred depends entirely on which coordinate system the layer happens to carry.</p>
+    <figure>
+      <div class="plot">
+        <canvas id="c2" role="img" aria-label="A map of three villages with distance circles around them and health facility points scattered across an island"></canvas>
       </div>
-      <div class="learn">
-        <div>
-          <h4>What this shows</h4>
-          <p>A buffer is drawn in whatever units the layer carries. Degrees are an angle, not a length: one degree of latitude is roughly 111 km. So 5 in a degree-based layer is about 555 km, not 5 km.</p>
-        </div>
-        <div>
-          <h4>What to notice</h4>
-          <ul>
-            <li>Nothing errors. The tool runs, a new column appears, and it is wrong by a factor of a hundred.</li>
-            <li>In degree mode every village counts every facility, so the variable has no variation left &mdash; and a variable with no variation quietly kills your regression.</li>
-            <li>A degree of longitude also shrinks as you move away from the equator, so the error is not even constant across your map.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>In QGIS</h4>
-          <p>Reproject first, every time:</p>
-          <code class="path">Reproject Layer &rsaquo; Buffer &rsaquo; Join Attributes by Location</code>
-          <p style="margin-top:8px">Check the EPSG code in the bottom-right corner of the window before you press Run. For Indonesia, pick the UTM zone your study area sits in.</p>
-        </div>
+      <div class="readout">
+        <div><p class="dt">Layer units</p><p class="dd" id="r2a">metres</p></div>
+        <div><p class="dt">Actual radius</p><p class="dd" id="r2b">5 km</p></div>
+        <div><p class="dt">Per village</p><p class="dd" id="r2c">0 &middot; 0 &middot; 0</p></div>
+        <div><p class="dt">Pairs counted</p><p class="dd hi" id="r2d">0</p></div>
       </div>
+      <div class="note" id="n2">This looks sensible: some facilities fall outside the reach of each village.</div>
+      <div class="knobs">
+        <label class="knob"><span>Coordinate system of the layer</span>
+          <select id="i2crs">
+            <option value="m">EPSG:32749 &mdash; UTM 49S, metres</option>
+            <option value="d">EPSG:4326 &mdash; WGS 84, degrees</option>
+          </select></label>
+        <label class="knob"><span>Distance value <b id="v2r">5</b></span>
+          <input type="range" id="i2r" min="1" max="20" step="1" value="5"></label>
+      </div>
+    </figure>
+    <div class="after">
+      <h3>Worth doing</h3>
+      <ol>
+        <li>Leave the value at 5 and switch to degrees. Read the radius you actually got.</li>
+        <li>Still in degrees, look for a value that gives a sensible answer. There isn't one.</li>
+        <li>Back in metres, find the smallest value that gives every village at least one facility.</li>
+      </ol>
+      <p>A degree is an angle. One degree of latitude runs about 111&nbsp;km, and a degree of longitude shrinks as you move away from the equator, so the error is not even constant across your map. Run <code>Reproject Layer</code> into the right UTM zone before anything that measures, and glance at the EPSG code in the bottom-right corner of the window before you press Run.</p>
     </div>
   </section>
 
-  <!-- ============ 03 ============ -->
-  <section class="sheet" id="m3">
-    <div class="sheet-head"><span class="code">Module 03</span><h2>Same data, different maps</h2></div>
-    <div class="sheet-body">
-      <p class="lede">Fifty-four areas with one poverty number each. That number never changes while you are on this page. All that changes is how the range is cut into classes and which colours those classes get. Watch how far the impression can shift.</p>
-      <div class="work">
-        <div class="plot">
-          <canvas id="c3" role="img" aria-label="A hexagon map of fifty-four areas shaded by value"></canvas>
-          <canvas id="c3h" role="img" aria-label="A histogram of the values with the class break lines drawn on it"></canvas>
-          <div class="axis"><span id="a3lo">min</span><span>distribution of values across areas</span><span id="a3hi">max</span></div>
-          <div class="legend" id="leg3"></div>
-          <div class="readout">
-            <div><p class="dt">Areas in top class</p><p class="dd hi" id="r3a">0</p></div>
-            <div><p class="dt">Share of areas</p><p class="dd" id="r3b">0%</p></div>
-            <div><p class="dt">Width of top class</p><p class="dd" id="r3c">0</p></div>
-          </div>
-          <div class="note" id="n3">Natural Breaks looks for natural gaps in the distribution.</div>
-        </div>
-        <div class="ctl">
-          <p class="ctl-h">Controls</p>
-          <div class="fld">
-            <label for="i3var">Variable on the map</label>
-            <select id="i3var">
-              <option value="rate">Poverty rate (percent)</option>
-              <option value="total">Number of poor people</option>
-            </select>
-          </div>
-          <div class="fld">
-            <label for="i3met">Classification method</label>
-            <select id="i3met">
-              <option value="ei">Equal Interval</option>
-              <option value="q">Quantile</option>
-              <option value="nb" selected>Natural Breaks</option>
-              <option value="sd">Standard Deviation</option>
-            </select>
-          </div>
-          <div class="fld">
-            <label for="i3k">Number of classes <span class="val" id="v3k">5</span></label>
-            <input type="range" id="i3k" min="3" max="7" step="1" value="5">
-          </div>
-          <div class="fld">
-            <label for="i3ramp">Colour scheme</label>
-            <select id="i3ramp">
-              <option value="seq">Sequential</option>
-              <option value="div">Diverging</option>
-              <option value="rain">Rainbow</option>
-            </select>
-          </div>
-          <div class="try">
-            <b>Try this</b>
-            <ol>
-              <li>Switch to Quantile and look at the histogram. See where the four break lines pile up.</li>
-              <li>Change the variable to the number of poor people. Whose map are you really looking at now?</li>
-              <li>Pick Rainbow, then try to rank the classes from low to high using colour alone.</li>
-              <li>Compare "width of top class" across methods. Equal Interval and Quantile answer very different questions.</li>
-            </ol>
-          </div>
-        </div>
+  <section class="mod" id="m3">
+    <h2>One column of numbers, and how different the maps can look</h2>
+    <p>Fifty-four areas, one poverty figure each. That figure does not change anywhere on this page. What changes is where the range gets cut into classes and which colours those classes are given &mdash; two decisions the data does not make for you, and which most readers will never think about.</p>
+    <figure>
+      <div class="plot">
+        <canvas id="c3" role="img" aria-label="A hexagon map of fifty-four areas shaded by value"></canvas>
+        <canvas id="c3h" role="img" aria-label="A histogram of the values with the class break lines drawn on it"></canvas>
+        <div class="axis"><span id="a3lo">min</span><span>how the values are spread across areas</span><span id="a3hi">max</span></div>
       </div>
-      <div class="learn">
-        <div>
-          <h4>What this shows</h4>
-          <p>A choropleth has two separate decisions inside it: where to cut the range into classes, and which colours to assign. Neither is given by the data, and both change what a reader concludes.</p>
-        </div>
-        <div>
-          <h4>What to notice</h4>
-          <ul>
-            <li>Quantile always puts the same number of areas in each class, so a map of nearly identical values still looks dramatic.</li>
-            <li>Equal Interval on skewed data often leaves the top class almost empty &mdash; one or two outliers carrying a whole colour.</li>
-            <li>Mapping counts instead of rates reproduces the population distribution, whatever the title says.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>In QGIS</h4>
-          <p>Every control here has a twin in the dialog:</p>
-          <code class="path">Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>
-          <p style="margin-top:8px">State the method and the number of classes in your figure caption. Without them a reader cannot judge the map, and a referee will ask.</p>
-        </div>
+      <div class="legend" id="leg3"></div>
+      <div class="readout">
+        <div><p class="dt">Areas in top class</p><p class="dd hi" id="r3a">0</p></div>
+        <div><p class="dt">Share of all areas</p><p class="dd" id="r3b">0%</p></div>
+        <div><p class="dt">Width of top class</p><p class="dd" id="r3c">0</p></div>
       </div>
+      <div class="note" id="n3">Natural Breaks looks for natural gaps in the distribution.</div>
+      <div class="knobs">
+        <label class="knob"><span>What the map shows</span>
+          <select id="i3var">
+            <option value="rate">Poverty rate, percent</option>
+            <option value="total">Number of poor people</option>
+          </select></label>
+        <label class="knob"><span>Classification</span>
+          <select id="i3met">
+            <option value="ei">Equal Interval</option>
+            <option value="q">Quantile</option>
+            <option value="nb" selected>Natural Breaks</option>
+            <option value="sd">Standard Deviation</option>
+          </select></label>
+        <label class="knob"><span>Classes <b id="v3k">5</b></span>
+          <input type="range" id="i3k" min="3" max="7" step="1" value="5"></label>
+        <label class="knob"><span>Colours</span>
+          <select id="i3ramp">
+            <option value="seq">Sequential</option>
+            <option value="div">Diverging</option>
+            <option value="rain">Rainbow</option>
+          </select></label>
+      </div>
+    </figure>
+    <div class="after">
+      <h3>Worth doing</h3>
+      <ol>
+        <li>Switch to Quantile and look at the histogram. The four break lines pile up where the data is dense, which is how a map of nearly identical values ends up looking dramatic.</li>
+        <li>Change the variable to the number of poor people. Ask yourself whose map that is.</li>
+        <li>Pick Rainbow and try to rank the classes from low to high using colour alone.</li>
+        <li>Watch the width of the top class as you change method. Equal Interval and Quantile are answering different questions.</li>
+      </ol>
+      <p>All of this sits in <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. Name the method and the class count in your figure caption; without them nobody can judge the map, and a referee will ask.</p>
     </div>
   </section>
 
-  <!-- ============ 04 ============ -->
-  <section class="sheet" id="m4">
-    <div class="sheet-head"><span class="code">Module 04</span><h2>The join that fails without telling you</h2></div>
-    <div class="sheet-body">
-      <p class="lede">Twelve districts in the polygon layer, twelve rows in the statistics table. Switch on one ordinary real-world condition and watch how many rows still match &mdash; and notice that nothing anywhere reports a problem.</p>
-      <div class="work">
-        <div class="plot">
-          <div class="tscroll">
-            <table>
-              <thead><tr><th>Polygon code</th><th>Name</th><th>Key in the table</th><th>Status</th></tr></thead>
-              <tbody id="tb4"></tbody>
-            </table>
-          </div>
-          <div class="readout">
-            <div><p class="dt">Rows matched</p><p class="dd" id="r4a">12 / 12</p></div>
-            <div><p class="dt">Sample lost</p><p class="dd hi" id="r4b">0%</p></div>
-            <div><p class="dt">Equivalent on 514</p><p class="dd" id="r4c">0 districts</p></div>
-            <div><p class="dt">Error message</p><p class="dd" id="r4d">none</p></div>
-          </div>
-          <div class="note" id="n4">Everything matches. This is what a healthy join looks like.</div>
-        </div>
-        <div class="ctl">
-          <p class="ctl-h">Conditions in force</p>
-          <label class="chk"><input type="checkbox" id="i4a"> The CSV was opened in Excel first, so codes became numbers</label>
-          <label class="chk"><input type="checkbox" id="i4b"> The statistics table predates the newest districts</label>
-          <label class="chk"><input type="checkbox" id="i4c"> Joined on the area name instead of the code</label>
-          <div class="try">
-            <b>Try this</b>
-            <ol>
-              <li>Switch on the first one alone. How many rows survive?</li>
-              <li>Turn it off and switch on the third. Which names fail, and why does each failure make sense?</li>
-              <li>Switch on the second and third together, then read the "equivalent on 514" figure.</li>
-              <li>Look at <em>which</em> rows drop, not just how many. Are they a random selection of districts?</li>
-            </ol>
-          </div>
-        </div>
+  <section class="mod" id="m4">
+    <h2>The join that drops a third of your sample without saying so</h2>
+    <p>Twelve districts on one side, twelve rows of statistics on the other. Switch on any of the ordinary conditions below and watch the match rate. Then look at which rows fell out, because that matters more than how many.</p>
+    <figure>
+      <div class="tscroll">
+        <table>
+          <thead><tr><th>Polygon code</th><th>Name</th><th>Key in the table</th><th>Status</th></tr></thead>
+          <tbody id="tb4"></tbody>
+        </table>
       </div>
-      <div class="learn">
-        <div>
-          <h4>What this shows</h4>
-          <p>A join matches rows on a key. When the key does not line up, the unmatched rows are not deleted and not flagged &mdash; they simply carry empty columns into everything you do next.</p>
-        </div>
-        <div>
-          <h4>What to notice</h4>
-          <ul>
-            <li>The rows that fail are never random. New districts, renamed cities and merged areas are systematically different from the ones that match.</li>
-            <li>That makes it a sample selection problem, not a data-cleaning annoyance.</li>
-            <li>A type mismatch kills every row at once, which is oddly the safest failure: you notice immediately.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>In QGIS</h4>
-          <p>The join itself lives here:</p>
-          <code class="path">Layer Properties &rsaquo; Joins</code>
-          <p style="margin-top:8px">Count rows before and after, sort the new column to find empty cells, and join on codes rather than names. A join is temporary until you run <code>Export &rsaquo; Save Features As</code>.</p>
-        </div>
+      <div class="readout">
+        <div><p class="dt">Rows matched</p><p class="dd" id="r4a">12 / 12</p></div>
+        <div><p class="dt">Sample lost</p><p class="dd hi" id="r4b">0%</p></div>
+        <div><p class="dt">Same rate on 514 districts</p><p class="dd" id="r4c">0 districts</p></div>
+        <div><p class="dt">Error message</p><p class="dd" id="r4d">none</p></div>
       </div>
+      <div class="note" id="n4">Everything matches. This is what a healthy join looks like.</div>
+      <div class="knobs">
+        <label class="switch"><input type="checkbox" id="i4a"> Someone opened the CSV in Excel first, so the codes became numbers</label>
+        <label class="switch"><input type="checkbox" id="i4b"> The statistics table is older than the newest districts</label>
+        <label class="switch"><input type="checkbox" id="i4c"> The join is on the area name instead of the code</label>
+      </div>
+    </figure>
+    <div class="after">
+      <h3>Worth doing</h3>
+      <ol>
+        <li>Switch on the first condition alone and see how many rows survive.</li>
+        <li>Turn it off, switch on the third, and read which names fail. Each failure makes sense once you see it.</li>
+        <li>Switch on the second and third together, then read the figure for 514 districts.</li>
+      </ol>
+      <p>The rows that fail are never a random draw. New districts, renamed cities and merged areas differ systematically from the ones that match, which turns a data-cleaning annoyance into a sample selection problem. Count your rows before and after every join, sort the new column to find the blanks, and join on codes rather than names. A join in <code>Layer Properties &rsaquo; Joins</code> is temporary until you run <code>Export &rsaquo; Save Features As</code>.</p>
     </div>
   </section>
 
-  <!-- ============ 05 ============ -->
-  <section class="sheet" id="m5">
-    <div class="sheet-head"><span class="code">Module 05</span><h2>The coefficient that moves when you change the unit</h2></div>
-    <div class="sheet-body">
-      <p class="lede">Four hundred households with one relationship that never changes: road access against spending. Average them up into larger and larger areas and watch the slope of the regression line. No new data arrives. The only thing that changes is where the boundaries are drawn.</p>
-      <div class="work">
-        <div class="plot">
-          <canvas id="c5" role="img" aria-label="A scatter plot of road access against household spending with a fitted regression line"></canvas>
-          <div class="axis"><span>vertical: household spending (log)</span><span>horizontal: road access index</span></div>
-          <div class="readout">
-            <div><p class="dt">Unit of observation</p><p class="dd" id="r5a">400 households</p></div>
-            <div><p class="dt">Coefficient &beta;</p><p class="dd hi" id="r5b">0.00</p></div>
-            <div><p class="dt">R&sup2;</p><p class="dd" id="r5c">0.00</p></div>
-            <div><p class="dt">Versus household level</p><p class="dd" id="r5d">1.00&times;</p></div>
-          </div>
-          <div class="note" id="n5">This is the household-level relationship, the one actually generating the data.</div>
-        </div>
-        <div class="ctl">
-          <p class="ctl-h">Level of aggregation</p>
+  <section class="mod" id="m5">
+    <h2>What happens to a coefficient when you redraw the boundaries</h2>
+    <p>Four hundred households, and one relationship between road access and spending that stays exactly the same throughout. Average them into larger and larger areas and watch the slope. Nothing new enters the data. The grey dashed line is the household-level relationship, kept for comparison.</p>
+    <figure>
+      <div class="plot">
+        <canvas id="c5" role="img" aria-label="A scatter plot of road access against household spending with a fitted regression line"></canvas>
+        <div class="axis"><span>vertical: household spending, log</span><span>horizontal: road access index</span></div>
+      </div>
+      <div class="readout">
+        <div><p class="dt">Unit of observation</p><p class="dd" id="r5a">400 households</p></div>
+        <div><p class="dt">Coefficient</p><p class="dd hi" id="r5b">0.00</p></div>
+        <div><p class="dt">R squared</p><p class="dd" id="r5c">0.00</p></div>
+        <div><p class="dt">Against household level</p><p class="dd" id="r5d">1.00&times;</p></div>
+      </div>
+      <div class="note" id="n5">This is the household-level relationship, the one actually generating the data.</div>
+      <div class="knobs">
+        <div class="knob"><span>Aggregate the households into</span>
           <div class="seg" id="seg5" role="group" aria-label="Level of aggregation">
-            <button type="button" data-n="0" aria-pressed="true">Households</button>
+            <button type="button" data-n="0" aria-pressed="true">nothing</button>
             <button type="button" data-n="64" aria-pressed="false">64 areas</button>
             <button type="button" data-n="16" aria-pressed="false">16 areas</button>
             <button type="button" data-n="4" aria-pressed="false">4 areas</button>
           </div>
-          <label class="chk"><input type="checkbox" id="i5z"> Shift the boundaries by half a cell</label>
-          <div class="try">
-            <b>Try this</b>
-            <ol>
-              <li>Note &beta; at household level, then at 4 areas. How many times larger has it become?</li>
-              <li>At 16 areas, switch the boundary shift on and off. Same households, different lines on the map, different &beta;.</li>
-              <li>Watch R&sup2; climb as you aggregate. A tighter fit is not a truer answer.</li>
-            </ol>
-          </div>
         </div>
+        <label class="switch"><input type="checkbox" id="i5z"> Shift every boundary by half a cell</label>
       </div>
-      <div class="learn">
-        <div>
-          <h4>What this shows</h4>
-          <p>Averaging within areas cancels out the noise that is specific to each household, but keeps whatever varies smoothly across space. What survives is the spatial part of the relationship, which here is much stronger than the household one.</p>
-        </div>
-        <div>
-          <h4>What to notice</h4>
-          <ul>
-            <li>The scale effect: &beta; grows as the areas get bigger, purely from aggregation.</li>
-            <li>The zoning effect: at a fixed number of areas, moving the boundaries still moves &beta;.</li>
-            <li>Together these are the modifiable areal unit problem. It has no general solution, only honest reporting.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>In QGIS</h4>
-          <p>Aggregation is a geoprocessing step:</p>
-          <code class="path">Dissolve &rsaquo; Join Attributes by Location &rsaquo; Export to CSV</code>
-          <p style="margin-top:8px">Choose the unit from the economic mechanism you believe in, then report the result at a second unit as a robustness check.</p>
-        </div>
-      </div>
+    </figure>
+    <div class="after">
+      <h3>Worth doing</h3>
+      <ol>
+        <li>Note the coefficient at household level, then at four areas, and work out the multiple.</li>
+        <li>At sixteen areas, switch the boundary shift on and off. Same households, different lines on the map, different answer.</li>
+        <li>Watch R squared climb as you aggregate. A tighter fit is not a truer one.</li>
+      </ol>
+      <p>Averaging within an area cancels the noise that belongs to each household but keeps whatever varies smoothly across space, so what survives is the spatial part of the relationship. Here that part is much stronger than the household one, which is why the slope grows. The first effect is about scale, the second about where the lines are drawn; together they are the modifiable areal unit problem, and there is no general fix for it. Choose the unit from a mechanism you can defend, then report a second unit as a robustness check.</p>
     </div>
   </section>
 
   <footer>
-    <div>
-      <h3>Every module has a twin in the lecture</h3>
-      <div class="map-list">
-        <div><b>Module 01</b> <span>Raster, zonal statistics, and why <code>count</code> matters</span></div>
-        <div><b>Module 02</b> <span>Coordinate systems, and Exercise 5 on buffers</span></div>
-        <div><b>Module 03</b> <span>Thematic maps, and the three-map comparison</span></div>
-        <div><b>Module 04</b> <span>Exercise 2, and the five silent join failures</span></div>
-        <div><b>Module 05</b> <span>Units of analysis, and spatial autocorrelation</span></div>
-      </div>
-    </div>
-    <div class="colophon">
-      Billy Thandy Tulungen<br>
-      Guest lecture, 21 September 2026<br>
-      <br>
-      Every number on this page is<br>
-      generated synthetically so the<br>
-      pattern reads clearly. None of<br>
-      it describes a real place.
-    </div>
+    <p>Billy Thandy Tulungen &middot; guest lecture, 21 September 2026</p>
+    <p>Every figure on this page is generated in your browser from synthetic data, so the patterns read clearly. None of it describes a real place, and nothing computed here should end up in a thesis. The practice files carry a README listing where the real Indonesian equivalents come from.</p>
   </footer>
 </div>
-
 <script>
 (function(){
 "use strict";
