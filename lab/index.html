@@ -17,6 +17,7 @@
   --d0:#8B2A5B; --d1:#CC7EA6; --d2:#E9EEE9; --d3:#7CA7C0; --d4:#1E5876;
   --ok:#2A6A4E; --bad:#9A2F2F;
   --blue-soft:#DCE8EE; --mag-soft:#F1DCE7; --on-mag:#FFF6FA;
+  --panel-2:#E9EFE9; --line:#CAD5CC; --grid:rgba(22,34,43,.11);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -28,6 +29,7 @@
     --d0:#DF7AAD; --d1:#A74A70; --d2:#27353D; --d3:#3C7D9F; --d4:#7BC1E1;
     --ok:#5EBD94; --bad:#DF7B7B;
     --blue-soft:#16313D; --mag-soft:#381A2B; --on-mag:#14202A;
+  --panel-2:#1C2A32; --line:#2A3B44; --grid:rgba(227,236,231,.09);
   }
 }
 :root[data-theme="dark"]{
@@ -39,6 +41,7 @@
   --d0:#DF7AAD; --d1:#A74A70; --d2:#27353D; --d3:#3C7D9F; --d4:#7BC1E1;
   --ok:#5EBD94; --bad:#DF7B7B;
   --blue-soft:#16313D; --mag-soft:#381A2B; --on-mag:#14202A;
+  --panel-2:#1C2A32; --line:#2A3B44; --grid:rgba(227,236,231,.09);
 }
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -50,7 +53,7 @@ img{max-width:100%}
 .wrap{max-width:860px; margin-inline:auto; padding-inline:22px; padding-block:0 80px}
 h1,h2,h3{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif; text-wrap:balance; margin:0}
 h1{font-size:clamp(40px,7vw,68px); font-weight:700; line-height:1}
-h2{font-size:clamp(26px,4vw,38px); font-weight:600; line-height:1.08; margin-bottom:10px}
+h2{font-size:clamp(26px,4vw,38px); font-weight:600; line-height:1.08; margin-bottom:14px}
 h3{font-size:19px; font-weight:600}
 p{margin:0}
 a{color:var(--blue)}
@@ -81,7 +84,7 @@ section.mod{padding-top:54px; margin-top:44px; border-top:1px solid var(--rule);
 section.mod > p{color:var(--ink-2); max-width:62ch; margin-top:2px}
 section.mod > p + p{margin-top:12px}
 
-figure{margin:26px 0 0; padding:0}
+figure{margin:24px 0 0; padding:0}
 .plot{background:var(--panel); padding:14px}
 canvas{display:block; width:100%; height:auto; max-width:100%}
 
@@ -92,7 +95,8 @@ canvas{display:block; width:100%; height:auto; max-width:100%}
   font-weight:500; color:var(--ink); font-variant-numeric:tabular-nums; line-height:1.15}
 .readout .dd.hi{color:var(--mag)}
 
-.note{margin-top:16px; font-size:15.5px; color:var(--ink-2); background:var(--blue-soft); padding:13px 16px}
+.note{margin-top:16px; font-size:15.5px; color:var(--ink-2); background:var(--blue-soft);
+  padding:14px 18px; max-width:76ch}
 .note.warn{background:var(--mag-soft)}
 .note strong{color:var(--ink)}
 
@@ -114,9 +118,9 @@ input[type=range]{width:100%; accent-color:var(--mag); background:transparent}
 .seg button[aria-pressed="true"]{background:var(--mag); border-color:var(--mag); color:var(--on-mag); font-weight:600}
 button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
 
-.after{margin-top:22px}
+.after{margin-top:26px}
 .after h3{margin-bottom:8px}
-.after p, .after li{color:var(--ink-2); font-size:16px}
+.after p, .after li{color:var(--ink-2); font-size:16px; max-width:64ch}
 .after ul,.after ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px}
 .after p + p{margin-top:12px}
 .after ol + p,.after ul + p{margin-top:14px}
@@ -156,10 +160,10 @@ footer p + p{margin-top:10px}
 .bar a.dl{display:inline-block; padding:8px 15px; background:var(--mag); color:var(--on-mag);
   text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13.5px; white-space:nowrap}
 .bar a.dl:hover{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
-.filenote{font-size:14px; color:var(--ink-3); margin-top:10px}
+.filenote{font-size:14px; color:var(--ink-3); margin-top:10px; max-width:74ch}
 section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
 .after h3{font-size:17px}
-.single{margin-top:20px; font-size:16px; color:var(--ink-2)}
+.single{margin-top:20px; font-size:16px; color:var(--ink-2); max-width:64ch}
 .single b{color:var(--ink)}
 </style>
 </head>
@@ -169,7 +173,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
   <header class="open">
     <p class="ident">A companion to a guest lecture in Empirical Development Economics, Universitas Indonesia &middot; <a href="https://billytulungen.com/">billytulungen.com</a></p>
     <h1>Spatial Data Lab</h1>
-    <p class="lead">Most of the trouble with spatial data comes from five places, and none of them announces itself. Your software runs, a column appears, and the number in it is wrong. So instead of warning you, this page lets you cause each one and watch what it does to the figures underneath.</p>
+    <p class="lead">Spatial data goes wrong in five ordinary ways. None of them shows an error. QGIS runs, a new column appears, and the number inside it is simply not what you think it is. This page lets you make each mistake on purpose and watch the figures underneath change while you do.</p>
     <div class="bar">
       <div class="jump">
         <a href="#m1">Raster resolution</a>
@@ -185,7 +189,8 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
 
   <section class="mod" id="m1">
     <h2>How coarse a raster can get before the average stops meaning anything</h2>
-    <p>Night lights, with one district boundary drawn over them. Zonal statistics reads every cell whose centre falls inside that boundary and returns one number. Coarsen the cells and you are not only losing detail in the picture, you are losing the observations the average is built from.</p>
+    <p>Below is a satellite image of night lights. Every square is one cell, and every cell holds one number: how bright that patch of ground was. The pink outline is a district.
+      QGIS can average all the cells inside that outline and hand you one figure for the district. That tool is called zonal statistics. Make the cells bigger and fewer of them fit inside the outline, so the average has less to stand on.</p>
     <figure>
       <div class="plot">
         <canvas id="c1" role="img" aria-label="A grid of night-light raster cells with one district boundary drawn on top"></canvas>
@@ -212,13 +217,14 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
         <li>Compare the mean at 1&nbsp;km and at 16&nbsp;km, then compare the standard errors beside them. One of those means belongs in a regression and the other does not.</li>
         <li>Watch the sum while you drag. It swings hard; the mean barely moves. That is the whole argument for using rates rather than totals.</li>
       </ol>
-      <p>In QGIS this is <code>Processing Toolbox &rsaquo; Zonal statistics</code>. Tick <code>count</code> as well as <code>mean</code>, always. A small city district can hold a dozen cells, and nobody downstream will know.</p>
+      <p>In QGIS you will find this under <code>Processing Toolbox &rsaquo; Zonal statistics</code>. When you run it, tick <code>count</code> as well as <code>mean</code>. Count tells you how many cells went into each average. A small city district might contain only a dozen, and without that column nobody reading your table would ever know.</p>
     </div>
   </section>
 
   <section class="mod" id="m2">
     <h2>Why 5000 sometimes means five kilometres and sometimes five hundred</h2>
-    <p>Three villages, twelve health facilities. You want the facilities within five kilometres of each village, so you type 5000 into the distance box. Whether that means five kilometres or roughly five hundred depends entirely on which coordinate system the layer happens to carry.</p>
+    <p>Three villages, twelve health facilities. You want to count the facilities within five kilometres of each village, so you draw a circle of that size around every village. In QGIS that circle is called a buffer, and you set its size by typing a number.
+      Type 5000 and you might get five kilometres, or you might get five hundred. Which one you get depends on the coordinate system the layer carries, and QGIS will not stop you either way.</p>
     <figure>
       <div class="plot">
         <canvas id="c2" role="img" aria-label="A map of three villages with distance circles around them and health facility points scattered across an island"></canvas>
@@ -242,14 +248,16 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
     </figure>
     <p class="single">Leave the value at 5 and switch the system to degrees. Then try to find any value that still gives a sensible answer, because there isn't one.</p>
     <div class="after">
-      <p>A degree is an angle, not a length. One degree of latitude runs about 111&nbsp;km, and a degree of longitude shrinks as you move away from the equator, so the error is not even constant across your map. In degree mode every village reaches every facility, which leaves the variable with no variation at all, and a variable with no variation quietly kills the regression it was built for.</p>
-      <p>Run <code>Reproject Layer</code> into the right UTM zone before anything that measures, and glance at the EPSG code in the bottom-right corner of the window before you press Run.</p>
+      <p>A coordinate system stores position either in metres or in degrees of latitude and longitude. A degree is an angle, not a length. One degree of latitude covers about 111&nbsp;km, so asking for a buffer of 5 in a degree-based layer gives you a circle roughly 555&nbsp;km across.
+      Worse, a degree of longitude gets shorter as you move away from the equator, so the mistake is not even the same size across your map. And once every village reaches every facility, your new column is the same number everywhere. A column with no variation tells a regression nothing at all.</p>
+      <p>The fix is one step. Before anything that measures distance or area, run <code>Reproject Layer</code> and send your data into the UTM zone that covers your study area, which puts it in metres. Then check the EPSG code in the bottom-right corner of the QGIS window before you press Run.</p>
     </div>
   </section>
 
   <section class="mod" id="m3">
     <h2>One column of numbers, and how different the maps can look</h2>
-    <p>Fifty-four areas, one poverty figure each, and that figure never changes while you are on this page. What changes is where the range gets cut and which colours the classes are given. Both are decisions the data does not make for you, and most readers will never think about either.</p>
+    <p>Fifty-four areas, each with one poverty figure. Those figures never change while you are on this page.
+      What changes is how you slice them. To colour a map you first sort the values into groups, called classes, and then give each class a shade. Where you cut between one class and the next is your choice, not the data's, and so is the colour scheme. Most readers will never think about either.</p>
     <figure>
       <div class="plot">
         <canvas id="c3" role="img" aria-label="A hexagon map of fifty-four areas shaded by value"></canvas>
@@ -293,13 +301,14 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
         <li>Change the variable to the number of poor people, then ask whose map that actually is.</li>
         <li>Pick Rainbow and try to rank the classes from low to high using colour alone.</li>
       </ol>
-      <p>All of this lives in <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. Name the method and the class count in your figure caption; without them nobody can judge the map, and a referee will ask.</p>
+      <p>Every control here has a twin in QGIS, under <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. When you put a map in a paper, write the method and the number of classes into the caption. Without them a reader cannot tell whether the pattern is in the data or in your choices, and a referee will ask.</p>
     </div>
   </section>
 
   <section class="mod" id="m4">
     <h2>The join that drops a third of your sample without saying so</h2>
-    <p>Twelve districts on one side, twelve rows of statistics on the other. Switch on any of the ordinary conditions below and watch the match rate fall. Then look at which rows fell out, because that matters far more than how many did.</p>
+    <p>A join is how you attach a table of statistics to a map. Both sides need a shared key, usually the district code, and QGIS matches them row by row.
+      Here are twelve districts on the map and twelve rows of statistics. Switch on any of the everyday situations below and watch how many rows still match. Then look at which ones dropped out, because that matters far more than the count.</p>
     <figure>
       <div class="tscroll">
         <table>
@@ -321,14 +330,15 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
       </div>
     </figure>
     <div class="after">
-      <p>The rows that fail are never a random draw. New districts, renamed cities and merged areas differ systematically from the ones that match, which turns what looks like a data-cleaning annoyance into a sample selection problem sitting quietly inside your estimates.</p>
+      <p>The rows that fail are never a random handful. They are the newly created districts, the cities whose names changed, the areas that merged. Those places are different from the ones that matched, often in ways related to what you are studying. So this is not a tidying-up problem. It is a sample selection problem sitting quietly inside your results.</p>
       <p><b>So count your rows before and after every join</b>, sort the new column to find the blanks, and match on codes rather than names. A join made in <code>Layer Properties &rsaquo; Joins</code> is temporary until you run <code>Export &rsaquo; Save Features As</code>.</p>
     </div>
   </section>
 
   <section class="mod" id="m5">
     <h2>What happens to a coefficient when you redraw the boundaries</h2>
-    <p>Four hundred households, and one relationship between road access and spending that holds steady throughout. Average them into larger and larger areas and watch the slope move. Nothing new enters the data; the grey dashed line is the household relationship, kept for comparison.</p>
+    <p>Four hundred households. The true relationship between road access and spending is fixed and never changes here.
+      Now group those households into areas and average each area, which is what you do whenever you work with district data instead of household data. Watch the slope of the line as the areas get bigger. No new information arrives; the grey dashed line is the household relationship, kept for comparison.</p>
     <figure>
       <div class="plot">
         <canvas id="c5" role="img" aria-label="A scatter plot of road access against household spending with a fitted regression line"></canvas>
@@ -355,8 +365,8 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
     </figure>
     <p class="single">At sixteen areas, switch the boundary shift on and off a few times. Same households, different lines on the map, different answer.</p>
     <div class="after">
-      <p>Averaging within an area cancels the noise belonging to each household but keeps whatever varies smoothly across space, so what survives is the spatial part of the relationship. Here that part is far stronger than the household one, which is why the slope grows and R squared climbs with it. A tighter fit is not a truer one.</p>
-      <p>The first effect is about scale and the second about where the lines fall. Together they are the modifiable areal unit problem, and there is no general fix. Choose the unit from a mechanism you can defend, then report a second unit as a robustness check.</p>
+      <p>Averaging cancels out whatever is peculiar to each household, but it keeps whatever varies smoothly from place to place. So what survives the averaging is the geographic part of the relationship, and here that part is much stronger than the household part. That is why the slope grows. R squared climbs too, which is worth noticing: a tighter fit is not a truer answer.</p>
+      <p>Two separate things are happening. Bigger areas change the answer, and moving the boundaries changes it again even when the number of areas stays the same. Together they are known as the modifiable areal unit problem, and there is no general cure for it. Pick your unit because you can explain why that is the right one, then show the result at a second unit so readers can see how much it moved.</p>
     </div>
   </section>
 
@@ -395,11 +405,12 @@ function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
       tot++;
       var isIn=inPoly(gx+r.px/2,gy+r.px/2,KAB);
       if(isIn)vals.push(v);
+      var a=(iS.checked&&!isIn)?.34:1;
+      x.globalAlpha=a;
       x.fillStyle=ramp[k];
-      x.globalAlpha=(iS.checked&&!isIn)?.28:1;
       x.fillRect(gx,gy,r.px,r.px);
-      x.globalAlpha=1;
       if(r.px>=10){x.strokeStyle=cv("--grid");x.lineWidth=1;x.strokeRect(gx+.5,gy+.5,r.px-1,r.px-1);}
+      x.globalAlpha=1;
     }
     if(iB.checked){
       x.beginPath();x.moveTo(KAB[0][0],KAB[0][1]);
