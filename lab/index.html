@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+  :root{ color-scheme: light dark;
+         padding-top: env(safe-area-inset-top, 0px);
+         padding-bottom: env(safe-area-inset-bottom, 0px); }
+  body{ margin:0; }
+  img{ max-width:100%; }
+  [hidden]{ display:none !important; }
+</style>
+<title>Lab Data Spasial</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --paper:#E4EAE5; --panel:#F2F6F2; --panel-2:#E8EFE9;
+  --ink:#13212B; --ink-2:#41545F; --ink-3:#5F737C;
+  --line:#BAC8BF; --line-soft:#D3DDD5;
+  --blue:#1F5C7B; --blue-soft:#D8E7EE;
+  --mag:#9E2C6E; --mag-soft:#F0DAE6;
+  --grid:rgba(19,33,43,.10);
+  --r0:#E7EDE9; --r1:#C4DAE4; --r2:#99C0D4; --r3:#6299BA; --r4:#37769B; --r5:#174E6C;
+  --d0:#8E2A5C; --d1:#CE7FA8; --d2:#E9EEE9; --d3:#7FA9C2; --d4:#1F5A78;
+  --ok:#2C6B4F; --bad:#9E3030;
+  --shadow:0 1px 0 rgba(19,33,43,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D171D; --panel:#152128; --panel-2:#1B2831;
+    --ink:#E2EBE6; --ink-2:#A6BAC2; --ink-3:#7B929C;
+    --line:#2B3C45; --line-soft:#1F2C34;
+    --blue:#72B8D9; --blue-soft:#15303C; --mag:#E88BBB; --mag-soft:#37192A;
+    --grid:rgba(226,235,230,.08);
+    --r0:#1A2830; --r1:#224557; --r2:#2D5F7C; --r3:#3E83A7; --r4:#5CA4C8; --r5:#8AC6E2;
+    --d0:#E07BAE; --d1:#A8496F; --d2:#26343C; --d3:#3B7C9E; --d4:#7CC2E2;
+    --ok:#5FBE95; --bad:#E07C7C;
+    --shadow:0 1px 0 rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D171D; --panel:#152128; --panel-2:#1B2831;
+  --ink:#E2EBE6; --ink-2:#A6BAC2; --ink-3:#7B929C;
+  --line:#2B3C45; --line-soft:#1F2C34;
+  --blue:#72B8D9; --blue-soft:#15303C; --mag:#E88BBB; --mag-soft:#37192A;
+  --grid:rgba(226,235,230,.08);
+  --r0:#1A2830; --r1:#224557; --r2:#2D5F7C; --r3:#3E83A7; --r4:#5CA4C8; --r5:#8AC6E2;
+  --d0:#E07BAE; --d1:#A8496F; --d2:#26343C; --d3:#3B7C9E; --d4:#7CC2E2;
+  --ok:#5FBE95; --bad:#E07C7C;
+  --shadow:0 1px 0 rgba(0,0,0,.3);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1160px; margin-inline:auto; padding-inline:20px; padding-block:0 72px}
+
+h1,h2,h3{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif; text-wrap:balance; margin:0}
+h1{font-size:clamp(36px,6vw,62px); font-weight:700; line-height:1.03; letter-spacing:-.01em}
+h2{font-size:clamp(25px,3.4vw,36px); font-weight:600; line-height:1.1}
+h3{font-size:19px; font-weight:600; line-height:1.25}
+p{margin:0}
+.mono{font-family:'IBM Plex Mono','Courier New',monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead, drawn like a map sheet ---------- */
+.mast{
+  border:1px solid var(--line); border-top:3px solid var(--ink);
+  background:var(--panel); margin-top:24px; position:relative;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:36px 36px;
+}
+.mast-in{padding:30px 26px 26px; display:grid; gap:26px; grid-template-columns:1fr}
+@media(min-width:840px){.mast-in{grid-template-columns:1fr 290px; align-items:end}}
+.kicker{
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; font-weight:500;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--mag); margin-bottom:12px;
+}
+.mast p.sub{margin-top:14px; color:var(--ink-2); font-size:17px; max-width:56ch}
+.marg{
+  border-left:2px solid var(--mag); padding-left:14px;
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12.5px; color:var(--ink-2); line-height:1.85;
+}
+.marg b{color:var(--ink); font-weight:500}
+
+/* ---------- sheet index nav ---------- */
+.idx{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:20;
+  background:var(--paper); border-bottom:1px solid var(--line);
+  margin-inline:-20px; padding:8px 20px; overflow-x:auto;
+}
+.idx ul{display:flex; gap:6px; list-style:none; margin:0; padding:0; min-width:max-content}
+.idx a{
+  display:block; text-decoration:none; padding:7px 12px; border:1px solid var(--line-soft);
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; letter-spacing:.06em;
+  color:var(--ink-2); white-space:nowrap; background:var(--panel);
+}
+.idx a:hover{border-color:var(--mag); color:var(--mag)}
+.idx a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
+
+/* ---------- sheets ---------- */
+.sheet{
+  border:1px solid var(--line); background:var(--panel); margin-top:34px; position:relative;
+}
+.sheet::before,.sheet::after{
+  content:""; position:absolute; width:11px; height:11px; border:2px solid var(--mag); pointer-events:none;
+}
+.sheet::before{top:-1px; left:-1px; border-right:0; border-bottom:0}
+.sheet::after{bottom:-1px; right:-1px; border-left:0; border-top:0}
+.sheet-head{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px;
+  padding:16px 22px; border-bottom:1px solid var(--line); background:var(--panel-2);
+}
+.code{
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; font-weight:500;
+  letter-spacing:.14em; color:var(--mag); text-transform:uppercase;
+}
+.sheet-body{padding:22px}
+.lede{color:var(--ink-2); max-width:70ch; font-size:16.5px}
+
+.work{display:grid; gap:20px; grid-template-columns:1fr; margin-top:20px}
+@media(min-width:900px){.work{grid-template-columns:minmax(0,1fr) 322px}}
+
+.plot{border:1px solid var(--line-soft); background:var(--panel-2); padding:12px}
+canvas{display:block; width:100%; height:auto; max-width:100%}
+.readout{
+  display:flex; flex-wrap:wrap; gap:0; margin-top:12px; border:1px solid var(--line-soft);
+  border-bottom:0; border-right:0;
+}
+.readout>div{
+  flex:1 1 118px; padding:8px 11px; border-right:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft);
+}
+.readout .dt{
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:10.5px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3); margin:0 0 3px;
+}
+.readout .dd{
+  margin:0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:19px; font-weight:500;
+  color:var(--ink); font-variant-numeric:tabular-nums; line-height:1.2;
+}
+.readout .dd.hi{color:var(--mag)}
+
+/* ---------- legend box = control panel ---------- */
+.ctl{border:1px solid var(--line-soft); background:var(--panel-2); padding:16px; display:flex; flex-direction:column; gap:15px; align-self:start}
+.ctl-h{
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-3); border-bottom:1px solid var(--line-soft); padding-bottom:8px;
+}
+.fld{display:flex; flex-direction:column; gap:7px}
+.fld>label{font-size:13.5px; font-weight:600; color:var(--ink-2)}
+select{
+  font:inherit; font-size:14px; padding:7px 9px; background:var(--panel); color:var(--ink);
+  border:1px solid var(--line); border-radius:0; width:100%;
+}
+input[type=range]{width:100%; accent-color:var(--mag); background:transparent}
+.seg{display:flex; flex-wrap:wrap; gap:5px}
+.seg button{
+  font:inherit; font-size:13px; padding:6px 11px; cursor:pointer;
+  background:var(--panel); color:var(--ink-2); border:1px solid var(--line); border-radius:0;
+}
+.seg button[aria-pressed="true"]{background:var(--mag); border-color:var(--mag); color:#FFF7FB; font-weight:600}
+.chk{display:flex; gap:9px; align-items:flex-start; font-size:14px; color:var(--ink-2); cursor:pointer; line-height:1.4}
+.chk input{margin:2px 0 0; accent-color:var(--mag); flex:none}
+button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
+.val{font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; color:var(--ink); float:right; font-weight:500}
+
+.try{border-top:1px solid var(--line-soft); padding-top:13px; font-size:14px; color:var(--ink-2)}
+.try b{display:block; font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--mag); margin-bottom:8px; font-weight:500}
+.try ol{margin:0; padding-left:19px; display:flex; flex-direction:column; gap:7px}
+
+.note{
+  margin-top:16px; border-left:3px solid var(--blue); background:var(--blue-soft);
+  padding:13px 16px; font-size:14.5px; color:var(--ink-2);
+}
+.note.warn{border-left-color:var(--mag); background:var(--mag-soft)}
+.note strong{color:var(--ink)}
+
+/* ---------- legend swatches ---------- */
+.legend{display:flex; flex-direction:column; gap:3px; margin-top:12px}
+.legend .row{display:flex; align-items:center; gap:10px; font-family:'IBM Plex Mono','Courier New',monospace; font-size:12.5px; color:var(--ink-2)}
+.legend i{width:26px; height:13px; flex:none; border:1px solid var(--line)}
+.legend span.n{margin-left:auto; color:var(--ink-3)}
+
+/* ---------- join table ---------- */
+.tscroll{overflow-x:auto; border:1px solid var(--line-soft); background:var(--panel-2)}
+table{border-collapse:collapse; width:100%; min-width:520px; font-size:14px}
+th,td{text-align:left; padding:8px 12px; border-bottom:1px solid var(--line-soft); white-space:nowrap}
+th{
+  font-family:'IBM Plex Mono','Courier New',monospace; font-size:10.5px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:500; background:var(--panel);
+}
+td.k{font-family:'IBM Plex Mono','Courier New',monospace; color:var(--ink)}
+tr.miss td{color:var(--ink-3)}
+tr.miss td.k{text-decoration:line-through}
+.badge{font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; padding:2px 7px; border:1px solid currentColor}
+.badge.ok{color:var(--ok)} .badge.no{color:var(--bad)}
+
+/* ---------- axis labels ---------- */
+.axis{display:flex; justify-content:space-between; font-family:'IBM Plex Mono','Courier New',monospace; font-size:11.5px; color:var(--ink-3); margin-top:6px}
+
+footer{margin-top:42px; border-top:2px solid var(--ink); padding-top:20px; display:grid; gap:22px}
+@media(min-width:840px){footer{grid-template-columns:1fr 290px}}
+footer h3{margin-bottom:10px}
+.map-list{display:grid; gap:0; border:1px solid var(--line-soft)}
+.map-list div{display:flex; flex-wrap:wrap; gap:4px 14px; padding:9px 13px; border-bottom:1px solid var(--line-soft); font-size:14px; color:var(--ink-2)}
+.map-list div:last-child{border-bottom:0}
+.map-list b{font-weight:600; color:var(--ink); min-width:150px}
+.map-list code{font-family:'IBM Plex Mono','Courier New',monospace; font-size:12.5px; color:var(--blue)}
+.colophon{font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; color:var(--ink-3); line-height:1.9; border-left:2px solid var(--line); padding-left:14px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+
+  <div class="mast">
+    <div class="mast-in">
+      <div>
+        <p class="kicker">Ekonomi Pembangunan Empiris &middot; FEB UI</p>
+        <h1>Lab Data Spasial</h1>
+        <p class="sub">Lima hal yang paling sering salah waktu pertama kali memakai data spasial. Di sini Anda bisa membuat kesalahan itu sendiri, melihat akibatnya, lalu memperbaikinya &mdash; sebelum mengulanginya di QGIS dengan data sungguhan.</p>
+      </div>
+      <div class="marg">
+        <b>SESI</b> &nbsp;21 September 2026<br>
+        <b>RUANG</b> &nbsp;A.112, 08.00&ndash;10.30<br>
+        <b>LEMBAR</b> &nbsp;5 modul, tanpa pemasangan<br>
+        <b>DATA</b> &nbsp;sintetis, dibangkitkan di peramban
+      </div>
+    </div>
+  </div>
+
+  <nav class="idx" aria-label="Daftar modul">
+    <ul>
+      <li><a href="#m1">01 &middot; Raster &amp; resolusi</a></li>
+      <li><a href="#m2">02 &middot; Proyeksi &amp; buffer</a></li>
+      <li><a href="#m3">03 &middot; Klasifikasi peta</a></li>
+      <li><a href="#m4">04 &middot; Penggabungan tabel</a></li>
+      <li><a href="#m5">05 &middot; MAUP</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ 01 ============ -->
+  <section class="sheet" id="m1">
+    <div class="sheet-head"><span class="code">Lembar 01</span><h2>Resolusi raster dan zonal statistics</h2></div>
+    <div class="sheet-body">
+      <p class="lede">Citra cahaya malam di atas satu kabupaten. Kasarkan selnya dan perhatikan dua hal sekaligus: garis pantai jadi bergerigi, dan jumlah sel yang jatuh di dalam batas menyusut sampai rata-ratanya tidak lagi bisa dipercaya.</p>
+      <div class="work">
+        <div class="plot">
+          <canvas id="c1" role="img" aria-label="Kisi raster cahaya malam dengan batas satu kabupaten digambar di atasnya"></canvas>
+          <div class="readout">
+            <div><p class="dt">Ukuran sel</p><p class="dd" id="r1a">4 km</p></div>
+            <div><p class="dt">Sel di dalam batas</p><p class="dd" id="r1b">0</p></div>
+            <div><p class="dt">Rata-rata</p><p class="dd" id="r1c">0</p></div>
+            <div><p class="dt">Jumlah</p><p class="dd" id="r1d">0</p></div>
+          </div>
+          <div class="note" id="n1">Pada resolusi ini rata-rata masih ditopang oleh cukup banyak sel.</div>
+        </div>
+        <div class="ctl">
+          <p class="ctl-h">Kendali</p>
+          <div class="fld">
+            <label for="i1res">Ukuran sel <span class="val" id="v1res">4 km</span></label>
+            <input type="range" id="i1res" min="0" max="4" step="1" value="2">
+          </div>
+          <label class="chk"><input type="checkbox" id="i1bat" checked> Tampilkan batas kabupaten</label>
+          <label class="chk"><input type="checkbox" id="i1sor" checked> Redupkan sel di luar batas</label>
+          <div class="try">
+            <b>Coba ini</b>
+            <ol>
+              <li>Geser ke sel 16 km. Berapa sel yang tersisa di dalam batas?</li>
+              <li>Bandingkan rata-rata pada 1 km dan 16 km. Mana yang lebih Anda percayai, dan mengapa?</li>
+              <li>Perhatikan bahwa <em>jumlah</em> ikut berubah, sementara <em>rata-rata</em> relatif bertahan.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="note warn"><strong>Yang dibawa ke QGIS:</strong> sertakan selalu statistik <span class="mono">count</span> saat menjalankan Zonal statistics. Kabupaten kota yang luasnya kecil bisa hanya memuat dua atau tiga sel, dan rata-ratanya akan naik turun tanpa alasan substantif.</div>
+    </div>
+  </section>
+
+  <!-- ============ 02 ============ -->
+  <section class="sheet" id="m2">
+    <div class="sheet-head"><span class="code">Lembar 02</span><h2>Satu angka, dua satuan</h2></div>
+    <div class="sheet-body">
+      <p class="lede">Tiga desa, dua belas fasilitas kesehatan. Anda ingin menghitung berapa fasilitas berada dalam radius 5 km dari setiap desa, lalu mengetik 5000 ke kotak <span class="mono">Distance</span>. Pilih CRS yang salah dan angka itu berubah arti sepenuhnya &mdash; tanpa satu pun pesan kesalahan.</p>
+      <div class="work">
+        <div class="plot">
+          <canvas id="c2" role="img" aria-label="Peta tiga desa dengan lingkaran radius di sekelilingnya dan titik fasilitas kesehatan"></canvas>
+          <div class="readout">
+            <div><p class="dt">Satuan layer</p><p class="dd" id="r2a">meter</p></div>
+            <div><p class="dt">Radius efektif</p><p class="dd" id="r2b">5 km</p></div>
+            <div><p class="dt">Per desa</p><p class="dd" id="r2c">0 &middot; 0 &middot; 0</p></div>
+            <div><p class="dt">Total terhitung</p><p class="dd hi" id="r2d">0</p></div>
+          </div>
+          <div class="note" id="n2">Hasil ini masuk akal: sebagian fasilitas di luar jangkauan.</div>
+        </div>
+        <div class="ctl">
+          <p class="ctl-h">Kendali</p>
+          <div class="fld">
+            <label for="i2crs">CRS layer</label>
+            <select id="i2crs">
+              <option value="m">EPSG:32748 &mdash; UTM 48S (meter)</option>
+              <option value="d">EPSG:4326 &mdash; WGS 84 (derajat)</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="i2r">Nilai Distance <span class="val" id="v2r">5</span></label>
+            <input type="range" id="i2r" min="1" max="20" step="1" value="5">
+          </div>
+          <div class="try">
+            <b>Coba ini</b>
+            <ol>
+              <li>Dengan nilai tetap 5, ganti CRS ke derajat. Berapa radius yang sebenarnya terbentuk?</li>
+              <li>Dalam mode derajat, adakah nilai Distance yang masih menghasilkan jawaban masuk akal?</li>
+              <li>Kembali ke meter, cari nilai terkecil yang membuat ketiga desa punya setidaknya satu fasilitas.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="note warn"><strong>Yang dibawa ke QGIS:</strong> jalankan <span class="mono">Reproject Layer</span> ke zona UTM yang sesuai sebelum Buffer, Distance, atau perhitungan luas apa pun. Lihat kode EPSG di pojok kanan bawah jendela sebelum menekan Run.</div>
+    </div>
+  </section>
+
+  <!-- ============ 03 ============ -->
+  <section class="sheet" id="m3">
+    <div class="sheet-head"><span class="code">Lembar 03</span><h2>Data yang sama, peta yang berbeda</h2></div>
+    <div class="sheet-body">
+      <p class="lede">Lima puluh empat wilayah dengan satu angka kemiskinan yang tidak berubah sama sekali selama Anda bermain di sini. Yang berubah hanya cara angka itu dipotong menjadi kelas dan diberi warna. Perhatikan seberapa jauh kesan yang ditinggalkan bisa berbeda.</p>
+      <div class="work">
+        <div class="plot">
+          <canvas id="c3" role="img" aria-label="Peta kisi heksagon lima puluh empat wilayah dengan warna bertingkat menurut nilainya"></canvas>
+          <canvas id="c3h" role="img" aria-label="Histogram sebaran nilai dengan garis batas kelas"></canvas>
+          <div class="axis"><span id="a3lo">min</span><span>sebaran nilai antarwilayah</span><span id="a3hi">maks</span></div>
+          <div class="legend" id="leg3"></div>
+        </div>
+        <div class="ctl">
+          <p class="ctl-h">Kendali</p>
+          <div class="fld">
+            <label for="i3var">Variabel yang dipetakan</label>
+            <select id="i3var">
+              <option value="rate">Persentase penduduk miskin</option>
+              <option value="total">Jumlah penduduk miskin (orang)</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="i3met">Metode klasifikasi</label>
+            <select id="i3met">
+              <option value="ei">Equal Interval</option>
+              <option value="q">Quantile</option>
+              <option value="nb" selected>Natural Breaks</option>
+              <option value="sd">Standard Deviation</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="i3k">Jumlah kelas <span class="val" id="v3k">5</span></label>
+            <input type="range" id="i3k" min="3" max="7" step="1" value="5">
+          </div>
+          <div class="fld">
+            <label for="i3ramp">Skema warna</label>
+            <select id="i3ramp">
+              <option value="seq">Sekuensial</option>
+              <option value="div">Diverging</option>
+              <option value="rain">Pelangi</option>
+            </select>
+          </div>
+          <div class="try">
+            <b>Coba ini</b>
+            <ol>
+              <li>Pada Quantile, lihat di histogram ke mana empat garis batasnya menumpuk.</li>
+              <li>Ganti variabel ke jumlah orang. Peta siapa yang sebenarnya Anda lihat sekarang?</li>
+              <li>Pilih Pelangi, lalu urutkan kelas dari rendah ke tinggi hanya dengan melihat warnanya.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="note" id="n3">Natural Breaks mencari celah alami dalam sebaran.</div>
+      <div class="note warn"><strong>Yang dibawa ke QGIS:</strong> sebutkan metode klasifikasi di keterangan gambar, dan normalkan variabel jumlah menjadi rasio sebelum memetakannya. Tanpa itu, peta Anda menggambarkan sebaran penduduk, bukan sebaran kemiskinan.</div>
+    </div>
+  </section>
+
+  <!-- ============ 04 ============ -->
+  <section class="sheet" id="m4">
+    <div class="sheet-head"><span class="code">Lembar 04</span><h2>Penggabungan yang gagal tanpa suara</h2></div>
+    <div class="sheet-body">
+      <p class="lede">Dua belas kabupaten di layer poligon, dua belas baris di tabel BPS. Nyalakan satu keadaan yang lumrah terjadi, lalu perhatikan berapa baris yang masih tercocokkan &mdash; dan perhatikan bahwa QGIS tidak mengeluh sedikit pun.</p>
+      <div class="work">
+        <div class="plot">
+          <div class="tscroll">
+            <table>
+              <thead><tr><th>Kode poligon</th><th>Nama</th><th>Kunci di tabel BPS</th><th>Status</th></tr></thead>
+              <tbody id="tb4"></tbody>
+            </table>
+          </div>
+          <div class="readout">
+            <div><p class="dt">Baris cocok</p><p class="dd" id="r4a">12 / 12</p></div>
+            <div><p class="dt">Sampel hilang</p><p class="dd hi" id="r4b">0%</p></div>
+            <div><p class="dt">Setara pada 514 kab.</p><p class="dd" id="r4c">0 wilayah</p></div>
+            <div><p class="dt">Pesan kesalahan</p><p class="dd" id="r4d">tidak ada</p></div>
+          </div>
+        </div>
+        <div class="ctl">
+          <p class="ctl-h">Keadaan yang menyala</p>
+          <label class="chk"><input type="checkbox" id="i4a"> CSV sempat dibuka di Excel, kode terbaca sebagai angka</label>
+          <label class="chk"><input type="checkbox" id="i4b"> Tabel BPS dari tahun sebelum pemekaran</label>
+          <label class="chk"><input type="checkbox" id="i4c"> Digabungkan lewat nama wilayah, bukan kode</label>
+          <div class="try">
+            <b>Coba ini</b>
+            <ol>
+              <li>Nyalakan yang pertama saja. Berapa baris yang selamat?</li>
+              <li>Matikan lagi, lalu nyalakan yang ketiga. Nama mana yang gagal, dan mengapa masuk akal?</li>
+              <li>Nyalakan kedua dan ketiga bersamaan, lalu bayangkan angka itu pada 514 kabupaten.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="note warn"><strong>Yang dibawa ke QGIS:</strong> hitung jumlah baris sebelum dan sesudah setiap penggabungan, dan urutkan kolom hasil join untuk mencari sel kosong. Gabungkan lewat kode, tidak pernah lewat nama.</div>
+    </div>
+  </section>
+
+  <!-- ============ 05 ============ -->
+  <section class="sheet" id="m5">
+    <div class="sheet-head"><span class="code">Lembar 05</span><h2>Koefisien yang bergerak saat unitnya diganti</h2></div>
+    <div class="sheet-body">
+      <p class="lede">Empat ratus rumah tangga dengan satu hubungan yang tidak pernah berubah: akses jalan terhadap pengeluaran. Agregasikan mereka ke wilayah yang makin besar, dan amati kemiringan garis regresinya. Tidak ada data baru yang masuk; yang berubah hanya batas wilayahnya.</p>
+      <div class="work">
+        <div class="plot">
+          <canvas id="c5" role="img" aria-label="Diagram pencar akses jalan terhadap pengeluaran dengan garis regresi"></canvas>
+          <div class="axis"><span>sumbu tegak: pengeluaran rumah tangga (log)</span><span>sumbu datar: indeks akses jalan</span></div>
+          <div class="readout">
+            <div><p class="dt">Unit observasi</p><p class="dd" id="r5a">400 rumah tangga</p></div>
+            <div><p class="dt">Koefisien &beta;</p><p class="dd hi" id="r5b">0.00</p></div>
+            <div><p class="dt">R&sup2;</p><p class="dd" id="r5c">0.00</p></div>
+            <div><p class="dt">Terhadap tingkat individu</p><p class="dd" id="r5d">1.0&times;</p></div>
+          </div>
+        </div>
+        <div class="ctl">
+          <p class="ctl-h">Tingkat agregasi</p>
+          <div class="seg" id="seg5" role="group" aria-label="Tingkat agregasi">
+            <button type="button" data-n="0" aria-pressed="true">Individu</button>
+            <button type="button" data-n="64" aria-pressed="false">64 unit</button>
+            <button type="button" data-n="16" aria-pressed="false">16 unit</button>
+            <button type="button" data-n="4" aria-pressed="false">4 unit</button>
+          </div>
+          <label class="chk"><input type="checkbox" id="i5z"> Geser batas wilayah setengah sel</label>
+          <div class="try">
+            <b>Coba ini</b>
+            <ol>
+              <li>Catat &beta; di tingkat individu, lalu di 4 unit. Berapa kali lipat perubahannya?</li>
+              <li>Pada 16 unit, nyalakan penggeseran batas. Data yang sama, batas berbeda &mdash; &beta; ikut bergerak.</li>
+              <li>Perhatikan R&sup2; ikut melonjak. Cocok bukan berarti benar.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="note warn"><strong>Yang dibawa ke QGIS:</strong> pilih unit analisis dari mekanisme ekonomi yang Anda yakini, bukan dari data yang paling mudah diunduh &mdash; lalu laporkan hasil pada unit alternatif sebagai uji ketahanan. Efek skala dan efek zonasi inilah yang disebut MAUP.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h3>Setiap lembar punya padanannya di QGIS</h3>
+      <div class="map-list">
+        <div><b>Lembar 01</b> <code>Processing Toolbox &rsaquo; Zonal statistics</code></div>
+        <div><b>Lembar 02</b> <code>Reproject Layer &rsaquo; Buffer &rsaquo; Join Attributes by Location</code></div>
+        <div><b>Lembar 03</b> <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code></div>
+        <div><b>Lembar 04</b> <code>Layer Properties &rsaquo; Joins</code></div>
+        <div><b>Lembar 05</b> <code>Dissolve, lalu ekspor ke Stata atau R</code></div>
+      </div>
+    </div>
+    <div class="colophon">
+      Billy Thandy Tulungen<br>
+      Kuliah tamu, 21 September 2026<br>
+      <br>
+      Seluruh angka di halaman ini<br>
+      dibangkitkan secara sintetis<br>
+      agar polanya terbaca jelas,<br>
+      dan bukan data wilayah nyata.
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var root=document.documentElement;
+function cv(n){return getComputedStyle(root).getPropertyValue(n).trim();}
+function mul(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function gauss(r){var u=0,v=0;while(u===0)u=r();while(v===0)v=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+function ctx2d(c,w,h){var d=Math.min(window.devicePixelRatio||1,2);c.width=w*d;c.height=h*d;c.style.aspectRatio=w+" / "+h;var x=c.getContext("2d");x.setTransform(d,0,0,d,0,0);return x;}
+function inPoly(px,py,poly){var i,j,hit=false;for(i=0,j=poly.length-1;i<poly.length;j=i++){var xi=poly[i][0],yi=poly[i][1],xj=poly[j][0],yj=poly[j][1];if((yi>py)!==(yj>py)&&px<(xj-xi)*(py-yi)/(yj-yi)+xi)hit=!hit;}return hit;}
+function ols(pts){var n=pts.length,sx=0,sy=0,i;for(i=0;i<n;i++){sx+=pts[i][0];sy+=pts[i][1];}var mx=sx/n,my=sy/n,sxy=0,sxx=0,syy=0;for(i=0;i<n;i++){var dx=pts[i][0]-mx,dy=pts[i][1]-my;sxy+=dx*dy;sxx+=dx*dx;syy+=dy*dy;}var b=sxx?sxy/sxx:0;return{b:b,a:my-b*mx,r2:(sxx&&syy)?(sxy*sxy)/(sxx*syy):0,mx:mx,my:my};}
+var W=640,H=420;
+var draws=[];
+function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
+
+/* ============================ 01 ============================ */
+(function(){
+  var c=document.getElementById("c1"),x=ctx2d(c,W,H);
+  var RES=[{px:80,km:16},{px:40,km:8},{px:20,km:4},{px:10,km:2},{px:5,km:1}];
+  var KAB=[[150,58],[338,38],[452,74],[522,158],[498,300],[372,384],[214,362],[112,240]];
+  var CITY=[{x:186,y:152,a:1,s:66},{x:414,y:122,a:.78,s:52},{x:326,y:296,a:.62,s:82},{x:512,y:330,a:.34,s:46},{x:96,y:334,a:.26,s:56},{x:250,y:70,a:.4,s:40}];
+  function field(px,py){var v=.05,i;for(i=0;i<CITY.length;i++){var c2=CITY[i],dx=px-c2.x,dy=py-c2.y;v+=c2.a*Math.exp(-(dx*dx+dy*dy)/(2*c2.s*c2.s));}return v>1?1:v;}
+  var iR=document.getElementById("i1res"),iB=document.getElementById("i1bat"),iS=document.getElementById("i1sor");
+  function draw(){
+    var r=RES[+iR.value],ramp=[cv("--r0"),cv("--r1"),cv("--r2"),cv("--r3"),cv("--r4"),cv("--r5")];
+    x.clearRect(0,0,W,H);x.fillStyle=cv("--panel-2");x.fillRect(0,0,W,H);
+    var inside=0,sum=0,tot=0,gx,gy;
+    for(gy=0;gy<H;gy+=r.px)for(gx=0;gx<W;gx+=r.px){
+      var v=field(gx+r.px/2,gy+r.px/2),k=Math.min(5,Math.floor(v*6));
+      tot++;
+      var isIn=inPoly(gx+r.px/2,gy+r.px/2,KAB);
+      if(isIn){inside++;sum+=v;}
+      x.fillStyle=ramp[k];
+      x.globalAlpha=(iS.checked&&!isIn)?.28:1;
+      x.fillRect(gx,gy,r.px,r.px);
+      x.globalAlpha=1;
+      if(r.px>=10){x.strokeStyle=cv("--grid");x.lineWidth=1;x.strokeRect(gx+.5,gy+.5,r.px-1,r.px-1);}
+    }
+    if(iB.checked){
+      x.beginPath();x.moveTo(KAB[0][0],KAB[0][1]);
+      for(var i=1;i<KAB.length;i++)x.lineTo(KAB[i][0],KAB[i][1]);
+      x.closePath();x.strokeStyle=cv("--mag");x.lineWidth=3.5;x.lineJoin="round";x.stroke();
+    }
+    document.getElementById("r1a").textContent=r.km+" km";
+    document.getElementById("v1res").textContent=r.km+" km";
+    document.getElementById("r1b").textContent=inside+" dari "+tot;
+    document.getElementById("r1c").textContent=inside?(sum/inside).toFixed(3):"—";
+    document.getElementById("r1d").textContent=sum.toFixed(1);
+    var n=document.getElementById("n1");
+    if(inside<12){n.className="note warn";n.innerHTML="<strong>Hanya "+inside+" sel di dalam batas.</strong> Pada jumlah sesedikit ini, satu sel terang saja sudah menggeser rata-rata kabupaten. Inilah sebabnya kolom <span class=\"mono\">count</span> harus ikut dilaporkan.";}
+    else{n.className="note";n.innerHTML="Rata-rata ditopang <strong>"+inside+" sel</strong>. Perhatikan bahwa <strong>jumlah</strong> berubah drastis antarresolusi sementara rata-rata jauh lebih bertahan &mdash; itu sebabnya rasio lebih aman dibandingkan total.";}
+  }
+  iR.addEventListener("input",draw);iB.addEventListener("change",draw);iS.addEventListener("change",draw);
+  draws.push(draw);
+})();
+
+/* ============================ 02 ============================ */
+(function(){
+  var c=document.getElementById("c2"),x=ctx2d(c,W,H);
+  var ISLAND=[[58,120],[168,52],[330,40],[470,66],[566,140],[588,262],[512,352],[352,392],[190,370],[84,286]];
+  var DESA=[[168,180],[336,246],[486,152]];
+  var FAS=[[122,140],[212,224],[248,118],[330,178],[398,292],[300,322],[470,108],[540,232],[548,330],[108,314],[418,62],[204,352]];
+  var KMPX=5;
+  var iC=document.getElementById("i2crs"),iR=document.getElementById("i2r");
+  function draw(){
+    var deg=iC.value==="d",val=+iR.value;
+    var km=deg?val*111.32:val, rpx=km*KMPX;
+    x.clearRect(0,0,W,H);x.fillStyle=cv("--blue-soft");x.fillRect(0,0,W,H);
+    x.beginPath();x.moveTo(ISLAND[0][0],ISLAND[0][1]);
+    for(var i=1;i<ISLAND.length;i++)x.lineTo(ISLAND[i][0],ISLAND[i][1]);
+    x.closePath();x.fillStyle=cv("--panel-2");x.fill();x.strokeStyle=cv("--line");x.lineWidth=2;x.stroke();
+    var counts=[0,0,0],total=0,j;
+    for(i=0;i<DESA.length;i++){
+      x.beginPath();x.arc(DESA[i][0],DESA[i][1],rpx,0,6.2832);
+      x.fillStyle=cv("--mag");x.globalAlpha=deg?.10:.14;x.fill();x.globalAlpha=1;
+      x.strokeStyle=cv("--mag");x.lineWidth=2;x.setLineDash([7,6]);x.stroke();x.setLineDash([]);
+      for(j=0;j<FAS.length;j++){
+        var dx=FAS[j][0]-DESA[i][0],dy=FAS[j][1]-DESA[i][1];
+        if(Math.sqrt(dx*dx+dy*dy)<=rpx){counts[i]++;total++;}
+      }
+    }
+    for(j=0;j<FAS.length;j++){x.beginPath();x.arc(FAS[j][0],FAS[j][1],6.5,0,6.2832);x.fillStyle=cv("--blue");x.fill();}
+    for(i=0;i<DESA.length;i++){x.fillStyle=cv("--ink");x.fillRect(DESA[i][0]-6,DESA[i][1]-6,12,12);x.strokeStyle=cv("--panel");x.lineWidth=2;x.strokeRect(DESA[i][0]-6,DESA[i][1]-6,12,12);}
+    document.getElementById("v2r").textContent=val;
+    document.getElementById("r2a").textContent=deg?"derajat":"meter";
+    document.getElementById("r2b").textContent=deg?("≈ "+Math.round(km)+" km"):(km+" km");
+    document.getElementById("r2c").textContent=counts.join(" · ");
+    document.getElementById("r2d").textContent=total+" dari 36";
+    var n=document.getElementById("n2");
+    if(deg){n.className="note warn";n.innerHTML="<strong>Distance "+val+" dibaca sebagai "+val+" derajat.</strong> Satu derajat lintang ≈ 111 km, jadi radiusnya menjadi sekitar "+Math.round(km)+" km &mdash; seluruh pulau masuk hitungan. QGIS menjalankannya tanpa peringatan apa pun.";}
+    else{n.className="note";n.innerHTML="Radius <strong>"+km+" km</strong> pada layer bersatuan meter. Angka per desa berbeda-beda, dan itulah variasi yang nantinya menjadi variabel akses di regresi Anda.";}
+  }
+  iC.addEventListener("change",draw);iR.addEventListener("input",draw);
+  draws.push(draw);
+})();
+
+/* ============================ 03 ============================ */
+(function(){
+  var c=document.getElementById("c3"),x=ctx2d(c,W,320);
+  var ch=document.getElementById("c3h"),xh=ctx2d(ch,W,120);
+  var rnd=mul(20260921),COLS=9,ROWS=6,SZ=30,units=[],i,r2,cc;
+  for(cc=0;cc<COLS;cc++)for(r2=0;r2<ROWS;r2++){
+    var cx=64+SZ*1.5*cc, cy=52+SZ*Math.sqrt(3)*(r2+(cc%2)/2);
+    var core=Math.exp(-(Math.pow(cc-3.2,2)/9+Math.pow(r2-2.6,2)/5));
+    var pop=Math.round((14+core*220+rnd()*40)*1000);
+    var rate=Math.max(2.1,3.4+ (1-core)*11*rnd()+ (rnd()<0.12? 9*rnd():0));
+    units.push({cx:cx,cy:cy,pop:pop,rate:+rate.toFixed(1),total:Math.round(pop*rate/100)});
+  }
+  function hex(px,py,s){x.beginPath();for(var k=0;k<6;k++){var a=Math.PI/180*(60*k);var vx=px+s*Math.cos(a),vy=py+s*Math.sin(a);k?x.lineTo(vx,vy):x.moveTo(vx,vy);}x.closePath();}
+  function breaks(v,k,m){
+    var s=v.slice().sort(function(a,b){return a-b;}),n=s.length,out=[],i;
+    if(m==="ei"){for(i=1;i<k;i++)out.push(s[0]+(s[n-1]-s[0])*i/k);}
+    else if(m==="q"){for(i=1;i<k;i++)out.push(s[Math.min(n-1,Math.floor(n*i/k))]);}
+    else if(m==="sd"){
+      var mu=0;for(i=0;i<n;i++)mu+=s[i];mu/=n;var sd=0;for(i=0;i<n;i++)sd+=Math.pow(s[i]-mu,2);sd=Math.sqrt(sd/n);
+      var half=(k-1)/2;for(i=0;i<k-1;i++)out.push(mu+sd*(i-half+0.5));
+    } else {
+      var cent=[];for(i=0;i<k;i++)cent.push(s[Math.floor(n*(i+0.5)/k)]);
+      for(var it=0;it<24;it++){
+        var sums=[],cnts=[];for(i=0;i<k;i++){sums.push(0);cnts.push(0);}
+        for(i=0;i<n;i++){var best=0,bd=Infinity;for(var j=0;j<k;j++){var d=Math.abs(s[i]-cent[j]);if(d<bd){bd=d;best=j;}}sums[best]+=s[i];cnts[best]++;}
+        for(i=0;i<k;i++)if(cnts[i])cent[i]=sums[i]/cnts[i];
+      }
+      cent.sort(function(a,b){return a-b;});
+      for(i=1;i<k;i++)out.push((cent[i-1]+cent[i])/2);
+    }
+    return out;
+  }
+  function ramp(kind,k){
+    var i,out=[];
+    if(kind==="rain"){var R=["#3B4CC0","#0091AD","#3FA93F","#E3C132","#EF8034","#D23A3A"];for(i=0;i<k;i++)out.push(R[Math.round(i*(R.length-1)/(k-1))]);return out;}
+    if(kind==="div"){var D=[cv("--d0"),cv("--d1"),cv("--d2"),cv("--d3"),cv("--d4")];for(i=0;i<k;i++)out.push(D[Math.round(i*(D.length-1)/(k-1))]);return out;}
+    var S=[cv("--r0"),cv("--r1"),cv("--r2"),cv("--r3"),cv("--r4"),cv("--r5")];
+    for(i=0;i<k;i++)out.push(S[Math.round(i*(S.length-1)/(k-1))]);return out;
+  }
+  var iV=document.getElementById("i3var"),iM=document.getElementById("i3met"),iK=document.getElementById("i3k"),iRp=document.getElementById("i3ramp");
+  function draw(){
+    var key=iV.value,k=+iK.value,m=iM.value;
+    var vals=units.map(function(u){return key==="rate"?u.rate:u.total;});
+    var br=breaks(vals,k,m),pal=ramp(iRp.value,k);
+    var lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals);
+    function cls(v){var i=0;while(i<br.length&&v>=br[i])i++;return i;}
+    var counts=[];for(var i=0;i<k;i++)counts.push(0);
+    x.clearRect(0,0,W,320);x.fillStyle=cv("--panel-2");x.fillRect(0,0,W,320);
+    units.forEach(function(u){
+      var v=key==="rate"?u.rate:u.total,ci=cls(v);counts[ci]++;
+      hex(u.cx,u.cy,SZ-2);x.fillStyle=pal[ci];x.fill();
+      x.strokeStyle=cv("--panel");x.lineWidth=1.6;x.stroke();
+    });
+    /* histogram */
+    var NB=32,bins=[];for(i=0;i<NB;i++)bins.push(0);
+    vals.forEach(function(v){var b=Math.min(NB-1,Math.floor((v-lo)/(hi-lo||1)*NB));bins[b]++;});
+    var mx=Math.max.apply(null,bins);
+    xh.clearRect(0,0,W,120);xh.fillStyle=cv("--panel-2");xh.fillRect(0,0,W,120);
+    for(i=0;i<NB;i++){
+      var bh=bins[i]/mx*84,bx=i*(W/NB);
+      xh.fillStyle=pal[cls(lo+(i+0.5)/NB*(hi-lo))];
+      xh.fillRect(bx+1,100-bh,W/NB-2,bh);
+    }
+    xh.strokeStyle=cv("--line");xh.lineWidth=1.5;xh.beginPath();xh.moveTo(0,100.5);xh.lineTo(W,100.5);xh.stroke();
+    br.forEach(function(b){
+      var bx=(b-lo)/(hi-lo||1)*W;
+      xh.strokeStyle=cv("--mag");xh.lineWidth=2;xh.setLineDash([5,4]);
+      xh.beginPath();xh.moveTo(bx,6);xh.lineTo(bx,108);xh.stroke();xh.setLineDash([]);
+    });
+    var fmt=function(v){return key==="rate"?v.toFixed(1)+"%":Math.round(v/1000)+"rb";};
+    document.getElementById("a3lo").textContent=fmt(lo);
+    document.getElementById("a3hi").textContent=fmt(hi);
+    var L=document.getElementById("leg3");L.innerHTML="";
+    for(i=0;i<k;i++){
+      var from=i===0?lo:br[i-1],to=i===k-1?hi:br[i];
+      var d=document.createElement("div");d.className="row";
+      d.innerHTML='<i style="background:'+pal[i]+'"></i><span>'+fmt(from)+" – "+fmt(to)+'</span><span class="n">'+counts[i]+" wilayah</span>";
+      L.appendChild(d);
+    }
+    var n=document.getElementById("n3"),msg;
+    if(iRp.value==="rain"){n.className="note warn";msg="<strong>Skema pelangi tidak punya urutan.</strong> Coba tebak kelas mana yang tertinggi hanya dari warnanya &mdash; lalu bandingkan dengan legenda. Pembaca peta Anda akan melakukan tebakan yang sama.";}
+    else if(key==="total"){n.className="note warn";msg="<strong>Anda sedang memetakan jumlah orang.</strong> Wilayah paling gelap adalah yang penduduknya paling banyak, bukan yang paling miskin. Kembalikan ke persentase untuk melihat perbedaannya.";}
+    else if(m==="q"){n.className="note";msg="<strong>Quantile</strong> memaksa setiap kelas berisi jumlah wilayah yang hampir sama, sehingga garis batasnya menumpuk di bagian sebaran yang padat. Peta jadi tampak beragam padahal nilainya berdekatan.";}
+    else if(m==="ei"){n.className="note";msg="<strong>Equal Interval</strong> membagi rentang nilai sama rata. Pada sebaran yang miring, kelas teratas sering hanya berisi satu atau dua wilayah.";}
+    else if(m==="sd"){n.className="note";msg="<strong>Standard Deviation</strong> membaca peta sebagai simpangan dari rata-rata, bukan sebagai tingkatan &mdash; berguna untuk menunjukkan siapa yang menyimpang, bukan seberapa besar nilainya.";}
+    else{n.className="note";msg="<strong>Natural Breaks</strong> mencari celah alami dalam sebaran, jadi batas kelasnya jatuh di tempat yang datanya memang jarang. Ini pilihan yang aman untuk data yang miring.";}
+    n.innerHTML=msg;
+    document.getElementById("v3k").textContent=k;
+  }
+  [iV,iM,iRp].forEach(function(e){e.addEventListener("change",draw);});
+  iK.addEventListener("input",draw);
+  draws.push(draw);
+})();
+
+/* ============================ 04 ============================ */
+(function(){
+  var ROWS=[
+    {k:"1101",n:"Simeulue",csvName:"Simeulue",baru:false,eja:false},
+    {k:"1207",n:"Tapanuli Utara",csvName:"Tapanuli Utara",baru:false,eja:false},
+    {k:"1371",n:"Kota Padang",csvName:"Padang",baru:false,eja:true},
+    {k:"1671",n:"Kota Palembang",csvName:"Kota Palembang",baru:false,eja:false},
+    {k:"3273",n:"Kota Bandung",csvName:"Bandung",baru:false,eja:true},
+    {k:"3217",n:"Bandung Barat",csvName:"Bandung Barat",baru:true,eja:false},
+    {k:"3218",n:"Pangandaran",csvName:"Pangandaran",baru:true,eja:false},
+    {k:"3374",n:"Kota Semarang",csvName:"Kota Semarang",baru:false,eja:false},
+    {k:"3578",n:"Kota Surabaya",csvName:"Kota Surabaya",baru:false,eja:false},
+    {k:"5103",n:"Badung",csvName:"Badung",baru:false,eja:false},
+    {k:"7371",n:"Kota Makassar",csvName:"Ujung Pandang",baru:false,eja:true},
+    {k:"9471",n:"Kota Jayapura",csvName:"Kota Jayapura",baru:false,eja:false}
+  ];
+  var iA=document.getElementById("i4a"),iB=document.getElementById("i4b"),iC=document.getElementById("i4c");
+  var tb=document.getElementById("tb4");
+  function draw(){
+    var byName=iC.checked,numeric=iA.checked,old=iB.checked,ok=0;
+    tb.innerHTML="";
+    ROWS.forEach(function(r){
+      var absent=old&&r.baru,match,why,shown;
+      if(absent){match=false;why="belum ada di tabel lama";shown="\u2014";}
+      else if(byName){match=!r.eja;why=match?"cocok":"ejaan nama berbeda";shown=r.csvName;}
+      else if(numeric){match=false;why="tipe angka, bukan teks";shown=String(parseInt(r.k,10));}
+      else {match=true;why="cocok";shown=r.k;}
+      if(match)ok++;
+      var tr=document.createElement("tr");
+      if(!match)tr.className="miss";
+      tr.innerHTML="<td class=\"k\">"+r.k+"</td><td>"+r.n+"</td><td class=\"k\">"+shown+"</td>"+
+        "<td><span class=\"badge "+(match?"ok":"no")+"\">"+why+"</span></td>";
+      tb.appendChild(tr);
+    });
+    var lost=ROWS.length-ok, pct=lost/ROWS.length;
+    document.getElementById("r4a").textContent=ok+" / "+ROWS.length;
+    document.getElementById("r4b").textContent=Math.round(pct*100)+"%";
+    document.getElementById("r4c").textContent=Math.round(514*pct)+" wilayah";
+    document.getElementById("r4d").textContent="tidak ada";
+  }
+  [iA,iB,iC].forEach(function(e){e.addEventListener("change",draw);});
+  draws.push(draw);
+})();
+
+/* ============================ 05 ============================ */
+(function(){
+  var c=document.getElementById("c5"),x=ctx2d(c,W,360);
+  var rnd=mul(1984),N=400,pts=[],i;
+  for(i=0;i<N;i++){
+    var gx=rnd(),gy=rnd();
+    var s=Math.sin(3.1*gx)*Math.cos(2.4*gy)+0.62*Math.sin(4.7*gy);
+    var xi=s+2*gauss(rnd);
+    var yi=0.30*xi+1.2*s+gauss(rnd);
+    pts.push({gx:gx,gy:gy,x:xi,y:yi});
+  }
+  var level=0,shift=false,base=null;
+  function agg(n,sh){
+    if(!n)return pts.map(function(p){return[p.x,p.y];});
+    var side=Math.round(Math.sqrt(n)),o=sh?0.5/side:0,cellsX={},out=[];
+    pts.forEach(function(p){
+      var cxi=Math.min(side-1,Math.max(0,Math.floor((p.gx+o)%1*side)));
+      var cyi=Math.min(side-1,Math.max(0,Math.floor((p.gy+o)%1*side)));
+      var key=cxi+"_"+cyi;
+      if(!cellsX[key])cellsX[key]={sx:0,sy:0,n:0};
+      cellsX[key].sx+=p.x;cellsX[key].sy+=p.y;cellsX[key].n++;
+    });
+    for(var k in cellsX)if(cellsX[k].n)out.push([cellsX[k].sx/cellsX[k].n,cellsX[k].sy/cellsX[k].n]);
+    return out;
+  }
+  function draw(){
+    var data=agg(level,shift),f=ols(data);
+    if(base===null)base=ols(agg(0,false)).b;
+    var xs=pts.map(function(p){return p.x;}),ys=pts.map(function(p){return p.y;});
+    var x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs),y0=Math.min.apply(null,ys),y1=Math.max.apply(null,ys);
+    var PL=46,PR=16,PT=16,PB=34, iw=W-PL-PR, ih=360-PT-PB;
+    function sx(v){return PL+(v-x0)/(x1-x0)*iw;}
+    function sy(v){return PT+ih-(v-y0)/(y1-y0)*ih;}
+    x.clearRect(0,0,W,360);x.fillStyle=cv("--panel-2");x.fillRect(0,0,W,360);
+    x.strokeStyle=cv("--grid");x.lineWidth=1;
+    for(i=0;i<=4;i++){
+      var gy2=PT+ih*i/4;x.beginPath();x.moveTo(PL,gy2);x.lineTo(W-PR,gy2);x.stroke();
+      var gx2=PL+iw*i/4;x.beginPath();x.moveTo(gx2,PT);x.lineTo(gx2,PT+ih);x.stroke();
+    }
+    x.strokeStyle=cv("--line");x.lineWidth=1.5;
+    x.beginPath();x.moveTo(PL,PT);x.lineTo(PL,PT+ih);x.lineTo(W-PR,PT+ih);x.stroke();
+    var rad=level?(level===4?13:level===16?9:6):2.6;
+    data.forEach(function(p){
+      x.beginPath();x.arc(sx(p[0]),sy(p[1]),rad,0,6.2832);
+      x.fillStyle=cv("--blue");x.globalAlpha=level?.85:.42;x.fill();x.globalAlpha=1;
+      if(level){x.strokeStyle=cv("--panel");x.lineWidth=2;x.stroke();}
+    });
+    x.strokeStyle=cv("--mag");x.lineWidth=3;
+    x.beginPath();x.moveTo(sx(x0),sy(f.a+f.b*x0));x.lineTo(sx(x1),sy(f.a+f.b*x1));x.stroke();
+    document.getElementById("r5a").textContent=level?(data.length+" wilayah"):"400 rumah tangga";
+    document.getElementById("r5b").textContent=f.b.toFixed(2);
+    document.getElementById("r5c").textContent=f.r2.toFixed(2);
+    document.getElementById("r5d").textContent=(f.b/base).toFixed(2)+"×";
+  }
+  var seg=document.getElementById("seg5");
+  seg.addEventListener("click",function(e){
+    var b=e.target.closest("button");if(!b)return;
+    Array.prototype.forEach.call(seg.querySelectorAll("button"),function(o){o.setAttribute("aria-pressed",String(o===b));});
+    level=+b.dataset.n;draw();
+  });
+  document.getElementById("i5z").addEventListener("change",function(e){shift=e.target.checked;draw();});
+  draws.push(draw);
+})();
+
+redrawAll();
+if(window.matchMedia){var mq=window.matchMedia("(prefers-color-scheme: dark)");
+  if(mq.addEventListener)mq.addEventListener("change",redrawAll);else if(mq.addListener)mq.addListener(redrawAll);}
+new MutationObserver(redrawAll).observe(root,{attributes:true,attributeFilter:["data-theme"]});
+})();
+</script>
+</body>
+</html>
