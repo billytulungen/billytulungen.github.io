@@ -16,7 +16,7 @@
   --r0:#E9EEEA; --r1:#C7DBE4; --r2:#9CC1D3; --r3:#6699B9; --r4:#39759A; --r5:#1A4F6C;
   --d0:#8B2A5B; --d1:#CC7EA6; --d2:#E9EEE9; --d3:#7CA7C0; --d4:#1E5876;
   --ok:#2A6A4E; --bad:#9A2F2F;
-  --blue-soft:#DCE8EE; --mag-soft:#F1DCE7;
+  --blue-soft:#DCE8EE; --mag-soft:#F1DCE7; --on-mag:#FFF6FA;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -27,7 +27,7 @@
     --r0:#1B2931; --r1:#234658; --r2:#2E617E; --r3:#3F85A8; --r4:#5DA5C9; --r5:#8BC7E3;
     --d0:#DF7AAD; --d1:#A74A70; --d2:#27353D; --d3:#3C7D9F; --d4:#7BC1E1;
     --ok:#5EBD94; --bad:#DF7B7B;
-    --blue-soft:#16313D; --mag-soft:#381A2B;
+    --blue-soft:#16313D; --mag-soft:#381A2B; --on-mag:#14202A;
   }
 }
 :root[data-theme="dark"]{
@@ -38,7 +38,7 @@
   --r0:#1B2931; --r1:#234658; --r2:#2E617E; --r3:#3F85A8; --r4:#5DA5C9; --r5:#8BC7E3;
   --d0:#DF7AAD; --d1:#A74A70; --d2:#27353D; --d3:#3C7D9F; --d4:#7BC1E1;
   --ok:#5EBD94; --bad:#DF7B7B;
-  --blue-soft:#16313D; --mag-soft:#381A2B;
+  --blue-soft:#16313D; --mag-soft:#381A2B; --on-mag:#14202A;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -67,7 +67,7 @@ code{font-family:'IBM Plex Mono','Courier New',monospace; font-size:.88em; color
 .get h3{margin-bottom:6px}
 .get p{font-size:15.5px; color:var(--ink-2)}
 .get a.dl{display:inline-block; margin-top:14px; padding:10px 18px; background:var(--mag);
-  color:#FFF6FA; text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:14px}
+  color:var(--on-mag); text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:14px}
 .get a.dl:hover{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
 
 nav.toc{margin-top:34px; padding-top:18px; border-top:1px solid var(--rule)}
@@ -111,7 +111,7 @@ input[type=range]{width:100%; accent-color:var(--mag); background:transparent}
 .seg{display:flex; flex-wrap:wrap; gap:6px}
 .seg button{font:inherit; font-size:14px; padding:7px 13px; cursor:pointer;
   background:var(--panel); color:var(--ink-2); border:1px solid var(--rule); border-radius:0}
-.seg button[aria-pressed="true"]{background:var(--mag); border-color:var(--mag); color:#FFF6FA; font-weight:600}
+.seg button[aria-pressed="true"]{background:var(--mag); border-color:var(--mag); color:var(--on-mag); font-weight:600}
 button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--mag); outline-offset:2px}
 
 .after{margin-top:22px}
@@ -119,6 +119,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
 .after p, .after li{color:var(--ink-2); font-size:16px}
 .after ul,.after ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px}
 .after p + p{margin-top:12px}
+.after ol + p,.after ul + p{margin-top:14px}
 
 .legend{display:flex; flex-direction:column; gap:4px; margin-top:14px}
 .legend .row{display:flex; align-items:center; gap:11px;
@@ -152,7 +153,7 @@ footer p + p{margin-top:10px}
 .bar .jump{display:flex; flex-wrap:wrap; gap:4px 14px; font-size:14.5px; flex:1 1 380px}
 .bar .jump a{color:var(--ink-2); text-decoration:none}
 .bar .jump a:hover{color:var(--mag)}
-.bar a.dl{display:inline-block; padding:8px 15px; background:var(--mag); color:#FFF6FA;
+.bar a.dl{display:inline-block; padding:8px 15px; background:var(--mag); color:var(--on-mag);
   text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13.5px; white-space:nowrap}
 .bar a.dl:hover{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
 .filenote{font-size:14px; color:var(--ink-3); margin-top:10px}
