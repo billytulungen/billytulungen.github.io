@@ -154,12 +154,15 @@ footer p + p{margin-top:10px}
 .open p.lead{font-size:19.5px; margin-top:16px; max-width:64ch}
 .bar{display:flex; flex-wrap:wrap; align-items:center; gap:10px 18px;
   margin-top:24px; padding:13px 0; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule)}
-.bar .jump{display:flex; flex-wrap:wrap; gap:4px 14px; font-size:14.5px; flex:1 1 380px}
+.bar .jump{display:flex; flex-wrap:wrap; gap:4px 13px; font-size:14px; flex:1 1 330px}
 .bar .jump a{color:var(--ink-2); text-decoration:none}
 .bar .jump a:hover{color:var(--mag)}
-.bar a.dl{display:inline-block; padding:8px 15px; background:var(--mag); color:var(--on-mag);
-  text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13.5px; white-space:nowrap}
+.bar a.dl{display:inline-block; padding:7px 13px; background:var(--mag); color:var(--on-mag);
+  text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; white-space:nowrap}
 .bar a.dl:hover{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
+.bar .dls{display:flex; flex-wrap:wrap; gap:8px}
+.bar a.dl.alt{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
+.bar a.dl.alt:hover{background:var(--mag); color:var(--on-mag)}
 .filenote{font-size:14px; color:var(--ink-3); margin-top:10px; max-width:74ch}
 section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
 .after h3{font-size:17px}
@@ -176,15 +179,18 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
     <p class="lead">Spatial data goes wrong in five ordinary ways. None of them shows an error. QGIS runs, a new column appears, and the number inside it is simply not what you think it is. This page lets you make each mistake on purpose and watch the figures underneath change while you do.</p>
     <div class="bar">
       <div class="jump">
-        <a href="#m1">Raster resolution</a>
+        <a href="#m1">Raster</a>
         <a href="#m2">Projections</a>
-        <a href="#m3">Map classification</a>
-        <a href="#m4">Joining tables</a>
-        <a href="#m5">Units of analysis</a>
+        <a href="#m3">Classification</a>
+        <a href="#m4">Joins</a>
+        <a href="#m5">Aggregation</a>
       </div>
-      <a class="dl" href="data/qgis-lab-data.zip" download>Practice files, 430 KB</a>
+      <span class="dls">
+        <a class="dl" href="data/qgis-lab-data.zip" download>Practice files, 430 KB</a>
+        <a class="dl alt" href="data/panduan_lab.pdf">Handout, PDF</a>
+      </span>
     </div>
-    <p class="filenote">The zip holds the same twelve layers and tables we use in the session. Unzip it anywhere and open the files straight from QGIS; the README inside says which one each exercise needs.</p>
+    <p class="filenote">The zip holds the same twelve layers and tables we use in the session; unzip it anywhere and open the files straight from QGIS, and the README inside says which one each exercise needs. The handout explains all five modules on paper, with the figures, in seven pages.</p>
   </header>
 
   <section class="mod" id="m1">
