@@ -7,6 +7,7 @@
 <meta name="description" content="A hands-on companion to a guest lecture on spatial data in economics: raster resolution, projections, map classification, table joins, and units of analysis.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
+
 :root{
   --paper:#E6EBE6; --panel:#F3F6F2; --sunk:#E9EFE9;
   --ink:#16222B; --ink-2:#44565F; --ink-3:#697C85;
@@ -140,37 +141,50 @@ td.k{font-family:'IBM Plex Mono','Courier New',monospace; color:var(--ink)}
 footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--rule); color:var(--ink-3); font-size:15px}
 footer p + p{margin-top:10px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* --- pembuka dipadatkan supaya gambar pertama naik ke atas --- */
+.open{padding-block:34px 0}
+.ident{font-size:14.5px; color:var(--ink-3); margin-bottom:14px}
+.ident a{color:var(--ink-2); text-decoration:none; border-bottom:1px solid var(--rule)}
+.ident a:hover{color:var(--mag); border-color:var(--mag)}
+.open p.lead{font-size:19.5px; margin-top:16px; max-width:64ch}
+.bar{display:flex; flex-wrap:wrap; align-items:center; gap:10px 18px;
+  margin-top:24px; padding:13px 0; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule)}
+.bar .jump{display:flex; flex-wrap:wrap; gap:4px 14px; font-size:14.5px; flex:1 1 380px}
+.bar .jump a{color:var(--ink-2); text-decoration:none}
+.bar .jump a:hover{color:var(--mag)}
+.bar a.dl{display:inline-block; padding:8px 15px; background:var(--mag); color:#FFF6FA;
+  text-decoration:none; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13.5px; white-space:nowrap}
+.bar a.dl:hover{background:transparent; color:var(--mag); box-shadow:inset 0 0 0 1px var(--mag)}
+.filenote{font-size:14px; color:var(--ink-3); margin-top:10px}
+section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
+.after h3{font-size:17px}
+.single{margin-top:20px; font-size:16px; color:var(--ink-2)}
+.single b{color:var(--ink)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="open">
-    <p class="by">Guest lecture, Empirical Development Economics &middot; Faculty of Economics and Business, Universitas Indonesia</p>
+    <p class="ident">A companion to a guest lecture in Empirical Development Economics, Universitas Indonesia &middot; <a href="https://billytulungen.com/">billytulungen.com</a></p>
     <h1>Spatial Data Lab</h1>
-    <p class="lead">Most of the trouble with spatial data in economics comes from five places. None of them announces itself. Your software runs, a column appears, and the number in it is wrong.</p>
-    <p class="lead">So rather than warn you about them, this page lets you cause each one and watch what it does. Drag something, then read the numbers under the picture. That is where the lesson usually is.</p>
-
-    <div class="get">
-      <h3>Practice files</h3>
-      <p>The same twelve layers and tables we use in the session, 430&nbsp;KB in total. Unzip it anywhere and open the files straight from QGIS. The README inside says which file each exercise needs.</p>
-      <a class="dl" href="data/qgis-lab-data.zip" download>qgis-lab-data.zip</a>
+    <p class="lead">Most of the trouble with spatial data comes from five places, and none of them announces itself. Your software runs, a column appears, and the number in it is wrong. So instead of warning you, this page lets you cause each one and watch what it does to the figures underneath.</p>
+    <div class="bar">
+      <div class="jump">
+        <a href="#m1">Raster resolution</a>
+        <a href="#m2">Projections</a>
+        <a href="#m3">Map classification</a>
+        <a href="#m4">Joining tables</a>
+        <a href="#m5">Units of analysis</a>
+      </div>
+      <a class="dl" href="data/qgis-lab-data.zip" download>Practice files, 430 KB</a>
     </div>
-
-    <nav class="toc">
-      <ol>
-        <li><a href="#m1">How coarse a raster can get before the average stops meaning anything</a></li>
-        <li><a href="#m2">Why 5000 sometimes means five kilometres and sometimes five hundred</a></li>
-        <li><a href="#m3">One column of numbers, and how different the maps can look</a></li>
-        <li><a href="#m4">The join that drops a third of your sample without saying so</a></li>
-        <li><a href="#m5">What happens to a coefficient when you redraw the boundaries</a></li>
-      </ol>
-    </nav>
+    <p class="filenote">The zip holds the same twelve layers and tables we use in the session. Unzip it anywhere and open the files straight from QGIS; the README inside says which one each exercise needs.</p>
   </header>
 
   <section class="mod" id="m1">
     <h2>How coarse a raster can get before the average stops meaning anything</h2>
-    <p>Below is a night-lights image with one district boundary drawn over it. Zonal statistics works by reading every cell whose centre falls inside that boundary and returning a single summary number. Coarsen the cells and you are not just losing detail in the picture; you are losing the observations the average is built from.</p>
+    <p>Night lights, with one district boundary drawn over them. Zonal statistics reads every cell whose centre falls inside that boundary and returns one number. Coarsen the cells and you are not only losing detail in the picture, you are losing the observations the average is built from.</p>
     <figure>
       <div class="plot">
         <canvas id="c1" role="img" aria-label="A grid of night-light raster cells with one district boundary drawn on top"></canvas>
@@ -203,7 +217,7 @@ footer p + p{margin-top:10px}
 
   <section class="mod" id="m2">
     <h2>Why 5000 sometimes means five kilometres and sometimes five hundred</h2>
-    <p>Three villages, twelve health facilities. You want to know how many facilities lie within five kilometres of each village, so you type 5000 into the distance box. Whether that is five kilometres or roughly five hundred depends entirely on which coordinate system the layer happens to carry.</p>
+    <p>Three villages, twelve health facilities. You want the facilities within five kilometres of each village, so you type 5000 into the distance box. Whether that means five kilometres or roughly five hundred depends entirely on which coordinate system the layer happens to carry.</p>
     <figure>
       <div class="plot">
         <canvas id="c2" role="img" aria-label="A map of three villages with distance circles around them and health facility points scattered across an island"></canvas>
@@ -225,20 +239,16 @@ footer p + p{margin-top:10px}
           <input type="range" id="i2r" min="1" max="20" step="1" value="5"></label>
       </div>
     </figure>
+    <p class="single">Leave the value at 5 and switch the system to degrees. Then try to find any value that still gives a sensible answer, because there isn't one.</p>
     <div class="after">
-      <h3>Worth doing</h3>
-      <ol>
-        <li>Leave the value at 5 and switch to degrees. Read the radius you actually got.</li>
-        <li>Still in degrees, look for a value that gives a sensible answer. There isn't one.</li>
-        <li>Back in metres, find the smallest value that gives every village at least one facility.</li>
-      </ol>
-      <p>A degree is an angle. One degree of latitude runs about 111&nbsp;km, and a degree of longitude shrinks as you move away from the equator, so the error is not even constant across your map. Run <code>Reproject Layer</code> into the right UTM zone before anything that measures, and glance at the EPSG code in the bottom-right corner of the window before you press Run.</p>
+      <p>A degree is an angle, not a length. One degree of latitude runs about 111&nbsp;km, and a degree of longitude shrinks as you move away from the equator, so the error is not even constant across your map. In degree mode every village reaches every facility, which leaves the variable with no variation at all, and a variable with no variation quietly kills the regression it was built for.</p>
+      <p>Run <code>Reproject Layer</code> into the right UTM zone before anything that measures, and glance at the EPSG code in the bottom-right corner of the window before you press Run.</p>
     </div>
   </section>
 
   <section class="mod" id="m3">
     <h2>One column of numbers, and how different the maps can look</h2>
-    <p>Fifty-four areas, one poverty figure each. That figure does not change anywhere on this page. What changes is where the range gets cut into classes and which colours those classes are given &mdash; two decisions the data does not make for you, and which most readers will never think about.</p>
+    <p>Fifty-four areas, one poverty figure each, and that figure never changes while you are on this page. What changes is where the range gets cut and which colours the classes are given. Both are decisions the data does not make for you, and most readers will never think about either.</p>
     <figure>
       <div class="plot">
         <canvas id="c3" role="img" aria-label="A hexagon map of fifty-four areas shaded by value"></canvas>
@@ -276,20 +286,19 @@ footer p + p{margin-top:10px}
       </div>
     </figure>
     <div class="after">
-      <h3>Worth doing</h3>
+      <h3>Three things to try</h3>
       <ol>
-        <li>Switch to Quantile and look at the histogram. The four break lines pile up where the data is dense, which is how a map of nearly identical values ends up looking dramatic.</li>
-        <li>Change the variable to the number of poor people. Ask yourself whose map that is.</li>
+        <li>Switch to Quantile and watch where the break lines land on the histogram. They pile up where the data is dense, which is how a map of nearly identical values ends up looking dramatic.</li>
+        <li>Change the variable to the number of poor people, then ask whose map that actually is.</li>
         <li>Pick Rainbow and try to rank the classes from low to high using colour alone.</li>
-        <li>Watch the width of the top class as you change method. Equal Interval and Quantile are answering different questions.</li>
       </ol>
-      <p>All of this sits in <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. Name the method and the class count in your figure caption; without them nobody can judge the map, and a referee will ask.</p>
+      <p>All of this lives in <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. Name the method and the class count in your figure caption; without them nobody can judge the map, and a referee will ask.</p>
     </div>
   </section>
 
   <section class="mod" id="m4">
     <h2>The join that drops a third of your sample without saying so</h2>
-    <p>Twelve districts on one side, twelve rows of statistics on the other. Switch on any of the ordinary conditions below and watch the match rate. Then look at which rows fell out, because that matters more than how many.</p>
+    <p>Twelve districts on one side, twelve rows of statistics on the other. Switch on any of the ordinary conditions below and watch the match rate fall. Then look at which rows fell out, because that matters far more than how many did.</p>
     <figure>
       <div class="tscroll">
         <table>
@@ -311,19 +320,14 @@ footer p + p{margin-top:10px}
       </div>
     </figure>
     <div class="after">
-      <h3>Worth doing</h3>
-      <ol>
-        <li>Switch on the first condition alone and see how many rows survive.</li>
-        <li>Turn it off, switch on the third, and read which names fail. Each failure makes sense once you see it.</li>
-        <li>Switch on the second and third together, then read the figure for 514 districts.</li>
-      </ol>
-      <p>The rows that fail are never a random draw. New districts, renamed cities and merged areas differ systematically from the ones that match, which turns a data-cleaning annoyance into a sample selection problem. Count your rows before and after every join, sort the new column to find the blanks, and join on codes rather than names. A join in <code>Layer Properties &rsaquo; Joins</code> is temporary until you run <code>Export &rsaquo; Save Features As</code>.</p>
+      <p>The rows that fail are never a random draw. New districts, renamed cities and merged areas differ systematically from the ones that match, which turns what looks like a data-cleaning annoyance into a sample selection problem sitting quietly inside your estimates.</p>
+      <p><b>So count your rows before and after every join</b>, sort the new column to find the blanks, and match on codes rather than names. A join made in <code>Layer Properties &rsaquo; Joins</code> is temporary until you run <code>Export &rsaquo; Save Features As</code>.</p>
     </div>
   </section>
 
   <section class="mod" id="m5">
     <h2>What happens to a coefficient when you redraw the boundaries</h2>
-    <p>Four hundred households, and one relationship between road access and spending that stays exactly the same throughout. Average them into larger and larger areas and watch the slope. Nothing new enters the data. The grey dashed line is the household-level relationship, kept for comparison.</p>
+    <p>Four hundred households, and one relationship between road access and spending that holds steady throughout. Average them into larger and larger areas and watch the slope move. Nothing new enters the data; the grey dashed line is the household relationship, kept for comparison.</p>
     <figure>
       <div class="plot">
         <canvas id="c5" role="img" aria-label="A scatter plot of road access against household spending with a fitted regression line"></canvas>
@@ -348,20 +352,16 @@ footer p + p{margin-top:10px}
         <label class="switch"><input type="checkbox" id="i5z"> Shift every boundary by half a cell</label>
       </div>
     </figure>
+    <p class="single">At sixteen areas, switch the boundary shift on and off a few times. Same households, different lines on the map, different answer.</p>
     <div class="after">
-      <h3>Worth doing</h3>
-      <ol>
-        <li>Note the coefficient at household level, then at four areas, and work out the multiple.</li>
-        <li>At sixteen areas, switch the boundary shift on and off. Same households, different lines on the map, different answer.</li>
-        <li>Watch R squared climb as you aggregate. A tighter fit is not a truer one.</li>
-      </ol>
-      <p>Averaging within an area cancels the noise that belongs to each household but keeps whatever varies smoothly across space, so what survives is the spatial part of the relationship. Here that part is much stronger than the household one, which is why the slope grows. The first effect is about scale, the second about where the lines are drawn; together they are the modifiable areal unit problem, and there is no general fix for it. Choose the unit from a mechanism you can defend, then report a second unit as a robustness check.</p>
+      <p>Averaging within an area cancels the noise belonging to each household but keeps whatever varies smoothly across space, so what survives is the spatial part of the relationship. Here that part is far stronger than the household one, which is why the slope grows and R squared climbs with it. A tighter fit is not a truer one.</p>
+      <p>The first effect is about scale and the second about where the lines fall. Together they are the modifiable areal unit problem, and there is no general fix. Choose the unit from a mechanism you can defend, then report a second unit as a robustness check.</p>
     </div>
   </section>
 
   <footer>
-    <p>Billy Thandy Tulungen &middot; guest lecture, 21 September 2026</p>
-    <p>Every figure on this page is generated in your browser from synthetic data, so the patterns read clearly. None of it describes a real place, and nothing computed here should end up in a thesis. The practice files carry a README listing where the real Indonesian equivalents come from.</p>
+    <p>Billy Thandy Tulungen &middot; guest lecture, 21 September 2026 &middot; <a href="https://billytulungen.com/">billytulungen.com</a></p>
+    <p>Every figure here is generated in your browser from synthetic data so the patterns read clearly. None of it describes a real place, and nothing computed on this page should end up in a thesis. The practice files carry a README listing where the real Indonesian equivalents come from.</p>
   </footer>
 </div>
 <script>
