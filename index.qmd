@@ -66,7 +66,7 @@ facilitator, competency assessor, and advisor.
 
 ::: {.paper-title}
 
-Earthquakes and Communal Conflict: Village-Level Evidence from Indonesia
+Earthquakes and Communal Conflict: Evidence from Indonesia's Seismic Zones
 
 :::
 
@@ -78,11 +78,10 @@ with M. Halley Yudhistira and Jahen F. Rezki &nbsp;·&nbsp; Dissertation chapter
 
 ::: {.paper-abstract}
 
-Damage-level shaking cuts reported communal conflict by 1.5 percentage points,
-yet theft rises by 5.8 points on the same villages in the same waves, and among
-the nine in ten villages with no prior episode the shock raises first-time
-conflict rather than suppressing it. What a disaster changes is the kind of
-disorder a village produces, not its level.
+Damage-level shaking cuts the probability a village reports a mass brawl by 1.6
+percentage points against a 6.7 percent base. On the same villages, in the same
+waves, on the same survey form, theft does not follow it down. What a disaster
+changes is the kind of disorder a village produces, not simply its level.
 
 :::
 

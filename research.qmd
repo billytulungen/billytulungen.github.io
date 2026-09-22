@@ -90,7 +90,7 @@ mark the epicentre of the main earthquake behind each cohort.
 
 ::: {.paper-title}
 
-Earthquakes and Communal Conflict: Village-Level Evidence from Indonesia
+Earthquakes and Communal Conflict: Evidence from Indonesia's Seismic Zones
 
 :::
 
@@ -102,55 +102,68 @@ with M. Halley Yudhistira and Jahen F. Rezki &nbsp;·&nbsp; [Working paper]{.pap
 
 ::: {.paper-abstract}
 
-Do earthquakes raise or suppress communal conflict? We combine seven waves of
-Indonesia's village census (PODES, 2005–2024) with village-level USGS ShakeMap
-intensities in a staggered difference-in-differences design. Within Indonesia's
-medium and high seismic-hazard zones, a village's first exposure to damage-level
-shaking (MMI ≥ VI) lowers reported communal conflict by 1.5 percentage points
-(SE 0.004) against the treated villages' 6.1 percent pre-exposure rate. That
-average conceals a split we take seriously rather than relegate: among the
-roughly nine in ten treated villages that had never reported an episode,
-exposure instead *raises* the onset of communal conflict by 0.70 percentage
-points (SE 0.22) against a counterfactual onset rate of 2.1 percent.
+Does a strong earthquake raise communal conflict or suppress it? The empirical
+record disagrees even on the sign. We combine seven waves of Indonesia's village
+census (PODES, 2005–2024) with USGS ShakeMap ground-shaking intensities for the
+43,351 villages in the country's official medium and high seismic-hazard zones,
+dating each village's first exposure to Modified Mercalli Intensity VI or above,
+where ordinary masonry buildings begin to crack. First exposure lowers the
+probability that a village reports a mass brawl by 1.6 percentage points against a
+6.7 percent pre-exposure mean, a decline of about a quarter.
 
-The finding the paper rests on is compositional. The same survey form that
-records communal conflict also records theft, robbery, and assault. On a single
-common sample of 211,082 village-waves, theft rises by 5.8 percentage points
-against a 41 percent base while communal conflict falls, robbery falls by 1.4
-points, and assault does not move. That contrast survives inference which treats
-the earthquake rather than the village as the unit of assignment: estimated
-event by event over 19 earthquakes, the divergence is 0.095 (bootstrap SE 0.034)
-weighting earthquakes by the villages they treat, and 0.061 counting each
-earthquake once (p = 0.046) — a bar the pooled level decline does not clear.
+A fall in reported violence is not self-interpreting. It is equally consistent with
+less fighting, with a village head too busy to file a report, and with a general
+improvement in local order under the eye of arriving responders. No single outcome
+separates those readings, and the disaster-conflict literature has been asking the
+question with one outcome at a time. The same form, filed by the same village head
+over the same twelve-month recall window, also records theft, robbery, and assault,
+and those acts differ in what they demand of whoever commits them: communal violence
+needs coordination and confrontation together, robbery an encounter but no
+coordination, theft neither. Holding reporter, instrument, and window fixed turns
+that variation into an identification device.
 
-The pattern rejects a general improvement in local security. It is most
-consistent with a shock that degrades a village's capacity for organised
-collective action, capacity that was doing two jobs at once: supplying the
-mobilisation communal violence requires, and supplying the routine guardianship
-— the night-watch rotations of *siskamling* — that deters property crime.
-High-involvement public-purpose *gotong royong* falls by 3.1 to 3.2 percentage
-points after exposure, while emergency mutual aid, which needs no standing
-coordination, does not.
+On a single common sample of 300,018 village-waves, communal conflict falls by 1.7
+percentage points against a 2.6 percent base while theft does not follow it down.
+Equality of the two responses is rejected on both scales (p = 0.003 linear, p < 0.001
+proportional), and robbery and assault do not follow theft. Taken to the earthquake,
+the unit at which treatment is actually assigned, the divergence is 7.6 percentage
+points weighting shocks by the villages they treat and 6.3 points counting each shock
+once (p = 0.023), positive in 12 of the 19 usable earthquakes.
+
+We are deliberate about which half of that contrast carries the weight. It is the
+communal decline, not theft's level. Theft rises sharply under wave effects, but its
+own coefficient is not separately identified once province-by-wave effects are
+imposed, and nothing in the argument requires theft to have risen. What the data
+establish is that the two series part company, and that they part company because
+collective violence falls while acquisitive crime does not.
+
+That pattern discriminates. A uniform reporting shock moves all four acts together, a
+general collapse of local order raises all four, and a rise in the motive for
+predation raises theft and robbery together. What we observe is most consistent with a
+loss of the organisational capacity that collective violence requires and stealth
+theft does not. A pre-determined moderator points the same way: the decline
+concentrates in villages that had mobile-phone signal at the 2005 baseline, an
+interaction worth 2.1 percentage points. High-involvement public-purpose *gotong
+royong* falls by 3.1 to 3.2 percentage points after exposure, while emergency mutual
+aid, which needs no standing coordination, does not.
 
 :::
 
 ::: {.figure style="margin-top:1.2rem"}
 
-[![](assets/img/fig_composition_a.png){fig-alt="Coefficient plot of the treatment effect on five outcomes. Theft alone sits well above zero; communal conflict and robbery sit below it; assault sits on it."}](assets/img/fig_composition_a.png)
-
-[![](assets/img/fig_composition_b.png){fig-alt="Scatter of the theft-minus-communal gap for each of nineteen earthquakes, sorted by size. Most points are positive, and the pooled means and their bootstrap interval lie above zero."}](assets/img/fig_composition_b.png)
+[![](assets/img/fig_composition.png){fig-alt="Two panels. Panel A, a coefficient plot on five outcomes: theft sits above zero, communal conflict, robbery and warga sit below it, assault sits on it. Panel B, a scatter of the theft-minus-warga divergence for each of nineteen earthquakes, most of them positive, with both pooled means and the bootstrap band above zero."}](assets/img/fig_composition.png)
 
 ::: {.figcaption}
 
-The composition of disorder. On a single common sample of 211,082
-village-waves, theft is the only outcome that rises after damage-level shaking:
-communal conflict and robbery fall, and assault does not move (Panel A, with 95
-percent village-clustered intervals). *Warga* is the civilian-versus-civilian
-series, the one whose survey definition holds across all seven waves. Panel B
-re-estimates the theft-minus-*warga* gap separately for each of the 19 usable
-earthquakes, with marker area proportional to the villages an earthquake
-treats. The divergence survives when the earthquake, rather than the village, is
-the unit of inference — the bar the pooled level decline does not clear.
+The composition of disorder. Panel A plots the treatment effect on each of five
+outcomes, estimated on the single common sample of 300,018 village-waves with village
+and wave fixed effects and 95 percent village-clustered intervals. Communal conflict,
+robbery, and the civilian-versus-civilian *warga* series sit below zero, theft sits
+above it, and assault sits on it. *Warga* is the subtype whose survey wording is
+near-stable across all seven waves. Panel B re-estimates the theft-minus-*warga*
+divergence separately for each of the 19 usable earthquakes, sorted by magnitude, with
+marker area proportional to the villages a shock treats. The divergence holds when the
+earthquake, rather than the village, is the unit of inference.
 
 :::
 

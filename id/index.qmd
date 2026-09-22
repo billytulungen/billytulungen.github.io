@@ -73,21 +73,35 @@ yang saya perbarui lebih dulu.
 Dugaan yang lazim, gempa besar memicu konflik. Ternyata tidak sesederhana itu.
 
 Bersama Halley Yudhistira dan Jahen Rezki, saya memadankan tujuh gelombang Podes
-2005–2024 dengan peta intensitas guncangan USGS ShakeMap. Hasilnya, laporan
-konflik komunal justru **turun** sekitar 1,5 poin persen dari basis 6,1 persen
-di desa yang terguncang. Tetapi di desa dan gelombang yang sama, **pencurian
-naik** 5,8 poin persen dari basis 41 persen, perampokan turun 1,4 poin, dan
-penganiayaan tidak bergerak sama sekali.
+2005–2024 dengan peta intensitas guncangan USGS ShakeMap, untuk 43.351 desa di zona
+rawan gempa menengah dan tinggi. Hasilnya, peluang sebuah desa melaporkan perkelahian
+massal justru **turun** 1,6 poin persen dari basis 6,7 persen, sekitar seperempat.
 
-Jadi keamanan tidak membaik. Yang berubah adalah *jenis* gangguan yang sanggup
-dihasilkan sebuah desa. Guncangan besar melumpuhkan kemampuan warga
-berorganisasi, dan kemampuan itu selama ini mengerjakan dua pekerjaan sekaligus:
-menggerakkan orang untuk kekerasan bersama, dan menjaga ronda serta siskamling
-yang menahan pencurian.
+Persoalannya, angka turun itu belum menjelaskan apa pun. Bisa berarti benar-benar
+lebih sedikit perkelahian, bisa juga kepala desa yang sedang sibuk sehingga tidak
+sempat melapor, atau ketertiban yang membaik karena ada aparat dan relawan yang
+berdatangan. Satu indikator tidak bisa memisahkan ketiganya. Maka kami pakai beberapa.
 
-Penurunan itu pun tidak merata. Di sembilan dari sepuluh desa terguncang yang
-sebelumnya tidak pernah melaporkan konflik, gempa justru **menaikkan** kemunculan
-konflik pertama sebesar 0,70 poin persen dari basis 2,1 persen.
+Formulir yang sama, diisi kepala desa yang sama, untuk rentang ingatan dua belas bulan
+yang sama, juga mencatat pencurian, perampokan, dan penganiayaan. Ketiganya menuntut
+hal berbeda dari pelakunya: kekerasan bersama butuh koordinasi sekaligus konfrontasi,
+perampokan butuh perjumpaan tetapi tidak butuh koordinasi, pencurian tidak butuh
+keduanya. Pada satu sampel bersama berisi 300.018 desa-gelombang, konflik komunal
+turun sementara **pencurian tidak ikut turun**. Perampokan dan penganiayaan pun tidak
+mengikuti pencurian.
+
+Yang kami klaim adalah perpisahan arah itu, bukan kenaikan pencuriannya. Pencurian
+memang naik tajam bila yang dipakai hanya efek gelombang, tetapi koefisiennya sendiri
+tidak lagi teridentifikasi terpisah begitu efek provinsi-per-gelombang dimasukkan.
+Argumen paper ini tidak bergantung pada pencurian yang naik.
+
+Jadi keamanan tidak serta-merta membaik. Yang berubah adalah *jenis* gangguan yang
+sanggup dihasilkan sebuah desa. Pola ini paling konsisten dengan lumpuhnya kemampuan
+warga berorganisasi, kemampuan yang dibutuhkan kekerasan kolektif dan tidak dibutuhkan
+pencurian diam-diam. Petunjuk lain mengarah ke tempat yang sama: **gotong royong**
+berpartisipasi tinggi untuk kepentingan umum turun 3,1 sampai 3,2 poin persen setelah
+guncangan, sedangkan tolong-menolong darurat, yang tidak memerlukan koordinasi
+permanen, tidak bergerak.
 
 ::: {.paper-links style="margin-top:1rem"}
 

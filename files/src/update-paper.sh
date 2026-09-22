@@ -11,7 +11,10 @@
 
 set -euo pipefail
 
-SRC="${1:-/Users/billytulungen/PhD Project/2. paper 1/6. paper/main.pdf}"
+# The manuscript used to be main.pdf. It is now split into a journal version, an
+# Indonesian version, a dissertation version and a supplement, and the journal
+# version is the one the site offers. Passing a path as $1 still overrides this.
+SRC="${1:-/Users/billytulungen/PhD Project/2. paper 1/6. paper/paper1_journal.pdf}"
 DEST="files/paper1-earthquakes-communal-conflict.pdf"
 
 if [[ ! -f "$SRC" ]]; then
