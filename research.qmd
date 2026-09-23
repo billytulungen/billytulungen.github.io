@@ -108,8 +108,8 @@ census (PODES, 2005–2024) with USGS ShakeMap ground-shaking intensities for th
 43,351 villages in the country's official medium and high seismic-hazard zones,
 dating each village's first exposure to Modified Mercalli Intensity VI or above,
 where ordinary masonry buildings begin to crack. First exposure lowers the
-probability that a village reports a mass brawl by 1.6 percentage points against a
-6.7 percent pre-exposure mean, a decline of about a quarter.
+probability that a village reports a mass brawl by 1.73 percentage points against a
+6.7 percent pre-exposure mean, a decline of 26 percent.
 
 A fall in reported violence is not self-interpreting. It is equally consistent with
 less fighting, with a village head too busy to file a report, and with a general
@@ -171,7 +171,7 @@ earthquake, rather than the village, is the unit of inference.
 
 ::: {.paper-links}
 
-[Draft (PDF)](files/paper1-earthquakes-communal-conflict.pdf) [This version: {{< var paper1.version >}}.]{.disabled}
+[Draft (PDF)](files/paper1-earthquakes-communal-conflict.pdf) [Supplementary material (PDF)](files/paper1-supplementary-material.pdf) [This version: {{< var paper1.version >}}.]{.disabled}
 
 :::
 

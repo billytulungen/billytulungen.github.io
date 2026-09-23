@@ -78,7 +78,7 @@ with M. Halley Yudhistira and Jahen F. Rezki &nbsp;·&nbsp; Dissertation chapter
 
 ::: {.paper-abstract}
 
-Damage-level shaking cuts the probability a village reports a mass brawl by 1.6
+Damage-level shaking cuts the probability a village reports a mass brawl by 1.73
 percentage points against a 6.7 percent base. On the same villages, in the same
 waves, on the same survey form, theft does not follow it down. What a disaster
 changes is the kind of disorder a village produces, not simply its level.
@@ -87,7 +87,7 @@ changes is the kind of disorder a village produces, not simply its level.
 
 ::: {.paper-links}
 
-[Draft (PDF)](files/paper1-earthquakes-communal-conflict.pdf) [Details](research.qmd)
+[Draft (PDF)](files/paper1-earthquakes-communal-conflict.pdf) [Supplementary material (PDF)](files/paper1-supplementary-material.pdf) [Details](research.qmd)
 
 :::
 
