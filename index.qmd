@@ -125,6 +125,40 @@ separate the income effect from the club-good and coping channels.
 
 ::::
 
+:::: {.paper}
+
+::: {.paper-title}
+
+Lines Drawn after the Ground Moved: Post-Disaster No-Build Zones and
+Reconstruction in Palu, Indonesia
+
+:::
+
+::: {.paper-meta}
+
+[Work in progress]{.paper-status}
+
+:::
+
+::: {.paper-abstract}
+
+After the 2018 Palu earthquake and liquefaction, Indonesia announced broad zones
+where rebuilding or housing was banned. Across more than 800 boundary segments,
+annual building data show no differential reconstruction at the announced 2018
+boundaries: the gap opened with the destruction and never widened. The legal
+zoning adopted in 2021 and 2023 later restricted a much smaller area, centred on
+the liquefaction sites the disaster had already emptied.
+
+:::
+
+::: {.paper-links}
+
+[Details](research.qmd)
+
+:::
+
+::::
+
 ## Public procurement
 
 Alongside my academic work I have worked in Indonesian public procurement since
