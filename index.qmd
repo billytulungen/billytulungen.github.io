@@ -24,7 +24,8 @@ Universitas Indonesia
 
 ::: {.hero-fields}
 
-Development Economics &middot; Urban & Regional Economics &middot; Political Economy
+Development Economics &middot; Urban & Regional Economics<br>
+Political Economy &middot; Public Economics
 
 :::
 
@@ -104,7 +105,7 @@ Value of Religion in Indonesia
 
 ::: {.paper-meta}
 
-[Work in progress]{.paper-status}
+Dissertation chapter &nbsp;·&nbsp; [Work in progress]{.paper-status}
 
 :::
 
@@ -136,7 +137,7 @@ Reconstruction in Palu, Indonesia
 
 ::: {.paper-meta}
 
-[Work in progress]{.paper-status}
+Dissertation chapter &nbsp;·&nbsp; [Work in progress]{.paper-status}
 
 :::
 

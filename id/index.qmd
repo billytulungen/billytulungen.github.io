@@ -22,7 +22,8 @@ Universitas Indonesia
 
 ::: {.hero-fields}
 
-Ekonomi Pembangunan &middot; Ekonomi Perkotaan dan Wilayah &middot; Ekonomi Politik
+Ekonomi Pembangunan &middot; Ekonomi Perkotaan dan Wilayah<br>
+Ekonomi Politik &middot; Ekonomi Publik
 
 :::
 
