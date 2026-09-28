@@ -273,6 +273,61 @@ rate on both sides.
 
 ::: {.paper-title}
 
+Forgetting the Ground? Disasters and the Location of New Construction within
+Indonesian Villages
+
+:::
+
+::: {.paper-meta}
+
+Billy Tulungen &nbsp;·&nbsp; [In progress]{.paper-status} &nbsp;·&nbsp; JEL: Q54, R14, R52, O18
+
+:::
+
+::: {.paper-abstract}
+
+Do earthquakes and floods change where new buildings go within the villages
+they hit, and if so, for how long? I split each of about 72,700 Indonesian
+villages into hazard zones (flood-prone land, steep slopes, and soft soils) and
+the remaining land, and track new construction in each zone with satellite
+settlement data. Because the comparison is within the same village and year,
+destruction, reconstruction funds, and income losses that affect the whole
+village cancel out; what remains is whether new construction moves toward or
+away from hazardous land after a disaster.
+
+The first fact is that new construction has been moving toward hazard zones.
+Flood zones hold 10.2 percent of village land and held 7.9 percent of the
+built-up stock in 1985, but received 10.9 percent of the settlement area added
+between 1990 and 2015. Steep slopes hold 27 percent of land but only 0.9
+percent of the 1985 stock, and their share of new settlement area rose from
+under 1 percent in the early 1990s to about 3 percent by 2015. Two independent
+satellite products show the same path. Estimates of how individual disasters
+shift this pattern are in progress.
+
+:::
+
+::: {.figure style="margin-top:1.2rem"}
+
+[![](assets/img/fig_hazard_trend_shares.png){fig-alt="Line and marker plot, 1990 to 2020. The share of new built-up area in flood zones rises from about 8 to 10 percent in the early 1990s to 11 to 12 percent after 2000 in the annual WSF series, and GHSL five-year points rise from about 8 to 11.5 percent. The share on steep slopes rises from under 1 percent in 1990 to about 3 percent in 2015 in both series, and GHSL shows about 6.7 percent in 2020."}](assets/img/fig_hazard_trend_shares.png)
+
+::: {.figcaption}
+
+Share of new built-up area located in hazard zones, Indonesia. Lines: annual
+settlement area first built in each year (World Settlement Footprint
+Evolution). Markers: five-year increase in built-up surface (Global Human
+Settlement Layer). Both series show new construction shifting toward flood
+zones and steep slopes.
+
+:::
+
+:::
+
+::::
+
+:::: {.paper}
+
+::: {.paper-title}
+
 Roads Not Taken? Toll Roads, Market Access, and Village Economies in Java and
 Sumatra
 
