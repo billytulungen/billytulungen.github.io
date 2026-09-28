@@ -269,6 +269,60 @@ rate on both sides.
 
 ::::
 
+:::: {.paper}
+
+::: {.paper-title}
+
+Roads Not Taken? Toll Roads, Market Access, and Village Economies in Java and
+Sumatra
+
+:::
+
+::: {.paper-meta}
+
+Billy Tulungen &nbsp;·&nbsp; [In progress]{.paper-status} &nbsp;·&nbsp; JEL: O18, R11, R12, R42, H54
+
+:::
+
+::: {.paper-abstract}
+
+Did the villages whose access to markets improved with Indonesia's new toll
+roads become more economically active? Between 2015 and 2024 Indonesia opened
+more than 2,000 kilometres of toll road in Java and Sumatra. I compute annual
+market access for 47,575 villages on a digitised road network and face a
+problem common to market-access designs: villages near large cities and on
+natural corridors gain from almost any new road, so they are not comparable
+with villages elsewhere. Following Borusyak and Hull's recentering approach, I
+simulate counterfactual opening schedules that reshuffle opening years among
+the sections actually built within each corridor, and use only the difference
+between a village's actual and expected market access.
+
+That correction matters. The raw association between night lights and market
+access (an elasticity of 1.39) falls to 0.17 once expected market access is
+taken into account, and the recentered estimate is negative and imprecise.
+Built-up area rises, and villages that gain a toll gate nearby brighten after
+opening, although that local estimate is not yet robust.
+
+:::
+
+::: {.figure style="margin-top:1.2rem"}
+
+[![](assets/img/fig_toll_ma_paths.png){fig-alt="Two panels. Panel A, lines from 2014 to 2024: actual mean change in log market access rises to about 0.12; expected market access under the timing design follows it closely; expected market access under a design that also lets planned sections open rises to about 0.08. Panel B, bars: the cross-village spread of recentered market access is between about 0.012 and 0.023 in 2015 to 2023 and zero in 2014 and 2024."}](assets/img/fig_toll_ma_paths.png)
+
+::: {.figcaption}
+
+Actual and expected market access. Panel A compares the mean gain in log market
+access since 2014 with its expectation over counterfactual opening schedules:
+most of the actual gain is predictable from where villages sit in the network.
+Panel B shows the variation left after recentering, which comes only from
+when sections opened.
+
+:::
+
+:::
+
+::::
+
 ## Publications
 
 :::: {.paper}
