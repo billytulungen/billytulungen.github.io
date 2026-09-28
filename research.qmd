@@ -1,6 +1,6 @@
 ---
 title: "Research"
-subtitle: "Development economics and public economics, with political economy, urban and regional economics, and industrial organization. Applied empirical work on Indonesian microdata."
+subtitle: "Development economics and urban and regional economics, with political economy and public economics. Applied empirical work on Indonesian microdata."
 description-meta: "Working papers, work in progress, publications, grants, and dissertation."
 toc: false
 ---
@@ -21,10 +21,10 @@ state capacity are weak.
 
 ::: {.area}
 
-### Public Economics
-How public money is actually spent. Government procurement, the efficiency of
-public purchasing, and the distance between what a rule requires and what an
-official can do.
+### Urban and Regional Economics
+Where people build and where activity locates: settlement in hazard-prone
+land, rebuilding after disasters, and how new transport links change villages'
+access to markets.
 
 :::
 
@@ -44,17 +44,10 @@ resources, including public procurement.
 
 ::: {.area}
 
-### Urban and Regional Economics
-Where people build and where activity locates: settlement in hazard-prone
-land, and how new transport links change villages' access to markets.
-
-:::
-
-::: {.area}
-
-### Industrial Organization
-Competition and bidding in government procurement markets, contract design, and
-what determines whether a tender delivers value rather than only a low price.
+### Public Economics
+How public money is actually spent. Government procurement, competition and
+bidding for public contracts, and the distance between what a rule requires and
+what an official can do.
 
 :::
 

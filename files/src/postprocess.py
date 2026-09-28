@@ -44,10 +44,9 @@ PERSON = {
     },
     "knowsAbout": [
         "Development economics",
-        "Public economics",
-        "Political economy",
         "Urban and regional economics",
-        "Industrial organization",
+        "Political economy",
+        "Public economics",
         "Public procurement",
     ],
     "sameAs": [

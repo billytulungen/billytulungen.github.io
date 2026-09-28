@@ -2,7 +2,7 @@
 # Quarto appends " – Billy Tulungen" (the site title), so do not repeat the
 # name here or the browser tab reads it twice.
 pagetitle: "Economist and Public Procurement Expert"
-description-meta: "PhD candidate in Economics at Universitas Indonesia. Development and public economics; public procurement practice."
+description-meta: "PhD candidate in Economics at Universitas Indonesia. Development economics and urban and regional economics; public procurement practice."
 image: assets/img/og-card.png
 image-alt: "Billy Tulungen, PhD Candidate in Economics, Universitas Indonesia"
 toc: false
@@ -31,7 +31,7 @@ Development Economics &middot; Urban & Regional Economics &middot; Political Eco
 ::: {.hero-bio}
 
 I am a PhD candidate in Economics at Universitas Indonesia, working in
-development economics and public economics. My dissertation,
+development economics and urban and regional economics. My dissertation,
 *Shaking Land and Shaking Lives*, asks how large seismic shocks reshape social
 order, household behaviour, and local economies in Indonesian villages. The
 first chapter is supported by a research grant from the ReCIPE Programme (CEPR
