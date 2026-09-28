@@ -46,6 +46,7 @@ PERSON = {
         "Development economics",
         "Public economics",
         "Political economy",
+        "Urban and regional economics",
         "Industrial organization",
         "Public procurement",
     ],

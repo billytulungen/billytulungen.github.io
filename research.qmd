@@ -1,6 +1,6 @@
 ---
 title: "Research"
-subtitle: "Development economics and public economics, with political economy and industrial organization. Applied empirical work on Indonesian microdata."
+subtitle: "Development economics and public economics, with political economy, urban and regional economics, and industrial organization. Applied empirical work on Indonesian microdata."
 description-meta: "Working papers, work in progress, publications, grants, and dissertation."
 toc: false
 ---
@@ -39,6 +39,14 @@ official can do.
 ### Political Economy
 Local order, collective action, and the institutions that govern public
 resources, including public procurement.
+
+:::
+
+::: {.area}
+
+### Urban and Regional Economics
+Where people build and where activity locates: settlement in hazard-prone
+land, and how new transport links change villages' access to markets.
 
 :::
 
