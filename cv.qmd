@@ -159,7 +159,8 @@ with Vid Adrison. *Indonesian Treasury Review*, 6(1), 19–29.
 
 ::: {.org}
 
-with M. Halley Yudhistira and Jahen F. Rezki. [Abstract →](research.qmd)
+with M. Halley Yudhistira and Jahen F. Rezki. Dissertation chapter.
+[Abstract →](research.qmd)
 
 :::
 
@@ -180,6 +181,78 @@ with M. Halley Yudhistira and Jahen F. Rezki. [Abstract →](research.qmd)
 :::: {.what}
 
 [Faith after the Shock: Earthquakes, Religious Expenditure, and the Insurance Value of Religion in Indonesia]{.role}
+
+::: {.org}
+
+Dissertation chapter.
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2026–
+
+:::
+
+:::: {.what}
+
+[Lines Drawn after the Ground Moved: Post-Disaster No-Build Zones and Reconstruction in Palu, Indonesia]{.role}
+
+::: {.org}
+
+Dissertation chapter. First full draft. [Abstract →](research.qmd)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2026–
+
+:::
+
+:::: {.what}
+
+[Forgetting the Ground? Disasters and the Location of New Construction within Indonesian Villages]{.role}
+
+::: {.org}
+
+[Abstract →](research.qmd)
+
+:::
+
+::::
+
+:::::
+
+::::: {.entry}
+
+::: {.years}
+
+2026–
+
+:::
+
+:::: {.what}
+
+[Roads Not Taken? Toll Roads, Market Access, and Village Economies in Java and Sumatra]{.role}
+
+::: {.org}
+
+[Abstract →](research.qmd)
+
+:::
 
 ::::
 
@@ -328,7 +401,7 @@ Ahli Kontrak Pemerintah Indonesia.
 
 ## Skills
 
-**Software.** Stata &middot; R &middot; Python &middot; QGIS &middot; LaTeX.
+**Software.** Stata &middot; R &middot; Python &middot; QGIS &middot; Google Earth Engine &middot; LaTeX.
 
 **Languages.** Indonesian (native), English (professional working proficiency).
 

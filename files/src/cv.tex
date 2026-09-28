@@ -16,7 +16,7 @@
 \usepackage{tgpagella}
 \usepackage{textcomp}
 \usepackage{microtype}
-\usepackage[margin=0.95in,top=0.7in,bottom=0.7in,footskip=0.4in]{geometry}
+\usepackage[margin=0.9in,top=0.6in,bottom=0.65in,footskip=0.4in]{geometry}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -41,14 +41,14 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot[L]{\footnotesize\color{faint} Billy Thandy Tulungen
-  \textperiodcentered\ Curriculum Vitae \textperiodcentered\ August 2026}
+  \textperiodcentered\ Curriculum Vitae \textperiodcentered\ September 2026}
 \fancyfoot[R]{\footnotesize\color{faint} \thepage\ of \pageref{LastPage}}
 
 % --- section headings ------------------------------------------------------
 \titleformat{\section}
   {\normalfont\normalsize\scshape\color{ink}}{}{0pt}{}
   [\vspace{-0.6em}{\color{rule}\rule{\textwidth}{0.4pt}}]
-\titlespacing*{\section}{0pt}{0.95em}{0.55em}
+\titlespacing*{\section}{0pt}{0.75em}{0.45em}
 
 % --- entry: date column on the left, content on the right ------------------
 % \strut in both columns puts their first baselines on the same line; without
@@ -65,10 +65,10 @@
   \begin{minipage}[t]{\bodycol}%
     \strut #2%
   \end{minipage}%
-  \par\vspace{0.22em}}
+  \par\vspace{0.16em}}
 
 % Full-width entry, for blocks with no date
-\newcommand{\fentry}[1]{\noindent#1\par\vspace{0.22em}}
+\newcommand{\fentry}[1]{\noindent#1\par\vspace{0.16em}}
 
 % Secondary line under an entry title
 \newcommand{\org}[1]{{\small\color{muted}#1}}
@@ -92,7 +92,7 @@ Indonesia\\[0.25em]
 \textperiodcentered\
 \href{https://orcid.org/0000-0001-5480-1426}{ORCID 0000-0001-5480-1426}
 \textperiodcentered\
-\href{https://billytulungen.github.io}{billytulungen.github.io}}
+\mbox{\href{https://billytulungen.com}{billytulungen.com}}}
 
 \vspace{0.5em}
 
@@ -139,22 +139,37 @@ Indonesia\\[0.25em]
 \section{Working Papers}
 
 \entry{2026}{%
-  ``Earthquakes and Communal Conflict: Village-Level Evidence from
-  Indonesia,'' with M. Halley Yudhistira and Jahen F. Rezki.\\
-  \org{Dissertation chapter. Seven waves of Indonesia's Village Potential
-  Survey (2005--2024) matched to village-level USGS ShakeMap intensities.
-  Damage-level shaking reduces reported communal conflict by 1.5 percentage
-  points against a 6.1 percent pre-exposure rate, while theft rises by 5.8
-  points on the same villages and waves.}}
+  ``Earthquakes and Communal Conflict: Evidence from Indonesia's Seismic
+  Zones,'' with M. Halley Yudhistira and Jahen F. Rezki.\\
+  \org{Dissertation chapter. Seven waves of Indonesia's village census
+  (PODES, 2005--2024) matched to village-level USGS ShakeMap intensities.
+  First exposure to damage-level shaking lowers the probability that a village
+  reports a mass brawl by 1.73 percentage points against a 6.7 percent
+  pre-exposure mean, while theft does not follow it down.}}
 
 \section{Work in Progress}
 
 \entry{2026--}{%
   ``Faith after the Shock: Earthquakes, Religious Expenditure, and the
   Insurance Value of Religion in Indonesia.''\\
-  \org{Dissertation chapter. Household religious and ceremonial expenditure
-  against village-level earthquake exposure, separating the income effect from
-  the club-good and coping channels.}}
+  \org{Dissertation chapter. Household religious expenditure against
+  earthquake exposure: income, club-good, and coping channels.}}
+
+\entry{2026--}{%
+  ``Lines Drawn after the Ground Moved: Post-Disaster No-Build Zones and
+  Reconstruction in Palu, Indonesia.''\\
+  \org{Dissertation chapter. First full draft. Boundary design on satellite
+  building data for the no-build zones drawn after the 2018 Palu disaster.}}
+
+\entry{2026--}{%
+  ``Forgetting the Ground? Disasters and the Location of New Construction
+  within Indonesian Villages.''\\
+  \org{Within-village location of new construction after earthquakes and floods.}}
+
+\entry{2026--}{%
+  ``Roads Not Taken? Toll Roads, Market Access, and Village Economies in Java
+  and Sumatra.''\\
+  \org{Recentered market access from the 2015--2024 toll-road openings.}}
 
 % ----------------------------------------------------------------- grants --
 \section{Grants, Scholarships, and Awards}
@@ -318,15 +333,16 @@ Indonesia\\[0.25em]
 \section{Skills}
 
 \entry{Software}{Stata \textperiodcentered\ R \textperiodcentered\ Python
-  \textperiodcentered\ QGIS \textperiodcentered\ \LaTeX.}
+  \textperiodcentered\ QGIS \textperiodcentered\ Google Earth Engine
+  \textperiodcentered\ \LaTeX.}
 
 \entry{Languages}{Indonesian (native), English (professional working
   proficiency).}
 
 % ------------------------------------------------------------ references --
 \Needspace{6\baselineskip}
-\Needspace{6\baselineskip}
 \section{References}
+{\small
 
 \fentry{\textbf{M. Halley Yudhistira, Ph.D.} \emph{(supervisor)}
   \textperiodcentered\
@@ -342,5 +358,7 @@ Indonesia\\[0.25em]
   \textperiodcentered\
   \org{Associate Professor, Universitas Indonesia
   \textperiodcentered\ \href{mailto:vid.adrison@ui.ac.id}{vid.adrison@ui.ac.id}}}
+
+}
 
 \end{document}
