@@ -1,6 +1,6 @@
 ---
 title: "Research"
-subtitle: "Development economics, urban and regional economics, and political economy. Applied empirical work on Indonesian microdata."
+subtitle: "Development economics and public economics, with political economy and industrial organization. Applied empirical work on Indonesian microdata."
 description-meta: "Working papers, work in progress, publications, grants, and dissertation."
 toc: false
 ---
