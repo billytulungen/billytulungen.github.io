@@ -448,12 +448,12 @@ M. Halley Yudhistira, Ph.D. Co-supervisor: Jahen F. Rezki, Ph.D.
 
 The dissertation asks how large, plausibly exogenous physical shocks propagate
 through village-level social and economic life in a setting where formal
-insurance is thin and local order is largely self-enforced. The first two
-chapters share a common empirical infrastructure: a long village panel
+insurance is thin and local order is largely self-enforced. The first chapter
+turns from the shock to the policy response, using satellite building data to
+study the no-build zones drawn after the 2018 Palu disaster. The second and
+third chapters share a common empirical infrastructure: a long village panel
 harmonised onto constant 2005 boundaries, and earthquake exposure constructed
-from USGS ShakeMap intensity surfaces. The third turns from the shock to the
-policy response, using satellite building data to study the no-build zones drawn
-after the 2018 Palu disaster.
+from USGS ShakeMap intensity surfaces.
 
 ::::: {.entry}
 
@@ -465,12 +465,12 @@ Chapter 1
 
 :::: {.what}
 
-[Earthquakes and Communal Conflict]{.role}
+[Lines Drawn after the Ground Moved]{.role}
 
 ::: {.org}
 
-Village-level evidence from Indonesia, with M. Halley Yudhistira and Jahen F.
-Rezki. Draft complete, under revision.
+Post-disaster no-build zones and reconstruction in Palu, Indonesia. First full
+draft, in progress.
 
 :::
 
@@ -488,11 +488,12 @@ Chapter 2
 
 :::: {.what}
 
-[Faith after the Shock]{.role}
+[Earthquakes and Communal Conflict]{.role}
 
 ::: {.org}
 
-Earthquakes, religious expenditure, and the insurance value of religion. In progress.
+Village-level evidence from Indonesia, with M. Halley Yudhistira and Jahen F.
+Rezki. Draft complete; household mechanism in progress.
 
 :::
 
@@ -510,12 +511,11 @@ Chapter 3
 
 :::: {.what}
 
-[Lines Drawn after the Ground Moved]{.role}
+[Faith after the Shock]{.role}
 
 ::: {.org}
 
-Post-disaster no-build zones and reconstruction in Palu, Indonesia. First full
-draft, in progress.
+Earthquakes, religious expenditure, and the insurance value of religion. In progress.
 
 :::
 
