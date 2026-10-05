@@ -28,28 +28,6 @@ procurement facilitator and competency assessor.
 
 ::: {.years}
 
-2026
-
-:::
-
-:::: {.what}
-
-[ECES908012 · Advanced Econometrics]{.role}
-
-::: {.org}
-
-Teaching assistant to Rus'an Nasrudin, Ph.D.
-
-:::
-
-::::
-
-:::::
-
-::::: {.entry}
-
-::: {.years}
-
 2025
 
 :::
@@ -69,29 +47,6 @@ Teaching assistant to Rus'an Nasrudin, Ph.D. and Jahen F. Rezki, Ph.D.
 :::::
 
 ### Master's programme in Economics (PPIE)
-
-::::: {.entry}
-
-::: {.years}
-
-2026
-
-:::
-
-:::: {.what}
-
-[ECES808832 · Econometrics 2: Cross-Section and Panel Data]{.role}
-
-::: {.org}
-
-Teaching assistant to I Dewa Gede Karma Wisana, Ph.D. and M. Halley
-Yudhistira, Ph.D.
-
-:::
-
-::::
-
-:::::
 
 ::::: {.entry}
 
@@ -139,28 +94,6 @@ Teaching assistant to Jahen F. Rezki, Ph.D. and Milda Irhamni, Ph.D.
 :::::
 
 ### Master's programme in Planning and Public Policy (MPKP)
-
-::::: {.entry}
-
-::: {.years}
-
-2026
-
-:::
-
-:::: {.what}
-
-[ECEM801101 · Applied Econometrics]{.role}
-
-::: {.org}
-
-Teaching assistant to Muhammad Hanri, Ph.D. and Prani Sastiono, Ph.D.
-
-:::
-
-::::
-
-:::::
 
 ::::: {.entry}
 
