@@ -1,0 +1,19 @@
+---
+title: "Privacy"
+description-meta: "Privacy notice for this website and for the personal Google Drive tool registered under billytulungen.com."
+image: assets/img/og-card.png
+toc: false
+---
+
+This website does not ask for, collect, or store personal information. It has no
+accounts, forms, or comment sections.
+
+The domain is also registered as the home of a private OAuth client in Google
+Cloud. I use that client only to connect my own copy of rclone, a file
+transfer program, to my own Google Drive so that I can move research data. It
+is not offered to anyone else. The files it reads and writes stay in my Google
+Drive and on my own computer, and nothing is shared with or sold to any third
+party.
+
+Questions about this notice can go to
+[billy.thandy21@ui.ac.id](mailto:billy.thandy21@ui.ac.id).
