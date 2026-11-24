@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lab Data Spasial</title>
-<meta name="description" content="Pendamping praktik sesi data spasial dalam mata kuliah Pengolahan dan Analisis Data Kuantitatif: resolusi raster, proyeksi, klasifikasi peta, join tabel, dan unit analisis.">
+<meta name="description" content="Pendamping praktik sesi data spasial dalam mata kuliah Pengolahan dan Analisis Data Kuantitatif: resolution raster, projection, classification peta, join tabel, dan unit of analysis.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
 
@@ -184,14 +184,14 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
   <header class="open">
     <p class="ident">Pendamping sesi Pengolahan dan Analisis Data Kuantitatif &middot; Magister Perencanaan Ekonomi dan Kebijakan Pembangunan, Fakultas Ekonomi dan Bisnis, Universitas Indonesia &middot; <a href="https://billytulungen.com/">billytulungen.com</a></p>
     <h1>Lab Data Spasial</h1>
-    <p class="lead">Data spasial bisa keliru lewat lima cara yang sangat biasa, dan tidak satu pun memunculkan pesan galat. QGIS tetap berjalan, kolom baru muncul, dan angka di dalamnya ternyata bukan yang Anda kira. Di halaman ini Anda bisa membuat setiap kesalahan itu dengan sengaja dan melihat angka di bawahnya berubah saat Anda melakukannya.</p>
+    <p class="lead">Data spasial bisa keliru lewat lima cara yang sangat biasa, dan tidak satu pun memunculkan error message. QGIS tetap berjalan, kolom baru muncul, dan angka di dalamnya ternyata bukan yang Anda kira. Di halaman ini Anda bisa membuat setiap kesalahan itu dengan sengaja dan melihat angka di bawahnya berubah saat Anda melakukannya.</p>
     <div class="bar">
       <div class="jump">
         <a href="#m1">Raster</a>
-        <a href="#m2">Proyeksi</a>
-        <a href="#m3">Klasifikasi</a>
+        <a href="#m2">Projection</a>
+        <a href="#m3">Classification</a>
         <a href="#m4">Join</a>
-        <a href="#m5">Agregasi</a>
+        <a href="#m5">Aggregation</a>
       </div>
       <span class="dls">
         <a class="dl" href="data/berkas-latihan-qgis.zip" download>Berkas latihan, 436 KB</a>
@@ -200,16 +200,16 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
         <a class="dl alt" href="data/buku-latihan-qgis.pdf">Buku latihan</a>
       </span>
     </div>
-    <p class="filenote">Zip berisi lapisan dan tabel yang sama dengan yang kita pakai di kelas. Ekstrak di mana saja lalu buka langsung dari QGIS; berkas BACA.txt di dalamnya menyebut berkas mana untuk latihan mana. Slide adalah deck lengkap sesi ini <!--SLIDESTAMP-->(70 halaman, 6,1 MB, 15 November 2026)<!--/SLIDESTAMP-->, catatan lab menjelaskan kelima modul di halaman ini di atas kertas, lengkap dengan gambarnya, dan buku latihan memandu ketujuh latihan QGIS langkah demi langkah sehingga bisa Anda selesaikan sendiri setelah kelas.</p>
+    <p class="filenote">Zip berisi layer dan tabel yang sama dengan yang kita pakai di kelas. Ekstrak di mana saja lalu buka langsung dari QGIS; berkas BACA.txt di dalamnya menyebut berkas mana untuk latihan mana. Slide adalah deck lengkap sesi ini <!--SLIDESTAMP-->(70 halaman, 6,1 MB, 24 November 2026)<!--/SLIDESTAMP-->, catatan lab menjelaskan kelima modul di halaman ini di atas kertas, lengkap dengan gambarnya, dan buku latihan memandu ketujuh latihan QGIS langkah demi langkah sehingga bisa Anda selesaikan sendiri setelah kelas.</p>
   </header>
 
   <section class="mod" id="m1">
     <h2>Seberapa kasar raster boleh dibuat sebelum rata-ratanya kehilangan makna</h2>
-    <p>Di bawah ini citra satelit cahaya malam. Setiap kotak adalah satu sel, dan setiap sel menyimpan satu angka: seberapa terang petak tanah itu. Garis merah muda adalah batas satu kabupaten.
+    <p>Di bawah ini satellite imagery (citra satelit) nighttime lights, yaitu cahaya malam. Setiap kotak adalah satu sel, dan setiap sel menyimpan satu angka: seberapa terang petak tanah itu. Garis merah muda adalah batas satu kabupaten.
       QGIS bisa merata-ratakan semua sel di dalam garis itu dan memberi Anda satu angka untuk kabupaten tersebut. Alat itu bernama zonal statistics. Perbesar selnya, maka makin sedikit sel yang muat di dalam batas, dan rata-ratanya makin kurang berpijak.</p>
     <figure>
       <div class="plot">
-        <canvas id="c1" role="img" aria-label="Kisi sel raster cahaya malam dengan satu batas kabupaten di atasnya"></canvas>
+        <canvas id="c1" role="img" aria-label="Grid sel raster nighttime lights dengan satu batas kabupaten di atasnya"></canvas>
       </div>
       <div class="readout">
         <div><p class="dt">Ukuran sel</p><p class="dd" id="r1a">4 km</p></div>
@@ -218,7 +218,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
         <div><p class="dt">Standard error</p><p class="dd hi" id="r1e">0</p></div>
         <div><p class="dt">Jumlah</p><p class="dd" id="r1d">0</p></div>
       </div>
-      <div class="note" id="n1">Pada resolusi ini rata-ratanya bertumpu pada banyak sel.</div>
+      <div class="note" id="n1">Pada resolution ini rata-ratanya bertumpu pada banyak sel.</div>
       <div class="knobs">
         <label class="knob"><span>Ukuran sel <b id="v1res">4 km</b></span>
           <input type="range" id="i1res" min="0" max="4" step="1" value="2"></label>
@@ -240,7 +240,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
   <section class="mod" id="m2">
     <h2>Mengapa 5000 kadang berarti lima kilometer, kadang ratusan kilometer</h2>
     <p>Tiga desa, dua belas fasilitas kesehatan. Anda ingin menghitung fasilitas dalam radius lima kilometer dari setiap desa, jadi Anda menggambar lingkaran seukuran itu di sekeliling setiap desa. Di QGIS lingkaran itu disebut buffer, dan ukurannya Anda tentukan dengan mengetik angka.
-      Ketik 5000 dan hasilnya bisa lima kilometer, bisa juga lebih dari lima ratus kilometer. Mana yang Anda dapat bergantung pada sistem koordinat yang dibawa layer itu, dan QGIS tidak akan mencegah Anda dalam kedua kasus.</p>
+      Ketik 5000 dan hasilnya bisa lima kilometer, bisa juga lebih dari lima ratus kilometer. Mana yang Anda dapat bergantung pada CRS (coordinate reference system) yang dibawa layer itu, dan QGIS tidak akan mencegah Anda dalam kedua kasus.</p>
     <figure>
       <div class="plot">
         <canvas id="c2" role="img" aria-label="Peta tiga desa dengan lingkaran jarak di sekelilingnya dan titik fasilitas kesehatan yang tersebar di satu pulau"></canvas>
@@ -253,7 +253,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
       </div>
       <div class="note" id="n2">Ini masuk akal: sebagian fasilitas berada di luar jangkauan setiap desa.</div>
       <div class="knobs">
-        <label class="knob"><span>Sistem koordinat layer</span>
+        <label class="knob"><span>CRS layer</span>
           <select id="i2crs">
             <option value="m">EPSG:32749 &mdash; UTM 49S, meter</option>
             <option value="d">EPSG:4326 &mdash; WGS 84, derajat</option>
@@ -262,10 +262,10 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
           <input type="range" id="i2r" min="1" max="20" step="1" value="5"></label>
       </div>
     </figure>
-    <p class="single">Biarkan nilainya 5 lalu ubah sistemnya ke derajat. Setelah itu coba cari nilai berapa pun yang masih memberi jawaban masuk akal. Tidak akan ada.</p>
+    <p class="single">Biarkan nilainya 5 lalu ubah CRS-nya ke derajat. Setelah itu coba cari nilai berapa pun yang masih memberi jawaban masuk akal. Tidak akan ada.</p>
     <div class="after">
-      <p>Sistem koordinat menyimpan posisi dalam meter atau dalam derajat lintang dan bujur. Derajat adalah sudut, bukan panjang. Satu derajat lintang kira-kira 111&nbsp;km, jadi meminta buffer 5 pada layer berbasis derajat menghasilkan lingkaran berjari-jari sekitar 555&nbsp;km.
-      Lebih buruk lagi, satu derajat bujur makin pendek saat menjauh dari khatulistiwa, sehingga ukuran kesalahannya pun tidak sama di seluruh peta. Begitu setiap desa menjangkau setiap fasilitas, kolom baru Anda berisi angka yang sama di semua baris. Kolom tanpa variasi tidak memberi tahu regresi apa pun.</p>
+      <p>CRS menyimpan posisi dalam meter atau dalam derajat latitude dan longitude. Derajat adalah sudut, bukan panjang. Satu derajat latitude kira-kira 111&nbsp;km, jadi meminta buffer 5 pada layer berbasis derajat menghasilkan lingkaran berjari-jari sekitar 555&nbsp;km.
+      Lebih buruk lagi, satu derajat longitude makin pendek saat menjauh dari khatulistiwa, sehingga ukuran kesalahannya pun tidak sama di seluruh peta. Begitu setiap desa menjangkau setiap fasilitas, kolom baru Anda berisi angka yang sama di semua baris. Kolom tanpa variasi tidak memberi tahu regresi apa pun.</p>
       <p>Perbaikannya cukup satu langkah. Sebelum operasi apa pun yang mengukur jarak atau luas, jalankan <code>Reproject Layer</code> dan pindahkan data ke zona UTM yang mencakup wilayah studi Anda, sehingga satuannya menjadi meter. Lalu periksa kode EPSG di pojok kanan bawah jendela QGIS sebelum menekan Run.</p>
     </div>
   </section>
@@ -273,11 +273,11 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
   <section class="mod" id="m3">
     <h2>Satu kolom angka, dan betapa berbedanya peta yang bisa dihasilkan</h2>
     <p>Lima puluh empat wilayah, masing-masing dengan satu angka kemiskinan. Angka-angka itu tidak pernah berubah selama Anda di halaman ini.
-      Yang berubah adalah cara Anda memotongnya. Untuk mewarnai peta, nilai-nilai itu lebih dulu dikelompokkan ke dalam kelas, lalu setiap kelas diberi satu warna. Di mana batas antarkelas ditarik adalah pilihan Anda, bukan pilihan data, begitu pula skema warnanya. Kebanyakan pembaca tidak akan pernah memikirkan keduanya.</p>
+      Yang berubah adalah cara Anda memotongnya. Untuk mewarnai peta, nilai-nilai itu lebih dulu dikelompokkan ke dalam kelas, lalu setiap kelas diberi satu warna. Di mana batas antarkelas ditarik adalah pilihan Anda, bukan pilihan data, begitu pula color scheme-nya. Kebanyakan pembaca tidak akan pernah memikirkan keduanya.</p>
     <figure>
       <div class="plot">
         <canvas id="c3" role="img" aria-label="Peta heksagon berisi lima puluh empat wilayah yang diwarnai menurut nilainya"></canvas>
-        <canvas id="c3h" role="img" aria-label="Histogram nilai dengan garis batas kelas di atasnya"></canvas>
+        <canvas id="c3h" role="img" aria-label="Histogram nilai dengan garis class breaks di atasnya"></canvas>
         <div class="axis"><span id="a3lo">min</span><span>sebaran nilai antarwilayah</span><span id="a3hi">maks</span></div>
       </div>
       <div class="legend" id="leg3"></div>
@@ -293,7 +293,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
             <option value="rate">Tingkat kemiskinan, persen</option>
             <option value="total">Jumlah penduduk miskin</option>
           </select></label>
-        <label class="knob"><span>Klasifikasi</span>
+        <label class="knob"><span>Classification</span>
           <select id="i3met">
             <option value="ei">Equal Interval</option>
             <option value="q">Quantile</option>
@@ -302,11 +302,11 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
           </select></label>
         <label class="knob"><span>Jumlah kelas <b id="v3k">5</b></span>
           <input type="range" id="i3k" min="3" max="7" step="1" value="5"></label>
-        <label class="knob"><span>Warna</span>
+        <label class="knob"><span>Color scheme</span>
           <select id="i3ramp">
-            <option value="seq">Sekuensial</option>
-            <option value="div">Divergen</option>
-            <option value="rain">Pelangi</option>
+            <option value="seq">Sequential</option>
+            <option value="div">Diverging</option>
+            <option value="rain">Rainbow</option>
           </select></label>
       </div>
     </figure>
@@ -315,20 +315,20 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
       <ol>
         <li>Pilih Quantile dan perhatikan di mana garis batas jatuh pada histogram. Garis-garis itu menumpuk di bagian data yang padat, dan begitulah peta berisi nilai yang hampir sama bisa tampak dramatis.</li>
         <li>Ganti variabelnya ke jumlah penduduk miskin, lalu tanyakan sebenarnya peta itu menggambarkan apa.</li>
-        <li>Pilih Pelangi dan coba urutkan kelas dari rendah ke tinggi hanya dengan melihat warnanya.</li>
+        <li>Pilih Rainbow dan coba urutkan kelas dari rendah ke tinggi hanya dengan melihat warnanya.</li>
       </ol>
-      <p>Setiap kontrol di sini punya padanan di QGIS, di <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. Saat memasukkan peta ke tesis atau kajian, tulis metode klasifikasi dan jumlah kelasnya di keterangan gambar. Tanpa itu pembaca tidak bisa membedakan apakah polanya ada di data atau di pilihan Anda, dan penguji akan menanyakannya.</p>
+      <p>Setiap kontrol di sini punya padanan di QGIS, di <code>Layer Properties &rsaquo; Symbology &rsaquo; Graduated</code>. Saat memasukkan peta ke tesis atau kajian, tulis metode classification dan jumlah kelasnya di keterangan gambar. Tanpa itu pembaca tidak bisa membedakan apakah polanya ada di data atau di pilihan Anda, dan penguji akan menanyakannya.</p>
     </div>
   </section>
 
   <section class="mod" id="m4">
     <h2>Join yang membuang sebagian sampel Anda tanpa pemberitahuan</h2>
-    <p>Join adalah cara menempelkan tabel statistik ke peta. Kedua sisi perlu kunci yang sama, biasanya kode kabupaten, dan QGIS mencocokkannya baris demi baris.
+    <p>Join adalah cara menempelkan tabel statistik ke peta. Kedua sisi perlu key (kolom pencocok) yang sama, biasanya kode kabupaten, dan QGIS mencocokkannya baris demi baris.
       Di sini ada dua belas kabupaten di peta dan dua belas baris statistik. Nyalakan situasi sehari-hari di bawah ini satu per satu dan lihat berapa baris yang masih cocok. Lalu lihat siapa yang terlempar, karena itu jauh lebih penting daripada jumlahnya.</p>
     <figure>
       <div class="tscroll">
         <table>
-          <thead><tr><th>Kode poligon</th><th>Nama</th><th>Kunci di tabel</th><th>Status</th></tr></thead>
+          <thead><tr><th>Kode polygon</th><th>Nama</th><th>Key di tabel</th><th>Status</th></tr></thead>
           <tbody id="tb4"></tbody>
         </table>
       </div>
@@ -336,7 +336,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
         <div><p class="dt">Baris cocok</p><p class="dd" id="r4a">12 / 12</p></div>
         <div><p class="dt">Sampel hilang</p><p class="dd hi" id="r4b">0%</p></div>
         <div><p class="dt">Setara pada 514 kabupaten/kota</p><p class="dd" id="r4c">0 kab/kota</p></div>
-        <div><p class="dt">Pesan galat</p><p class="dd" id="r4d">tidak ada</p></div>
+        <div><p class="dt">Error message</p><p class="dd" id="r4d">tidak ada</p></div>
       </div>
       <div class="note" id="n4">Semuanya cocok. Beginilah rupa join yang sehat.</div>
       <div class="knobs">
@@ -346,7 +346,7 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
       </div>
     </figure>
     <div class="after">
-      <p>Baris yang gagal tidak pernah segelintir yang acak. Mereka adalah kabupaten hasil pemekaran terbaru, kota yang namanya berubah, wilayah yang digabung. Tempat-tempat itu berbeda dari yang berhasil cocok, sering kali justru dalam hal yang berkaitan dengan yang sedang Anda teliti. Jadi ini bukan soal merapikan data. Ini masalah seleksi sampel (selection bias) yang diam-diam bersarang di dalam hasil Anda.</p>
+      <p>Baris yang gagal tidak pernah segelintir yang acak. Mereka adalah kabupaten hasil pemekaran terbaru, kota yang namanya berubah, wilayah yang digabung. Tempat-tempat itu berbeda dari yang berhasil cocok, sering kali justru dalam hal yang berkaitan dengan yang sedang Anda teliti. Jadi ini bukan soal merapikan data. Ini selection bias yang diam-diam bersarang di dalam hasil Anda.</p>
       <p><b>Jadi hitung jumlah baris sebelum dan sesudah setiap join</b>, urutkan kolom baru untuk menemukan sel kosong, dan cocokkan dengan kode, bukan nama. Join yang dibuat di <code>Layer Properties &rsaquo; Joins</code> hanya sementara sampai Anda menjalankan <code>Export &rsaquo; Save Features As</code>.</p>
     </div>
   </section>
@@ -354,22 +354,22 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
   <section class="mod" id="m5">
     <h2>Apa yang terjadi pada koefisien ketika batas wilayah digambar ulang</h2>
     <p>Empat ratus rumah tangga. Hubungan sebenarnya antara akses jalan dan pengeluaran sudah tetap dan tidak pernah berubah di sini.
-      Sekarang kelompokkan rumah tangga itu ke dalam wilayah dan rata-ratakan setiap wilayah, persis yang Anda lakukan setiap kali memakai data kabupaten alih-alih data rumah tangga. Perhatikan kemiringan garisnya saat wilayah makin besar. Tidak ada informasi baru yang masuk; garis putus-putus abu-abu adalah hubungan tingkat rumah tangga, dipertahankan sebagai pembanding.</p>
+      Sekarang kelompokkan rumah tangga itu ke dalam wilayah dan rata-ratakan setiap wilayah, persis yang Anda lakukan setiap kali memakai data kabupaten alih-alih data rumah tangga. Perhatikan slope (kemiringan) garisnya saat wilayah makin besar. Tidak ada informasi baru yang masuk; garis putus-putus abu-abu adalah hubungan tingkat rumah tangga, dipertahankan sebagai pembanding.</p>
     <figure>
       <div class="plot">
-        <canvas id="c5" role="img" aria-label="Diagram pencar akses jalan terhadap pengeluaran rumah tangga dengan garis regresinya"></canvas>
+        <canvas id="c5" role="img" aria-label="Scatter plot akses jalan terhadap pengeluaran rumah tangga dengan garis regresinya"></canvas>
         <div class="axis"><span>vertikal: pengeluaran rumah tangga, log</span><span>horizontal: indeks akses jalan</span></div>
       </div>
       <div class="readout">
-        <div><p class="dt">Unit observasi</p><p class="dd" id="r5a">400 rumah tangga</p></div>
+        <div><p class="dt">Unit of observation</p><p class="dd" id="r5a">400 rumah tangga</p></div>
         <div><p class="dt">Koefisien</p><p class="dd hi" id="r5b">0,00</p></div>
-        <div><p class="dt">R kuadrat</p><p class="dd" id="r5c">0,00</p></div>
+        <div><p class="dt">R²</p><p class="dd" id="r5c">0,00</p></div>
         <div><p class="dt">Dibanding tingkat rumah tangga</p><p class="dd" id="r5d">1,00&times;</p></div>
       </div>
-      <div class="note" id="n5">Ini hubungan tingkat rumah tangga, hubungan yang sebenarnya membangkitkan data.</div>
+      <div class="note" id="n5">Ini hubungan tingkat rumah tangga, yaitu data generating process: hubungan yang sebenarnya membangkitkan data.</div>
       <div class="knobs">
-        <div class="knob"><span>Agregasikan rumah tangga menjadi</span>
-          <div class="seg" id="seg5" role="group" aria-label="Tingkat agregasi">
+        <div class="knob"><span>Aggregate rumah tangga menjadi</span>
+          <div class="seg" id="seg5" role="group" aria-label="Tingkat aggregation">
             <button type="button" data-n="0" aria-pressed="true">tidak ada</button>
             <button type="button" data-n="64" aria-pressed="false">64 wilayah</button>
             <button type="button" data-n="16" aria-pressed="false">16 wilayah</button>
@@ -381,14 +381,14 @@ section.mod:first-of-type{padding-top:30px; border-top:0; margin-top:14px}
     </figure>
     <p class="single">Pada enam belas wilayah, nyala-matikan pergeseran batas beberapa kali. Rumah tangga yang sama, garis batas yang berbeda di peta, jawaban yang berbeda.</p>
     <div class="after">
-      <p>Merata-ratakan menghapus apa pun yang khas pada tiap rumah tangga, tetapi mempertahankan apa pun yang berubah perlahan dari satu tempat ke tempat lain. Jadi yang tersisa setelah dirata-ratakan adalah bagian geografis dari hubungan itu, dan di sini bagian itu jauh lebih kuat daripada bagian rumah tangga. Itulah sebabnya kemiringannya membesar. R kuadrat juga naik, dan ini patut dicatat: kecocokan yang lebih rapat bukan jawaban yang lebih benar.</p>
-      <p>Ada dua hal terpisah yang terjadi. Wilayah yang lebih besar mengubah jawaban, dan menggeser batas mengubahnya lagi walaupun jumlah wilayahnya sama. Keduanya bersama-sama dikenal sebagai modifiable areal unit problem (MAUP), dan tidak ada obat umumnya. Pilih unit analisis karena Anda bisa menjelaskan mengapa unit itu yang tepat, lalu tunjukkan hasilnya pada unit kedua agar pembaca bisa melihat seberapa jauh hasilnya bergeser.</p>
+      <p>Merata-ratakan menghapus apa pun yang khas pada tiap rumah tangga, tetapi mempertahankan apa pun yang berubah perlahan dari satu tempat ke tempat lain. Jadi yang tersisa setelah dirata-ratakan adalah bagian geografis dari hubungan itu, dan di sini bagian itu jauh lebih kuat daripada bagian rumah tangga. Itulah sebabnya slope-nya membesar. R² juga naik, dan ini patut dicatat: fit yang lebih rapat bukan jawaban yang lebih benar.</p>
+      <p>Ada dua hal terpisah yang terjadi. Wilayah yang lebih besar mengubah jawaban, dan menggeser batas mengubahnya lagi walaupun jumlah wilayahnya sama. Keduanya bersama-sama dikenal sebagai modifiable areal unit problem (MAUP), dan tidak ada obat umumnya. Pilih unit of analysis karena Anda bisa menjelaskan mengapa unit itu yang tepat, lalu tunjukkan hasilnya pada unit kedua agar pembaca bisa melihat seberapa jauh hasilnya bergeser.</p>
     </div>
   </section>
 
   <footer>
     <p>Billy Thandy Tulungen &middot; Pengolahan dan Analisis Data Kuantitatif &middot; <a href="https://billytulungen.com/">billytulungen.com</a></p>
-    <p>Semua gambar di sini dibangkitkan di peramban Anda dari data sintetis agar polanya mudah dibaca. Tidak satu pun menggambarkan tempat nyata, dan tidak ada angka yang dihitung di halaman ini yang boleh masuk ke tesis. Berkas latihan disertai BACA.txt yang mencantumkan sumber data Indonesia yang sebenarnya.</p>
+    <p>Semua gambar di sini dibangkitkan di peramban Anda dari synthetic data (data buatan) agar polanya mudah dibaca. Tidak satu pun menggambarkan tempat nyata, dan tidak ada angka yang dihitung di halaman ini yang boleh masuk ke tesis. Berkas latihan disertai BACA.txt yang mencantumkan sumber data Indonesia yang sebenarnya.</p>
   </footer>
 </div>
 <script>
@@ -447,7 +447,7 @@ function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
     document.getElementById("r1d").textContent=nf(sum,1);
     var el=document.getElementById("n1");
     if(n<12){el.className="note warn";el.innerHTML="<strong>Hanya "+n+" sel yang jatuh di dalam batas.</strong> Dengan sesedikit ini, satu sel yang terang sudah menggeser rata-rata seluruh kabupaten. Standard error di sebelah rata-rata ikut membesar, dan karena itulah <span class=\"mono\">count</span> harus dilaporkan bersamanya.";}
-    else{el.className="note";el.innerHTML="Rata-ratanya bertumpu pada <strong>"+n+" sel</strong>. Perhatikan bahwa <strong>jumlah</strong> melonjak antarresolusi, sementara rata-rata nyaris tidak bergerak. Total bergantung pada berapa banyak sel yang kebetulan Anda punya; rasio tidak.";}
+    else{el.className="note";el.innerHTML="Rata-ratanya bertumpu pada <strong>"+n+" sel</strong>. Perhatikan bahwa <strong>jumlah</strong> melonjak antar-resolution, sementara rata-rata nyaris tidak bergerak. Total bergantung pada berapa banyak sel yang kebetulan Anda punya; rasio tidak.";}
   }
   iR.addEventListener("input",draw);iB.addEventListener("change",draw);iS.addEventListener("change",draw);
   draws.push(draw);
@@ -486,7 +486,7 @@ function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
     document.getElementById("r2c").textContent=counts.join(" · ");
     document.getElementById("r2d").textContent=total+" dari 36";
     var el=document.getElementById("n2");
-    if(deg){el.className="note warn";el.innerHTML="<strong>Jarak "+val+" dibaca sebagai "+val+" derajat.</strong> Satu derajat lintang kira-kira 111 km, jadi jari-jarinya menjadi sekitar "+Math.round(km)+" km dan seluruh pulau masuk ke dalamnya. Setiap desa kini menghitung semua fasilitas, sehingga variabelnya tidak lagi bervariasi, dan QGIS menjalankannya tanpa sepatah kata pun.";}
+    if(deg){el.className="note warn";el.innerHTML="<strong>Jarak "+val+" dibaca sebagai "+val+" derajat.</strong> Satu derajat latitude kira-kira 111 km, jadi jari-jarinya menjadi sekitar "+Math.round(km)+" km dan seluruh pulau masuk ke dalamnya. Setiap desa kini menghitung semua fasilitas, sehingga variabelnya tidak lagi bervariasi, dan QGIS menjalankannya tanpa sepatah kata pun.";}
     else{el.className="note";el.innerHTML="Radius <strong>"+km+" km</strong> pada layer bersatuan meter. Jumlah fasilitas berbeda dari desa ke desa, dan variasi itulah yang menjadi variabel akses dalam regresi Anda.";}
   }
   iC.addEventListener("change",draw);iR.addEventListener("input",draw);
@@ -576,12 +576,12 @@ function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
     document.getElementById("r3b").textContent=Math.round(100*counts[k-1]/units.length)+"%";
     document.getElementById("r3c").textContent=fmt(topW);
     var el=document.getElementById("n3"),msg;
-    if(iRp.value==="rain"){el.className="note warn";msg="<strong>Skema pelangi tidak punya urutan.</strong> Coba urutkan kelas dari rendah ke tinggi hanya dari warnanya, lalu cocokkan dengan legenda. Pembaca Anda akan menebak dengan cara yang sama.";}
+    if(iRp.value==="rain"){el.className="note warn";msg="<strong>Rainbow color scheme tidak punya urutan.</strong> Coba urutkan kelas dari rendah ke tinggi hanya dari warnanya, lalu cocokkan dengan legenda. Pembaca Anda akan menebak dengan cara yang sama.";}
     else if(key==="total"){el.className="note warn";msg="<strong>Anda sedang memetakan jumlah orang.</strong> Wilayah paling gelap adalah yang penduduknya paling banyak, bukan yang paling miskin. Kembalikan ke tingkat kemiskinan dan lihat petanya tersusun ulang.";}
     else if(m==="q"){el.className="note";msg="<strong>Quantile</strong> memaksa jumlah wilayah yang kurang lebih sama di setiap kelas, sehingga garis batas berhimpun di bagian data yang padat. Peta tampak beragam walaupun nilainya nyaris tidak berbeda.";}
-    else if(m==="ei"){el.className="note";msg="<strong>Equal Interval</strong> membagi rentang nilai sama lebar. Pada data yang menceng, kelas teratas sering hanya berisi satu atau dua wilayah. Periksa angka di atas.";}
-    else if(m==="sd"){el.className="note";msg="<strong>Standard Deviation</strong> membaca peta sebagai simpangan dari rata-rata, bukan sebagai tingkat. Berguna untuk menunjukkan wilayah mana yang tidak biasa, bukan seberapa besar nilainya.";}
-    else{el.className="note";msg="<strong>Natural Breaks</strong> menaruh batas di bagian data yang jarang, sehingga setiap kelas mengelompokkan nilai yang memang berdekatan. Pilihan bawaan yang aman untuk sebaran yang menceng.";}
+    else if(m==="ei"){el.className="note";msg="<strong>Equal Interval</strong> membagi rentang nilai sama lebar. Pada data yang skewed (menceng), kelas teratas sering hanya berisi satu atau dua wilayah. Periksa angka di atas.";}
+    else if(m==="sd"){el.className="note";msg="<strong>Standard Deviation</strong> membaca peta sebagai deviation dari rata-rata, bukan sebagai tingkat. Berguna untuk menunjukkan wilayah mana yang tidak biasa, bukan seberapa besar nilainya.";}
+    else{el.className="note";msg="<strong>Natural Breaks</strong> menaruh batas di bagian data yang jarang, sehingga setiap kelas mengelompokkan nilai yang memang berdekatan. Pilihan bawaan yang aman untuk sebaran yang skewed.";}
     el.innerHTML=msg;
     document.getElementById("v3k").textContent=k;
   }
@@ -631,10 +631,10 @@ function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
     document.getElementById("r4d").textContent="tidak ada";
     var el=document.getElementById("n4"),msg;
     if(lost===0){el.className="note";msg="Semuanya cocok. Beginilah rupa join yang sehat, dan hanya dalam keadaan inilah jumlah baris memberi tahu Anda bahwa tidak ada yang salah.";}
-    else if(numeric&&!byName){el.className="note warn";msg="<strong>Semua baris gagal.</strong> Kuncinya tampak sama di layar, tetapi satu sisi berupa teks dan sisi lain berupa angka. Anehnya, ini kegagalan yang paling aman: Anda langsung menyadarinya.";}
+    else if(numeric&&!byName){el.className="note warn";msg="<strong>Semua baris gagal.</strong> Key-nya tampak sama di layar, tetapi satu sisi berupa teks dan sisi lain berupa angka. Anehnya, ini kegagalan yang paling aman: Anda langsung menyadarinya.";}
     else{
       el.className="note warn";
-      msg="<strong>"+lost+" dari "+ROWS.length+" baris terlempar, tanpa pesan galat di mana pun.</strong> ";
+      msg="<strong>"+lost+" dari "+ROWS.length+" baris terlempar, tanpa error message di mana pun.</strong> ";
       if(lostNew&&lostName)msg+="Yang hilang adalah kabupaten terbaru dan kota yang berganti nama, dan tidak satu pun dari kedua kelompok itu terpilih secara acak.";
       else if(lostNew)msg+="Yang hilang adalah kabupaten yang paling akhir dibentuk, yang secara sistematis berbeda dari yang lain.";
       else msg+="Yang hilang adalah kota yang namanya ditulis berbeda, dan karena itulah join dilakukan dengan kode, tidak pernah dengan nama.";
@@ -705,7 +705,7 @@ function redrawAll(){for(var i=0;i<draws.length;i++)draws[i]();}
     document.getElementById("r5c").textContent=nf(f.r2,2);
     document.getElementById("r5d").textContent=nf(f.b/base,2)+"×";
     var el=document.getElementById("n5");
-    if(!level){el.className="note";el.innerHTML="Ini hubungan tingkat rumah tangga, hubungan yang sebenarnya membangkitkan data. Setiap garis hasil agregasi yang Anda buat setelah ini perlu dibandingkan dengannya.";}
+    if(!level){el.className="note";el.innerHTML="Ini hubungan tingkat rumah tangga, yaitu data generating process: hubungan yang sebenarnya membangkitkan data. Setiap garis hasil aggregation yang Anda buat setelah ini perlu dibandingkan dengannya.";}
     else{el.className="note warn";el.innerHTML="<strong>&beta; kini "+nf(f.b/base,2)+" kali nilai tingkat rumah tangga</strong>, dan R² naik menjadi "+nf(f.r2,2)+". Garis putus-putus abu-abu adalah hubungan rumah tangga sebagai pembanding. Tidak ada data baru yang masuk; hanya batasnya yang berubah.";}
   }
   var seg=document.getElementById("seg5");
